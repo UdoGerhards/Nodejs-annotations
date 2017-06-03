@@ -1,0 +1,27 @@
+{
+    "appenders": [
+    {
+        "type": "clustered",
+        "appenders": [
+            {
+                "type": "console",
+                "pattern": "-yyyy-MM-dd",
+                "category": "estraverse"
+            }
+        ]
+    },
+    {
+        "type": "clustered",
+        "appenders": [
+            {
+                "type": "console",
+                "pattern": "-yyyy-MM-dd",
+                "category": "classParser"
+            }
+        ]
+    }
+],
+    "levels": {
+    "[all]": "INFO"
+}
+}
