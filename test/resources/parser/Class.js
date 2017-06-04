@@ -96,6 +96,9 @@ class ClassParser {
         instance.finisher = null;
     }
 
+    /*
+     * @Init()
+     */
     get TestMethod() {
         var instance = this;
     }
