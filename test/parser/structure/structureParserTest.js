@@ -13,10 +13,10 @@ var mocha = require("mocha")
     , glob = require("glob")
     , sizeOf = require("object-sizeof")
     , applicationConstants = require("../../../lib/helper/constants")
-    , ClassUnderTest = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"structure"+path.sep+"StructureParser.js");
+    , ClassUnderTest = require(process.env.PWD + path.sep + "lib" + path.sep + "parser" + path.sep + "structure" + path.sep + "StructureParser.js");
 
 
-describe("ClassParserTest", function() {
+describe("ClassParserTest", function () {
 
     var parser = null;
     var annotations = {};
@@ -26,6 +26,8 @@ describe("ClassParserTest", function() {
     applicationConstants();
 
     var annotationPath = process.env.PWD + path.sep + "lib" + path.sep + "annotation" + path.sep;
+    var annotationParserPath = process.env.PWD + path.sep + "lib" + path.sep + "parser" + path.sep + "annotation" + path.sep;
+
     var parserPath = process.env.PWD + path.sep + "lib" + path.sep + "parser" + path.sep + "member" + path.sep;
 
     var resourcesPath = process.env.PWD + path.sep + "test" + path.sep + "resources" + path.sep;
@@ -45,7 +47,7 @@ describe("ClassParserTest", function() {
             mocks[fileName] = file;
         });
 
-        parser = new ClassUnderTest();
+        parser = ClassUnderTest;
 
         var files = glob.sync(annotationPath + "**/*.js");
         files.forEach(function (file) {
@@ -70,10 +72,37 @@ describe("ClassParserTest", function() {
             expressionParser[eP.name] = expressionP;
         });
 
+        // AnnotationParser
+
+        var annotationParserList = {};
+        var files = glob.sync(annotationParserPath + "**/*.js");
+
+        files.forEach(function (file) {
+            var AnnotationParser = require(file);
+            var supports = AnnotationParser.SUPPORTS;
+            if (supports && supports.length > 0) {
+                supports.forEach(function (annotationName) {
+
+                    var annotationParser = new AnnotationParser();
+
+                    annotationParser.annotationParser = annotationParserList;
+                    annotationParser.tokenParser = expressionParser;
+                    annotationParser.logger = logger;
+
+                    annotationParserList[annotationName] = annotationParser;
+                });
+            }
+        });
+
+        logger.trace(annotationParserList);
+
+        logger.trace(util.inspect(expressionParser, {depth: null}));
+
         logger.trace(util.inspect(expressionParser, {depth: null}));
 
         parser.annotations = annotations;
         parser.expressionParser = expressionParser;
+        parser.annotationParser = annotationParserList;
 
         logger.trace(util.inspect(parser.expressionParser, {depth: null}));
 
@@ -123,7 +152,7 @@ describe("ClassParserTest", function() {
             expect(beanStack).to.have.lengthOf(4);
 
             logger.info(sizeOf(beanStack));
-            logger.info(util.inspect(beanStack, {depth: 7}));
+            logger.info(util.inspect(beanStack, {depth: 3}));
 
         });
 
@@ -143,7 +172,7 @@ describe("ClassParserTest", function() {
             expect(beanStack).to.have.lengthOf(2);
 
             logger.info(sizeOf(beanStack));
-            logger.info(util.inspect(beanStack, {depth: 5}));
+            logger.info(util.inspect(beanStack, {depth: 3}));
 
         });
 

@@ -16,6 +16,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "chai": "^4.0.0",
     "collections": "^5.0.6",
     "dot-object": "^1.5.4",
@@ -30,6 +31,7 @@
     "mocha": "^3.4.2",
     "node-proxy": "^1.0.0",
     "object-sizeof": "^1.2.0",
+    "toposort-class": "^1.0.1",
     "traverse": "^0.6.6"
   }
 }
