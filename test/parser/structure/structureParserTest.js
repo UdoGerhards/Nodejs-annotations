@@ -12,6 +12,7 @@ var mocha = require("mocha")
     , _ = require("lodash")
     , glob = require("glob")
     , sizeOf = require("object-sizeof")
+    , applicationConstants = require("../../../lib/helper/constants")
     , ClassUnderTest = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"structure"+path.sep+"StructureParser.js");
 
 
@@ -21,6 +22,8 @@ describe("ClassParserTest", function() {
     var annotations = {};
     var expressionParser = {};
     var mocks = {};
+
+    applicationConstants();
 
     var annotationPath = process.env.PWD + path.sep + "lib" + path.sep + "annotation" + path.sep;
     var parserPath = process.env.PWD + path.sep + "lib" + path.sep + "parser" + path.sep + "member" + path.sep;

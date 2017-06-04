@@ -12,7 +12,7 @@ var mocha = require("mocha")
     , _ = require("lodash")
     , glob = require("glob")
     , sizeOf = require("object-sizeof")
-    , ClassUnderTest = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"annotation"+path.sep+"Bean"+path.sep+"BeanAnnotationParser.js");
+    , ClassUnderTest = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"annotation"+path.sep+"instance"+path.sep+"Bean"+path.sep+"BeanAnnotationParser.js");
 
 
 describe("AnnotationParserTest", function() {
@@ -103,7 +103,7 @@ describe("AnnotationParserTest", function() {
     describe("AnnotationParserInitTest", function() {
         it("Checks if the annotation parsers will be correctly initialized", function() {
 
-            var BeanParserClass = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"annotation"+path.sep+"Bean"+path.sep+"BeanAnnotationParser.js");
+            var BeanParserClass = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"annotation"+path.sep+"instance"+path.sep+"Bean"+path.sep+"BeanAnnotationParser.js");
             var beanParser = new BeanParserClass();
 
             beanParser.tokenParser = tokenParserList;
