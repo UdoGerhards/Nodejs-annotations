@@ -11,6 +11,7 @@ var mocha = require("mocha")
     , util = require("util")
     , _ = require("lodash")
     , glob = require("glob")
+    , sizeOf = require("object-sizeof")
     , ClassUnderTest = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"structure"+path.sep+"StructureParser.js");
 
 
@@ -82,6 +83,8 @@ describe("ClassParserTest", function() {
 
     describe("InitTest", function () {
         it("Will initialize the parser", function () {
+
+            parser.removeTokens = ['ExpressionStatement', 'AssignmentExpression', 'FunctionDeclaration'];
             parser.init();
             assert.typeOf(parser.regexAnnotation, 'regexp', "Regexpression could not be created!");
 
@@ -109,13 +112,15 @@ describe("ClassParserTest", function() {
 
             var data = fs.readFileSync(mocks["component2"]).toString();
 
+            parser.removeTokens = ['BlockStatement', 'AssignmentExpression', 'Identifier', 'Literal'];
             parser.init();
             var beanStack = parser.parse(data);
             assert.isNotNull(beanStack);
             assert.isArray(beanStack);
             expect(beanStack).to.have.lengthOf(4);
 
-            logger.info(util.inspect(beanStack, {depth: 2}));
+            logger.info(sizeOf(beanStack));
+            logger.info(util.inspect(beanStack, {depth: 5}));
 
         });
 
@@ -133,7 +138,7 @@ describe("ClassParserTest", function() {
             assert.isArray(beanStack);
             expect(beanStack).to.have.lengthOf(2);
 
-            logger.info(util.inspect(beanStack, {depth: 2}));
+            logger.info(util.inspect(beanStack, {depth: null}));
 
         });
 
@@ -169,7 +174,8 @@ describe("ClassParserTest", function() {
             assert.isArray(beanStack);
             //expect(beanStack).to.have.lengthOf(2);
 
-            logger.trace(util.inspect(beanStack, {depth: 3}));
+            logger.info(sizeOf(beanStack));
+            logger.info(util.inspect(beanStack, {depth: null}));
 
         });
 

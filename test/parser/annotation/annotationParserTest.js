@@ -11,6 +11,7 @@ var mocha = require("mocha")
     , util = require("util")
     , _ = require("lodash")
     , glob = require("glob")
+    , sizeOf = require("object-sizeof")
     , ClassUnderTest = require(process.env.PWD+path.sep+"lib"+path.sep+"parser"+path.sep+"annotation"+path.sep+"Bean"+path.sep+"BeanAnnotationParser.js");
 
 

@@ -77,6 +77,11 @@ function ExtensionManager() {
      */
     instance.exec = null;
 
+    /*
+     * @Qualifier("FinishingLevel0")
+     */
+    instance.finishingLevel0 = null;
+
     instance.directory = null;
 
     instance.cmdInstall = null;
@@ -173,11 +178,6 @@ function ExtensionManager() {
          */
         instance.finishingLevel1 = null;
     }
-
-    /*
-     * @Qualifier("FinishingLevel0")
-     */
-    instance.finishingLevel0 = null;
 }
 
 // TODO: Check if initialization takes place after initialization of "index.js" to avoid false or wrong values in Application Configuration

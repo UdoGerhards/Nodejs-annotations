@@ -89,6 +89,11 @@ class ClassParser {
             }
 
         }
+
+        /*
+         * @Qualifier("Finisher")
+         */
+        instance.finisher = null;
     }
 
     get TestMethod() {
