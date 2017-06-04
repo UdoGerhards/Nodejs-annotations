@@ -115,7 +115,7 @@ describe("ClassParserTest", function() {
 
             var data = fs.readFileSync(mocks["component2"]).toString();
 
-            parser.removeTokens = ['BlockStatement', 'AssignmentExpression', 'Identifier', 'Literal'];
+            parser.removeTokens = ['BlockStatement', 'AssignmentExpression', 'Identifier', 'Literal', 'FunctionExpression'];
             parser.init();
             var beanStack = parser.parse(data);
             assert.isNotNull(beanStack);
@@ -123,7 +123,7 @@ describe("ClassParserTest", function() {
             expect(beanStack).to.have.lengthOf(4);
 
             logger.info(sizeOf(beanStack));
-            logger.info(util.inspect(beanStack, {depth: 5}));
+            logger.info(util.inspect(beanStack, {depth: 7}));
 
         });
 
@@ -175,7 +175,7 @@ describe("ClassParserTest", function() {
 
             var data = fs.readFileSync(mocks["Class"]).toString();
 
-            parser.removeTokens = ['BlockStatement', 'AssignmentExpression', 'Identifier', 'Literal']
+            parser.removeTokens = ['BlockStatement', 'AssignmentExpression', 'Identifier', 'Literal', 'ClassBody', 'ClassExpression']
             parser.init();
             var beanStack = parser.parse(data);
             assert.isNotNull(beanStack);
