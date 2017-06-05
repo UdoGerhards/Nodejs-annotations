@@ -9,8 +9,7 @@ var mocha = require("mocha")
     , fs = require("fs-extra")
     , path = require("path")
     , util = require("util")
-    , _ = require("lodash")
-    , sizeOf = require("object-sizeof");
+    , _ = require("lodash");
 
 
 describe("EstraversTest", function() {

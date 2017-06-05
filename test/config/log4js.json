@@ -1,27 +1,47 @@
 {
-    "appenders": [
+  "appenders": [
     {
-        "type": "clustered",
-        "appenders": [
-            {
-                "type": "console",
-                "pattern": "-yyyy-MM-dd",
-                "category": "estraverse"
-            }
-        ]
+      "type": "clustered",
+      "appenders": [
+        {
+          "type": "console",
+          "pattern": "-yyyy-MM-dd",
+          "category": "estraverse"
+        }
+      ]
     },
     {
-        "type": "clustered",
-        "appenders": [
-            {
-                "type": "console",
-                "pattern": "-yyyy-MM-dd",
-                "category": "classParser"
-            }
-        ]
+      "type": "clustered",
+      "appenders": [
+        {
+          "type": "console",
+          "pattern": "-yyyy-MM-dd",
+          "category": "classParser"
+        }
+      ]
+    },
+    {
+      "type": "clustered",
+      "appenders": [
+        {
+          "type": "console",
+          "pattern": "-yyyy-MM-dd",
+          "category": "factory"
+        }
+      ]
+    },
+    {
+      "type": "clustered",
+      "appenders": [
+        {
+          "type": "console",
+          "pattern": "-yyyy-MM-dd",
+          "category": "contextBuilder"
+        }
+      ]
     }
-],
-    "levels": {
+  ],
+  "levels": {
     "[all]": "INFO"
-}
+  }
 }
