@@ -3,7 +3,7 @@
 /**
  * @Service("ExtensionManager")
  * @Lazy()
- * @Ressource()
+ * @Resource()
  *
  **/
 function ExtensionManager() {
@@ -14,6 +14,8 @@ function ExtensionManager() {
 
     /*
      * @Qualifier("ExtensionManagerPackageInfo")
+     * @Lazy()
+     * @Resource()
      */
     instance.
         packageInfo

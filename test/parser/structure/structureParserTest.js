@@ -160,7 +160,7 @@ describe("ClassParserTest", function () {
             expect(beanStack).to.have.lengthOf(4);
 
             logger.info(sizeOf(beanStack));
-            logger.info(util.inspect(beanStack, {depth: 3}));
+            logger.info(util.inspect(beanStack, {depth: 9}));
 
         });
 
