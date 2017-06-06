@@ -94,13 +94,7 @@ describe("ClassParserTest", function () {
 
         logger.trace(annotationParserList);
 
-        logger.trace(util.inspect(expressionParser, {depth: null}));
-
-        logger.trace(util.inspect(expressionParser, {depth: null}));
-
-        parser.annotations = annotations;
         parser.expressionParser = expressionParser;
-        parser.annotationParser = annotationParserList;
 
         logger.trace(util.inspect(parser.expressionParser, {depth: null}));
 
@@ -156,11 +150,10 @@ describe("ClassParserTest", function () {
             parser.init();
             var beanStack = parser.parse(fileInfo);
             assert.isNotNull(beanStack);
-            assert.isArray(beanStack);
-            expect(beanStack).to.have.lengthOf(4);
+            assert.isObject(beanStack);
 
             logger.info(sizeOf(beanStack));
-            logger.info(util.inspect(beanStack, {depth: 9}));
+            logger.info(util.inspect(beanStack, {depth: 3}));
 
         });
 
@@ -181,8 +174,8 @@ describe("ClassParserTest", function () {
             parser.init();
             var beanStack = parser.parse(fileInfo);
             assert.isNotNull(beanStack);
-            assert.isArray(beanStack);
-            expect(beanStack).to.have.lengthOf(2);
+            assert.isObject(beanStack);
+            //expect(beanStack).to.have.lengthOf(2);
 
             logger.info(sizeOf(beanStack));
             logger.info(util.inspect(beanStack, {depth: 3}));
@@ -206,7 +199,7 @@ describe("ClassParserTest", function () {
             parser.init();
             var beanStack = parser.parse(fileInfo);
             assert.isNotNull(beanStack);
-            assert.isArray(beanStack);
+            assert.isObject(beanStack);
             //expect(beanStack).to.have.lengthOf(2);
 
             logger.info(sizeOf(beanStack));
@@ -231,11 +224,11 @@ describe("ClassParserTest", function () {
             parser.init();
             var beanStack = parser.parse(fileInfo);
             assert.isNotNull(beanStack);
-            assert.isArray(beanStack);
+            assert.isObject(beanStack);
             //expect(beanStack).to.have.lengthOf(2);
 
             logger.info(sizeOf(beanStack));
-            logger.info(util.inspect(beanStack, {depth: 5}));
+            logger.info(util.inspect(beanStack, {depth: 3}));
 
         });
 

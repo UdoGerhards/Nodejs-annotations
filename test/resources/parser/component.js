@@ -3,9 +3,9 @@
 /**
  * @Service("ExtensionManager")
  * @Lazy()
- * @Resource()
  *
  **/
+// @Resource()
 function ExtensionManager() {
     var instance = this;
 
