@@ -148,7 +148,7 @@ describe("ContextBuilderTestSuite", function () {
                     })
                 });
 
-                var processedApplicationStack = contextBuilder._processApplicationStack(applicationStack);
+                var processedApplicationStack = contextBuilder.processApplicationStack(applicationStack);
                 console.log(sizeOf(processedApplicationStack));
             });
 
@@ -189,7 +189,7 @@ describe("ContextBuilderTestSuite", function () {
                     })
                 });
 
-                var stagedApplicationStack = contextBuilder._processApplicationStack(applicationStack);
+                var stagedApplicationStack = contextBuilder.processApplicationStack(applicationStack);
 
                 stagedApplicationStack.forEach(function(beanStack){
                     beanStack.forEach(function(beanStructure) {
@@ -197,7 +197,7 @@ describe("ContextBuilderTestSuite", function () {
                     })
                 });
 
-                var instantiatedApplicationStack = contextBuilder._processApplicationStack(applicationStack);
+                var instantiatedApplicationStack = contextBuilder.processApplicationStack(applicationStack);
                 instantiatedApplicationStack.forEach(function(beanStack){
                     beanStack.forEach(function(beanStructure) {
                         assert.isNotNull(beanStructure._instance);
