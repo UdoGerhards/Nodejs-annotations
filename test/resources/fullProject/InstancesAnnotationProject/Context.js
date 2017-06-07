@@ -9,7 +9,7 @@ var Application = function() {
     var instance = this;
 
     /*
-     * @Bean()
+     * @Qualifier()
      */
     instance.bean = null;
 

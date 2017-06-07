@@ -181,33 +181,15 @@ describe("ContextBuilderTestSuite", function () {
             return contextBuilder.parseFileInformation(dependencyPackages).then(function(applicationStack){
 
                 assert.isNotNull(applicationStack);
-                assert.isArray(applicationStack);
+                assert.isObject(applicationStack);
 
-                applicationStack.forEach(function(beanStack){
-                    beanStack.forEach(function(beanStructure) {
-                        beanStructure.stage =  global._STAGE_
-                    })
-                });
+                contextBuilder.processApplicationStack(applicationStack, global._STAGE_);
+                contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_);
+                contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_);
 
-                var stagedApplicationStack = contextBuilder.processApplicationStack(applicationStack);
+                console.log(sizeOf(applicationStack));
 
-                stagedApplicationStack.forEach(function(beanStack){
-                    beanStack.forEach(function(beanStructure) {
-                        beanStructure.stage =  global._INSTANTIATE_;
-                    })
-                });
-
-                var instantiatedApplicationStack = contextBuilder.processApplicationStack(applicationStack);
-                instantiatedApplicationStack.forEach(function(beanStack){
-                    beanStack.forEach(function(beanStructure) {
-                        assert.isNotNull(beanStructure._instance);
-                        assert.isObject(beanStructure._instance);
-                    })
-                });
-
-                console.log(sizeOf(instantiatedApplicationStack));
-
-                logger.info(util.inspect(instantiatedApplicationStack, {depth:2}));
+                logger.info(util.inspect(applicationStack, {depth:1}));
             });
 
         });
