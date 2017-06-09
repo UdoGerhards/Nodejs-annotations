@@ -21,6 +21,8 @@ function Component() {
      * @Qualifier("ServiceBean")
      */
     instance.service = null;
+
+    instance.initFlag = null;
 }
 
 /**
@@ -28,6 +30,7 @@ function Component() {
  */
 Component.prototype.init = function() {
     var instance = this;
+    instance.initFlag = true;
 }
 
 module.exports = exports = Component;

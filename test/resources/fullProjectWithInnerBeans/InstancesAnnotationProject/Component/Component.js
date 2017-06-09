@@ -1,11 +1,10 @@
 'use strict';
 
-
 /**
- * @Context("Application")
+ * @Component("ComponentBean")
+ * @constructor
  */
-var Application = function() {
-
+function Component() {
     var instance = this;
 
     /*
@@ -23,30 +22,17 @@ var Application = function() {
      */
     instance.service = null;
 
-    /*
-     * @Qualifier("ComponentBean")
-     */
-    instance.component = null;
-
     instance.initFlag = null;
-
 }
 
 /**
- *  @Init()
+ * @Init()
  */
-Application.prototype.init = function() {
+Component.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
-};
 
-/**
- * @Run()
- * @type {Application}
- */
-Application.prototype.run = function() {
-
+    console.log("Initialization ...");
 }
 
-
-module.exports = exports = Application;
+module.exports = exports = Component;

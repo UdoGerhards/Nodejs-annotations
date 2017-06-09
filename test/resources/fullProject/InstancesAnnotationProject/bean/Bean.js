@@ -21,6 +21,8 @@ function Bean() {
      * @Qualifier("ComponentBean")
      */
     instance.component = null;
+
+    instance.initFlag = null;
 }
 
 /**
@@ -28,6 +30,7 @@ function Bean() {
  */
 Bean.prototype.init = function() {
     var instance = this;
+    instance.initFlag = true;
 }
 
 module.exports = exports = Bean;

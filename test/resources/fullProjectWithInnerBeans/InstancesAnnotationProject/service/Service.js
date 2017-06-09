@@ -22,6 +22,16 @@ function Service() {
      */
     instance.component = null;
 
+    /*
+     * @Qualifier("InnerBeanLevel2")
+     */
+    instance.innerBeanLevel2 = null;
+
+    /*
+     * @Qualifier("InnerBeanLevel3")
+     */
+    instance.innerBeanLevel3 = null;
+
     instance.initFlag = null;
 }
 
@@ -32,6 +42,7 @@ Service.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
 
-};
+    console.log("Initialization ...");
+}
 
 module.exports = exports = Service;

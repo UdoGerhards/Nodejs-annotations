@@ -36,15 +36,21 @@ var Application = function() {
  *  @Init()
  */
 Application.prototype.init = function() {
+
     var instance = this;
     instance.initFlag = true;
-};
+
+    console.log("Initialization ...");
+
+}
 
 /**
  * @Run()
  * @type {Application}
  */
 Application.prototype.run = function() {
+
+    console.log("Application is running!");
 
 }
 
