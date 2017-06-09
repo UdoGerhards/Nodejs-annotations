@@ -9,12 +9,12 @@ var Application = function() {
     var instance = this;
 
     /*
-     * @Qualifier()
+     * @Qualifier("Bean")
      */
     instance.bean = null;
 
     /*
-     * @Qualifier()
+     * @Qualifier("Controller")
      */
     instance.controller= null;
 

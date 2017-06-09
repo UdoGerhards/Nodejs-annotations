@@ -1,14 +1,14 @@
 'use strict';
 
 /**
- * @Controller()
+ * @Controller("Controller")
  * @constructor
  */
 function Controller() {
     var instance = this;
 
     /*
-     * @Qualifier()
+     * @Qualifier("Bean")
      */
     instance.bean = null;
 

@@ -2,8 +2,6 @@
 
 /**
  * @Service("ExtensionManager")
- * @Lazy()
- * @Resource()
  *
  **/
 function ExtensionManager() {
@@ -14,8 +12,6 @@ function ExtensionManager() {
 
     /*
      * @Qualifier("ExtensionManagerPackageInfo")
-     * @Lazy()
-     * @Resource()
      */
     instance.
         packageInfo
@@ -92,7 +88,7 @@ function ExtensionManager() {
     /**
      * @Component("InnerBeanLevel1")
      */
-    instance.innerBeanLevel1 = function() {
+    instance.innerBeanLevel1 = function InnerBeanLevel1() {
 
         var instance = this;
 
@@ -119,7 +115,7 @@ function ExtensionManager() {
         /**
          * @Component("InnerBeanLevel2")
          */
-        instance.innerBeanLevel2 = function() {
+        instance.innerBeanLevel2 = function InnerBeanLevel2() {
             var instance = this;
 
             /*
@@ -145,7 +141,7 @@ function ExtensionManager() {
             /**
              * @Component("InnerBeanLevel3")
              */
-            instance.innerBeanLevel3 = function() {
+            instance.innerBeanLevel3 = function InnerBeanLevel3() {
                 var instance = this;
 
                 /*

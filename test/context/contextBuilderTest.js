@@ -156,6 +156,43 @@ describe("ContextBuilderTestSuite", function () {
 
     });
 
+    describe("InstantiateSingleObjectWithInnerBeans",  function() {
+
+        it("Instantiates a single object with inner beans", function() {
+
+                this.timeout(timeout);
+
+                var fileToParse = resourcesPath+path.sep+"parser"+path.sep+"component2.js";
+
+                var dependencyPackage = {
+                    paths: [fileToParse]
+                };
+
+                var dependencyPackages = {
+                    testPackage: dependencyPackage
+                };
+
+                contextBuilder.logger.setLevel("INFO");
+                return contextBuilder.parseFileInformation(dependencyPackages).then(function(applicationStack){
+
+                    assert.isNotNull(applicationStack);
+                    assert.isObject(applicationStack);
+
+                    return contextBuilder.processApplicationStack(applicationStack, global._STAGE_).then(function(results) {
+                        return contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_).then(function(results){
+                            return contextBuilder.processApplicationStack(applicationStack, global._INJECT_).then(function(results) {
+                                return contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_).then(function (results) {
+                                    logger.info(util.inspect(applicationStack, {depth: 1}));
+                                });
+                            });
+                        });
+                    });
+                });
+
+
+            });
+    });
+
     describe("InstantiateSimpleObjects", function() {
 
         it("Instantiates simple objects in the demo project", function() {
@@ -183,13 +220,16 @@ describe("ContextBuilderTestSuite", function () {
                 assert.isNotNull(applicationStack);
                 assert.isObject(applicationStack);
 
-                contextBuilder.processApplicationStack(applicationStack, global._STAGE_);
-                contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_);
-                contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_);
-
-                console.log(sizeOf(applicationStack));
-
-                logger.info(util.inspect(applicationStack, {depth:1}));
+                return contextBuilder.processApplicationStack(applicationStack, global._STAGE_).then(function(results) {
+                    return contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_).then(function(results){
+                        return contextBuilder.processApplicationStack(applicationStack, global._INJECT_).then(function(results) {
+                            return contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_).then(function (results) {
+                                //console.log(sizeOf(applicationStack));
+                                logger.info(util.inspect(applicationStack, {depth: 1}));
+                            });
+                        });
+                    });
+                });
             });
 
         });

@@ -8,9 +8,9 @@ function Bean() {
     var instance = this;
 
     /*
-     * @Qualifier("BeanThis")
+     * @Qualifier("Controller")
      */
-    this.controller= null;
+    instance.controller= null;
 
     /*
      * @Qualifier("ServiceBean")
