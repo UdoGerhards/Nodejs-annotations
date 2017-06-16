@@ -325,7 +325,7 @@ describe("ContextBuilderTestSuite", function () {
 
     });
 
-    describe("InheritanceProcessing", function() {
+    describe("SimpleInheritance", function() {
         it("Inherits from parent beans", function(){
 
             this.timeout(timeout);
@@ -368,6 +368,59 @@ describe("ContextBuilderTestSuite", function () {
                 return new Promise(function(resolve, reject){
                     contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
                         logger.info(util.inspect(result, {depth:3}));
+                        resolve();
+                    });
+
+                    // Process
+                    contextBuilder.processApplicationStack(processStage);
+                });
+            });
+        });
+    });
+
+    describe("MultipleInheritance", function() {
+        it("Inherits from parent beans", function(){
+
+            this.timeout(timeout);
+
+            var fileToParser = process.env.PWD + path.sep + "test" + path.sep + "resources" + path.sep + "inheritance" + path.sep+"multiple"+path.sep;
+            var filesToParse = glob.sync(fileToParser + "**/*.js");
+
+            /*
+             * Mocked dependency packages
+             */
+            var dependencyPackage = {
+                paths: filesToParse
+            }
+
+            var dependencyPackages = {
+                testPackage: dependencyPackage
+            };
+
+
+            contextBuilder.logger.setLevel("INFO");
+            // Factory loads all stages but we only want to have _STASHING_ for the test
+            contextBuilder.removeStageHandler();
+            contextBuilder.stages = [
+                global.stages._STASHING_,
+                global.stages._INHERIT_,
+                global.stages._INSTANTIATE_,
+            ];
+            contextBuilder.setStageHandler();
+
+            return contextBuilder.parseFileInformation(dependencyPackages).then(function (applicationStack) {
+
+                assert.isNotNull(applicationStack);
+                assert.isObject(applicationStack);
+
+                var processStage = [
+                    applicationStack,
+                    0
+                ];
+
+                return new Promise(function(resolve, reject){
+                    contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
+                        logger.info(util.inspect(result, {depth:1}));
                         resolve();
                     });
 
