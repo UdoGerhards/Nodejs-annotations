@@ -4,7 +4,6 @@ var mocha = require("mocha")
     , assert = require("chai").assert
     , expect = require("chai").expect
     , estraverse = require("estraverse")
-    , esprima = require("esprima")
     , log4js = require("log4js")
     , fs = require("fs-extra")
     , path = require("path")
@@ -32,12 +31,8 @@ describe("ContextBuilderTestSuite", function () {
     beforeEach(function () {
 
         factory.logger = factoryLogger;
-        factory.init();
-
         contextBuilder = ClassUnderTest;
-        contextBuilder.logger = logger;
-
-
+        factory.init();
     });
 
     afterEach(function () {
@@ -48,12 +43,7 @@ describe("ContextBuilderTestSuite", function () {
 
         it("Tests the initializtation of the context builder object", function () {
             contextBuilder.logger.setLevel("TRACE");
-            contextBuilder.init();
 
-            assert.isNotNull(contextBuilder.annotations);
-            assert.isObject(contextBuilder.annotations);
-            assert.isNotNull(contextBuilder.tokenParser);
-            assert.isObject(contextBuilder.tokenParser);
             assert.isNotNull(contextBuilder.annotationParser);
             assert.isObject(contextBuilder.annotationParser);
         });
@@ -116,7 +106,7 @@ describe("ContextBuilderTestSuite", function () {
 
     });
 
-    describe("StageSimpleObjects", function () {
+    describe("StashSimpleObjects", function () {
 
         it("Parses a given file and gives back its bean structure", function () {
 
@@ -138,19 +128,33 @@ describe("ContextBuilderTestSuite", function () {
             };
 
             contextBuilder.logger.setLevel("INFO");
+
+            // Factory loads all stages but we only want to have _STASHING_ for the test
+            contextBuilder.removeStageHandler();
+            contextBuilder.stages = [
+                global.stages._STASHING_
+            ];
+            contextBuilder.setStageHandler();
+
             return contextBuilder.parseFileInformation(dependencyPackages).then(function (applicationStack) {
 
                 assert.isNotNull(applicationStack);
-                assert.isArray(applicationStack);
+                assert.isObject(applicationStack);
 
-                applicationStack.forEach(function (beanStack) {
-                    beanStack.forEach(function (beanStructure) {
-                        beanStructure.stage = global._STAGE_
-                    })
+                var processStage = [
+                    applicationStack,
+                    0
+                ];
+
+                return new Promise(function(resolve, reject){
+                    contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
+                        logger.info(util.inspect(result, {depth:1}));
+                        resolve();
+                    });
+
+                    // Process
+                    contextBuilder.processApplicationStack(processStage);
                 });
-
-                var processedApplicationStack = contextBuilder.processApplicationStack(applicationStack);
-                console.log(sizeOf(processedApplicationStack));
             });
 
         });
@@ -174,23 +178,35 @@ describe("ContextBuilderTestSuite", function () {
             };
 
             contextBuilder.logger.setLevel("INFO");
+
+            // Factory loads all stages but we only want to have _STASHING_ for the test
+            contextBuilder.removeStageHandler();
+            contextBuilder.stages = [
+                global.stages._STASHING_,
+                global.stages._INSTANTIATE_
+            ];
+            contextBuilder.setStageHandler();
             return contextBuilder.parseFileInformation(dependencyPackages).then(function (applicationStack) {
 
                 assert.isNotNull(applicationStack);
                 assert.isObject(applicationStack);
 
-                return contextBuilder.processApplicationStack(applicationStack, global._STAGE_).then(function (results) {
-                    return contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_).then(function (results) {
-                        return contextBuilder.processApplicationStack(applicationStack, global._INJECT_).then(function (results) {
-                            return contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_).then(function (results) {
-                                logger.info(util.inspect(applicationStack, {depth: 1}));
-                            });
-                        });
+                var processStage = [
+                    applicationStack,
+                    0
+                ];
+
+                return new Promise(function(resolve, reject){
+                    contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
+                        logger.info(util.inspect(result, {depth:1}));
+                        resolve();
                     });
+
+                    // Process
+                    contextBuilder.processApplicationStack(processStage);
                 });
+
             });
-
-
         });
     });
 
@@ -216,23 +232,37 @@ describe("ContextBuilderTestSuite", function () {
             };
 
             contextBuilder.logger.setLevel("INFO");
+
+            // Factory loads all stages but we only want to have _STASHING_ for the test
+            contextBuilder.removeStageHandler();
+            contextBuilder.stages = [
+                global.stages._STASHING_,
+                global.stages._INSTANTIATE_,
+                global.stages._INJECT_,
+                global.stages._FINISH_SETUP_
+            ];
+            contextBuilder.setStageHandler();
             return contextBuilder.parseFileInformation(dependencyPackages).then(function (applicationStack) {
 
                 assert.isNotNull(applicationStack);
                 assert.isObject(applicationStack);
 
-                return contextBuilder.processApplicationStack(applicationStack, global._STAGE_).then(function (results) {
-                    return contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_).then(function (results) {
-                        return contextBuilder.processApplicationStack(applicationStack, global._INJECT_).then(function (results) {
-                            return contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_).then(function (results) {
-                                //console.log(sizeOf(applicationStack));
-                                logger.info(util.inspect(applicationStack, {depth: 1}));
-                            });
-                        });
-                    });
-                });
-            });
+                var processStage = [
+                    applicationStack,
+                    0
+                ];
 
+                return new Promise(function(resolve, reject){
+                    contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
+                        logger.info(util.inspect(result, {depth:1}));
+                        resolve();
+                    });
+
+                    // Process
+                    contextBuilder.processApplicationStack(processStage);
+                });
+
+            });
         });
 
     });
@@ -259,25 +289,83 @@ describe("ContextBuilderTestSuite", function () {
             };
 
             contextBuilder.logger.setLevel("INFO");
+            // Factory loads all stages but we only want to have _STASHING_ for the test
+            contextBuilder.removeStageHandler();
+            contextBuilder.stages = [
+                global.stages._STASHING_,
+                global.stages._INSTANTIATE_,
+                global.stages._INJECT_,
+                global.stages._RUN_,
+                global.stages._FINISH_SETUP_
+            ];
+            contextBuilder.setStageHandler();
             return contextBuilder.parseFileInformation(dependencyPackages).then(function (applicationStack) {
 
                 assert.isNotNull(applicationStack);
                 assert.isObject(applicationStack);
 
+                var processStage = [
+                    applicationStack,
+                    0
+                ];
 
-                return contextBuilder.processApplicationStack(applicationStack, global._STAGE_).then(function (results) {
-                    return contextBuilder.processApplicationStack(applicationStack, global._INSTANTIATE_).then(function (results) {
-                        return contextBuilder.processApplicationStack(applicationStack, global._INJECT_).then(function (results) {
-                            return contextBuilder.processApplicationStack(applicationStack, global._INITIALIZE_).then(function (results) {
-                                return contextBuilder.processApplicationStack(applicationStack, global._RUN_).then(function (results) {
-                                    return contextBuilder.processApplicationStack(applicationStack, global._FINISH_SETUP_).then(function (results) {
-                                        //console.log(sizeOf(applicationStack));
-                                        logger.info(util.inspect(applicationStack, {depth: 1}));
-                                    });
-                                });
-                            });
-                        });
+                return new Promise(function(resolve, reject){
+                    contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
+                        logger.info(util.inspect(result, {depth:1}));
+                        resolve();
                     });
+
+                    // Process
+                    contextBuilder.processApplicationStack(processStage);
+                });
+
+            });
+
+        });
+
+    });
+
+
+    describe("AsynchronInstantiateWithInnerBeans", function () {
+
+        it("Instantiates simple objects in the demo project", function () {
+
+            this.timeout(timeout);
+
+            var fileToParser = process.env.PWD + path.sep + "test" + path.sep + "resources" + path.sep + "fullProjectWithInnerBeans" + path.sep + "InstancesAnnotationProject" + path.sep;
+
+            var filesToParse = glob.sync(fileToParser + "**/*.js");
+
+            /*
+             * Mocked dependency packages
+             */
+            var dependencyPackage = {
+                paths: filesToParse
+            }
+
+            var dependencyPackages = {
+                testPackage: dependencyPackage
+            };
+
+            contextBuilder.logger.setLevel("INFO");
+            return contextBuilder.parseFileInformation(dependencyPackages).then(function (applicationStack) {
+
+                assert.isNotNull(applicationStack);
+                assert.isObject(applicationStack);
+
+                var processStage = [
+                    applicationStack,
+                    0
+                ];
+
+                return new Promise(function(resolve, reject){
+                    contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
+                        logger.info(util.inspect(result, {depth:1}));
+                        resolve();
+                    });
+
+                    // Process
+                    contextBuilder.processApplicationStack(processStage);
                 });
             });
 
