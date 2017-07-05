@@ -502,7 +502,7 @@ describe("ContextBuilderTestSuite", function () {
             var parsePromises = factory._parseFiles(searchInPath, null, addBeans);
 
             return Promise.map(parsePromises, function(applicationStack) {
-                console.log(applicationStack);
+                //console.log(applicationStack);
             });
         });
     });

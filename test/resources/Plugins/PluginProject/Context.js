@@ -2,9 +2,9 @@
 
 
 /**
- * @Plugin("Application")
+ * @Plugin("Plugin")
  */
-var Application = function() {
+var Plugin = function() {
 
     var instance = this;
 
@@ -28,6 +28,26 @@ var Application = function() {
      */
     instance.component = null;
 
+    /*
+     * @Qualifier("AnnotationFactory")
+     */
+    instance.factory = null;
+
+    /*
+     * @Qualifier("AnnotationContextBuilder")
+     */
+    instance.contextBuilder = null;
+
+    /*
+     * @Qualifier("AnnotationDependencyBuilder")
+     */
+    instance.dependencyBuilder = null;
+
+    /*
+     * @Qualifier("AnnotationStructureParser")
+     */
+    instance.structurParser = null;
+
     instance.initFlag = null;
 
 }
@@ -35,7 +55,7 @@ var Application = function() {
 /**
  *  @Init()
  */
-Application.prototype.init = function() {
+Plugin.prototype.init = function() {
 
     var instance = this;
     instance.initFlag = true;
@@ -46,13 +66,11 @@ Application.prototype.init = function() {
 
 /**
  * @Run()
- * @type {Application}
+ * @type {Plugin}
  */
-Application.prototype.run = function() {
-
-    console.log("Application is running!");
-
+Plugin.prototype.run = function() {
+    var instance = this;
 }
 
 
-module.exports = exports = Application;
+module.exports = exports = Plugin;
