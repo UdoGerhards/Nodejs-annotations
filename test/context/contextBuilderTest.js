@@ -494,6 +494,7 @@ describe("ContextBuilderTestSuite", function () {
                 global.stages._STASHING_,
                 global.stages._INSTANTIATE_,
                 global.stages._INJECT_,
+                global.stages._INITIALIZE_,
                 global.stages._RUN_,
                 global.stages._FINISH_SETUP_
             ];
