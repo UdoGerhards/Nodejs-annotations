@@ -3,6 +3,7 @@
 /**
  * @Component("ComponentBean")
  * @Namespace();
+ * @Resource("Util", "util");
  */
 function Component() {
     var instance = this;
@@ -31,9 +32,6 @@ function Component() {
 Component.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
-
-    console.log(instance._namespace);
-    console.log(instance._canonicalName);
-}
+};
 
 module.exports = exports = Component;

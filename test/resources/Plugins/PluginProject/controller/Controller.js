@@ -21,6 +21,11 @@ function Controller() {
      */
     instance.component = null;
 
+    /*
+     * @Qualifier("Util")
+     */
+    instance.util = null;
+
     instance.initFlag = null;
 }
 
