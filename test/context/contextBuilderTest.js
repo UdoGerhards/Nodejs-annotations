@@ -12,7 +12,8 @@ var mocha = require("mocha")
     , glob = require("glob")
     , factory = require(process.env.PWD + path.sep + "lib" + path.sep + "factory" + path.sep + "Factory.js")
     , ClassUnderTest = require(process.env.PWD + path.sep + "lib" + path.sep + "context" + path.sep + "ContextBuilder.js")
-    , sizeOf = require("object-sizeof");
+    , sizeOf = require("object-sizeof")
+    , Promise = require("bluebird");
 ;
 
 describe("ContextBuilderTestSuite", function () {
@@ -465,7 +466,7 @@ describe("ContextBuilderTestSuite", function () {
 
                 return new Promise(function(resolve, reject){
                     contextBuilder.on(global.phase._BUILD_FINISHED_, function(result) {
-                        logger.info(util.inspect(result, {depth:1}));
+                        logger.info(util.inspect(result, {depth:5}));
                         resolve();
                     });
 
@@ -478,4 +479,31 @@ describe("ContextBuilderTestSuite", function () {
 
     });
 
+    describe("PluginTest", function () {
+
+        it("Instantiates plugin objects in the demo plugin", function () {
+
+            this.timeout(timeout);
+
+            var searchInPath = process.env.PWD + path.sep + "test" + path.sep + "resources" + path.sep + "Plugins" + path.sep + "PluginProject" + path.sep;
+
+            var addBeans = factory._prepareBeans();
+
+            contextBuilder.removeStageHandler();
+            contextBuilder.stages = [
+                global.stages._STASHING_,
+                global.stages._INSTANTIATE_,
+                global.stages._INJECT_,
+                global.stages._RUN_,
+                global.stages._FINISH_SETUP_
+            ];
+            contextBuilder.setStageHandler();
+
+            var parsePromises = factory._parseFiles(searchInPath, null, addBeans);
+
+            return Promise.map(parsePromises, function(applicationStack) {
+                console.log(applicationStack);
+            });
+        });
+    });
 });

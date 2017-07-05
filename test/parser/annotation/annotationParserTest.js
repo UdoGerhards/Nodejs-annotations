@@ -110,6 +110,5 @@ describe("AnnotationParserTest", function() {
             beanParser.annotationParser = {};
             beanParser.init();
         });
-    })
-
+    });
 })

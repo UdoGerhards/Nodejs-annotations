@@ -16,6 +16,7 @@ var mocha = require("mocha")
 describe("FactoryTestSuite", function () {
 
     var factory = null;
+    var timeout = 50000;
 
     var loggerConfig = process.env.PWD + path.sep + "test" + path.sep + "config" + path.sep + "log4js.json";
 
@@ -39,6 +40,6 @@ describe("FactoryTestSuite", function () {
         it("Tests the initializtation of the factory object", function() {
             factory.init();
         })
-    })
+    });
 
 })
