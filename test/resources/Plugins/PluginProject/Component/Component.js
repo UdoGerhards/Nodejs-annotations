@@ -34,4 +34,11 @@ Component.prototype.init = function() {
     instance.initFlag = true;
 };
 
+/**
+ * @Before("Controller","aspectFunction")
+ */
+Component.prototype.beforeWiredFunction = function() {
+
+}
+
 module.exports = exports = Component;

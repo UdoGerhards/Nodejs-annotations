@@ -35,6 +35,14 @@ function Controller() {
 Controller.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
-}
+};
+
+/**
+ * Target function for aspect
+ */
+Controller.prototype.aspectFunction = function() {
+
+
+};
 
 module.exports = exports = Controller;
