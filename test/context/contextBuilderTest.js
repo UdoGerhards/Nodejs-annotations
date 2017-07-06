@@ -487,7 +487,7 @@ describe("ContextBuilderTestSuite", function () {
 
             var searchInPath = process.env.PWD + path.sep + "test" + path.sep + "resources" + path.sep + "Plugins" + path.sep + "PluginProject" + path.sep;
 
-            var addBeans = factory._prepareBeans();
+            var addBeans = factory._serveParserContext();
 
             contextBuilder.removeStageHandler();
             contextBuilder.stages = [
