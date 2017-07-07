@@ -18,12 +18,19 @@ function Component() {
      */
     instance.controller= null;
 
-    /*
-     * @Qualifier("ServiceBean")
-     */
     instance.service = null;
 
     instance.initFlag = null;
+}
+
+/**
+ * Test setter
+ * @Qualifier("ServiceBean")
+ */
+Component.prototype.setService = function(service) {
+    var instance = this;
+    console.log("Setter is called");
+    instance.service = service;
 }
 
 /**
