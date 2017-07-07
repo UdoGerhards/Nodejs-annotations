@@ -500,7 +500,12 @@ describe("ContextBuilderTestSuite", function () {
             ];
             contextBuilder.setStageHandler();
 
-            var parsePromises = factory._parseFiles(searchInPath, null, addBeans);
+            var parameters = {
+                "scan": searchInPath,
+                "externalContext": addBeans
+            }
+
+            var parsePromises = factory._parseFiles(parameters);
 
             return Promise.map(parsePromises, function(applicationStack) {
                 //console.log(applicationStack);
