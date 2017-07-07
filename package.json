@@ -6,6 +6,7 @@
     "test": "mocha --recursive",
     "coverage": "istanbul cover _mocha -- --recursive"
   },
+  "main": "./lib/bootstrap/bootstrap.js",
   "repository": "",
   "keywords": [
     "node.js",
