@@ -2,7 +2,7 @@
 
 /**
  * @Bean()
- * @constructor
+ * @Inherits("Prototype")
  */
 function Bean() {
     var instance = this;

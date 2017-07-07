@@ -492,6 +492,7 @@ describe("ContextBuilderTestSuite", function () {
             contextBuilder.removeStageHandler();
             contextBuilder.stages = [
                 global.stages._STASHING_,
+                global.stages._INHERIT_,
                 global.stages._INSTANTIATE_,
                 global.stages._INJECT_,
                 global.stages._INITIALIZE_,
