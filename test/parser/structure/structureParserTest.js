@@ -234,4 +234,27 @@ describe("ClassParserTest", function () {
 
     });
 
+    describe("LevelTest", function() {
+
+        it("Will determine levels of parsed beans", function() {
+
+            var data = fs.readFileSync(mocks["ModuleBeans"]).toString();
+
+            var fileInfo = [
+                mocks["ModuleBeans"],
+                data
+            ];
+
+            parser.removeTokens = ['BlockStatement', 'AssignmentExpression', 'Identifier', 'Literal']
+            parser.init();
+            var beanStack = parser.parse(fileInfo);
+
+            assert.isNotNull(beanStack);
+            assert.isObject(beanStack);
+            //expect(beanStack).to.have.lengthOf(2);
+
+            logger.info(sizeOf(beanStack));
+            logger.info(util.inspect(beanStack, {depth: 3}));
+        });
+    });
 });
