@@ -1,21 +1,79 @@
 {
-  "name": "nodejs-annotations-refactored",
-  "version": "0.1.0",
-  "description": "nodejs",
-  "scripts": {
-    "test": "mocha --recursive",
-    "coverage": "istanbul cover _mocha -- --recursive"
-  },
-  "main": "./lib/bootstrap/bootstrap.js",
-  "repository": "",
-  "keywords": [
-    "node.js",
-    "eclipse",
-    "nodeclipse"
+  "_args": [
+    [
+      {
+        "raw": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+        "spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "bitbucket",
+          "ssh": "git@bitbucket.org:UdoGerhards/nodejs-annotations-refactored.git",
+          "sshUrl": "git+ssh://git@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+          "httpsUrl": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+          "shortcut": "bitbucket:UdoGerhards/nodejs-annotations-refactored",
+          "directUrl": "https://bitbucket.org/UdoGerhards/nodejs-annotations-refactored/raw/master/package.json"
+        }
+      },
+      "/Users/udogerhards/Documents/workspace_nodejs/nodecms-docroot"
+    ]
   ],
+  "_from": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+  "_id": "nodejs-annotations-refactored@0.1.0",
+  "_inCache": true,
+  "_location": "/nodejs-annotations-refactored",
+  "_phantomChildren": {
+    "assertion-error": "1.0.2",
+    "browser-stdout": "1.3.0",
+    "check-error": "1.0.2",
+    "commander": "2.9.0",
+    "fs.realpath": "1.0.0",
+    "get-func-name": "2.0.0",
+    "graceful-fs": "4.1.11",
+    "growl": "1.9.2",
+    "has-flag": "1.0.0",
+    "inflight": "1.0.6",
+    "inherits": "2.0.3",
+    "json3": "3.3.2",
+    "lodash.create": "3.1.1",
+    "minimatch": "3.0.4",
+    "mkdirp": "0.5.1",
+    "ms": "0.7.2",
+    "once": "1.4.0",
+    "path-is-absolute": "1.0.1",
+    "pathval": "1.1.0",
+    "universalify": "0.1.0"
+  },
+  "_requested": {
+    "raw": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+    "spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "bitbucket",
+      "ssh": "git@bitbucket.org:UdoGerhards/nodejs-annotations-refactored.git",
+      "sshUrl": "git+ssh://git@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+      "httpsUrl": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+      "shortcut": "bitbucket:UdoGerhards/nodejs-annotations-refactored",
+      "directUrl": "https://bitbucket.org/UdoGerhards/nodejs-annotations-refactored/raw/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git#cebe72437738ff8d2b2b9453dc67d6dcc24d1f0c",
+  "_shasum": "906b35c22f6c1d8d3b7ae3b84709e8d67c8f9f8a",
+  "_shrinkwrap": null,
+  "_spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
+  "_where": "/Users/udogerhards/Documents/workspace_nodejs/nodecms-docroot",
   "author": "",
-  "license": "MIT",
-  "readmeFilename": "README.md",
   "dependencies": {
     "bluebird": "^3.5.0",
     "chai": "^4.0.0",
@@ -25,12 +83,30 @@
     "fs-extra": "^3.0.1",
     "glob": "^7.1.2",
     "istanbul": "^0.4.5",
-    "js-beautify": "^1.6.14",
     "lodash": "^4.17.4",
     "log4js": "^1.1.1",
     "mocha": "^3.4.2",
-    "object-sizeof": "^1.2.0",
     "toposort-class": "^1.0.1",
     "uuid": "^3.0.1"
-  }
+  },
+  "description": "nodejs",
+  "devDependencies": {},
+  "gitHead": "cebe72437738ff8d2b2b9453dc67d6dcc24d1f0c",
+  "keywords": [
+    "node.js",
+    "eclipse",
+    "nodeclipse"
+  ],
+  "license": "MIT",
+  "main": "./lib/bootstrap/bootstrap.js",
+  "name": "nodejs-annotations-refactored",
+  "optionalDependencies": {},
+  "readme": "\n\n# nodejs\n\n\n\n## Usage\n\n\n\n## Developing\n\n\n\n### Tools\n\nCreated with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\n ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   \n\nNodeclipse is free open-source project that grows with your contributions.\n",
+  "readmeFilename": "README.md",
+  "repository": "",
+  "scripts": {
+    "coverage": "istanbul cover _mocha -- --recursive",
+    "test": "mocha --recursive"
+  },
+  "version": "0.1.0"
 }
