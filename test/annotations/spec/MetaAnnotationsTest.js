@@ -28,7 +28,7 @@ describe("Meta annotation test suite", function(){
     var logger = log4js.getLogger("contextBuilder");
 
 
-    it('Should instantiate and add an AOP function before the objects target function with "@Before"', function(){
+    it('Should instantiate and add namespace with "@Namespace" annotation', function(){
 
         /*
             Initialize context
@@ -50,35 +50,87 @@ describe("Meta annotation test suite", function(){
 
         bootstrap(contextInfo, "INFO", null);
         return new Promise(function(resolve, reject){
-           factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
 
-               try {
-                   var contextInfo = applicationStack[0];
-                   var context = contextInfo.instanceTypes.Context[0];
+                try {
+                    var contextInfo = applicationStack[0];
+                    var context = contextInfo.instanceTypes.Context[0];
 
-                   // Test context
-                   assert.isNotNull(context, "Context is null");
-                   assert.isObject(context, "Context is not an object");
+                    // Test context
+                    assert.isNotNull(context, "Context is null");
+                    assert.isObject(context, "Context is not an object");
 
-                   // Test bean
-                   assert.isNotNull(context.bean, "Bean is null");
-                   assert.isObject(context.bean, "Bean is not an object");
+                    // Test bean
+                    assert.isNotNull(context.bean, "Bean is null");
+                    assert.isObject(context.bean, "Bean is not an object");
 
-                   // Test bean class
-                   assert.instanceOf(context.bean, TestClass, "Context bean has wrong class type");
+                    // Test bean class
+                    assert.instanceOf(context.bean, TestClass, "Context bean has wrong class type");
 
-                   // Test availability of namespace var
-                   assert.exists(context.bean._namespace, 'Namespace var is "null" or "undefined"');
+                    // Test availability of namespace var
+                    assert.exists(context.bean._namespace, 'Namespace var is "null" or "undefined"');
 
-                   // Remove all listeners
-                   factory.removeAllListeners();
-               } catch(e) {
+                    // Remove all listeners
+                    factory.removeAllListeners();
+                } catch(e) {
 
                     reject(e);
 
-               } finally {
-                   resolve();
-               }
+                } finally {
+                    resolve();
+                }
+            });
+        });
+    });
+
+    it('Should instantiate and scan a folder with "@Scan"-annotation', function(){
+
+        /*
+            Initialize context
+         */
+        var contextRoot = resourcesPath+path.sep+path.join("Scan");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                try {
+                    var contextInfo = applicationStack[0];
+                    var context = contextInfo.instanceTypes.Context[0];
+
+                    // Test context
+                    //assert.isNotNull(context, "Context is null");
+                    //assert.isObject(context, "Context is not an object");
+
+                    // Test bean
+                    //assert.isNotNull(context.bean, "Bean is null");
+                    //assert.isObject(context.bean, "Bean is not an object");
+
+                    // Test bean class
+                    //assert.instanceOf(context.bean, TestClass, "Context bean has wrong class type");
+
+                    // Test availability of namespace var
+                    //assert.exists(context.bean._namespace, 'Namespace var is "null" or "undefined"');
+
+                    // Remove all listeners
+                    factory.removeAllListeners();
+                } catch(e) {
+
+                    reject(e);
+
+                } finally {
+                    resolve();
+                }
             });
         });
     });
