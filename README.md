@@ -18,6 +18,30 @@ Remark: The library is currently in BETA state. I recommend not to use it in you
 
 ## Usage
 
+###Annotations
+
+Type | Annotation | Target | Description
+---- | ---------- | ------ | -----------
+**Instance** | | |
+ | @Context | Class : Application context | Marks the application context. Can occur only once in an application and marks the root of this application
+ | @Bean | Class : Simple bean object | Marks a class as a simple application bean 
+ | @Component | Class : Simple component object | 
+ | @Controller | Class : Marks a controller | 
+ | @Service | Class : Marks a service | 
+  | @Configuration | Class : Marks a configuration bean | 
+ **Injection** | | |
+ | @Inject | | 
+ | @Qualifier | | 
+ | @Store | | 
+  **Inheritance** | | |
+ | @Prototype | Class : Marks a prototype | This annotation is used to mark a prototype class which is used later to inherit concrete objects afterwards 
+ | @Inherits | | 
+  **AOP** | | |
+ | @Aspect | |   
+ | @PointCut | | 
+ | @Before | | 
+ | @After | |  
+
 
 
 ## Developing
