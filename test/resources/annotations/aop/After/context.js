@@ -10,7 +10,7 @@ class Application {
         var instance = this;
 
         /*
-         * @Qualifier("TestAOPBeforeBean")
+         * @Qualifier("TestAOPAfterBean")
          */
         instance.bean = null;
 

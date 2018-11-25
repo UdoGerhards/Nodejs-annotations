@@ -5,15 +5,15 @@
  *
  * Created by udogerhards on 20.10.18.
  *
- * @Bean("TestAOPBeforeBean")
+ * @Bean("TestAOPAfterBean")
  */
 class Bean {
 
     constructor() {}
 
-    beforeFunction(param) {
+    afterFunction(param) {
 
-        console.log("-------- TestAOPAfterBean::beforeFunction, start --------");
+        console.log("-------- TestAOPAfterBean::afterFunction, start --------");
 
         console.log("TestAOPAfterBean::afterFunction");
 
@@ -21,9 +21,8 @@ class Bean {
 
         var transformed = !!param;
 
-        console.log("-------- TestAOPAfterBean::beforeFunction, end --------");
+        console.log("-------- TestAOPAfterBean::afterFunction, end --------");
         return transformed;
-
     }
 
 }

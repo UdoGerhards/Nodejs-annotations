@@ -3,7 +3,7 @@
 /**
  * Created by udogerhards on 04.11.18.
  *
- * @Aspect()
+ * @Aspect("TestBeforeAspect")
  * @PointCut("beforeFunction")
  */
 class Aspect {
@@ -13,9 +13,12 @@ class Aspect {
     /**
      * @Before()
      */
-    beforeFunction(param) {
-        console.log("Before function");
-        return param;
+    beforeFunctionAspect(...args) {
+        console.log("-------- Aspect::beforeFunctionAspect, start --------");
+
+        console.log("    arguments passed:", ...args);
+
+        console.log("-------- Aspect::beforeFunctionAspect, start --------");
     }
 }
 module.exports = exports = Aspect;
