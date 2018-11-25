@@ -11,9 +11,10 @@ The library is purely written in NodeJS and a supports object oriented developme
 - Prototyping
 - Simple Javascript objects
 
+<aside class="warning">
  **Remark:** The library is currently in **BETA state**. Do not use it in your production development unless you are sure there are no security risks
  and a proper working is assured! In any case I cannot provide any support to your developments.
-
+</aside>
 
 ## Usage
 
