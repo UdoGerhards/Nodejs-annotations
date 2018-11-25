@@ -28,7 +28,7 @@ Type | Annotation | Target | Description
  | Component | Class : Simple component object | 
  | Controller | Class : Marks a controller | 
  | Service | Class : Marks a service | 
-  | Configuration | Class : Marks a configuration bean | 
+ | Configuration | Class : Marks a configuration bean | 
  **Injection** | | |
  | Inject | | 
  | Qualifier | | 
