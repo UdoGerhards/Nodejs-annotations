@@ -2,8 +2,8 @@
 
 /**
  * @Context("Application")
- * @Scan('/resources/annotations/meta/Scan/configs/**;./**')
  */
+// @Scan('/resources/annotations/meta/Scan/configs/**/*.{json,xml}')
 class Application {
     constructor()
     {
