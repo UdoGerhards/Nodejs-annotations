@@ -21,7 +21,7 @@ The library is purely written in NodeJS and a supports object oriented developme
 Type | Annotation | Target | Description
 ---- | ---------- | ------ | -----------
 **Instance** | | |
- | \@Context | Class : Application context | Marks the application context. Can occur only once in an application and marks the root of this application
+ | Context | Class : Application context | Marks the application context. Can occur only once in an application and marks the root of this application
  | Bean | Class : Simple bean object | Marks a class as a simple application bean 
  | Component | Class : Simple component object | 
  | Controller | Class : Marks a controller | 
