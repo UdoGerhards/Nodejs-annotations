@@ -28,9 +28,9 @@ Type | Annotation | Target | Description
  | Service | Class : Marks a service | 
  | Configuration | Class : Marks a configuration bean | 
  **Injection** | | |
- | Inject | | 
- | Qualifier | | 
- | Store | | 
+ | Inject | Property or Function : Inject a bean | Used to inject a bean, component, controller or service
+ | Qualifier | Property or Function : Inject a bean | Used to inject a bean, component, controller or service
+ | Store | Property or Function : Inject a bean | Used to inject a bean, component, controller or service. Can be used to add mulitple beans to a property. If the target property of type array elements will be added as an array element, if the target property is of type object new elements will be added with there bean / class name to this object. 
   **Inheritance** | | |
  | Prototype | Class : Marks a prototype | This annotation is used to mark a prototype class which is used later to inherit concrete objects afterwards 
  | Inherits | | 
