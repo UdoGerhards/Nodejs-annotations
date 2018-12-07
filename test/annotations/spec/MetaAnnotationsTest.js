@@ -83,12 +83,12 @@ describe("Meta annotation test suite", function(){
         });
     });
 
-    it('Should instantiate and scan a folder with "@Scan"-annotation', function(){
+    it('Should instantiate and scan a folder with "@Properties"-annotation', function(){
 
         /*
             Initialize context
          */
-        var contextRoot = resourcesPath+path.sep+path.join("Scan");
+        var contextRoot = resourcesPath+path.sep+path.join("Properties");
         var contextInfo = {
             "scan": [
                 contextRoot
@@ -98,7 +98,7 @@ describe("Meta annotation test suite", function(){
         /*
             Bootstrap the context and run the tests
         */
-        this.timeout(timeout);
+        this.timeout(timeout*10);
 
         bootstrap(contextInfo, "INFO", null);
         return new Promise(function(resolve, reject){
@@ -108,19 +108,19 @@ describe("Meta annotation test suite", function(){
                     var contextInfo = applicationStack[0];
                     var context = contextInfo.instanceTypes.Context[0];
 
+                    //console.log(context);
+
                     // Test context
-                    //assert.isNotNull(context, "Context is null");
-                    //assert.isObject(context, "Context is not an object");
+                    assert.isNotNull(context, "Context is null");
+                    assert.isObject(context, "Context is not an object");
 
                     // Test bean
-                    //assert.isNotNull(context.bean, "Bean is null");
-                    //assert.isObject(context.bean, "Bean is not an object");
-
-                    // Test bean class
-                    //assert.instanceOf(context.bean, TestClass, "Context bean has wrong class type");
-
-                    // Test availability of namespace var
-                    //assert.exists(context.bean._namespace, 'Namespace var is "null" or "undefined"');
+                    assert.isNotNull(context.xmlConfig, "Bean parameter 'xmlConfig' is null");
+                    assert.isObject(context.xmlConfig, "Bean parameter 'xmlConfig' not an object");
+                    assert.isNotNull(context.jsonConfig, "Bean parameter 'jsonConfig' is null");
+                    assert.isObject(context.jsonConfig, "Bean parameter 'jsonConfig' not an object");
+                    assert.isNotNull(context.javaConfig, "Bean parameter 'javaConfig' is null");
+                    assert.isObject(context.javaConfig, "Bean parameter 'javaConfig' not an object");
 
                     // Remove all listeners
                     factory.removeAllListeners();
