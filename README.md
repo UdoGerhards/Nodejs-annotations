@@ -1,6 +1,6 @@
 # Nodejs annotations
 
-##Introduction
+## Introduction
 This liberary brings dependency injection to nodejs objects like it is common use in JAVA.
 During my developments I was often using SPRING for such topics and I was wondering to bring a similiar functionality to NodeJS as well. 
 
@@ -16,7 +16,7 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 ## Usage
 
-###Annotations
+### Annotations
 
 |             | Annotation    | Target               | Description                                                                                                                                                                                                                                                                                    |
 |-------------|---------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
