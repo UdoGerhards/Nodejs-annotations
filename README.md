@@ -18,28 +18,35 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 ###Annotations
 
-Type | Annotation | Target | Description
----- | ---------- | ------ | -----------
-**Instance** | | |
- | Context | Class : Application context | Marks the application context. Can occur only once in an application and marks the root of this application
- | Bean | Class : Simple bean object | Marks a class as a simple application bean 
- | Component | Class : Simple component object | 
- | Controller | Class : Marks a controller | 
- | Service | Class : Marks a service | 
- | Configuration | Class : Marks a configuration bean | 
- **Injection** | | |
- | Inject | Property or Function : Inject a bean | Used to inject a bean, component, controller or service
- | Qualifier | Property or Function : Inject a bean | Used to inject a bean, component, controller or service
- | Store | Property or Function : Inject a bean | Used to inject a bean, component, controller or service. Can be used to add mulitple beans to a property. If the target property is of type array, beans are added as an array element, if the target property is of type object, beans are added with there bean or class name to the object. 
-  **Inheritance** | | |
- | Prototype | Class : Marks a prototype | This annotation is used to mark a prototype class which is used later to inherit concrete objects afterwards 
- | Inherits | | 
-  **AOP** | | |
- | Aspect | |   
- | PointCut | | 
- | Before | | 
- | After | |  
-
+|             | Annotation    | Target               | Description                                                                                                                                                                                                                                                                                    |
+|-------------|---------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Instance**    |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Context       | Class                | Marks the application context. Can occur only once in an application and marks the root of this application                                                                                                                                                                                    |
+|             | Bean          | Class                | Marks a class as simple bean                                                                                                                                                                                                                                                                   |
+|             | Component     | Class                | Marks a class as simple component                                                                                                                                                                                                                                                              |
+|             | Service       | Class                | Marks a class as service                                                                                                                                                                                                                                                                       |
+|             | Controller    | Class                | Marks a class as controller                                                                                                                                                                                                                                                                    |
+|             | Configuration | Class                | Marks a class as configuration bean                                                                                                                                                                                                                                                            |
+| **Injection**   |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Inject        | Property or Function | Injects a bean, component, service, controller or configuration                                                                                                                                                                                                                                |
+|             | Qualifier     | Property or Function | Injects a bean, component, service, controller or configuration                                                                                                                                                                                                                                |
+|             | Store         | Property or Function | Used to inject a bean, component, controller or service. Can be used to add mulitple beans to a property. If the target property is of type array, beans are added as an array element, if the target property is of type object, beans are added with there bean or class name to the object. |
+| **Inheritance** |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Prototype     | Class                | Marks a class as a prototype object which can be inherited by other objects.                                                                                                                                                                                                                   |
+|             | Inherits      | Class                | Inherits a prototype object. Supports multiple inheritance.                                                                                                                                                                                                                                    |
+| **AOP**        |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Aspect        | Class                | Marks a class as aspect class which contains aop functions to be executed on dedicated point cuts                                                                                                                                                                                              |
+|             | PointCut      | Class                | Specifies a point cut for aop developing, matching functions over the whole application by a given search string. Wildcard is supported.                                                                                                                                                       |
+|             | Before        | Property or Function | Marks a function which will be executed before a PointCut-object                                                                                                                                                                                                                               |
+|             | After         | Property or Function | Marks a function which will be executed after a PointCut-object                                                                                                                                                                                                                                |
+| **Meta**        |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Properties    |   Class              | Scans for property-file(s) in a given directory. Supports glob parameters                                                                                                                                                                                                                      |
+|             | Namespace     |   Class              | Generates a unique namespace for the marked bean.                                                                                                                                                                                                                                              |
+| **Initialize**  |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Init          | Property or Function | Marks an init-function which is used to initialize a bean                                                                                                                                                                                                                                      |
+| **Run**         |               |                      |                                                                                                                                                                                                                                                                                                |
+|             | Run           | Property or Function | Marks an explizit run-function. Used for starting application with a dedicated method.                                                                                                                                                                                                         |
+                                                                                                                                                                                                                                                                                               |
 
 
 ## Developing
