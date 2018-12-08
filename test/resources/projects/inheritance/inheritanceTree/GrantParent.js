@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @Prototype("ParentParent")
+ * @Prototype("GrantParent")
  *
  * @constructor
  */

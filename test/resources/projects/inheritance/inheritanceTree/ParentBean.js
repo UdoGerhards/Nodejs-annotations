@@ -2,7 +2,7 @@
 
 /**
  * @Prototype("Parent")
- * @Inherits("ParentParent")
+ * @Inherits("GrantParent")
  *
  * @constructor
  */

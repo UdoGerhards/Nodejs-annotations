@@ -286,4 +286,96 @@ describe("AOP annotation test suite", function(){
             });
         });
     });
+
+
+    it('Should instantiate a simple project with inheritance', function() {
+
+        /*
+            Initialize context
+         */
+        var contextRoot = resourcesPath+path.sep+path.join("inheritance", "simple");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                try {
+
+                    var context = getContextBean(applicationStack);
+
+                    // Test context
+                    assert.isNotNull(context, "Context is null");
+                    assert.isObject(context, "Context is not an object");
+
+                    assert.isNotNull(context.inheritor, "Context property 'bean' is null");
+                    assert.isObject(context.inheritor, "Context property 'bean' is not an object");
+
+
+                    factory.removeAllListeners();
+                } catch(e) {
+
+                    reject(e);
+
+                } finally {
+                    resolve();
+                }
+            });
+        });
+    });
+
+    it('Should instantiate a simple project with inheritance tree', function() {
+
+        /*
+            Initialize context
+         */
+        var contextRoot = resourcesPath+path.sep+path.join("inheritance", "inheritanceTree");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                try {
+
+                    var context = getContextBean(applicationStack);
+
+                    // Test context
+                    assert.isNotNull(context, "Context is null");
+                    assert.isObject(context, "Context is not an object");
+
+                    assert.isNotNull(context.inheritor, "Context property 'bean' is null");
+                    assert.isObject(context.inheritor, "Context property 'bean' is not an object");
+
+
+                    factory.removeAllListeners();
+                } catch(e) {
+
+                    reject(e);
+
+                } finally {
+                    resolve();
+                }
+            });
+        });
+    });
+
 });

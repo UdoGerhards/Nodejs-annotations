@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @Bean("Child")
+ * @Bean("Inheritor")
  * @Inherits("Parent")
  *
  * @constructor
