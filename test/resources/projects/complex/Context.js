@@ -28,6 +28,21 @@ var Application = function() {
      */
     instance.component = null;
 
+    /*
+     * @Qualifier("InnerBeanLevel1")
+     */
+    instance.innerBeanLevel1 = null;
+
+    /*
+    * @Qualifier("InnerBeanLevel2")
+    */
+    instance.innerBeanLevel2 = null;
+
+    /*
+     * @Qualifier("InnerBeanLevel3")
+     */
+    instance.innerBeanLevel3 = null;
+
     instance.initFlag = null;
 
 }
