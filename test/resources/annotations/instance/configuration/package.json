@@ -1,9 +1,9 @@
 {
-    "name": "SimpleProjectTest",
+    "name": "ConfigurationBeanTest",
     "preferGlobal": true,
     "version": "0.0.1",
     "author": "Udo.Gerhards@gerhards.eu",
-    "description": "",
+    "description": "This is the package.json from ConfigurationBeanTest",
     "license": "MIT",
     "engines": {
         "node": ">=0.10"

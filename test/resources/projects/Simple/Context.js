@@ -30,6 +30,10 @@ var Application = function() {
 
     instance.initFlag = null;
 
+    instance.runFlag = null;
+
+    instance.counter = 0;
+
 }
 
 /**
@@ -37,14 +41,16 @@ var Application = function() {
  */
 Application.prototype.init = function() {
     var instance = this;
-    instance.initFlag = true;
+    instance.initFlag = ++instance.counter;
 };
 
 /**
  * @Run()
- * @type {Application}
  */
 Application.prototype.run = function() {
+
+   var instance = this;
+   instance.runFlag = ++instance.counter;;
 
 }
 

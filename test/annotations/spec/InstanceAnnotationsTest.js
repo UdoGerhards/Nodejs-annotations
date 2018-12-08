@@ -176,9 +176,6 @@ describe("Instance annotation test suite", function(){
             ]
         };
 
-        // Instantiate test class
-        var TestClass = require(contextRoot+path.sep+path.join("prototype_test.js"));
-
         /*
             Bootstrap the context and run the tests
         */
@@ -197,9 +194,6 @@ describe("Instance annotation test suite", function(){
                 // Test bean
                 assert.isNotNull(context.prototype, "Bean is null");
                 assert.isFunction(context.prototype, "Bean is not an object");
-
-                // Test bean class
-                //assert.typeOf(context.prototype, TestClass, "Context bean has wrong class type");
 
                 // Remove all listeners
                 factory.removeAllListeners();
@@ -245,6 +239,109 @@ describe("Instance annotation test suite", function(){
 
                 // Test bean class
                 assert.instanceOf(context.service, TestClass, "Context bean has wrong class type");
+
+                // Remove all listeners
+                factory.removeAllListeners();
+
+                resolve();
+            });
+        });
+
+    });
+
+    it('Should instantiate a simple configuration with "@Configuration"', function(){
+
+        /*
+            Initialize context
+        */
+        var contextRoot = resourcesPath+path.sep+path.join("configuration");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                var contextInfo = applicationStack[0];
+                var context = contextInfo.instanceTypes.Context[0];
+
+                // Test context
+                assert.isNotNull(context, "Context is null");
+                assert.isObject(context, "Context is not an object");
+
+                // Test properties
+                assert.isNotNull(context.cItemA, "Context property 'cItemA' is null");
+                assert.isObject(context.cItemA, "Context property 'cItemA' is not an object");
+                assert.isNotNull(context.cItemB, "Context property 'cItemB' is null");
+                assert.isObject(context.cItemB, "Context property 'cItemB' is not an object");
+                assert.isNotNull(context.cItemC, "Context property 'cItemC' is null");
+                assert.isObject(context.cItemC, "Context property 'cItemC' is not an object");
+                assert.isNotNull(context.cItemD, "Context property 'cItemC' is null");
+                assert.isFunction(context.cItemD, "Context property 'cItemC' is not a function");
+
+
+                console.log(context.cItemA);
+                console.log(typeof context.cItemA);
+
+                context.cItemB.printName();
+                context.cItemB.printType();
+
+                context.cItemC.printName();
+                context.cItemC.printType();
+
+                context.cItemD();
+                console.log(typeof context.cItemD);
+
+                // Remove all listeners
+                factory.removeAllListeners();
+
+                resolve();
+            });
+        });
+
+    });
+
+    it('Should instantiate a simple context with use of "@Resource"', function(){
+
+        /*
+            Initialize context
+        */
+        var contextRoot = resourcesPath+path.sep+path.join("resource");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                var contextInfo = applicationStack[0];
+                var context = contextInfo.instanceTypes.Context[0];
+
+                // Test context
+                assert.isNotNull(context, "Context is null");
+                assert.isObject(context, "Context is not an object");
+
+                // Test properties
+                assert.isNotNull(context.util, "Context property 'util' is null");
+                assert.isObject(context.util, "Context property 'util' is not an object");
+                assert.isNotNull(context.path, "Context property 'path' is null");
+                assert.isObject(context.path, "Context property 'path' is not an object");
+                assert.isNotNull(context._, "Context property '_' is null");
+                assert.isFunction(context._, "Context property '_' is not an object");
 
                 // Remove all listeners
                 factory.removeAllListeners();
