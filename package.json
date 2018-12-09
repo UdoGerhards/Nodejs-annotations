@@ -130,6 +130,7 @@
     "log4js": "^1.1.1",
     "md5": "^2.2.1",
     "mocha": "^3.5.3",
+    "node-plantuml": "^0.7.0",
     "node-wildcard": "0.0.9",
     "object-sizeof": "^1.2.0",
     "properties": "^1.2.1",

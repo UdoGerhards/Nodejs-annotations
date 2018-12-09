@@ -30,7 +30,7 @@ function Bean() {
         var instance = this;
 
         /*
-         * @Qualifier("InnerBeanLevel3"
+         * @Qualifier("InnerBeanLevel3")
          */
         instance.innerBeanLevel3 = null;
 
@@ -41,7 +41,7 @@ function Bean() {
             var instance = this;
 
             /*
-             * @Qualifier("InnerBeanLevel1"
+             * @Qualifier("InnerBeanLevel1")
              */
             instance.innerBeanLevel1 = null;
 
