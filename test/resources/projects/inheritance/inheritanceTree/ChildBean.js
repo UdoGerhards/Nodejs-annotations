@@ -50,7 +50,7 @@ var Child = function() {
      */
     instance.parentPropertyOverwritten3 = null;
 
-}
+};
 
 /**
  * @Init()

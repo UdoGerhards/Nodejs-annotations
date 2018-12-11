@@ -299,10 +299,12 @@ describe("AOP annotation test suite", function(){
             "scan": [
                 contextRoot
             ],
-            "projectLandscapeDir": contextRoot,
-            "useBeanNames": true,
-            //"canvas": "",
-            "mapType": "png"
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showObjectMethods": false,
+                "mapType": "png"
+            }
         };
 
         /*
@@ -450,7 +452,7 @@ describe("AOP annotation test suite", function(){
 
             factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
 
-                console.log(util.inspect(applicationStack, {depth:25}));
+                //console.log(util.inspect(applicationStack, {depth:25}));
 
                 try {
 
@@ -486,8 +488,12 @@ describe("AOP annotation test suite", function(){
             "scan": [
                 contextRoot
             ],
-            "projectLandscapeDir": contextRoot,
-            "useBeanNames": true,
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": false,
+                "showObjectMethods": true,
+                "mapType": "png"
+            }
         };
 
         /*

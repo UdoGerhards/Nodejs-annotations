@@ -13,7 +13,6 @@ var Application = function() {
      */
     instance.inheritor = null;
 
-
     instance.initFlag = null;
 
 }
