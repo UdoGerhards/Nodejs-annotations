@@ -289,7 +289,7 @@ describe("AOP annotation test suite", function(){
         });
     });
 
-    it('Should instantiate a simple project', function() {
+    it('Should instantiate a complex project', function() {
 
         /*
             Initialize context
@@ -299,7 +299,10 @@ describe("AOP annotation test suite", function(){
             "scan": [
                 contextRoot
             ],
-            "createProjectLandscape": true
+            "projectLandscapeDir": contextRoot,
+            "useBeanNames": true,
+            //"canvas": "",
+            "mapType": "png"
         };
 
         /*
@@ -447,6 +450,8 @@ describe("AOP annotation test suite", function(){
 
             factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
 
+                console.log(util.inspect(applicationStack, {depth:25}));
+
                 try {
 
                     var context = getContextBean(applicationStack);
@@ -481,7 +486,8 @@ describe("AOP annotation test suite", function(){
             "scan": [
                 contextRoot
             ],
-            "createProjectLandscape": true
+            "projectLandscapeDir": contextRoot,
+            "useBeanNames": true,
         };
 
         /*
