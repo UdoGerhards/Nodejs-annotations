@@ -545,7 +545,7 @@ describe("AOP annotation test suite", function(){
             ],
             "projectLandScape": {
                 "dir": contextRoot,
-                "useBeanNames": false,
+                "useBeanNames": true,
                 "showObjectMethods": false,
                 "mapType": "svg"
             }
