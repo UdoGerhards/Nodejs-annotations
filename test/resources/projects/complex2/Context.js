@@ -45,7 +45,7 @@ var Application = function() {
 
     instance.initFlag = null;
 
-}
+};
 
 /**
  *  @Init()
@@ -57,7 +57,7 @@ Application.prototype.init = function() {
 
     console.log("Initialization ...");
 
-}
+};
 
 /**
  * @Run()
@@ -67,7 +67,7 @@ Application.prototype.run = function() {
 
     console.log("Application is running!");
 
-}
+};
 
 
 module.exports = exports = Application;

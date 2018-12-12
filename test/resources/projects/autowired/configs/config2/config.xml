@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <__name__>XML Properties bean</__name__>
+    <propertyA>Value of property A</propertyA>
+    <propertyB>Value of property B</propertyB>
+    <propertyC>Value of property C</propertyC>
+    <propertyD>
+        <subObjectPropertyA>Value of property A</subObjectPropertyA>
+        <subObjectPropertyB>Value of property B</subObjectPropertyB>
+        <subObjectPropertyC>Value of property C</subObjectPropertyC>
+    </propertyD>
+</properties>

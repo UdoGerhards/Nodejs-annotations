@@ -61,7 +61,7 @@ describe("AOP annotation test suite", function(){
                     assert.isObject(context, "Context is not an object");
 
                     // Match test bean aspect
-                    assert.isNotNull(contextInfo.classToBean.TestAspectBean, 'Test aspect team is not available!');
+                    assert.isNotNull(contextInfo.nameToNamespace.TestAspect, 'Test aspect team is not available!');
 
                     factory.removeAllListeners();
                 } catch(e) {
@@ -112,7 +112,7 @@ describe("AOP annotation test suite", function(){
                     assert.isObject(context, "Context is not an object");
 
                     // Match test bean aspect
-                    assert.isNotNull(contextInfo.classToBean.TestAspectBean, 'Test aspect team is not available!');
+                    assert.isNotNull(contextInfo.nameToNamespace.TestAspect, 'Test aspect team is not available!');
 
                     factory.removeAllListeners();
                 } catch(e) {
