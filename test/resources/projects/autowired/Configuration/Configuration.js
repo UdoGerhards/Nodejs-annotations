@@ -4,6 +4,8 @@
  * @Configuration("Configuration")
  * @Resource("Util", "util")
  * @Resource("Path", "path")
+ * @Resource("CamelCase", "camelcase")
+ * @Resource("Wildcard", "wildcard")
  *
  * @Autowire()
  *
@@ -15,6 +17,25 @@ function Configuration() {
     instance.util = null;
 
     instance.path = null;
+
+    instance.camelCase = null;
+
+    instance.wildcard = null;
+
+    /*
+     * @Qualifier("xmlPropertiesBean")
+     */
+    instance.xmlPropertiesBean = null;
+
+    /*
+     * @Qualifier("jsonPropertiesBean")
+     */
+    instance.jsonPropertiesBean = null;
+
+    /*
+     * @Qualifier("javaPropertiesBean")
+     */
+    instance.javaPropertiesBean = null;
 
 }
 
