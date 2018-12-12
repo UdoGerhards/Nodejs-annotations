@@ -9,7 +9,7 @@
  *
  * @constructor
  */
-function Bean() {
+function Configuration() {
     var instance = this;
 
     instance.util = null;
@@ -21,10 +21,10 @@ function Bean() {
 /**
  * @Init()
  */
-Bean.prototype.init = function() {
+Configuration.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
     console.log("Initialization ...");
 };
 
-module.exports = exports = Bean;
+module.exports = exports = Configuration;
