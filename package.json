@@ -115,7 +115,7 @@
   "_where": "/Users/udogerhards/Documents/workspace_nodecms_admin/nodecms-docroot",
   "author": "",
   "dependencies": {
-    "bluebird": "^3.5.2",
+    "bluebird": "^3.5.3",
     "camelcase": "^5.0.0",
     "chai": "^4.2.0",
     "dot-object": "^1.7.0",
@@ -138,6 +138,7 @@
     "toposort-class": "^1.0.1",
     "uuid": "^3.3.2",
     "wildcard": "^1.1.2",
+    "wildstring": "^1.0.9",
     "xml2js": "^0.4.19"
   },
   "description": "nodejs",
