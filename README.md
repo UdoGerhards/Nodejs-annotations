@@ -118,7 +118,7 @@ module.exports = exports = function() {
           },
       "Server": {
           _instance: function () {
-               return instance.server;
+               return server;
             }
           },
       "ServerConfig": {
