@@ -6,12 +6,12 @@ During my developments I was often using SPRING for such topics and I was wonder
 
 Based on this experience this library was developed to aim SPRING like dependency injection for ESS6 objects.
 
-The library is purely written in NodeJS and a supports object oriented development implemented with the following Javascript object types:
+The library is purely written in NodeJS and supports object oriented development implemented with the following Javascript object types:
  - Classes
  - Prototyping
  - Simple Javascript objects
 
- **Remark**: The library is currently in **BETA state**. Do not use it in your production development unless you are sure there are no security risks
+ **Remark**: The library is currently in **BETA state**. Due to this the code is under heavy change currently. Do not use it in your production development unless you are sure there are no security risks
  and a proper working is assured! In any case I cannot provide any support to your developments. 
 
 ## Usage
@@ -52,11 +52,12 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 ## How to use
 
+### Include boostrap.js script in your app
+
 Involve the lib into your index.js-file, setup the parameters and start the bootstrap-script:
 
 
-
-```$xslt
+```
 
 ... 
 var bootstrap = require("nodejs-annotations")
@@ -78,7 +79,7 @@ class ContextStarter {
      
      _loadServer(){
      
-        var contextFolder = "/Users/udogerhards/Documents/<Project-folder>
+        var contextFolder = "/Users/xyz/Documents/<Project-folder>
 
         var contextInfo = {
            "scan": [
@@ -100,5 +101,51 @@ module.exports = exports = function() {
     server.init();
 }()
 
-``` 
+```
 
+### bootstrap.js parameter
+
+**scan**: A simple array with paths to scan for annotations,  
+**externalContext**: A javascript object containing objects used as beans for injection. The object properties have to be of type function which return the dedicated obejct instance. This will enable the library to use them as normal context beans.
+For e.g.:
+```
+ ...
+ "externalContext": {
+     // Bean "Domain"
+     "Domain": {
+          _instance: function () {
+               return domainName;
+            }
+          },
+      // Bean "Server"
+      "Server": {
+          _instance: function () {
+               return server;
+            }
+          },
+      // Bean "ServerConfig"
+      "ServerConfig": {
+          _instance: function () {
+               return serverConfiguration
+            }
+          },
+      // Bean "DomainConfig"
+      'DomainConfig': {
+          _instance: function() {
+               return domainConfiguration;
+             }
+          }
+  }
+ ```
+ 
+## Visualization of your context
+
+The library provides also the possiblity to visualize your application context but this feature is currently under development and not ready for use at the moment. 
+
+## Remark
+
+The project is under heavy development currently! Contents and functionality might change! Due to this the lib should not be used in projects other than development!
+
+## Further documentation
+
+Please have a look at the provided tests to see how to use the different annotations. The ["resource/annotations"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources/annotations) and the ["resources/projects"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources/projects) folders contain according examples.
