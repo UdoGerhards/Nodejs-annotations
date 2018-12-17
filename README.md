@@ -58,7 +58,7 @@ Involve the lib into your index.js-file, setup the parameters and start the boot
 
 
 
-```$xslt
+_```
 
 ... 
 var bootstrap = require("nodejs-annotations")
@@ -102,13 +102,13 @@ module.exports = exports = function() {
     server.init();
 }()
 
-``` 
+```_ 
 
 ### bootstrap.js parameter
 
 **scan**: A simple array with paths to scan for annotations,  
 **externalContext**: A javascript object containing objects used as beans for injection. The object properties have to be function which return the dedicated obejct instance. This will enable the script to use them as normal context beans. For e.g.:
- ```
+ _```
  ...
  "externalContext": {
      "Domain": {
@@ -132,4 +132,4 @@ module.exports = exports = function() {
              }
           }
   }
- ```
+ ```_
