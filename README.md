@@ -77,14 +77,16 @@ class ContextStarter {
      }
      
      _loadServer(){
+     
+        var contextFolder = "/Users/udogerhards/Documents/<Project-folder>
 
-                                var contextInfo = {
-                                    "scan": [
-                                        domainConfiguration.contextFolder
-                                    ],
-                                    ... 
-                                    }
-                                };
+        var contextInfo = {
+           "scan": [
+                  contextFolder
+                 ],
+                 ... 
+           }
+         };
      }
 
 
