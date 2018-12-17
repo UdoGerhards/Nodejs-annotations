@@ -132,3 +132,7 @@ module.exports = exports = function() {
           }
   }
  ```
+ 
+## Visualization of your context
+
+The library is also possible to visualize your application context but this feature is currently under development and not ready for use at the moment. 
