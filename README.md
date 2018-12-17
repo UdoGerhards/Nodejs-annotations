@@ -139,7 +139,7 @@ The library provides also the possiblity to visualize your application context b
 
 ## Remark
 
-The project is under heavy development currently! Contents might change! Due to this the lib should not be used in projects other than development!
+The project is under heavy development currently! Contents and functionality might change! Due to this the lib should not be used in projects other than development!
 
 ## Further documentation
 
