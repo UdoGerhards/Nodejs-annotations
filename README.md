@@ -52,7 +52,7 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 ## How to use
 
-Involve the lib into your index.js file, setup the parameters and start the bootstrap script:
+Involve the lib into your index.js-file, setup the parameters and start the bootstrap-script:
 
 
 
@@ -101,4 +101,33 @@ module.exports = exports = function() {
 }()
 
 ``` 
-Please note that this is just an example. You might adapt and use is to you personale needs.
+
+### bootstrap.js parameter
+
+**scan**: A simple array with paths to scan for annotations,
+**externalContext**: A javascript object containing objects used as beans for injection. The object properties have to be function which return the dedicated obejct instance. This will enable the script to use them as normal context beans. For e.g.:
+ ```
+ ...
+ "externalContext": {
+     "Domain": {
+          _instance: function () {
+               return domainName;
+            }
+          },
+      "Server": {
+          _instance: function () {
+               return instance.server;
+            }
+          },
+      "ServerConfig": {
+          _instance: function () {
+               return serverConfiguration
+            }
+          },
+      'DomainConfig': {
+          _instance: function() {
+               return domainConfiguration;
+             }
+          }
+  }
+ ```
