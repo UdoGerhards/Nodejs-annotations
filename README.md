@@ -139,4 +139,4 @@ The library provides also the possiblity to visualize your application context b
 
 ## Further documentation
 
-Please have a look at the provided [tests](https://github.com/UdoGerhards/DIAnnotations/tree/master/test) to see how to use the different annotations
+Please have a look at the provided [tests](https://github.com/UdoGerhards/DIAnnotations/tree/master/test) to see how to use the different annotations.
