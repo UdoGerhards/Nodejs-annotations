@@ -1,4 +1,4 @@
-# Nodejs annotations
+# DI-Annotations annotations
 
 ## Introduction
 This liberary brings dependency injection to nodejs objects like it is common use in JAVA.
