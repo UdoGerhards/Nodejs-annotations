@@ -6,7 +6,7 @@ During my developments I was often using SPRING for such topics and I was wonder
 
 Based on this experience this library was developed to aim SPRING like dependency injection for ESS6 objects.
 
-The library is purely written in NodeJS and a supports object oriented development implemented with the following Javascript object types:
+The library is purely written in NodeJS and supports object oriented development implemented with the following Javascript object types:
  - Classes
  - Prototyping
  - Simple Javascript objects
