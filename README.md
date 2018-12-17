@@ -148,4 +148,4 @@ The project is under heavy development currently! Contents and functionality mig
 
 ## Further documentation
 
-Please have a look at the provided tests to see how to use the different annotations. The ["resource/annoations"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources/annotations) and the ["resources/projects"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources/projects) folders contain according examples.
+Please have a look at the provided tests to see how to use the different annotations. The ["resource/annotations"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources/annotations) and the ["resources/projects"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources/projects) folders contain according examples.
