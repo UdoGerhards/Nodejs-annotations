@@ -52,6 +52,8 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 ## How to use
 
+### Include boostrap.js script in your app
+
 Involve the lib into your index.js-file, setup the parameters and start the bootstrap-script:
 
 
