@@ -50,13 +50,54 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 
 
-## Developing
+## How to use
+
+Involve the lib into your index.js-file, setup the parameters and start the bootstrap-script:
 
 
 
-### Tools
+```$xslt
 
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
+... 
+var bootstrap = require("nodejs-annotations")
+    , express = require("express");
+...
 
-Nodeclipse is free open-source project that grows with your contributions.
+/**
+ *
+ * Define the starter script
+ *
+ */
+class ContextStarter {
+
+     init() {
+         var instance = this;
+         instance.server = express();
+         instance._loadServer();
+     }
+     
+     _loadServer(){
+     
+        var contextFolder = "/Users/udogerhards/Documents/<Project-folder>
+
+        var contextInfo = {
+           "scan": [
+                  contextFolder
+                 ],
+                 ... 
+           }
+         };
+     }
+
+
+}
+
+/**
+ *  Boostrap the annotations context
+ */
+module.exports = exports = function() {
+    var server = new ContextStarter();
+    server.init();
+}()
+
+``` 
