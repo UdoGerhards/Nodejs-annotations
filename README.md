@@ -52,7 +52,7 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 ## How to use
 
-Involve the lib into your index.js-file, setup the parameters and start the bootstrap-script:
+Involve the lib into your index.js-file, setup the parameters and start the bootstrap script:
 
 
 
@@ -101,3 +101,4 @@ module.exports = exports = function() {
 }()
 
 ``` 
+Please note that this is just an example. You might adapt and use is to you personale needs.
