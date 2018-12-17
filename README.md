@@ -1,4 +1,4 @@
-# Nodejs annotations
+# DI-Annotations for NodeJS
 
 ## Introduction
 This liberary brings dependency injection to nodejs objects like it is common use in JAVA.
@@ -11,8 +11,8 @@ The library is purely written in NodeJS and a supports object oriented developme
  - Prototyping
  - Simple Javascript objects
 
- Remark: The library is currently in **BETA state**. Do not use it in your production development unless you are sure there are no security risks
- and a proper working is assured! In any case I cannot provide any support to your developments.
+ **Remark**: The library is currently in **BETA state**. Do not use it in your production development unless you are sure there are no security risks
+ and a proper working is assured! In any case I cannot provide any support to your developments. 
 
 ## Usage
 
@@ -50,13 +50,53 @@ The library is purely written in NodeJS and a supports object oriented developme
 
 
 
-## Developing
+## How to use
+
+Involve the lib into your index.js-file, setup the parameters and start the bootstrap-script:
 
 
 
-### Tools
+```$xslt
 
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
+... 
+var bootstrap = require("nodejs-annotations")
+    , express = require("express");
+...
 
-Nodeclipse is free open-source project that grows with your contributions.
+/**
+ *
+ * Define the starter script
+ *
+ */
+class ContextStarter {
+
+     init() {
+         var instance = this;
+         instance.server = express();
+         instance._loadServer();
+     }
+     
+     _loadServer(){
+
+                                var contextInfo = {
+                                    "scan": [
+                                        domainConfiguration.contextFolder
+                                    ],
+                                    ... 
+                                    }
+                                };
+     }
+
+
+}
+
+/**
+ *  Boostrap the annotations context
+ */
+module.exports = exports = function() {
+    var server = new ContextStarter();
+    server.init();
+}()
+
+``` 
+
