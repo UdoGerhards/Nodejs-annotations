@@ -137,6 +137,10 @@ module.exports = exports = function() {
 
 The library provides also the possiblity to visualize your application context but this feature is currently under development and not ready for use at the moment. 
 
+## Remark
+
+The project is under heavy development currently! Contents might change from time to time. Due to this the lib should not be used in projects other than development!
+
 ## Further documentation
 
 Please have a look at the provided [tests](https://github.com/UdoGerhards/DIAnnotations/tree/master/test) to see how to use the different annotations.
