@@ -78,7 +78,7 @@ class ContextStarter {
      
      _loadServer(){
      
-        var contextFolder = "/Users/udogerhards/Documents/<Project-folder>
+        var contextFolder = "/Users/xyz/Documents/<Project-folder>
 
         var contextInfo = {
            "scan": [
