@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UML Class Nodes</title>
+    <title>Class Nodes</title>
     <meta name="description" content="UML Class-like nodes showing two collapsible lists of items." />
     <!-- Copyright 1998-2018 by Northwoods Software Corporation. -->
     <meta charset="UTF-8">
@@ -187,10 +187,23 @@
                 });
         }
     </script>
+    <style type="text/css">
+        #myDiagramDiv {
+            width: 98%;
+            height: 98%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: scroll;
+            margin: auto;
+        }
+    </style>
 </head>
 <body onload="init()">
 <div id="sample">
-    <div id="myDiagramDiv" style="max-height: 1000px;max-width:100%;overflow: scroll;width:100%;height:700px;"></div>
+    <div id="myDiagramDiv"></div>
 </div>
 </body>
 </html>
