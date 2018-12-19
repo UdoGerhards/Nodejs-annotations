@@ -138,7 +138,7 @@ For e.g.:
   }
  ```
  
-## Visualization of your context
+## Archtecture diagram / Visualization of your application
 
 The library provides also the visualization of you app. In order to do so you have to add the following parameters to the configuration of above mentioned **bootstrap.js** script:
 
