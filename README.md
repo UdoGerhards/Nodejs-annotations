@@ -165,7 +165,7 @@ _**excludeResources**_: External beans imported with "Resource"-annotation will 
 
 ### Generating images from the architecture diagram
 
-To access the visualiztation you have to simlify access the generated index.html in a browser. When you click the right mouse button in the diagram you can download and image of the diagram either as "svg" or "png"
+To access the visualization you have just to access the generated index.html in a browser. This will give you a architecture diagram of your application. When you click the right mouse button in the diagram you can download and image of the diagram either as "svg" or "png"
 image.
 
 
