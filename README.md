@@ -105,8 +105,8 @@ module.exports = exports = function() {
 
 ### bootstrap.js parameter
 
-**scan**: A simple array with paths to scan for annotations,  
-**externalContext**: A javascript object containing objects used as beans for injection. The object properties have to be of type function which return the dedicated obejct instance. This will enable the library to use them as normal context beans.
+_**scan**_: A simple array with paths to scan for annotations,  
+_**externalContext**_: A javascript object containing objects used as beans for injection. The object properties have to be of type function which return the dedicated obejct instance. This will enable the library to use them as normal context beans.
 For e.g.:
 ```
  ...
