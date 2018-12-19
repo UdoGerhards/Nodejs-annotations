@@ -28,34 +28,142 @@
                             })
                     });
 
+            myDiagram.contextMenu =
+                $(go.Adornment, "Vertical",
+                    $("ContextMenuButton",
+                        $(go.TextBlock, "Download as PNG image"),
+                        { click:  makePNG}),
+                    $("ContextMenuButton",
+                        $(go.TextBlock, "Download as SVG image"),
+                        { click:  makeSvg})
+                );
+
             // show visibility or access as a single character at the beginning of each property or method
-            function convertVisibility(v) {
+            function convertVisibilityMethod(v) {
+
                 switch (v) {
-                    case "public": return "+";
-                    case "private": return "-";
-                    case "protected": return "#";
+                    case "public": return "Ellipse";
+                    case "private": return "Rectangle";
+                    case "protected": return "Diamond";
                     case "package": return "~";
                     default: return v;
                 }
+            }
+
+            function convertVisiblityColorMethod(v) {
+
+                switch(v) {
+                    case "public":
+                        return "#619b71";
+                    case "private":
+                        return "red";
+                    case "protected":
+                        return "yellow";
+                    case "package":
+                        return "~";
+                    default:
+                        return v
+                }
+            }
+
+            function convertVisibilityProperties(v) {
+
+                switch (v) {
+                    case "public": return "Rectangle";
+                    case "private": return "Rectangle";
+                    case "protected": return "Rectangle";
+                    case "package": return "~";
+                    default: return v;
+                }
+            }
+
+            function convertVisiblityColorProperties(v) {
+
+                switch(v) {
+                    case "public":
+                        return "#619b71";
+                    case "private":
+                        return "red";
+                    case "protected":
+                        return "yellow";
+                    case "package":
+                        return "~";
+                    default:
+                        return v
+                }
+            }
+
+            function getType(v) {
+
+                return v[0];
+
+            }
+
+            // PNG
+
+            function myCallback(blob) {
+                var url = window.URL.createObjectURL(blob);
+
+                console.log(blob);
+
+                var type = blob.type;
+                var filename = data.appName;
+
+                if (type == "image/svg+xml") {
+                    filename += ".svg";
+                } else if (type == "image/png") {
+                    filename += ".png";
+                }
+
+                var a = document.createElement("a");
+                a.style = "display: none";
+                a.href = url;
+                a.download = filename;
+
+                // IE 11
+                if (window.navigator.msSaveBlob !== undefined) {
+                    window.navigator.msSaveBlob(blob, filename);
+                    return;
+                }
+
+                document.body.appendChild(a);
+                requestAnimationFrame(function() {
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a);
+                });
+            }
+
+            function makePNG() {
+                var blob = myDiagram.makeImageData( { background: "white", returnType: "blob", callback: myCallback });
+            }
+
+            function makeSvg() {
+                var svg = myDiagram.makeSvg({ scale: 1, background: "white" });
+                var svgstr = new XMLSerializer().serializeToString(svg);
+                var blob = new Blob([svgstr], { type: "image/svg+xml" });
+                myCallback(blob);
             }
 
             // the item template for properties
             var propertyTemplate =
                 $(go.Panel, "Horizontal",
                     // property visibility/access
+                    $(go.Shape,
+                        { width: 7, height: 7, column: 0, strokeWidth: 1, stroke:"#aaaaaa", margin: 4,
+                            // but disallow drawing links from or to this shape:
+                            fromLinkable: false, toLinkable: false },
+                        new go.Binding("figure", "visibility", convertVisibilityProperties),
+                        new go.Binding("fill", "visibility", convertVisiblityColorProperties)),
                     $(go.TextBlock,
-                        { isMultiline: false, editable: false, width: 12 },
-                        new go.Binding("text", "visibility", convertVisibility)),
-                    // property name, underlined if scope=="class" to indicate static property
-                    $(go.TextBlock,
-                        { isMultiline: false, editable: true },
+                        { isMultiline: false, editable: false },
                         new go.Binding("text", "name").makeTwoWay(),
                         new go.Binding("isUnderline", "scope", function(s) { return s[0] === 'c' })),
                     // property type, if known
                     $(go.TextBlock, "",
                         new go.Binding("text", "type", function(t) { return (t ? ": " : ""); })),
                     $(go.TextBlock,
-                        { isMultiline: false, editable: true },
+                        { isMultiline: false, editable: false },
                         new go.Binding("text", "type").makeTwoWay()),
                     // property default value, if any
                     $(go.TextBlock,
@@ -67,12 +175,14 @@
             var methodTemplate =
                 $(go.Panel, "Horizontal",
                     // method visibility/access
+                    $(go.Shape,
+                        { width: 7, height: 7, column: 0, strokeWidth: 1, stroke:"#aaaaaa", margin: 4,
+                            // but disallow drawing links from or to this shape:
+                            fromLinkable: false, toLinkable: false },
+                        new go.Binding("figure", "visibility", convertVisibilityMethod),
+                        new go.Binding("fill", "visibility", convertVisiblityColorMethod)),
                     $(go.TextBlock,
-                        { isMultiline: false, editable: false, width: 12 },
-                        new go.Binding("text", "visibility", convertVisibility)),
-                    // method name, underlined if scope=="class" to indicate static method
-                    $(go.TextBlock,
-                        { isMultiline: false, editable: true },
+                        { isMultiline: false, editable: false },
                         new go.Binding("text", "name").makeTwoWay(),
                         new go.Binding("isUnderline", "scope", function(s) { return s[0] === 'c' })),
                     // method parameters
@@ -91,7 +201,7 @@
                     $(go.TextBlock, "",
                         new go.Binding("text", "type", function(t) { return (t ? ": " : ""); })),
                     $(go.TextBlock,
-                        { isMultiline: false, editable: true },
+                        { isMultiline: false, editable: false },
                         new go.Binding("text", "type").makeTwoWay())
                 );
 
@@ -110,14 +220,32 @@
                         // header
                         $(go.TextBlock,
                             {
-                                row: 0, columnSpan: 2, margin: 3, alignment: go.Spot.Center,
-                                font: "bold 12pt sans-serif",
-                                isMultiline: false, editable: true
+                                row: 0, columnSpan: 2, margin: go.Margin.parse("3 10 3 25"),alignment: go.Spot.Left,
+                                font: "bold 9pt sans-serif",
+                                isMultiline: false, editable: false
                             },
                             new go.Binding("text", "name").makeTwoWay()),
+                        $(go.Shape, "Circle",
+                            { fill: "#619b71",
+                                alignment: go.Spot.Left,
+                                margin: 5,
+                                stroke: null,
+                                desiredSize: new go.Size(18, 18)
+                            },
+                            new go.Binding("fill", "fill"),
+                        ),
+                        $(go.TextBlock,
+                            {
+                                margin: go.Margin.parse("12 10 10 11"),
+                                alignment: go.Spot.Left,
+                                font: "bold 8pt sans-serif",
+                                stroke: "white"
+                            },
+                            new go.Binding("text", "type", getType),
+                        ),
                         // properties
                         $(go.TextBlock, "Properties",
-                            { row: 1, font: "italic 10pt sans-serif" },
+                            { row: 1, font: "italic 8pt sans-serif" },
                             new go.Binding("visible", "visible", function(v) { return !v; }).ofObject("PROPERTIES")),
                         $(go.Panel, "Vertical", { name: "PROPERTIES" },
                             new go.Binding("itemArray", "properties"),
@@ -132,7 +260,7 @@
                             new go.Binding("visible", "properties", function(arr) { return arr.length > 0; })),
                         // methods
                         $(go.TextBlock, "Methods",
-                            { row: 2, font: "italic 10pt sans-serif" },
+                            { row: 2, font: "italic 8pt sans-serif" },
                             new go.Binding("visible", "visible", function(v) { return !v; }).ofObject("METHODS")),
                         $(go.Panel, "Vertical", { name: "METHODS" },
                             new go.Binding("itemArray", "methods"),
@@ -147,6 +275,13 @@
                             new go.Binding("visible", "methods", function(arr) { return arr.length > 0; }))
                     )
                 );
+
+            function beanColor(r) {
+
+                console.log(r);
+
+                return "#619b71";
+            }
 
             function convertIsTreeLink(r) {
                 return r === "generalization";
@@ -198,6 +333,7 @@
             right: 0;
             overflow: scroll;
             margin: auto;
+            resize: both;
         }
     </style>
 </head>
