@@ -140,7 +140,34 @@ For e.g.:
  
 ## Visualization of your context
 
-The library provides also the possiblity to visualize your application context but this feature is currently under development and not ready for use at the moment. 
+The library provides also the visualization of you app. In order to do so you have to add the following parameters to the configuration of above mentioned **bootstrap.js** script:
+
+```
+...
+            "projectLandScape": {
+                "dir": "visualiztion path",
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": false,
+            }
+```
+
+### Visualization parameters
+
+This generates an index.html and a data.js file under the "visualiztion path". The following parameters are available:
+
+_**dir**_: The path where the architecture index should be generated  
+_**useBeanNames**_: If this parameter is set to true, bean names are used in the diagram. Otherwise class names will be used.  
+_**showAnnotations**_: Not implemented yet, but will be used later on to show instance types instead of classes  
+_**avoidDefaultMethods**_: To avoid javascript default methods in the chart, every objects gets added like "toString", etc.
+_**excludeResources**_: External beans imported with "Resource"-annotation will be omitted and not shown in the diagram  
+
+### Generating images from the architecture diagram
+
+To access the visualiztation you have to simlify access the generated index.html in a browser. When you click the right mouse button in the diagram you can download and image of the diagram either as "svg" or "png"
+image.
+
 
 ## Remark
 
