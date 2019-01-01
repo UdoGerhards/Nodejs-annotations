@@ -123,17 +123,35 @@ describe("XML context described annotation test suite", function(){
         );
     });
 
-    it('Should instantiate the intial context from the Foundation instance and test it', function() {
+    it('Should instantiate the intial base context from the Foundation instance and test it', function() {
 
         var foundationClassPath = path.join(resourcesPath, "Foundation.js");
         var FoundationSingleton = require(foundationClassPath);
 
         FoundationSingleton.init("/lib/foundation/configuration/xmlContext.xml");
-        var context = FoundationSingleton.process();
+        var context = FoundationSingleton.getFullBaseContext();
 
         return context.then(function(result){
 
             testContext(result);
+
+            return result;
+        });
+
+    });
+
+    it('Should instantiate the initial base context from the Foundation instance and return the Factory instance', function() {
+
+        var foundationClassPath = path.join(resourcesPath, "Foundation.js");
+        var FoundationSingleton = require(foundationClassPath);
+
+        FoundationSingleton.init("/lib/foundation/configuration/xmlContext.xml");
+        var Factory = FoundationSingleton.getFactory();
+
+        return Factory.then(function(result){
+
+            assert.isNotNull(result, "Factory object is null ...");
+            assert.isObject(result, "Factory is not an object ... ");
 
             return result;
         });
