@@ -1,47 +1,18 @@
 {
-  "appenders": [
-    {
-      "type": "clustered",
-      "appenders": [
-        {
-          "type": "console",
-          "pattern": "-yyyy-MM-dd",
-          "category": "estraverse"
-        }
-      ]
+  "appenders": {
+    "default": {
+      "type": "stdout",
+      "pattern": "-yyyy-MM-dd",
+      "category": "defaultConsole"
     },
-    {
-      "type": "clustered",
-      "appenders": [
-        {
-          "type": "console",
-          "pattern": "-yyyy-MM-dd",
-          "category": "classParser"
-        }
-      ]
-    },
-    {
-      "type": "clustered",
-      "appenders": [
-        {
-          "type": "console",
-          "pattern": "-yyyy-MM-dd",
-          "category": "factory"
-        }
-      ]
-    },
-    {
-      "type": "clustered",
-      "appenders": [
-        {
-          "type": "console",
-          "pattern": "-yyyy-MM-dd",
-          "category": "contextBuilder"
-        }
-      ]
+    "defaultFile": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "category": "defaultFile",
+      "filename": "default.log"
     }
-  ],
-  "levels": {
-    "[all]": "INFO"
+  },
+  "categories": {
+    "default": { "appenders": ["default","defaultFile"], "level": "DEBUG" }
   }
 }

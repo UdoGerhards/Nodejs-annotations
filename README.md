@@ -38,15 +38,15 @@ The library is purely written in NodeJS and supports object oriented development
 | **AOP**        |               |                 |                      |                                                                                                                                                                                                                                                                                             |
 |             | Aspect        | Class                |_```@Aspect("AspectName")```_| Marks a class as aspect class which contains aop functions to be executed on dedicated point cuts                                                                                                                                                                                              |
 |             | PointCut      | Class                |_```@PointCut("FunctionName")```_| Specifies a point cut for aop developing, matching functions over the whole application by a given search string. Wildcard is supported.                                                                                                                                                       |
-|             | Before        | Property or Function |_```@Before()```_| Marks a function which will be executed before a PointCut-object                                                                                                                                                                                                                               |
-|             | After         | Property or Function |_```@After()```_ | Marks a function which will be executed after a PointCut-object                                                                                                                                                                                                                                |
+|             | Before        | Function |_```@Before()```_| Marks a function which will be executed before a PointCut-object                                                                                                                                                                                                                               |
+|             | After         | Function |_```@After()```_ | Marks a function which will be executed after a PointCut-object                                                                                                                                                                                                                                |
 | **Meta**        |               |                 |                      |                                                                                                                                                                                                                                                                                            |
 |             | Properties    |   Class              |_```@PointCut("[GlobPatern, [GLobPattern],[...]")```_| Scans for property-file(s) in a given directory. Supports glob parameters                                                                                                                                                                                                                      |
 |             | Namespace     |   Class              |_```@Namespace([[namespace=...], [canonical=...])```_                | Generates a unique namespace for the marked bean.                                                                                                                                                                                                                                              |
 | **Initialize**  |               |                 |                      |                                                                                                                                                                                                                                                                                            |
-|             | Init          | Property or Function |_```@Init()```_| Marks an init-function which is used to initialize a bean                                                                                                                                                                                                                                      |
+|             | Init          | Function |_```@Init()```_| Marks an init-function which is used to initialize a bean                                                                                                                                                                                                                                      |
 | **Run**         |               |                 |                      |                                                                                                                                                                                                                                                                                            |
-|             | Run           | Property or Function |_```@Run()```_ | Marks an explizit run-function. Used for starting application with a dedicated method.                                                                                                                                                                                                         |
+|             | Run           | Function |_```@Run()```_ | Marks an explizit run-function. Used for starting application with a dedicated method.                                                                                                                                                                                                         |
 
 
 
@@ -138,7 +138,7 @@ For e.g.:
   }
  ```
  
-## Archtecture diagram / Visualization of your application
+## Architecture diagram / Visualization of your application
 
 The library provides also the visualization of you app. In order to do so you have to add the following parameters to the configuration of above mentioned **bootstrap.js** script:
 
@@ -168,6 +168,64 @@ _**excludeResources**_: External beans imported with "Resource"-annotation will 
 To access the visualization you have just to access the generated index.html in a browser. This will give you a architecture diagram of your application. When you click the right mouse button in the diagram you can download and image of the diagram either as "svg" or "png"
 image.
 
+## Inheritance 
+
+The inheritance functionality is currently is supporting function declaration approach like 
+
+```
+/**
+ * @Prototype("Parent")
+ */
+var ParentParentBean = function() {
+
+...
+}
+
+```
+
+then you can use the @Inherits annotation like 
+
+```
+/**
+ * @Bean("Inheritor")
+ * @Inherits("Parent")
+ *
+ * @constructor
+ */
+var Child = function() {
+... 
+}
+
+```
+
+Multiple inheritance is supported, for e.g.
+
+```
+/**
+ * @Prototype("GrantParent")
+ *
+ * @constructor
+ */
+var ParentParentBean = function() {
+...
+}
+```
+
+and 
+
+```
+/**
+ * @Prototype("Parent")
+ * @Inherits("GrantParent")
+ *
+ * @constructor
+ */
+var ParentBean = function() {
+...
+}
+```
+
+Please note that the inheritance functionality is still experimental. Further syntax support for e.g. extending class definitions is up to come.
 
 ## Remark
 

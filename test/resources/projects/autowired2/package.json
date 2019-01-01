@@ -1,0 +1,13 @@
+{
+    "name": "ComplexProjectTestProject",
+    "preferGlobal": true,
+    "version": "0.0.1",
+    "author": "Udo.Gerhards@gerhards.eu",
+    "description": "",
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.10"
+    },
+    "dependencies": {
+    }
+}

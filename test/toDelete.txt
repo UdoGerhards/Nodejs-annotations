@@ -1,0 +1,233 @@
+
+
+  AOP annotation test suite
+[32m[2018-12-12 16:30:24.125] [INFO] nodejs-annotations - [39mInitializing context builder
+[32m[2018-12-12 16:30:24.127] [INFO] nodejs-annotations - [39mScanning for plugins ... 
+[32m[2018-12-12 16:30:24.127] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.128] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/node_modules/@annotations/'
+[32m[2018-12-12 16:30:24.131] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.131] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/projects/simple'
+[32m[2018-12-12 16:30:24.172] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'stashing'
+[32m[2018-12-12 16:30:24.174] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'inherit'
+[32m[2018-12-12 16:30:24.174] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'instantiate'
+[32m[2018-12-12 16:30:24.177] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'injection'
+[32m[2018-12-12 16:30:24.177] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_initialize'
+[32m[2018-12-12 16:30:24.177] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_wire'
+[32m[2018-12-12 16:30:24.177] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'initializitation'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39m    ... initializing bean 'Application'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39m    ... initializing bean 'Bean'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39m    ... initializing bean 'ServiceBean'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39m    ... initializing bean 'ComponentBean'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39m    ... initializing bean 'Controller'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'run'
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39m    ... running Application::run
+[32m[2018-12-12 16:30:24.178] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'finishing bean setup'
+    ✓ Should instantiate a simple project (127ms)
+[32m[2018-12-12 16:30:24.184] [INFO] nodejs-annotations - [39mScanning for plugins ... 
+[32m[2018-12-12 16:30:24.184] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.184] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/node_modules/@annotations/'
+[32m[2018-12-12 16:30:24.185] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.185] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/projects/complex'
+[32m[2018-12-12 16:30:24.210] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'stashing'
+[32m[2018-12-12 16:30:24.211] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'inherit'
+[32m[2018-12-12 16:30:24.211] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'instantiate'
+[32m[2018-12-12 16:30:24.214] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'injection'
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_initialize'
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_wire'
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'initializitation'
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39m    ... initializing bean 'Application'
+Initialization ...
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39m    ... initializing bean 'Bean'
+Initialization ...
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39m    ... initializing bean 'ServiceBean'
+Initialization ...
+[32m[2018-12-12 16:30:24.215] [INFO] nodejs-annotations - [39m    ... initializing bean 'ComponentBean'
+Initialization ...
+[32m[2018-12-12 16:30:24.216] [INFO] nodejs-annotations - [39m    ... initializing bean 'Controller'
+Initialization ...
+[32m[2018-12-12 16:30:24.216] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'run'
+[32m[2018-12-12 16:30:24.216] [INFO] nodejs-annotations - [39m    ... running Application::run
+Application is running!
+[32m[2018-12-12 16:30:24.216] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'finishing bean setup'
+    ✓ Should instantiate a simple project
+[32m[2018-12-12 16:30:24.219] [INFO] nodejs-annotations - [39mScanning for plugins ... 
+[32m[2018-12-12 16:30:24.219] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.219] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/node_modules/@annotations/'
+[32m[2018-12-12 16:30:24.220] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.220] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/projects/complex2'
+[32m[2018-12-12 16:30:24.254] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'stashing'
+[32m[2018-12-12 16:30:24.255] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'inherit'
+[32m[2018-12-12 16:30:24.255] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'instantiate'
+[32m[2018-12-12 16:30:24.260] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'injection'
+[31m[2018-12-12 16:30:24.260] [ERROR] nodejs-annotations - [39mMissing bean 'ServiceBean'
+[31m[2018-12-12 16:30:24.260] [ERROR] nodejs-annotations - [39mMissing bean 'InnerBeanLevel1'
+[31m[2018-12-12 16:30:24.260] [ERROR] nodejs-annotations - [39mMissing bean 'InnerBeanLevel2'
+[31m[2018-12-12 16:30:24.260] [ERROR] nodejs-annotations - [39mMissing bean 'InnerBeanLevel3'
+[31m[2018-12-12 16:30:24.260] [ERROR] nodejs-annotations - [39mMissing bean 'ServiceBean'
+[32m[2018-12-12 16:30:24.260] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_initialize'
+[ 'afterFunction' ]
+[ 'afterFunction' ]
+[32m[2018-12-12 16:30:24.264] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_wire'
+[32m[2018-12-12 16:30:24.264] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'initializitation'
+[32m[2018-12-12 16:30:24.264] [INFO] nodejs-annotations - [39m    ... initializing bean 'Application'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'Bean'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'Bean2'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'Service'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'Service2'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'ComponentBean'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'Component2'
+Initialization ...
+[32m[2018-12-12 16:30:24.265] [INFO] nodejs-annotations - [39m    ... initializing bean 'Controller'
+Initialization ...
+[32m[2018-12-12 16:30:24.266] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'run'
+[32m[2018-12-12 16:30:24.266] [INFO] nodejs-annotations - [39m    ... running Application::run
+Application is running!
+[32m[2018-12-12 16:30:24.266] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'finishing bean setup'
+    ✓ Should instantiate a complex project (47ms)
+[32m[2018-12-12 16:30:24.267] [INFO] nodejs-annotations - [39mScanning for plugins ... 
+[32m[2018-12-12 16:30:24.267] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.267] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/node_modules/@annotations/'
+[32m[2018-12-12 16:30:24.267] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.268] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/projects/inheritance/simple'
+[32m[2018-12-12 16:30:24.281] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'stashing'
+[32m[2018-12-12 16:30:24.282] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'inherit'
+[32m[2018-12-12 16:30:24.282] [INFO] nodejs-annotations - [39mProcessing inheritance for bean 'Inheritor'
+[32m[2018-12-12 16:30:24.282] [INFO] nodejs-annotations - [39m... inherit from bean 'Parent'
+[32m[2018-12-12 16:30:24.283] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'instantiate'
+[32m[2018-12-12 16:30:24.284] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'injection'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty1'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty2'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty3'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty4'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty5'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten1'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten2'
+[31m[2018-12-12 16:30:24.284] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten3'
+[31m[2018-12-12 16:30:24.285] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty1'
+[31m[2018-12-12 16:30:24.285] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty2'
+[31m[2018-12-12 16:30:24.285] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty3'
+[31m[2018-12-12 16:30:24.285] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty4'
+[31m[2018-12-12 16:30:24.285] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty5'
+[32m[2018-12-12 16:30:24.285] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_initialize'
+[32m[2018-12-12 16:30:24.285] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_wire'
+[32m[2018-12-12 16:30:24.285] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'initializitation'
+[32m[2018-12-12 16:30:24.286] [INFO] nodejs-annotations - [39m    ... initializing bean 'Application'
+Initialization ...
+[32m[2018-12-12 16:30:24.286] [INFO] nodejs-annotations - [39m    ... initializing bean 'Inheritor'
+[32m[2018-12-12 16:30:24.286] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'run'
+[32m[2018-12-12 16:30:24.286] [INFO] nodejs-annotations - [39m    ... running Application::run
+Application is running!
+[32m[2018-12-12 16:30:24.286] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'finishing bean setup'
+    ✓ Should instantiate a simple project with inheritance
+[32m[2018-12-12 16:30:24.287] [INFO] nodejs-annotations - [39mScanning for plugins ... 
+[32m[2018-12-12 16:30:24.287] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.287] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/node_modules/@annotations/'
+[32m[2018-12-12 16:30:24.288] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.288] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/projects/inheritance/inheritanceTree'
+[32m[2018-12-12 16:30:24.304] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'stashing'
+[32m[2018-12-12 16:30:24.305] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'inherit'
+[32m[2018-12-12 16:30:24.305] [INFO] nodejs-annotations - [39mProcessing inheritance for bean 'Inheritor'
+[32m[2018-12-12 16:30:24.305] [INFO] nodejs-annotations - [39m... inherit from bean 'Parent'
+[32m[2018-12-12 16:30:24.305] [INFO] nodejs-annotations - [39mProcessing inheritance for bean 'Parent'
+[32m[2018-12-12 16:30:24.305] [INFO] nodejs-annotations - [39m... inherit from bean 'GrantParent'
+[32m[2018-12-12 16:30:24.307] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'instantiate'
+[32m[2018-12-12 16:30:24.309] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'injection'
+[31m[2018-12-12 16:30:24.310] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty1'
+[31m[2018-12-12 16:30:24.310] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty2'
+[31m[2018-12-12 16:30:24.310] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty3'
+[31m[2018-12-12 16:30:24.310] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty4'
+[31m[2018-12-12 16:30:24.310] [ERROR] nodejs-annotations - [39mMissing bean 'childProperty5'
+[31m[2018-12-12 16:30:24.310] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten1'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten2'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten3'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty1'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty2'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty3'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty4'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty5'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty1'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty2'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty3'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty4'
+[31m[2018-12-12 16:30:24.311] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty5'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentPropertyOverwritten1'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentPropertyOverwritten2'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentPropertyOverwritten3'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty1'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty2'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty3'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty4'
+[31m[2018-12-12 16:30:24.312] [ERROR] nodejs-annotations - [39mMissing bean 'parentProperty5'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten1'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten2'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentPropertyOverwritten3'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty1'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty2'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty3'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty4'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentProperty5'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentPropertyOverwritten1'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentPropertyOverwritten2'
+[31m[2018-12-12 16:30:24.313] [ERROR] nodejs-annotations - [39mMissing bean 'parentParentPropertyOverwritten3'
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_initialize'
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_wire'
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'initializitation'
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39m    ... initializing bean 'Application'
+Initialization ...
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39m    ... initializing bean 'Inheritor'
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'run'
+[32m[2018-12-12 16:30:24.314] [INFO] nodejs-annotations - [39m    ... running Application::run
+Application is running!
+[32m[2018-12-12 16:30:24.315] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'finishing bean setup'
+    ✓ Should instantiate a simple project with inheritance tree
+[32m[2018-12-12 16:30:24.316] [INFO] nodejs-annotations - [39mScanning for plugins ... 
+[32m[2018-12-12 16:30:24.316] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.316] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/node_modules/@annotations/'
+[32m[2018-12-12 16:30:24.316] [INFO] nodejs-annotations - [39m... building dependencies ...
+[32m[2018-12-12 16:30:24.316] [INFO] nodejs-annotations - [39m    => main path: '/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/projects/autowired'
+[32m[2018-12-12 16:30:24.339] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'stashing'
+[32m[2018-12-12 16:30:24.342] [INFO] nodejs-annotations - [39m    ... stashing resource 'Util'
+[32m[2018-12-12 16:30:24.342] [INFO] nodejs-annotations - [39m    ... stashing resource 'Path'
+[32m[2018-12-12 16:30:24.342] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'inherit'
+[32m[2018-12-12 16:30:24.342] [INFO] nodejs-annotations - [39mProcessing inheritance for bean 'Service'
+[32m[2018-12-12 16:30:24.343] [INFO] nodejs-annotations - [39m... inherit from bean 'AncestorService'
+[32m[2018-12-12 16:30:24.343] [INFO] nodejs-annotations - [39mProcessing inheritance for bean 'Component'
+[32m[2018-12-12 16:30:24.343] [INFO] nodejs-annotations - [39m... inherit from bean 'AncestorComponent'
+[32m[2018-12-12 16:30:24.343] [INFO] nodejs-annotations - [39mProcessing inheritance for bean 'AncestorComponent'
+[32m[2018-12-12 16:30:24.344] [INFO] nodejs-annotations - [39m... inherit from bean 'BaseAncestorComponent'
+[32m[2018-12-12 16:30:24.344] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'instantiate'
+[32m[2018-12-12 16:30:24.356] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'injection'
+[31m[2018-12-12 16:30:24.356] [ERROR] nodejs-annotations - [39mMissing bean 'InitFlag'
+[31m[2018-12-12 16:30:24.356] [ERROR] nodejs-annotations - [39mMissing bean 'ServiceBean'
+[31m[2018-12-12 16:30:24.357] [ERROR] nodejs-annotations - [39mMissing bean 'ComponentBean'
+[31m[2018-12-12 16:30:24.357] [ERROR] nodejs-annotations - [39mMissing bean 'InitFlag'
+[31m[2018-12-12 16:30:24.357] [ERROR] nodejs-annotations - [39mMissing bean 'InitFlag'
+[31m[2018-12-12 16:30:24.357] [ERROR] nodejs-annotations - [39mMissing bean 'InitFlag'
+[32m[2018-12-12 16:30:24.357] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_initialize'
+[32m[2018-12-12 16:30:24.357] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'aop_wire'
+[32m[2018-12-12 16:30:24.357] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'initializitation'
+[32m[2018-12-12 16:30:24.357] [INFO] nodejs-annotations - [39m    ... initializing bean 'Application'
+Initialization ...
+[32m[2018-12-12 16:30:24.358] [INFO] nodejs-annotations - [39m    ... initializing bean 'Bean'
+Initialization ...
+[32m[2018-12-12 16:30:24.358] [INFO] nodejs-annotations - [39m    ... initializing bean 'OtherBean'
+Initialization ...
+[32m[2018-12-12 16:30:24.358] [INFO] nodejs-annotations - [39m    ... initializing bean 'Service'
+Initialization ...
+[32m[2018-12-12 16:30:24.358] [INFO] nodejs-annotations - [39m    ... initializing bean 'Component'
+Initialization ...
+[32m[2018-12-12 16:30:24.358] [INFO] nodejs-annotations - [39m    ... initializing bean 'Configuration'
+Initialization ...
+[32m[2018-12-12 16:30:24.358] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'run'
+[32m[2018-12-12 16:30:24.359] [INFO] nodejs-annotations - [39mProcessing application stack, stage:'finishing bean setup'
+    ✓ Should instantiate a simple autowried project (45ms)
+
+
+  6 passing (333ms)
+

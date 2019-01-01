@@ -1,0 +1,41 @@
+{
+  "appenders": {
+    "default": {
+      "type": "stdout",
+      "pattern": "-yyyy-MM-dd"
+    },
+    "defaultFile": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "category": "defaultFile",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/Application.log"
+    },
+    "ContextBuilder": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ContextBuilder.log"
+    },
+    "StructureParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/StructureParser.log"
+    },
+    "DependencyBuilder": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/DependencyBuilder.log"
+    },
+    "PropertiesParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/PropertiesParser.log"
+    }
+  },
+  "categories": {
+    "default": { "appenders": ["default","defaultFile"], "level": "DEBUG" },
+    "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "DEBUG" },
+    "StructureParser": { "appenders": ["default","StructureParser"], "level": "DEBUG" },
+    "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "DEBUG" },
+    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "TRACE" }
+  }
+}

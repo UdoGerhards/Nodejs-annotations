@@ -1,11 +1,9 @@
 'use strict';
 
 
-var mocha = require("mocha")
-    , assert = require("chai").assert
+var assert = require("chai").assert
     , log4js = require("log4js")
     , path = require("path")
-    , util = require("util")
     , Promise = require("bluebird");
 
 /**
@@ -25,7 +23,7 @@ describe("AOP annotation test suite", function(){
 
 
     log4js.configure(loggerConfig);
-    var logger = log4js.getLogger("contextBuilder");
+    var logger = log4js.getLogger();
 
     var getContextBean = function(applicationStack) {
 
@@ -542,13 +540,60 @@ describe("AOP annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                try {
+
+                    var context = getContextBean(applicationStack);
+
+                    //console.log(util.inspect(applicationStack, {depth:5}));
+
+                    // Test context
+                    assert.isNotNull(context, "Context is null");
+                    assert.isObject(context, "Context is not an object");
+
+                    assert.isNotNull(context.bean, "Context property 'bean' is null");
+                    assert.isObject(context.bean, "Context property 'bean' is not an object");
+
+
+                    factory.removeAllListeners();
+                } catch(e) {
+
+                    reject(e);
+
+                } finally {
+                    resolve();
+                }
+            });
+        });
+    });
+
+    it('Should instantiate a simple autowried project', function() {
+
+        /*
+            Initialize context
+         */
+        var contextRoot = resourcesPath+path.sep+path.join("autowired2");
+        var contextInfo = {
+            "scan": [
+                contextRoot
             ],
             "projectLandScape": {
                 "dir": contextRoot,
                 "useBeanNames": true,
                 "showAnnotations": false,
                 "avoidDefaultMethods": false,
-                "excludeResources": false,
+                "excludeResources": true,
             }
         };
 
@@ -574,6 +619,43 @@ describe("AOP annotation test suite", function(){
                     assert.isNotNull(context.bean, "Context property 'bean' is null");
                     assert.isObject(context.bean, "Context property 'bean' is not an object");
 
+
+                    factory.removeAllListeners();
+                } catch(e) {
+
+                    reject(e);
+
+                } finally {
+                    resolve();
+                }
+            });
+        });
+    });
+
+    it('Should instantiate a simple project', function() {
+
+        /*
+            Initialize context
+         */
+        var contextRoot = resourcesPath+path.sep+path.join("simple2");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        bootstrap(contextInfo, "INFO", null);
+        return new Promise(function(resolve, reject){
+            factory.on(global.phase._FINAL_APPLICATION_CONTEXT_, function(applicationStack) {
+
+                try {
+
+                    //var context = getContextBean(applicationStack);
 
                     factory.removeAllListeners();
                 } catch(e) {

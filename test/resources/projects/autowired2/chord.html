@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Chord Diagram - Phone Brands</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="data2.js"></script>
+
+    <style>
+        body {
+            /*background: url(http://mbostock.github.io/d3/talk/20111018/texture-noise.png);*/
+            overflow: hidden;
+            margin: 0;
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica;
+        }
+
+        #footer {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            display: block;
+            font-size: 36px;
+            font-weight: 300;
+            text-shadow: 0 1px 0 #fff;
+            top: 640px;
+            right: 140px;
+            text-align: right;
+        }
+
+        line {
+            stroke: #000;
+            stroke-width: 1.px;
+        }
+
+        .hint {
+            position: absolute;
+            right: 0;
+            width: 350px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        text {
+            font-size: 10px;
+        }
+
+        .titles{
+            font-size: 14px;
+        }
+
+        path.chord {
+            fill-opacity: .80;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cont" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-sm-12 column"><div id="chart"></div></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var NameProvider = [];
+    var matrix = [];
+
+    var objectModel = data.objectModel;
+    var injections = data.injections;
+
+    for (var index = 0; objectModel[index]; index++) {
+
+        var element = objectModel[index];
+        if (!NameProvider.includes(element.name)) {
+            NameProvider.push(element.name);
+        }
+    }
+
+    for (var index = 0; injections[index]; index++) {
+
+        var element = injections[index];
+        if (!NameProvider.includes(element.to)) {
+            NameProvider.push(element.to);
+        }
+    }
+
+    for(var index=0; index < NameProvider.length; index++) {
+        var dependencies = [];
+        for(var depIndex=0; depIndex < NameProvider.length; depIndex++) {
+            dependencies.push(0);
+        }
+        matrix.push(dependencies);
+    }
+
+
+    for (var index = 0; injections[index]; index++) {
+
+        var element = injections[index];
+
+        var from = element.from;
+        var fromPos = NameProvider.indexOf(from);
+
+
+        var to = element.to;
+        var pos = NameProvider.indexOf(to);
+
+        try {
+            if (pos > -1  && fromPos) {
+                matrix[fromPos][pos] = matrix[fromPos][pos] ? ++matrix[fromPos][pos] : 1;
+            }
+        } catch(e) {
+
+        }
+    }
+
+   // var NameProvider = ["Apple","HTC","Huawei","LG","Nokia","Samsung","Sony","Other"];
+
+    /*
+    var matrix = [
+        [9.6899,0.8859,0.0554,0.443,2.5471,2.4363,0.5537,2.5471], //Apple
+        [0.1107,1.8272,0,0.4983,1.1074,1.052,0.2215,0.4983], //HTC
+        [0.0554,0.2769,0.2215,0.2215,0.3876,0.8306,0.0554,0.3322], //Huawei
+        [0.0554,0.1107,0.0554,1.2182,1.1628,0.6645,0.4983,1.052], //LG
+        [0.2215,0.443,0,0.2769,10.4097,1.2182,0.4983,2.8239], //Nokia
+        [1.1628,2.6024,0,1.3843,8.7486,16.8328,1.7165,5.5925], //Samsung
+        [0.0554,0.4983,0,0.3322,0.443,0.8859,1.7719,0.443], //Sony
+        [0.2215,0.7198,0,0.3322,1.6611,1.495,0.1107,5.4264] //Other
+    ];
+    */
+
+    var colors = ["#C4C4C4","#69B40F","#EC1D25","#C8125C","#008FC8","#10218B","#134B24","#737373"];
+
+    var chord = d3.layout.chord()
+        .padding(.04)
+        .sortSubgroups(d3.descending) //sort the chords inside an arc from high to low
+        .sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
+        .matrix(matrix);
+
+    var width = 2048,
+        height = 1300,
+        innerRadius = Math.min(width, height) * .41,
+        outerRadius = innerRadius * 1.05;
+
+    var fill = d3.scale.ordinal()
+        .domain(d3.range(NameProvider.length))
+        .range(colors);
+
+    var arc = d3.svg.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius);
+
+    var zoom = d3.behavior.zoom();
+        zoom.on("zoom", function () {
+            if (d3.event.translate[0] == 0 && d3.event.translate[1] <= 0 ){
+                d3.event.translate[0] = 2000 / 2;
+                d3.event.translate[1] = 1000 / 2+30;
+            }
+            svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+        })
+        //.center(2000, 1000)
+        .scaleExtent([0.1, 4])
+        .scale(0.5);
+
+    var svg = d3.select("#chart").append("svg:svg")
+        .call(zoom)
+        .attr("width", width)
+        .attr("height", height+50)
+        .append("svg:g")
+        .attr("transform", "translate(" + 2000 / 2 + "," + (1000 / 2+30) + ")");
+
+    zoom.event(svg);
+
+    zoom.center(2000, 1000);
+    zoom.event(svg);
+
+    ////////////////////////////////////////////////////////////
+    ////////////////// Draw outer Arcs /////////////////////////
+    ////////////////////////////////////////////////////////////
+
+    var g = svg.selectAll("g.group")
+        .data(chord.groups)
+        .enter().append("svg:g")
+        .attr("class", "group")
+        .on("mouseover", fade(.02))
+        .on("mouseout", fade(.80));
+
+    g.append("svg:path")
+        .style("stroke", function(d) { return fill(d.index); })
+        .style("fill", function(d) { return fill(d.index); })
+        .attr("d", arc);
+
+
+    ////////////////////////////////////////////////////////////
+    ////////////////// Append Ticks ////////////////////////////
+    ////////////////////////////////////////////////////////////
+
+    var ticks = svg.append("svg:g").selectAll("g.ticks")
+        .data(chord.groups)
+        .enter().append("svg:g").selectAll("g.ticks")
+        .attr("class", "ticks")
+        .data(groupTicks)
+        .enter().append("svg:g")
+        .attr("transform", function(d) {
+            return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+                + "translate(" + outerRadius+40 + ",0)";
+        });
+
+    ticks.append("svg:line")
+        .attr("x1", 1)
+        .attr("y1", 0)
+        .attr("x2", 5)
+        .attr("y2", 0)
+        .style("stroke", "#000");
+
+    ticks.append("svg:text")
+        .attr("x", 8)
+        .attr("dy", ".35em")
+        .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180)translate(-16)" : null; })
+        .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+        .text(function(d) { return d.label; });
+
+    ////////////////////////////////////////////////////////////
+    ////////////////// Append Names ////////////////////////////
+    ////////////////////////////////////////////////////////////
+
+    g.append("svg:text")
+        .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
+        .attr("dy", ".35em")
+        .attr("class", "titles")
+        .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+        .attr("transform", function(d) {
+            return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+                + "translate(" + (innerRadius + 55) + ")"
+                + (d.angle > Math.PI ? "rotate(180)" : "");
+        })
+        .style("font-size", "0.8em")
+        .text(function(d,i) { return NameProvider[i]; });
+
+    ////////////////////////////////////////////////////////////
+    ////////////////// Draw inner chords ///////////////////////
+    ////////////////////////////////////////////////////////////
+
+    svg.selectAll("path.chord")
+        .data(chord.chords)
+        .enter().append("svg:path")
+        .attr("class", "chord")
+        .style("stroke", function(d) { return d3.rgb(fill(d.source.index)).darker(); })
+        .style("fill", function(d) { return fill(d.source.index); })
+        .attr("d", d3.svg.chord().radius(innerRadius));
+
+    ////////////////////////////////////////////////////////////
+    ////////////////// Extra Functions /////////////////////////
+    ////////////////////////////////////////////////////////////
+
+    // Returns an event handler for fading a given chord group.
+    function fade(opacity) {
+        return function(d, i) {
+            svg.selectAll("path.chord")
+                .filter(function(d) { return d.source.index != i && d.target.index != i; })
+                .transition()
+                .style("stroke-opacity", opacity)
+                .style("fill-opacity", opacity);
+        };
+    }//fade
+
+    // Returns an array of tick angles and labels, given a group.
+    function groupTicks(d) {
+        var k = (d.endAngle - d.startAngle) / d.value;
+        return d3.range(0, d.value, 1).map(function(v, i) {
+            return {
+                angle: v * k + d.startAngle,
+                label: (i % 10) && (i >0)? null : v
+            };
+        });
+    }//groupTicks
+
+</script>
+</body>
+</html>
