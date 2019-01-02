@@ -20,15 +20,14 @@ var assert = require("chai").assert
             "FS",
             "Path",
             "Util",
-
+            "StaticMemberExpressionIdentifierMatch",
+            "VariableDecorationStaticMemberExpressionIdentifierMatch",
         ];
         var functions = [
             "Diagram",
             "Beautify",
             "Bluebird",
             "Glob",
-            "StaticMemberExpressionIdentifierMatch",
-            "VariableDecorationStaticMemberExpressionIdentifierMatch",
             "Lodash"
         ];
 
@@ -102,9 +101,9 @@ describe("XML context described annotation test suite", function(){
     var logger = log4js.getLogger("contextBuilder");
 
 
-    it('Should instantiate a XMLContextBuilder instance and test it', function() {
+    it('Should instantiate a FoundationXMLParser instance and test it', function() {
 
-        var xmlContextBuilderClassPath = path.join(resourcesPath,"context", "XMLContextBuilder.js");
+        var xmlContextBuilderClassPath = path.join(resourcesPath,"parser", "xml", "FoundationXMLParser.js");
         var xmlContextBuilderClass = require(xmlContextBuilderClassPath);
 
         var XMLBuilderInstance = new xmlContextBuilderClass();
