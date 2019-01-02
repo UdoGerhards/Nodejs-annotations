@@ -97,7 +97,7 @@ describe("XML context described annotation test suite", function(){
 
     var timeout = 50000;
 
-    var resourcesPath = process.env.PWD.replace("/test","") + path.sep + path.join("lib","foundation");
+    var resourcesPath = process.env.PWD.replace("/test","") + path.sep + path.join("lib");
     var loggerConfig = process.env.PWD + path.sep + path.join("config", "log4js.json");
     var logger = log4js.getLogger("contextBuilder");
 
@@ -108,7 +108,7 @@ describe("XML context described annotation test suite", function(){
         var xmlContextBuilderClass = require(xmlContextBuilderClassPath);
 
         var XMLBuilderInstance = new xmlContextBuilderClass();
-        XMLBuilderInstance.init("/Users/udogerhards/Documents/Bitbucket/nodejs-annotations", "/lib/foundation/configuration/xmlContext.xml");
+        XMLBuilderInstance.init("/Users/udogerhards/Documents/Bitbucket/nodejs-annotations", "/lib/configuration/DIAnnotationsContext.xml");
 
         this.timeout(timeout);
 
@@ -125,10 +125,10 @@ describe("XML context described annotation test suite", function(){
 
     it('Should instantiate the intial base context from the Foundation instance and test it', function() {
 
-        var foundationClassPath = path.join(resourcesPath, "Foundation.js");
+        var foundationClassPath = path.join(resourcesPath, "foundation", "Foundation.js");
         var FoundationSingleton = require(foundationClassPath);
 
-        FoundationSingleton.init("/lib/foundation/configuration/xmlContext.xml");
+        FoundationSingleton.init("/lib/configuration/DIAnnotationsContext.xml");
         var context = FoundationSingleton.getFullBaseContext();
 
         return context.then(function(result){
@@ -142,10 +142,10 @@ describe("XML context described annotation test suite", function(){
 
     it('Should instantiate the initial base context from the Foundation instance and return the Factory instance', function() {
 
-        var foundationClassPath = path.join(resourcesPath, "Foundation.js");
+        var foundationClassPath = path.join(resourcesPath,"foundation", "Foundation.js");
         var FoundationSingleton = require(foundationClassPath);
 
-        FoundationSingleton.init("/lib/foundation/configuration/xmlContext.xml");
+        FoundationSingleton.init("/lib/configuration/DIAnnotationsContext.xml");
         var Factory = FoundationSingleton.getFactory();
 
         return Factory.then(function(result){

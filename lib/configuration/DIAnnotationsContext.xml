@@ -24,8 +24,8 @@
     </list>
 
     <!-- Prototypes -->
-    <class id="BaseAnnotationParser" src="/lib/foundation/parser/annotation/Base/BaseAnnotationParser.js" />
-    <class id="BeanAnnotationParserPrototype" src="/lib/foundation/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
+    <class id="BaseAnnotationParser" src="/lib/parser/annotation/Base/BaseAnnotationParser.js" />
+    <class id="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -44,10 +44,11 @@
     <bean id="Doctrine" src="doctrine" />
     <bean id="PropertiesReader" src="properties" />
     <bean id="XML2js" src="xml2js" />
+    <bean id="UuidV4" src="uuid/v4" />
 
     <!-- LogManager -->
-    <bean id="LogManager" src="/lib/foundation/logging/LogManager.js" init="init">
-        <property name="configFile" value="/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/foundation/configuration/log4js.json" />
+    <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
+        <property name="configFile" value="/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/configuration/log4js.json" />
     </bean>
 
     <!-- Helpers -->
@@ -60,10 +61,10 @@
     <!-- TokenParser -->
     <list id="TokenParser">
         <entry key="FunctionDeclaration">
-            <bean src="/lib/foundation/parser/member/FunctionDeclaration/FunctionDeclarationParser.js"/>
+            <bean src="/lib/parser/member/FunctionDeclaration/FunctionDeclarationParser.js"/>
         </entry>
         <entry key="MemberExpression">
-            <bean src="/lib/foundation/parser/member/MemberExpression/MemberExpression.js"/>
+            <bean src="/lib/parser/member/MemberExpression/MemberExpression.js"/>
         </entry>
         <entry key="Block">
             <bean src="/lib/parser/member/Block/BlockParser.js"/>
@@ -153,10 +154,10 @@
     </bean>
 
     <!-- Annotation classes -->
-    <class id="Init" src="/lib/foundation/annotation/initialize/Init/InitAnnotationClass.js" />
-    <class id="Qualifier" src="/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
-    <class id="Bean" src="/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js" />
-    <class id="Resource" src="/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js" />
+    <class id="Init" src="/lib/annotation/initialize/Init/InitAnnotationClass.js" />
+    <class id="Qualifier" src="/lib/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
+    <class id="Bean" src="/lib/annotation/instance/Bean/BeanAnnotationClass.js" />
+    <class id="Resource" src="/lib/annotation/instance/Resource/ResourceAnnotationClass.js" />
     <class id="After" src="/lib/annotation/aop/After/AfterAnnotationClass.js" />
     <class id="Aspect" src="/lib/annotation/aop/Aspect/AspectAnnotationClass.js" />
     <class id="Before" src="/lib/annotation/aop/Before/BeforeAnnotationClass.js" />
@@ -177,20 +178,30 @@
     <class id="Properties" src="/lib/annotation/meta/Properties/PropertiesAnnotationClass.js" />
     <class id="Run" src="/lib/annotation/run/Run/RunAnnotationClass.js" />
 
+    <!-- Parser helper classes -->
+    <class id="MainBeanLoader" src="/lib/parser/annotation/instance/Bean/MainBeanLoader.js" />
+    <class id="SubBeanLoader" src="/lib/parser/annotation/instance/Bean/SubBeanLoader.js" />
+
     <!-- AnnotationParser -->
     <list id="AnnotationParser">
-        <entry key="BeanAnnotationParser">
-            <bean inherits="BaseAnnotationParser" src="/lib/foundation/parser/annotation/instance/Bean/BeanAnnotationParser.js">
+        <entry key="BeanAnnotation">
+            <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
+                </property>
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
                 </property>
                 <property name="annotation">
                     <reference id="Bean" />
                 </property>
             </bean>
         </entry>
-        <entry key="ResourceParser">
-            <bean inherits="BeanAnnotationParserPrototype" src="/lib/foundation/parser/annotation/instance/Resource/ResourceParser.js">
+        <entry key="ResourceAnnotation">
+            <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
                 </property>
@@ -200,10 +211,13 @@
                 <property name="util">
                     <reference id="Util" />
                 </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
             </bean>
         </entry>
-        <entry key="QualifierAnnotationParser">
-            <bean inherits="BaseAnnotationParser" src="/lib/foundation/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
+        <entry key="QualifierAnnotation">
+            <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
                 </property>
@@ -215,8 +229,8 @@
                 </property>
             </bean>
         </entry>
-        <entry key="InitAnnotationParser">
-            <bean inherits="BaseAnnotationParser" test="true" src="/lib/foundation/parser/annotation/initialize/Init/InitAnnotationParser.js">
+        <entry key="InitAnnotation">
+            <bean inherits="BaseAnnotationParser" test="true" src="/lib/parser/annotation/initialize/Init/InitAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
                 </property>
@@ -228,7 +242,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="AfterAnnotationParser">
+        <entry key="AfterAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/aop/After/AfterAnnotationParser.js" >
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -238,7 +252,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="AspectAnnotationParser">
+        <entry key="AspectAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/aop/Aspect/AspectAnnotationParser.js" >
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -248,7 +262,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="BeforeAnnotationParser">
+        <entry key="BeforeAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/aop/Before/BeforeAnnotationParser.js" >
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -258,7 +272,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="PointCuteAnnotationParser">
+        <entry key="PointCuteAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/aop/PointCut/PointCutAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -274,7 +288,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="InheritsAnnotationParser">
+        <entry key="InheritsAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/inherits/inherits/InheritsAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -287,7 +301,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="AutowireAnnotationParser">
+        <entry key="AutowireAnnotation">
             <bean src="/lib/parser/annotation/inject/Autowire/AutowireAnnotationParser.js" >
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -303,7 +317,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="StoreAnnotationParser">
+        <entry key="StoreAnnotation">
             <bean src="/lib/parser/annotation/inject/Store/StoreAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -316,7 +330,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ComponentAnnotationParser">
+        <entry key="ComponentAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Component/ComponentParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -326,7 +340,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ConfigurationAnnotationParser">
+        <entry key="ConfigurationAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Configuration/ConfigurationParser.js" >
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -336,7 +350,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ContextAnnotationParser">
+        <entry key="ContextAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Context/ContextParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -346,7 +360,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ControllerAnnotationParser">
+        <entry key="ControllerAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Controller/ControllerParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -356,7 +370,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="PrototypeAnnotationParser">
+        <entry key="PrototypeAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -366,7 +380,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ResourceAnnotationParser">
+        <entry key="ResourceAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -379,7 +393,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ServiceAnnotationParser">
+        <entry key="ServiceAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Service/ServiceParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -389,7 +403,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ParamAnnotationParser">
+        <entry key="ParamAnnotation">
             <bean src="/lib/parser/annotation/JSDoc/paramParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -405,7 +419,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="TypeAnnotationParser">
+        <entry key="TypeAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/annotation/JSDoc/typeAnnotationClass.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -421,7 +435,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="NamespaceAnnotationParser">
+        <entry key="NamespaceAnnotation">
             <bean inherits="BeanAnnotationParserPrototype" src="/lib/parser/annotation/meta/Namespace/NamespaceParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -431,10 +445,10 @@
                 </property>
             </bean>
         </entry>
-        <entry key="PropertiesAnnotationParser">
+        <entry key="PropertiesAnnotation">
             <reference id="PropertiesAnnotationParserInstance" />
         </entry>
-        <entry key="RunAnnotationParser">
+        <entry key="RunAnnotation">
             <bean inherits="BaseAnnotationParser" src="/lib/parser/annotation/run/Run/RunAnnotationParser.js">
                 <property name="logManager">
                     <reference id="LogManager" />
@@ -447,7 +461,7 @@
     </list>
 
     <!-- DependencyBuilder -->
-    <bean id="DependencyBuilder" init="init" src="/lib/foundation/dependency/DependencyBuilder.js">
+    <bean id="DependencyBuilder" init="init" src="/lib/dependency/DependencyBuilder.js">
         <property name="logManager">
             <reference id="LogManager" />
         </property>
@@ -469,7 +483,7 @@
     </bean>
 
     <!-- StructureParser -->
-    <bean id="StructureParser" init="init" src="/lib/foundation/parser/structure/StructureParser.js">
+    <bean id="StructureParser" init="init" src="/lib/parser/structure/StructureParser.js">
         <property name="logManager">
             <reference id="LogManager" />
         </property>
@@ -504,12 +518,19 @@
         <property name="estraverse">
             <reference id="Estraverse"/>
         </property>
-        <property name="removeLocationInformation"><value>true</value></property>
-        <property name="lightTokenInformation"><value>true</value></property>
+        <property name="uuidV4">
+            <reference id="UuidV4" />
+        </property>
+        <property name="removeLocationInformation">
+            <value>true</value>
+        </property>
+        <property name="lightTokenInformation">
+            <value>true</value>
+        </property>
     </bean>
 
     <!-- ContextBuilder -->
-    <bean id="ContextBuilder" init="init" src="/lib/foundation/context/ContextBuilder.js">
+    <bean id="ContextBuilder" init="init" src="/lib/context/ContextBuilder.js">
         <property name="logManager">
             <reference id="LogManager" />
         </property>
@@ -525,7 +546,7 @@
     </bean>
 
     <!-- Factory -->
-    <context id="Factory" init="init" src="lib/foundation/factory/Factory.js">
+    <context id="Factory" init="init" src="/lib/factory/Factory.js">
         <property name="logManager">
             <reference id="LogManager" />
         </property>
@@ -548,6 +569,9 @@
         </property>
         <property name="estraverse">
             <reference id="Estraverse"/>
+        </property>
+        <property name="uuidV4">
+            <reference id="UuidV4" />
         </property>
     </context>
 </application>
