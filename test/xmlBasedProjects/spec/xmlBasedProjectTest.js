@@ -10,7 +10,7 @@ var assert = require("chai").assert
  * Created by udogerhards on 20.10.18.
  */
 
-describe("AOP annotation test suite", function(){
+describe("XML based context annotation test suite", function(){
 
     var timeout = 50000;
 
@@ -28,10 +28,10 @@ describe("AOP annotation test suite", function(){
 
         // /Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/xmlBasedProjects/simple/configuration/context.xml
 
-        var simpleProjectPath = path.join(process.env.PWD, "test", "resources", "xmlBasedProjects", "simple");
+        var simpleProjectPath = path.join(process.env.PWD, "resources", "xmlBasedProjects", "simple");
         let contextConfiguration = path.join("configuration", "context.xml");
 
-        console.log(contextConfiguration);
+        console.log(simpleProjectPath);
 
         /* Inject correct working dir */
 
@@ -49,6 +49,7 @@ describe("AOP annotation test suite", function(){
         return libPromise.then(function(resolve){
 
             let XMLParser = resolve["XMLParser"];
+
             XMLParser.init(simpleProjectPath, contextConfiguration);
 
             let applicationContext = XMLParser.process();
