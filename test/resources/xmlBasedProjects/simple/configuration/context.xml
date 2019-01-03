@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "referenceBean" />
+    <component src="/test/resources/xmlBasedProjects/simple/component/Component.js" id = "component" />
+    <controller src="/test/resources/xmlBasedProjects/simple/controller/Controller.js" id = "controller" />
+    <service src="/test/resources/xmlBasedProjects/simple/service/Service.js" id = "service" />
+    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Bean">
+        <property name="innerBean">
+            <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js">
+                <property name="innerBean1">
+                    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js">
+                        <property name="innerBean2">
+                            <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" />
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+        <property name="referenceBean">
+            <reference id="referenceBean" />
+        </property>
+    </bean>
+    <context src="test/resources/annotatedProjects/simple/Context.js" id="Application"></context>
+</application>

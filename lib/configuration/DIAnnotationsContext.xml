@@ -45,6 +45,8 @@
     <bean id="PropertiesReader" src="properties" />
     <bean id="XML2js" src="xml2js" />
     <bean id="UuidV4" src="uuid/v4" />
+    <bean id="HTMLParser" src="htmlparser2" />
+    <bean id="DotProp" src="dot-prop" />
 
     <!-- LogManager -->
     <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
@@ -89,36 +91,6 @@
         </entry>
         <entry key="VariableDeclaration">
             <bean src="/lib/parser/member/VariableDeclaration/VariableDeclarationParser.js"/>
-        </entry>
-    </list>
-
-    <list id="Bean_XML_Mapper">
-        <entry key="Bean">
-            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
-        </entry>
-    </list>
-
-    <list id="Namespace_XML_Mapper">
-        <entry key="Namespace">
-            <bean src="/lib/parser/xml/namespace/XML_Namespace_Attribute.js" />
-        </entry>
-    </list>
-
-    <list id="Inherits_XML_Mapper">
-        <entry key="Inherits">
-            <bean src="/lib/parser/xml/inherits/XML_Inherits_Attribute.js" />
-        </entry>
-    </list>
-
-    <list id="Qualifier_XML_Mapper">
-        <entry key="Property">
-            <bean src ="/lib/parser/xml/property/XML_Property_Tag.js" />
-        </entry>
-        <entry key="Reference">
-            <bean src="/lib/parser/xml/reference/XML_Reference_Tag.js" />
-        </entry>
-        <entry key="Value">
-            <bean src="/lib/parser/xml/value/XML_Value_Tag.js" />
         </entry>
     </list>
 
@@ -232,7 +204,11 @@
                     <reference id="UuidV4" />
                 </property>
                 <property name="xmlMapper">
-                    <reference id="Bean_XML_Mapper" />
+                    <list>
+                        <entry key="Bean">
+                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -263,8 +239,21 @@
                 <property name="util">
                     <reference id="Util" />
                 </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
                 <property name="xmlMapper">
-                    <reference id="Qualifier_XML_Mapper" />
+                    <list>
+                        <entry key="Property">
+                            <bean src ="/lib/parser/xml/property/XML_Property_Tag.js" />
+                        </entry>
+                        <entry key="Reference">
+                            <bean src="/lib/parser/xml/reference/XML_Reference_Tag.js" />
+                        </entry>
+                        <entry key="Value">
+                            <bean src="/lib/parser/xml/value/XML_Value_Tag.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -344,8 +333,15 @@
                 <property name="util">
                     <reference id="Util" />
                 </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
                 <property name="xmlMapper">
-                    <reference id="Inherits_XML_Mapper" />
+                    <list>
+                        <entry key="Inherits">
+                            <bean src="/lib/parser/xml/inherits/XML_Inherits_Attribute.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -386,6 +382,16 @@
                 <property name="annotation">
                     <reference id="Component" />
                 </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Component">
+                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                        </entry>
+                    </list>
+                </property>
             </bean>
         </entry>
         <entry key="ConfigurationAnnotation">
@@ -406,6 +412,16 @@
                 <property name="annotation">
                     <reference id="Context" />
                 </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Context">
+                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                        </entry>
+                    </list>
+                </property>
             </bean>
         </entry>
         <entry key="ControllerAnnotation">
@@ -415,6 +431,16 @@
                 </property>
                 <property name="annotation">
                     <reference id="Controller" />
+                </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Controller">
+                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -448,6 +474,16 @@
                 </property>
                 <property name="annotation">
                     <reference id="Service" />
+                </property>
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Service">
+                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -492,7 +528,11 @@
                     <reference id="Namespace" />
                 </property>
                 <property name="xmlMapper">
-                    <reference id="Namespace_XML_Mapper" />
+                    <list>
+                        <entry key="Namespace">
+                            <bean src="/lib/parser/xml/namespace/XML_Namespace_Attribute.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -580,12 +620,28 @@
         </property>
     </bean>
 
+    <!-- XML Parser -->
     <bean id="XMLParser" src="/lib/parser/xml/XMLParser.js">
-        <property name="logManager">
+        <property name="LogManager">
             <reference id="LogManager" />
         </property>
-        <property name="annotationParser">
+        <property name="xmlMapper">
             <reference id="AnnotationParser" />
+        </property>
+        <property name="fs">
+            <reference id="FS" />
+        </property>
+        <property name="util">
+            <reference id="Util" />
+        </property>
+        <property name="path">
+            <reference id="Path" />
+        </property>
+        <property name="dotProp">
+            <reference id="DotProp" />
+        </property>
+        <property name="wildcard">
+            <reference id="Wildcard" />
         </property>
     </bean>
 

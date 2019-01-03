@@ -34,6 +34,11 @@
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/PropertiesParser.log"
+    },
+    "XMLParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/XMLParser.log"
     }
   },
   "categories": {
@@ -42,6 +47,7 @@
     "StructureParser": { "appenders": ["default","StructureParser"], "level": "DEBUG" },
     "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "DEBUG" },
     "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "TRACE" },
-    "Foundation": { "appenders": ["default","Foundation"], "level": "TRACE" }
+    "Foundation": { "appenders": ["default","Foundation"], "level": "TRACE" },
+    "XMLParser": { "appenders": ["default","XMLParser"], "level": "TRACE" }
   }
 }

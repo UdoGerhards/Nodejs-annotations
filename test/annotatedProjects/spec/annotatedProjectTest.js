@@ -15,7 +15,7 @@ describe("AOP annotation test suite", function(){
     var contextBuilder = null;
     var timeout = 50000;
 
-    var resourcesPath = process.env.PWD + path.sep + path.join("resources", "projects");
+    var resourcesPath = process.env.PWD + path.sep + path.join("resources", "annotatedProjects");
     var loggerConfig = process.env.PWD + path.sep + path.join("config", "log4js.json");
     var bootstrap = require(process.env.PWD.replace("/test","") + path.sep + path.join("lib", "bootstrap", "bootstrap.js"));
     var factory = require(process.env.PWD.replace("/test","") + path.sep + path.join("lib", "factory", "Factory.js"));
