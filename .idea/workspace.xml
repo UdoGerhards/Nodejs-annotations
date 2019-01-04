@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Added xml based context processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/configuration/log4js.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/log4js.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/Base/BaseAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/Base/BaseAnnotationParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/property/XML_Property_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/xml/property/XML_Property_Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/reference/XML_Reference_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/xml/reference/XML_Reference_Tag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/xml/value/XML_Value_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/xml/value/XML_Value_Tag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" afterDir="false" />
     </list>
@@ -60,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="291" column="15" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="15" />
+            <state relative-caret-position="467">
+              <caret line="241" column="15" selection-start-line="241" selection-start-column="15" selection-end-line="241" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -76,28 +68,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/xml/value/XML_Value_Tag.js">
+        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="203">
+              <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="249" column="30" selection-start-line="249" selection-start-column="30" selection-end-line="249" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="90">
+              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -237,12 +220,12 @@
         <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
         <option value="$PROJECT_DIR$/lib/configuration/log4js.json" />
         <option value="$PROJECT_DIR$/lib/parser/xml/property/XML_Property_Tag.js" />
-        <option value="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" />
         <option value="$PROJECT_DIR$/lib/parser/xml/reference/XML_Reference_Tag.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/value/XML_Value_Tag.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js" />
+        <option value="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" />
       </list>
     </option>
   </component>
@@ -844,7 +827,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546623846113" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546624544995" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -1018,14 +1001,7 @@
       <workItem from="1546513576779" duration="28337000" />
       <workItem from="1546597169395" duration="8275000" />
       <workItem from="1546617311826" duration="6155000" />
-      <workItem from="1546623690745" duration="83000" />
-    </task>
-    <task id="LOCAL-00021" summary="Added new annotation: Scan">
-      <created>1543159018924</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1543159018924</updated>
+      <workItem from="1546623690745" duration="852000" />
     </task>
     <task id="LOCAL-00022" summary="Added new annotation: Scan">
       <created>1543159630677</created>
@@ -1363,43 +1339,50 @@
       <option name="project" value="LOCAL" />
       <updated>1546598970366</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Added xml based context processing">
+      <created>1546623860480</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1546623860481</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 34m 38s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 35m 31s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 37m 09s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 38m 35s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 39m 18s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 39m 44s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 40m 16s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 18h 40m 20s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="XML_based_Context - 2019.01.04 at 18h 40m 45s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
     <history-entry file="XML_based_Context - 2019.01.04 at 18h 42m 35s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 43m 57s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 45m 31s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 46m 43s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 49m 56s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 51m 18s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 51m 42s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 53m 12s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="XML_based_Context - 2019.01.04 at 18h 55m 16s.xml">
+      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344230000" />
+    <option name="totallyTimeSpent" value="344999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1427,7 +1410,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.41700405" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.46153846" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.31072876" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
@@ -1532,12 +1515,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js</url>
-          <line>293</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js</url>
-          <line>291</line>
+          <line>241</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="191" />
         </line-breakpoint>
@@ -1856,31 +1834,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="291" column="15" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/xml/value/XML_Value_Tag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="73">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="249" column="30" selection-start-line="249" selection-start-column="30" selection-end-line="249" selection-end-column="30" />
+        <state relative-caret-position="203">
+          <caret line="256" column="19" selection-start-line="256" selection-start-column="19" selection-end-line="256" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="241" column="15" selection-start-line="241" selection-start-column="15" selection-end-line="241" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
         </state>
       </provider>
     </entry>

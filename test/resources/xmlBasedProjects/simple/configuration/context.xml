@@ -4,7 +4,7 @@
         <entry><list /></entry>
         <entry><list /></entry>
         <entry><list /></entry>
-        <entry value="testEntry"></entry>
+        <entry value="testEntry" name="thisIsAlistElement"></entry>
         <entry><value>Testvalue</value></entry>
         <entry></entry>
     </list>
