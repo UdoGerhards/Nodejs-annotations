@@ -2,8 +2,20 @@
 <application>
     <list id="List">
         <entry><list /></entry>
-        <entry><list /></entry>
-        <entry><list /></entry>
+        <entry>
+            <list>
+                <entry name="nestedListElement1">
+                    <value>nestedValue1</value>
+                </entry>
+            </list>
+        </entry>
+        <entry>
+            <list>
+                <entry name="nestedListElement2">
+                    <value>nestedValue2</value>
+                </entry>
+            </list>
+        </entry>
         <entry value="testEntry" name="thisIsAlistElement"></entry>
         <entry><value>Testvalue</value></entry>
         <entry></entry>
