@@ -4,22 +4,9 @@
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Added xml based context processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/context/ContextBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/ContextBuilder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dependency/DependencyBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dependency/DependencyBuilder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/factory/Factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/factory/Factory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/Base/BaseAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/Base/BaseAnnotationParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Component/ComponentParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Component/ComponentParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Configuration/ConfigurationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Configuration/ConfigurationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Controller/ControllerParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Controller/ControllerParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Service/ServiceParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Service/ServiceParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="240" column="18" selection-start-line="240" selection-start-column="18" selection-end-line="240" selection-end-column="18" />
+            <state relative-caret-position="292">
+              <caret line="515" column="16" selection-start-line="515" selection-start-column="16" selection-end-line="515" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -66,7 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>reference</find>
       <find>parseXML(</find>
       <find>annotation</find>
       <find>parseOpenXMLTag(currentTag, propertyStack, context, stack, beanStructure)</find>
@@ -96,6 +91,7 @@
       <find>ControllerParser</find>
       <find>Context</find>
       <find>&lt;property name=&quot;logManager&quot;&gt;</find>
+      <find>initFun</find>
     </findStrings>
     <replaceStrings>
       <replace>AutowrieAnnotationParser</replace>
@@ -143,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/context/FoundationXMLParser.js" />
         <option value="$PROJECT_DIR$/lib/context/XMLParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/MethodDefinition/MethodDefintionParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js" />
@@ -164,7 +159,6 @@
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/Context.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/configuration/context.xml" />
         <option value="$PROJECT_DIR$/lib/foundation/Foundation.js" />
-        <option value="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/component/XML_Bean_Tag.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/bean/XML_Bean_Tag.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/list/XML_List_Tag.js" />
@@ -190,10 +184,12 @@
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Service/ServiceParser.js" />
-        <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" />
+        <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js" />
+        <option value="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" />
         <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
+        <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js" />
       </list>
     </option>
   </component>
@@ -579,12 +575,6 @@
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -593,31 +583,6 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-              <item name="Qualifier" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -626,15 +591,6 @@
               <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
               <item name="instance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -651,87 +607,7 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
               <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-              <item name="Namespace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-              <item name="Properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -757,128 +633,6 @@
               <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="reference" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="value" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="annotatedProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlBasedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -891,7 +645,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546625789003" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546626858217" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -1065,14 +819,7 @@
       <workItem from="1546513576779" duration="28337000" />
       <workItem from="1546597169395" duration="8275000" />
       <workItem from="1546617311826" duration="6155000" />
-      <workItem from="1546623690745" duration="2093000" />
-    </task>
-    <task id="LOCAL-00024" summary="Added new functionality to read property-files&#10;&#10;Property-files supported:&#10;&#10;- .json =&gt; json properties file&#10;- .xml =&gt; xml properties file&#10;- .properties =&gt; java properties file">
-      <created>1544210826234</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1544210826234</updated>
+      <workItem from="1546623690745" duration="3160000" />
     </task>
     <task id="LOCAL-00025" summary="Added new functionality to read property-files&#10;&#10;Property-files supported:&#10;&#10;- .json =&gt; json properties file&#10;- .xml =&gt; xml properties file&#10;- .properties =&gt; java properties file">
       <created>1544210962366</created>
@@ -1410,43 +1157,50 @@
       <option name="project" value="LOCAL" />
       <updated>1546624849305</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Added xml based context processing">
+      <created>1546625804144</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1546625804144</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 07m 15s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 26m 54s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 08m 05s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 27m 27s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 09m 01s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 28m 16s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 09m 56s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 29m 42s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 10m 19s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 30m 42s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 10m 44s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 31m 07s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 11m 04s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 32m 07s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 11m 22s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 33m 01s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 12m 26s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 33m 25s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.04 at 19h 14m 16s.xml">
+    <history-entry file="XML_based_Context - 2019.01.04 at 19h 34m 15s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346240000" />
+    <option name="totallyTimeSpent" value="347307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1461,7 +1215,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20660277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20660277" />
       <window_info id="Structure" order="1" weight="0.24973376" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1473,8 +1227,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.33604062" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.21356276" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.35222673" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.44635627" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.5931174" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
@@ -1576,12 +1330,6 @@
           <url>file://$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js</url>
           <line>63</line>
           <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js</url>
-          <line>241</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="191" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1795,24 +1543,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="231" column="29" lean-forward="true" selection-start-line="231" selection-start-column="29" selection-end-line="231" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1851,13 +1585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Component/ComponentParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Configuration/ConfigurationParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1886,27 +1613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Service/ServiceParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1931,17 +1641,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="242" selection-start-line="242" selection-end-line="242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="644" column="40" selection-start-line="644" selection-start-column="40" selection-end-line="644" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Component/ComponentParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="240" column="18" selection-start-line="240" selection-start-column="18" selection-end-line="240" selection-end-column="18" />
+        <state relative-caret-position="292">
+          <caret line="515" column="16" selection-start-line="515" selection-start-column="16" selection-end-line="515" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
         </state>
       </provider>
     </entry>
