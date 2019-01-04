@@ -128,33 +128,6 @@
         </entry>
     </list>
 
-    <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/parser/annotation/meta/Properties/PropertiesParser.js">
-        <property name="logManager">
-            <reference id="LogManager" />
-        </property>
-        <property name="annotation">
-            <reference id="Properties" />
-        </property>
-        <property name="glob">
-            <reference id="Glob" />
-        </property>
-        <property name="path">
-            <reference id="Path" />
-        </property>
-        <property name="fs">
-            <reference id="FS" />
-        </property>
-        <property name="Promise">
-            <reference id="Bluebird" />
-        </property>
-        <property name="camelcase">
-            <reference id="CamelCase" />
-        </property>
-        <property name="processors">
-            <reference id="PropertiesProcessors" />
-        </property>
-    </bean>
-
     <!-- Annotation classes -->
     <class id="Init" src="/lib/annotation/initialize/Init/InitAnnotationClass.js" />
     <class id="Qualifier" src="/lib/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
@@ -184,36 +157,85 @@
     <class id="MainBeanLoader" src="/lib/parser/annotation/instance/Bean/MainBeanLoader.js" />
     <class id="SubBeanLoader" src="/lib/parser/annotation/instance/Bean/SubBeanLoader.js" />
 
+    <!-- Special annotation parser -->
+    <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/parser/annotation/meta/Properties/PropertiesParser.js">
+        <property name="LogManager">
+            <reference id="LogManager" />
+        </property>
+        <property name="annotation">
+            <reference id="Properties" />
+        </property>
+        <property name="glob">
+            <reference id="Glob" />
+        </property>
+        <property name="path">
+            <reference id="Path" />
+        </property>
+        <property name="fs">
+            <reference id="FS" />
+        </property>
+        <property name="Promise">
+            <reference id="Bluebird" />
+        </property>
+        <property name="camelcase">
+            <reference id="CamelCase" />
+        </property>
+        <property name="processors">
+            <reference id="PropertiesProcessors" />
+        </property>
+    </bean>
+
+    <bean id="BeanParser" init="init" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
+        <property name="LogManager">
+            <reference id="LogManager" />
+        </property>
+        <property name="MainBeanLoader">
+            <reference id="MainBeanLoader" />
+        </property>
+        <property name="SubBeanLoader">
+            <reference id="SubBeanLoader" />
+        </property>
+        <property name="annotation">
+            <reference id="Bean" />
+        </property>
+        <property name="uuidV4">
+            <reference id="UuidV4" />
+        </property>
+        <property name="xmlMapper">
+            <list>
+                <entry key="Bean">
+                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                </entry>
+                <entry key="List">
+                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                </entry>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="ContextParser" src="/lib/parser/annotation/instance/Context/ContextParser.js">
+        <property name="logManager">
+            <reference id="LogManager" />
+        </property>
+        <property name="annotation">
+            <reference id="Context" />
+        </property>
+        <property name="uuidV4">
+            <reference id="UuidV4" />
+        </property>
+        <property name="xmlMapper">
+            <list>
+                <entry key="Context">
+                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                </entry>
+            </list>
+        </property>
+    </bean>
+
     <!-- AnnotationParser -->
     <list id="AnnotationParser">
         <entry key="BeanAnnotation">
-            <bean src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
-                <property name="logManager">
-                    <reference id="LogManager" />
-                </property>
-                <property name="MainBeanLoader">
-                    <reference id="MainBeanLoader" />
-                </property>
-                <property name="SubBeanLoader">
-                    <reference id="SubBeanLoader" />
-                </property>
-                <property name="annotation">
-                    <reference id="Bean" />
-                </property>
-                <property name="uuidV4">
-                    <reference id="UuidV4" />
-                </property>
-                <property name="xmlMapper">
-                    <list>
-                        <entry key="Bean">
-                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
-                        </entry>
-                        <entry key="List">
-                            <bean src="/lib/parser/xml/list/XML_List_Tag.js" />
-                        </entry>
-                    </list>
-                </property>
-            </bean>
+            <reference id="BeanParser" />
         </entry>
         <entry key="ResourceAnnotation">
             <bean src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
@@ -411,24 +433,7 @@
             </bean>
         </entry>
         <entry key="ContextAnnotation">
-            <bean src="/lib/parser/annotation/instance/Context/ContextParser.js">
-                <property name="logManager">
-                    <reference id="LogManager" />
-                </property>
-                <property name="annotation">
-                    <reference id="Context" />
-                </property>
-                <property name="uuidV4">
-                    <reference id="UuidV4" />
-                </property>
-                <property name="xmlMapper">
-                    <list>
-                        <entry key="Context">
-                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
-                        </entry>
-                    </list>
-                </property>
-            </bean>
+            <reference id="ContextParser" />
         </entry>
         <entry key="ControllerAnnotation">
             <bean src="/lib/parser/annotation/instance/Controller/ControllerParser.js">

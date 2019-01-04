@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application>
-    <list id="List" />
+    <list id="List">
+        <entry><list /></entry>
+        <entry><list /></entry>
+        <entry><list /></entry>
+        <entry value="testEntry"></entry>
+        <entry><value>Testvalue</value></entry>
+        <entry></entry>
+    </list>
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "referenceBean" />
-    <component src="/test/resources/xmlBasedProjects/simple/component/Component.js" id = "component" />
-    <controller src="/test/resources/xmlBasedProjects/simple/controller/Controller.js" id = "controller" />
-    <service src="/test/resources/xmlBasedProjects/simple/service/Service.js" id = "service" />
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Bean">
         <property name="innerBean">
             <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js">
@@ -21,5 +25,4 @@
             <reference id="referenceBean" />
         </property>
     </bean>
-    <context src="test/resources/annotatedProjects/simple/Context.js" id="Application"></context>
 </application>

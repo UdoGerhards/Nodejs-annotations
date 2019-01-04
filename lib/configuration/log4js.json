@@ -39,6 +39,11 @@
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/XMLParser.log"
+    },
+    "BeanParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/BeanParser.log"
     }
   },
   "categories": {
@@ -46,8 +51,9 @@
     "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "DEBUG" },
     "StructureParser": { "appenders": ["default","StructureParser"], "level": "DEBUG" },
     "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "DEBUG" },
-    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "TRACE" },
-    "Foundation": { "appenders": ["default","Foundation"], "level": "TRACE" },
-    "XMLParser": { "appenders": ["default","XMLParser"], "level": "TRACE" }
+    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "DEBUG" },
+    "Foundation": { "appenders": ["default","Foundation"], "level": "DEBUG" },
+    "XMLParser": { "appenders": ["default","XMLParser"], "level": "DEBUG" },
+    "BeanParser": { "appenders": ["default","BeanParser"], "level": "TRACE" }
   }
 }
