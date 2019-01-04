@@ -13,25 +13,17 @@ var assert = require("chai").assert
 describe("XML based context annotation test suite", function(){
 
     var timeout = 50000;
+    var moduleDir = process.env.PWD.replace("/test","").replace("resources",""). replace("xmlBasedProjects", "");
 
-    var resourcesPath = process.env.PWD + path.sep + path.join("resources", "xmlBasedProjects");
-    var loggerConfig = process.env.PWD + path.sep + path.join("config", "log4js.json");
-    var moduleDir = process.env.PWD.replace("/test","");
-
-    var bootstrap = require(process.env.PWD.replace("/test","") + path.sep + path.join("lib", "bootstrap", "bootstrap.js"));
-
+    let FoundationClassPath = path.join(moduleDir, "lib", "foundation", "Foundation.js");
+    let Foundation = require(FoundationClassPath);
 
     it('Should instantiate a simple project ', function() {
 
-        let FoundationClassPath = path.join(moduleDir, "lib", "foundation", "Foundation.js");
-        let Foundation = require(FoundationClassPath);
-
         // /Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/xmlBasedProjects/simple/configuration/context.xml
 
-        var simpleProjectPath = path.join(process.env.PWD, "resources", "xmlBasedProjects", "simple");
+        var simpleProjectPath = path.join(moduleDir, "test", "resources", "xmlBasedProjects", "simple");
         let contextConfiguration = path.join("configuration", "context.xml");
-
-        console.log(simpleProjectPath);
 
         /* Inject correct working dir */
 
@@ -54,7 +46,11 @@ describe("XML based context annotation test suite", function(){
 
             let applicationContext = XMLParser.process();
 
-            return applicationContext;
+            return applicationContext.then(function(res){
+                console.log(res);
+
+                return res;
+            });
         });
     });
 });

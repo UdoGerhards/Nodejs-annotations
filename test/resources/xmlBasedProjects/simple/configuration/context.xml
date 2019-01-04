@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application>
+    <list id="List" />
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "referenceBean" />
     <component src="/test/resources/xmlBasedProjects/simple/component/Component.js" id = "component" />
     <controller src="/test/resources/xmlBasedProjects/simple/controller/Controller.js" id = "controller" />

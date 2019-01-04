@@ -208,6 +208,9 @@
                         <entry key="Bean">
                             <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
+                        <entry key="List">
+                            <bean src="/lib/parser/xml/list/XML_List_Tag.js" />
+                        </entry>
                     </list>
                 </property>
             </bean>
@@ -245,6 +248,9 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Property">
+                            <bean src ="/lib/parser/xml/property/XML_Property_Tag.js" />
+                        </entry>
+                        <entry key="Entry">
                             <bean src ="/lib/parser/xml/property/XML_Property_Tag.js" />
                         </entry>
                         <entry key="Reference">
