@@ -21,6 +21,9 @@
         <entry></entry>
     </list>
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "referenceBean" />
+    <component src="/test/resources/xmlBasedProjects/simple/component/Component.js" id = "testComponent" />
+    <controller src="/test/resources/xmlBasedProjects/simple/controller/Controller.js" id = "testController" />
+    <service src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "testController" />
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Bean">
         <property name="innerBean">
             <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js">
@@ -37,4 +40,5 @@
             <reference id="referenceBean" />
         </property>
     </bean>
+    <context src="test/resources/annotatedProjects/simple/Context.js" id="Application"></context>
 </application>

@@ -44,6 +44,26 @@
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/BeanParser.log"
+    },
+    "ComponentParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ComponentParser.log"
+    },
+    "ControllerParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ControllerParser.log"
+    },
+    "ServiceParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
+    },
+    "ContextParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
     }
   },
   "categories": {
@@ -54,6 +74,10 @@
     "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "DEBUG" },
     "Foundation": { "appenders": ["default","Foundation"], "level": "DEBUG" },
     "XMLParser": { "appenders": ["default","XMLParser"], "level": "DEBUG" },
-    "BeanParser": { "appenders": ["default","BeanParser"], "level": "TRACE" }
+    "BeanParser": { "appenders": ["default","BeanParser"], "level": "TRACE" },
+    "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "TRACE" },
+    "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "TRACE" },
+    "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "TRACE" },
+    "ContextParser": { "appenders": ["default","ContextParser"], "level": "TRACE" }
   }
 }
