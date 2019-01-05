@@ -60,6 +60,11 @@
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
     },
+    "QualifierParser": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
+    },
     "ContextParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
@@ -67,17 +72,18 @@
     }
   },
   "categories": {
-    "default": { "appenders": ["default","defaultFile"], "level": "DEBUG" },
+    "default": { "appenders": ["default","defaultFile"], "level": "INFO" },
     "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "DEBUG" },
     "StructureParser": { "appenders": ["default","StructureParser"], "level": "DEBUG" },
     "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "DEBUG" },
     "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "DEBUG" },
     "Foundation": { "appenders": ["default","Foundation"], "level": "DEBUG" },
     "XMLParser": { "appenders": ["default","XMLParser"], "level": "DEBUG" },
-    "BeanParser": { "appenders": ["default","BeanParser"], "level": "TRACE" },
-    "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "TRACE" },
-    "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "TRACE" },
-    "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "TRACE" },
-    "ContextParser": { "appenders": ["default","ContextParser"], "level": "TRACE" }
+    "BeanParser": { "appenders": ["default","BeanParser"], "level": "DEBUG" },
+    "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "DEBUG" },
+    "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "DEBUG" },
+    "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "DEBUG" },
+    "QualifierParser": { "appenders": ["default","QualifierParser"], "level": "TRACE" },
+    "ContextParser": { "appenders": ["default","ContextParser"], "level": "DEBUG" }
   }
 }

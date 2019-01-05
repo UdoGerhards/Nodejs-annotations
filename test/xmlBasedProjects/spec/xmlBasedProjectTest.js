@@ -25,15 +25,9 @@ describe("XML based context annotation test suite", function(){
         var simpleProjectPath = path.join(moduleDir, "test", "resources", "xmlBasedProjects", "simple");
         let contextConfiguration = path.join("configuration", "context.xml");
 
-        //let testString = ["one", "two", "three", "four"].join(String.fromCharCode(6));
-
-        //console.log(testString.split(String.fromCharCode(8)));
-
         /* Inject correct working dir */
 
         Foundation.init("/lib/configuration/DIAnnotationsContext.xml");
-
-        //Foundation.init(contextConfiguration)
 
         /*
             Bootstrap the context and run the tests
