@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application>
-    <bean id="ReferencedBean" init="init" run="run" src="/test/resources/xmlBasedProjects/simple/bean/ReferencedBean.js" />
+    <bean id="ReferencedBean" init="init" run="run" namespace="TestNamespace" canonical="TestCanonical" inherits="InheritanceBean" src="/test/resources/xmlBasedProjects/simple/bean/ReferencedBean.js" />
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Nested">
         <property name="innerBean">
             <bean init="init" src="/test/resources/annotatedProjects/simple/bean/NestedBean.js" />
