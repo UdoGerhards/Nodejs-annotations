@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Added xml based context processing">
-      <change afterPath="$PROJECT_DIR$/lib/annotation/instance/List/ListAnnotationClass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/List/ListParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/configuration/log4js.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/log4js.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,74 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="341" column="104" selection-start-line="341" selection-start-column="104" selection-end-line="341" selection-end-column="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="121" column="75" selection-start-line="121" selection-start-column="75" selection-end-line="121" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="82" column="79" selection-start-line="82" selection-start-column="79" selection-end-line="82" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/configuration/log4js.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="86" column="83" selection-start-line="86" selection-start-column="83" selection-end-line="86" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+            <state relative-caret-position="272">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
+        <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="264" column="20" selection-start-line="264" selection-start-column="20" selection-end-line="264" selection-end-column="20" />
+            <state relative-caret-position="152">
+              <caret line="144" column="25" selection-start-line="144" selection-start-column="25" selection-end-line="144" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -117,20 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="221" column="43" selection-start-line="221" selection-start-column="43" selection-end-line="221" selection-end-column="43" />
+            <state relative-caret-position="525">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
               <folding>
                 <element signature="e#6146#20368#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -245,7 +169,6 @@
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Service/ServiceParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js" />
-        <option value="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js" />
         <option value="$PROJECT_DIR$/lib/logging/LogManager.js" />
         <option value="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/bean/Bean.js" />
@@ -269,13 +192,14 @@
         <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
         <option value="$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml" />
         <option value="$PROJECT_DIR$/lib/configuration/log4js.json" />
-        <option value="$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js" />
+        <option value="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" />
+        <option value="$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js" />
       </list>
     </option>
   </component>
@@ -569,7 +493,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546711687104" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546714809467" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -744,14 +668,7 @@
       <workItem from="1546597169395" duration="8275000" />
       <workItem from="1546617311826" duration="6155000" />
       <workItem from="1546623690745" duration="4558000" />
-      <workItem from="1546691494723" duration="19107000" />
-    </task>
-    <task id="LOCAL-00032" summary="Project landscape images will now saved in same Dir as context.">
-      <created>1544380819716</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1544380819716</updated>
+      <workItem from="1546691494723" duration="21567000" />
     </task>
     <task id="LOCAL-00033" summary="Project landscape images will now saved in same Dir as context.">
       <created>1544535999617</created>
@@ -1089,43 +1006,50 @@
       <option name="project" value="LOCAL" />
       <updated>1546709110855</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Added xml based context processing">
+      <created>1546711715729</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1546711715729</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XML_based_Context - 2019.01.05 at 18h 53m 15s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 47m 08s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 18h 54m 18s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 48m 38s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 03m 41s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 57m 13s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 05m 31s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 57m 16s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 06m 17s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 57m 41s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 06m 24s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 58m 35s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 06m 58s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 58m 49s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 07m 14s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 58m 56s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 07m 33s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 59m 35s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.01.05 at 19h 07m 45s.xml">
+    <history-entry file="XML_based_Context - 2019.01.05 at 19h 59m 57s.xml">
       <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367812000" />
+    <option name="totallyTimeSpent" value="370272000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1152,8 +1076,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.33604062" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.35020244" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.5" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.51012146" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.29352227" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
@@ -1255,12 +1179,6 @@
           <url>file://$PROJECT_DIR$/lib/parser/annotation/initialize/Init/InitAnnotationParser.js</url>
           <line>63</line>
           <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js</url>
-          <line>141</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js</url>
@@ -1610,23 +1528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="221" column="43" selection-start-line="221" selection-start-column="43" selection-end-line="221" selection-end-column="43" />
-          <folding>
-            <element signature="e#6146#20368#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -1662,10 +1563,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+          <folding>
+            <element signature="e#6146#20368#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/xml/XMLParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+        <state relative-caret-position="152">
+          <caret line="144" column="25" selection-start-line="144" selection-start-column="25" selection-end-line="144" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/xmlBasedProjects/spec/xmlBasedProjectTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>

@@ -42,12 +42,13 @@ describe("XML based context annotation test suite", function(){
 
             XMLParser.init(simpleProjectPath, contextConfiguration);
 
-            let applicationContext = XMLParser.process();
+            let parseResult = XMLParser.process();
 
-            return applicationContext.then(function(res){
-                console.log(res);
+            return parseResult.then(function(applicationStack){
 
-                return res;
+                console.log(applicationStack);
+
+                return applicationStack;
             });
         });
     });
