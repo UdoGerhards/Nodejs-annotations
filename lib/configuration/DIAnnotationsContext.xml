@@ -296,6 +296,13 @@
                 <property name="util">
                     <reference id="Util" />
                 </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Init">
+                            <bean src ="/lib/parser/xml/init/XML_Init_Attribute.js" />
+                        </entry>
+                    </list>
+                </property>
             </bean>
         </entry>
         <entry key="AfterAnnotation">
@@ -557,6 +564,13 @@
                 </property>
                 <property name="annotation">
                     <reference id="Run" />
+                </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Run">
+                            <bean src="/lib/parser/xml/run/XML_Run_Attribute.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
