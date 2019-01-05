@@ -2,7 +2,8 @@
 <application>
 
     <class id="Parent" src="/test/resources/annotatedProjects/simple/prototypes/Parent.js" />
-    <properties id="Properties">
+
+    <properties id="ApplicationProperties">
         <entry>
             <value>
                 /resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}
@@ -16,8 +17,7 @@
         <entry value="/resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}"/>
     </properties>
 
-    <bean id="ReferencedBean" init="init" run="run" namespace="TestNamespace" canonical="TestCanonical" inherits="InheritanceBean" src="/test/resources/xmlBasedProjects/simple/bean/ReferencedBean.js" />
-    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Nested">
+    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Nested" run="run" namespace="TestNamespace" canonical="TestCanonical">
         <property name="innerBean">
             <bean init="init" src="/test/resources/annotatedProjects/simple/bean/NestedBean.js" />
         </property>
@@ -25,6 +25,7 @@
             <reference id="ReferenceBean" />
         </property>
     </bean>
+
     <bean id="Bean" init="init" src="/test/resources/xmlBasedProjects/simple/bean/Bean.js" />
     <component id="Component" init="init" src="test/resources/xmlBasedProjects/simple/component/Component.js">
         <property name="bean">

@@ -183,6 +183,16 @@
         <property name="processors">
             <reference id="PropertiesProcessors" />
         </property>
+        <property name="uuidV4">
+            <reference id="UuidV4" />
+        </property>
+        <property name="xmlMapper">
+            <list>
+                <entry key="Properties">
+                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                </entry>
+            </list>
+        </property>
     </bean>
 
     <bean id="BeanParser" init="init" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
@@ -207,9 +217,6 @@
                     <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
                 <entry key="List">
-                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
-                </entry>
-                <entry key="Properties">
                     <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
             </list>
