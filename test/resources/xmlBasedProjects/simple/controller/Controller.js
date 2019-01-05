@@ -7,19 +7,10 @@
 function Controller() {
     var instance = this;
 
-    /*
-     * @Qualifier("Bean")
-     */
     instance.bean = null;
 
-    /*
-     * @Qualifier("ServiceBean")
-     */
     instance.service = null;
 
-    /*
-     * @Qualifier("ComponentBean")
-     */
     instance.component = null;
 
     instance.initFlag = null;

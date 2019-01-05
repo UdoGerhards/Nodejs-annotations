@@ -5,22 +5,9 @@
  * @constructor
  */
 function Component() {
-    var instance = this;
+    let instance = this;
 
-    /*
-     * @Qualifier("Bean")
-     */
     instance.bean = null;
-
-    /*
-     * @Qualifier("Controller")
-     */
-    instance.controller= null;
-
-    /*
-     * @Qualifier("ServiceBean")
-     */
-    instance.service = null;
 
     instance.initFlag = null;
 }

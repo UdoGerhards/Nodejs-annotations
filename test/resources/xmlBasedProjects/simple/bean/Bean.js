@@ -9,21 +9,6 @@ class Bean {
 
         var instance = this;
 
-        /*
-         * @Qualifier("Controller")
-         */
-        instance.controller = null;
-
-        /*
-         * @Qualifier("ServiceBean")
-         */
-        instance.service = null;
-
-        /*
-         * @Qualifier("ComponentBean")
-         */
-        instance.component = null;
-
         instance.initFlag = null;
     }
 

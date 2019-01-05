@@ -1,44 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application>
-    <list id="List">
-        <entry><list /></entry>
-        <entry>
-            <list>
-                <entry name="nestedListElement1">
-                    <value>nestedValue1</value>
-                </entry>
-            </list>
-        </entry>
-        <entry>
-            <list>
-                <entry name="nestedListElement2">
-                    <value>nestedValue2</value>
-                </entry>
-            </list>
-        </entry>
-        <entry value="testEntry" name="thisIsAlistElement"></entry>
-        <entry><value>Testvalue</value></entry>
-        <entry></entry>
-    </list>
-    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "referenceBean" />
-    <component src="/test/resources/xmlBasedProjects/simple/component/Component.js" id = "testComponent" />
-    <controller src="/test/resources/xmlBasedProjects/simple/controller/Controller.js" id = "testController" />
-    <service src="/test/resources/annotatedProjects/simple/bean/Bean.js" id = "testController" />
-    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Bean">
+    <bean id="ReferencedBean" init="init" src="/test/resources/xmlBasedProjects/simple/bean/ReferencedBean.js" />
+    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Nested">
         <property name="innerBean">
-            <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js">
-                <property name="innerBean1">
-                    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js">
-                        <property name="innerBean2">
-                            <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" />
-                        </property>
-                    </bean>
-                </property>
-            </bean>
+            <bean src="/test/resources/annotatedProjects/simple/bean/NestedBean.js" />
         </property>
         <property name="referenceBean">
-            <reference id="referenceBean" />
+            <reference id="ReferenceBean" />
         </property>
     </bean>
-    <context src="test/resources/annotatedProjects/simple/Context.js" id="Application"></context>
+    <bean id="Bean" init="init" src="/test/resources/xmlBasedProjects/simple/bean/Bean.js" />
+    <component id="Component" init="init" src="test/resources/xmlBasedProjects/simple/component/Component.js">
+        <property name="bean">
+            <reference id="Bean" />
+        </property>
+    </component>
+    <controller id="Controller" init="init" src="/test/resources/xmlBasedProjects/simple/controller/Controller.js">
+        <property name="bean">
+            <reference id="Bean" />
+        </property>
+        <property name="component">
+            <reference id="Component" />
+        </property>
+    </controller>
+    <service id="Service" init="init" src="/test/resources/xmlBasedProjects/simple/service/Service.js">
+        <property name="bean">
+            <reference id="Bean" />
+        </property>
+        <property name="controller">
+            <reference id="Controller" />
+        </property>
+        <property name="component">
+            <reference id="Component" />
+        </property>
+    </service>
+    <context init="init" src="test/resources/annotatedProjects/simple/Context.js" id="Application">
+        <property name="bean">
+            <reference id="Bean" />
+        </property>
+        <property name="controller">
+            <reference id="Controller" />
+        </property>
+        <property name="component">
+            <reference id="Component" />
+        </property>
+        <property name="service">
+            <reference id="Service" />
+        </property>
+    </context>
 </application>
