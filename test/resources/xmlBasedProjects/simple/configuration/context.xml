@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application>
+
+    <class id="Parent" src="/test/resources/annotatedProjects/simple/prototypes/Parent.js" />
+    <properties id="Properties">
+        <entry>
+            <value>
+                /resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}
+            </value>
+        </entry>
+        <entry>
+            <value>
+                /resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}
+            </value>
+        </entry>
+        <entry value="/resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}"/>
+    </properties>
+
     <bean id="ReferencedBean" init="init" run="run" namespace="TestNamespace" canonical="TestCanonical" inherits="InheritanceBean" src="/test/resources/xmlBasedProjects/simple/bean/ReferencedBean.js" />
     <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Nested">
         <property name="innerBean">

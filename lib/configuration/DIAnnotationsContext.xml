@@ -209,6 +209,9 @@
                 <entry key="List">
                     <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
+                <entry key="Properties">
+                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                </entry>
             </list>
         </property>
     </bean>
@@ -464,11 +467,21 @@
         </entry>
         <entry key="PrototypeAnnotation">
             <bean init="init" src="/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js">
+                <property name="uuidV4">
+                    <reference id="UuidV4" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
                     <reference id="Prototype" />
+                </property>
+                <property name="xmlMapper">
+                    <list>
+                        <entry key="Class">
+                            <bean src="/lib/parser/xml/class/XML_Class_Tag.js" />
+                        </entry>
+                    </list>
                 </property>
             </bean>
         </entry>
