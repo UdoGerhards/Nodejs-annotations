@@ -75,6 +75,9 @@ describe("XML based context annotation test suite", function(){
             }
         };
 
+        let test = [1,2,3,4].join(String.fromCharCode(12));
+
+
         this.timeout(timeout);
         return bootstrap(contextInfo, "INFO", null).then(function(factory){
             return new Promise(function(resolve, reject){
