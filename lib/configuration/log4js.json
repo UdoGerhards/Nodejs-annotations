@@ -72,7 +72,7 @@
     }
   },
   "categories": {
-    "default": { "appenders": ["default","defaultFile"], "level": "INFO" },
+    "default": { "appenders": ["default","defaultFile"], "level": "DEBUG" },
     "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "DEBUG" },
     "StructureParser": { "appenders": ["default","StructureParser"], "level": "DEBUG" },
     "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "DEBUG" },

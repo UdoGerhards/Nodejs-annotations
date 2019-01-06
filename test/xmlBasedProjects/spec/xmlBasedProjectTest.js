@@ -12,13 +12,17 @@ var assert = require("chai").assert
 
 describe("XML based context annotation test suite", function(){
 
-    var timeout = 50000;
-    var moduleDir = process.env.PWD.replace("/test","").replace("resources",""). replace("xmlBasedProjects", "");
+    let timeout = 50000;
+    let moduleDir = path.normalize(process.env.PWD.replace("/test","").replace("resources",""). replace("xmlBasedProjects", ""));
+
+    let resourcesPath = process.env.PWD ;
 
     let FoundationClassPath = path.join(moduleDir, "lib", "foundation", "Foundation.js");
     let Foundation = require(FoundationClassPath);
 
-    it('Should instantiate a simple project ', function() {
+    let bootstrap = require(path.join(moduleDir, "lib", "bootstrap", "bootstrap.js"));
+
+    it('Should prepare the application context for parsing for a simple project ', function() {
 
         // /Users/udogerhards/Documents/Bitbucket/nodejs-annotations/test/resources/xmlBasedProjects/simple/configuration/context.xml
 
@@ -39,17 +43,60 @@ describe("XML based context annotation test suite", function(){
         return libPromise.then(function(resolve){
 
             let XMLParser = resolve["XMLParser"];
+            let fulPath = path.join(simpleProjectPath, contextConfiguration);
 
-            XMLParser.init(simpleProjectPath, contextConfiguration);
+            XMLParser.init(fulPath);
 
             let parseResult = XMLParser.process();
 
             return parseResult.then(function(applicationStack){
 
-                console.log(applicationStack);
+                //console.log(applicationStack);
 
                 return applicationStack;
             });
         });
+    });
+
+
+    it('Should instantiate a simple project ', function() {
+
+        let contextConfiguration = path.join(resourcesPath, "simple", "configuration", "context.xml");
+        console.error(contextConfiguration)
+
+        var contextInfo = {
+            "file": contextConfiguration,
+            "projectLandScape": {
+                "dir": resourcesPath,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
+        };
+
+        this.timeout(timeout);
+        return bootstrap(contextInfo, "INFO", null).then(function(factory){
+            return new Promise(function(resolve, reject){
+                factory.on(0xFF, function(applicationStack) {
+
+                    try {
+
+                        console.log(applicationStack);
+
+
+                        //var context = getContextBean(applicationStack);
+
+                        factory.removeAllListeners();
+                    } catch(e) {
+
+                        reject(e);
+
+                    } finally {
+                        resolve();
+                    }
+                });
+            });
+        })
     });
 });

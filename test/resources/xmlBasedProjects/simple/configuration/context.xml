@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application>
 
-    <class id="Parent" src="/test/resources/annotatedProjects/simple/prototypes/Parent.js" />
-
-    <list id="List">
+    <!-- <list id="List">
         <entry><list /></entry>
         <entry>
             <list>
@@ -36,24 +34,22 @@
             </value>
         </entry>
         <entry value="/resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}"/>
-    </properties>
+    </properties> -->
 
-    <bean src="/test/resources/annotatedProjects/simple/bean/Bean.js" id="Nested" run="run" namespace="TestNamespace" canonical="TestCanonical">
-        <property name="innerBean">
-            <bean init="init" src="/test/resources/annotatedProjects/simple/bean/NestedBean.js" />
-        </property>
-        <property name="referenceBean">
-            <reference id="ReferenceBean" />
+    <bean id="Bean" init="init" src="/bean/Bean.js" >
+        <property name="inner">
+            <property name="innerBean">
+                <bean init="init" src="/test/resources/annotatedProjects/simple/bean/NestedBean.js" />
+            </property>
         </property>
     </bean>
 
-    <bean id="Bean" init="init" src="/test/resources/xmlBasedProjects/simple/bean/Bean.js" />
-    <component id="Component" init="init" src="test/resources/xmlBasedProjects/simple/component/Component.js">
+    <component id="Component" init="init" src="/component/Component.js">
         <property name="bean">
             <reference id="Bean" />
         </property>
     </component>
-    <controller id="Controller" init="init" src="/test/resources/xmlBasedProjects/simple/controller/Controller.js">
+    <controller id="Controller" init="init" src="/controller/Controller.js">
         <property name="bean">
             <reference id="Bean" />
         </property>
@@ -61,7 +57,7 @@
             <reference id="Component" />
         </property>
     </controller>
-    <service id="Service" init="init" src="/test/resources/xmlBasedProjects/simple/service/Service.js">
+    <service id="Service" init="init" src="/service/Service.js">
         <property name="bean">
             <reference id="Bean" />
         </property>
@@ -72,7 +68,7 @@
             <reference id="Component" />
         </property>
     </service>
-    <context init="init" src="test/resources/annotatedProjects/simple/Context.js" id="Application">
+    <context init="init" src="/Context.js" id="Application">
         <property name="bean">
             <reference id="Bean" />
         </property>

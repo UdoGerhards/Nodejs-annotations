@@ -47,6 +47,7 @@
     <bean id="UuidV4" src="uuid/v4" />
     <bean id="HTMLParser" src="htmlparser2" />
     <bean id="DotProp" src="dot-prop" />
+    <bean id="UuidValidator" src="uuidv4" />
 
     <!-- LogManager -->
     <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
@@ -160,6 +161,9 @@
 
     <!-- Special annotation parser -->
     <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/parser/annotation/meta/Properties/PropertiesParser.js">
+        <property name="tokenParser">
+            <reference id="TokenParser" />
+        </property>
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -197,6 +201,9 @@
     </bean>
 
     <bean id="BeanParser" init="init" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
+        <property name="tokenParser">
+            <reference id="TokenParser" />
+        </property>
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -208,6 +215,12 @@
         </property>
         <property name="annotation">
             <reference id="Bean" />
+        </property>
+        <property name="util">
+            <reference id="Util" />
+        </property>
+        <property name="path">
+            <reference id="Path" />
         </property>
         <property name="uuidV4">
             <reference id="UuidV4" />
@@ -222,6 +235,15 @@
     </bean>
 
     <bean id="ContextParser" init="init" src="/lib/parser/annotation/instance/Context/ContextParser.js">
+        <property name="MainBeanLoader">
+            <reference id="MainBeanLoader" />
+        </property>
+        <property name="SubBeanLoader">
+            <reference id="SubBeanLoader" />
+        </property>
+        <property name="tokenParser">
+            <reference id="TokenParser" />
+        </property>
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -230,6 +252,12 @@
         </property>
         <property name="uuidV4">
             <reference id="UuidV4" />
+        </property>
+        <property name="util">
+            <reference id="Util" />
+        </property>
+        <property name="path">
+            <reference id="Path" />
         </property>
         <property name="xmlMapper">
             <list>
@@ -242,11 +270,14 @@
 
     <!-- AnnotationParser -->
     <list id="AnnotationParser">
-        <entry key="BeanAnnotation">
+        <entry key="Bean">
             <reference id="BeanParser" />
         </entry>
-        <entry key="ResourceAnnotation">
+        <entry key="Resource">
             <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -256,13 +287,19 @@
                 <property name="util">
                     <reference id="Util" />
                 </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
                 </property>
             </bean>
         </entry>
-        <entry key="QualifierAnnotation">
+        <entry key="Qualifier">
             <bean init="init" src="/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -271,6 +308,9 @@
                 </property>
                 <property name="util">
                     <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
                 </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
@@ -293,8 +333,11 @@
                 </property>
             </bean>
         </entry>
-        <entry key="InitAnnotation">
+        <entry key="Init">
             <bean init="init" src="/lib/parser/annotation/initialize/Init/InitAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -303,6 +346,9 @@
                 </property>
                 <property name="util">
                     <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
                 </property>
                 <property name="xmlMapper">
                     <list>
@@ -313,41 +359,71 @@
                 </property>
             </bean>
         </entry>
-        <entry key="AfterAnnotation">
+        <entry key="After">
             <bean init="init" src="/lib/parser/annotation/aop/After/AfterAnnotationParser.js" >
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
                     <reference id="After" />
                 </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
             </bean>
         </entry>
-        <entry key="AspectAnnotation">
+        <entry key="Aspect">
             <bean init="init" src="/lib/parser/annotation/aop/Aspect/AspectAnnotationParser.js" >
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
                     <reference id="Aspect" />
                 </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
             </bean>
         </entry>
-        <entry key="BeforeAnnotation">
+        <entry key="Before">
             <bean init="init" src="/lib/parser/annotation/aop/Before/BeforeAnnotationParser.js" >
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
                     <reference id="Before" />
                 </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
             </bean>
         </entry>
-        <entry key="PointCuteAnnotation">
+        <entry key="PointCute">
             <bean init="init" src="/lib/parser/annotation/aop/PointCut/PointCutAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -360,10 +436,19 @@
                 <property name="md5">
                     <reference id="Md5" />
                 </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
             </bean>
         </entry>
-        <entry key="InheritsAnnotation">
+        <entry key="Inherits">
             <bean init="init" src="/lib/parser/annotation/inherits/inherits/InheritsAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -375,6 +460,9 @@
                 </property>
                 <property name="util">
                     <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
                 </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
@@ -388,8 +476,11 @@
                 </property>
             </bean>
         </entry>
-        <entry key="AutowireAnnotation">
+        <entry key="Autowire">
             <bean init="init" src="/lib/parser/annotation/inject/Autowire/AutowireAnnotationParser.js" >
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -402,10 +493,19 @@
                 <property name="QualifierAnnotation">
                     <reference id="Qualifier" />
                 </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
             </bean>
         </entry>
-        <entry key="StoreAnnotation">
+        <entry key="Store">
             <bean init="init" src="/lib/parser/annotation/inject/Store/StoreAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -415,10 +515,22 @@
                 <property name="util">
                     <reference id="Util" />
                 </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
             </bean>
         </entry>
-        <entry key="ComponentAnnotation">
+        <entry key="Component">
             <bean init="init" src="/lib/parser/annotation/instance/Component/ComponentParser.js">
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
+                </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -427,6 +539,12 @@
                 </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
                 </property>
                 <property name="xmlMapper">
                     <list>
@@ -437,21 +555,45 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ConfigurationAnnotation">
+        <entry key="Configuration">
             <bean init="init" src="/lib/parser/annotation/instance/Configuration/ConfigurationParser.js" >
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
+                </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
                     <reference id="Configuration" />
                 </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
             </bean>
         </entry>
-        <entry key="ContextAnnotation">
+        <entry key="Context">
             <reference id="ContextParser" />
         </entry>
-        <entry key="ControllerAnnotation">
+        <entry key="Controller">
             <bean init="init" src="/lib/parser/annotation/instance/Controller/ControllerParser.js">
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
+                </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -460,6 +602,12 @@
                 </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
                 </property>
                 <property name="xmlMapper">
                     <list>
@@ -470,8 +618,17 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ListAnnotation">
+        <entry key="List">
             <bean init="init" src="/lib/parser/annotation/instance/List/ListParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -490,8 +647,17 @@
                 </property>
             </bean>
         </entry>
-        <entry key="PrototypeAnnotation">
+        <entry key="Prototype">
             <bean init="init" src="/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
                 </property>
@@ -510,8 +676,17 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ResourceAnnotation">
+        <entry key="Resource">
             <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -523,13 +698,28 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ServiceAnnotation">
+        <entry key="Service">
             <bean init="init" src="/lib/parser/annotation/instance/Service/ServiceParser.js">
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
+                </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
                     <reference id="Service" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
                 </property>
                 <property name="uuidV4">
                     <reference id="UuidV4" />
@@ -543,8 +733,11 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ParamAnnotation">
+        <entry key="Param">
             <bean init="init" src="/lib/parser/annotation/JSDoc/paramParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -559,8 +752,23 @@
                 </property>
             </bean>
         </entry>
-        <entry key="TypeAnnotation">
+        <entry key="Type">
             <bean init="init" src="/lib/parser/annotation/JSDoc/typeParser.js">
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
+                </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -575,8 +783,23 @@
                 </property>
             </bean>
         </entry>
-        <entry key="NamespaceAnnotation">
+        <entry key="Namespace">
             <bean init="init" src="/lib/parser/annotation/meta/Namespace/NamespaceParser.js">
+                <property name="MainBeanLoader">
+                    <reference id="MainBeanLoader" />
+                </property>
+                <property name="SubBeanLoader">
+                    <reference id="SubBeanLoader" />
+                </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -592,11 +815,20 @@
                 </property>
             </bean>
         </entry>
-        <entry key="PropertiesAnnotation">
+        <entry key="Properties">
             <reference id="PropertiesAnnotationParserInstance" />
         </entry>
-        <entry key="RunAnnotation">
+        <entry key="Run">
             <bean init="init" src="/lib/parser/annotation/run/Run/RunAnnotationParser.js">
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+                <property name="path">
+                    <reference id="Path" />
+                </property>
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -716,14 +948,20 @@
         <property name="annotationParser">
             <reference id="AnnotationParser"/>
         </property>
-        <property name="stages">
-            <reference id="stages"/>
+        <property name="uuidValidator">
+            <reference id="UuidValidator" />
         </property>
+        <!--<property name="stages">
+            <reference id="stages"/>
+        </property> -->
         <property name="promise">
             <reference id="Bluebird"/>
         </property>
         <property name="structureParser">
             <reference id="StructureParser" />
+        </property>
+        <property name="util">
+            <reference id="Util" />
         </property>
         <property name="xmlParser">
             <reference id="XMLParser" />
@@ -738,8 +976,17 @@
         <property name="stages">
             <reference id="stages"/>
         </property>
+        <property name="contextBuilder">
+            <reference id="ContextBuilder"/>
+        </property>
         <property name="dependencyBuilder">
             <reference id="DependencyBuilder"/>
+        </property>
+        <property name="xmlParser">
+            <reference id="XMLParser"/>
+        </property>
+        <property name="structureParser">
+            <reference id="StructureParser" />
         </property>
         <property name="esprima">
             <reference id="Esprima"/>
