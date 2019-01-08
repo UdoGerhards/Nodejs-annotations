@@ -973,6 +973,9 @@
         <property name="xmlParser">
             <reference id="XMLParser" />
         </property>
+        <property name="fs">
+            <reference id="FS" />
+        </property>
     </bean>
 
     <!-- Factory -->

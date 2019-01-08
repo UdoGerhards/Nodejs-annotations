@@ -3,8 +3,7 @@
 
 var assert = require("chai").assert
     , log4js = require("log4js")
-    , path = require("path")
-    , Promise = require("bluebird");
+    , path = require("path");
 
 /**
  * Created by udogerhards on 20.10.18.
