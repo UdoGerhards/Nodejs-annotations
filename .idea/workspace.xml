@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Added xml based context processing">
+    <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Lodash free version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/context/ContextBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/ContextBuilder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dependency/DependencyBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dependency/DependencyBuilder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,15 +35,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/resources/xmlBasedProjects/simple/configuration/context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/factory/Factory.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1739">
@@ -64,8 +55,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="322">
+              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -110,7 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>resourcesPath</find>
       <find>getPackageJsonDependencies</find>
       <find>intance</find>
       <find>Bloc</find>
@@ -137,9 +163,10 @@
       <find>instance.promise</find>
       <find>filterJsonFiles</find>
       <find>filterPackageJsonFiles</find>
-      <find>_.</find>
-      <find>instance._</find>
       <find>Lodash</find>
+      <find>instance._</find>
+      <find>_.</find>
+      <find>Bluebird</find>
     </findStrings>
     <replaceStrings>
       <replace>type</replace>
@@ -188,9 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Resource/ResourceParser.js" />
-        <option value="$PROJECT_DIR$/lib/parser/annotation/instance/Service/ServiceParser.js" />
-        <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/paramParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/annotation/JSDoc/typeParser.js" />
         <option value="$PROJECT_DIR$/lib/logging/LogManager.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/reference/XML_Reference_Tag.js" />
@@ -238,6 +262,9 @@
         <option value="$PROJECT_DIR$/lib/context/ContextBuilder.js" />
         <option value="$PROJECT_DIR$/lib/dependency/DependencyBuilder.js" />
         <option value="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" />
+        <option value="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" />
+        <option value="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" />
+        <option value="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" />
         <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
       </list>
     </option>
@@ -299,6 +326,49 @@
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="Namespace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="Properties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="Properties" type="462c0819:PsiDirectoryNode" />
+              <item name="Processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -436,7 +506,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546955947647" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546956350285" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -628,14 +698,7 @@
       <workItem from="1546691494723" duration="21603000" />
       <workItem from="1546767322633" duration="22763000" />
       <workItem from="1546858720673" duration="20079000" />
-      <workItem from="1546943783750" duration="11132000" />
-    </task>
-    <task id="LOCAL-00038" summary="Project landscape images will now saved in same Dir as context.">
-      <created>1544637982314</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1544637982314</updated>
+      <workItem from="1546943783750" duration="11534000" />
     </task>
     <task id="LOCAL-00039" summary="Example landscape">
       <created>1544638040158</created>
@@ -973,25 +1036,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546953327401</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Lodash free version">
+      <created>1546956047089</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1546956047090</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Annotated_projects - 2019.01.08 at 14h 47m 31s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.08 at 14h 48m 16s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.08 at 14h 51m 19s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.08 at 14h 52m 52s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.08 at 14h 54m 03s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Annotated_projects - 2019.01.08 at 14h 55m 13s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -1007,9 +1062,24 @@
     <history-entry file="Annotated_projects - 2019.01.08 at 14h 58m 50s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="Annotated_projects - 2019.01.08 at 14h 59m 10s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.01.08 at 14h 59m 39s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.01.08 at 14h 59m 44s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.01.08 at 15h 02m 44s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.01.08 at 15h 04m 54s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424282000" />
+    <option name="totallyTimeSpent" value="424684000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1036,14 +1106,14 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.33604062" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.39473686" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.39473686" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.45647773" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
       <window_info anchor="bottom" id="Statistic" order="9" weight="0.23959391" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32994923" />
-      <window_info anchor="bottom" x="541" y="0" width="1133" height="1045" id="Terminal" order="11" sideWeight="0.49733758" weight="0.054655872" />
+      <window_info active="true" anchor="bottom" x="541" y="0" width="1133" height="1045" id="Terminal" order="11" sideWeight="0.49733758" visible="true" weight="0.23380567" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="SvgViewer" order="0" weight="0.3541001" />
@@ -1125,7 +1195,8 @@
     <MESSAGE value="Added positioning in factory.js" />
     <MESSAGE value="Using goJs to create tree model" />
     <MESSAGE value="Added xml based context processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added xml based context processing" />
+    <MESSAGE value="Lodash free version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lodash free version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1245,34 +1316,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/logging/LogManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/configuration/log4js.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="74" column="72" selection-start-line="74" selection-start-column="72" selection-end-line="74" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/helper/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -1537,10 +1580,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="322">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
         </state>
       </provider>
     </entry>

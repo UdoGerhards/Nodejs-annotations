@@ -32,7 +32,6 @@
     <bean id="Util" src="util"/>
     <bean id="Path" src="path"/>
     <bean id="Estraverse" src="estraverse"/>
-    <bean id="Bluebird" src="bluebird"/>
     <bean id="FS" src="fs"/>
     <bean id="Glob" src="glob" />
     <bean id="Toposort" src="toposort-class" />
@@ -64,9 +63,6 @@
     <list id="PropertiesProcessors">
         <entry>
             <bean src ="/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js">
-                <property name="Promise">
-                    <reference id="Bluebird" />
-                </property>
                 <property name="propertiesReader">
                     <reference id="PropertiesReader" />
                 </property>
@@ -74,16 +70,10 @@
         </entry>
         <entry>
             <bean src ="/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js">
-                <property name="Promise">
-                    <reference id="Bluebird" />
-                </property>
             </bean>
         </entry>
         <entry>
             <bean src ="/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
-                <property name="Promise">
-                    <reference id="Bluebird" />
-                </property>
                 <property name="fs">
                     <references id="FS" />
                 </property>
@@ -210,9 +200,6 @@
         </property>
         <property name="fs">
             <reference id="FS" />
-        </property>
-        <property name="Promise">
-            <reference id="Bluebird" />
         </property>
         <property name="camelcase">
             <reference id="CamelCase" />
