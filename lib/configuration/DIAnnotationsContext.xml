@@ -1001,9 +1001,6 @@
         <property name="path">
             <reference id="Path"/>
         </property>
-        <property name="estraverse">
-            <reference id="Estraverse"/>
-        </property>
         <property name="uuidV4">
             <reference id="UuidV4" />
         </property>
