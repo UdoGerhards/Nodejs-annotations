@@ -109,6 +109,7 @@
     <class id="Namespace" src="/lib/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
     <class id="Properties" src="/lib/annotation/meta/Properties/PropertiesAnnotationClass.js" />
     <class id="Run" src="/lib/annotation/run/Run/RunAnnotationClass.js" />
+    <class id="diagramTool" src="/lib/diagram/diagramTool.js" />
 
     <!-- Parser helper classes -->
     <class id="MainBeanLoader" src="/lib/parser/annotation/instance/Bean/MainBeanLoader.js" />
@@ -1003,6 +1004,9 @@
         </property>
         <property name="uuidV4">
             <reference id="UuidV4" />
+        </property>
+        <property name="diagramTool">
+            <reference id = "diagramTool" />
         </property>
     </context>
 </application>
