@@ -1,7 +1,6 @@
 'use strict';
 
 /**
- * @Service("ServiceBean")
  * @constructor
  */
 function Service() {
@@ -25,9 +24,6 @@ function Service() {
     instance.initFlag = null;
 }
 
-/**
- * @Init()
- */
 Service.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;

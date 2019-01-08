@@ -68,7 +68,7 @@
             <reference id="Component" />
         </property>
     </service>
-    <context init="init" src="/Context.js" id="Application">
+    <context init="init" run="run" src="/Context.js" id="Application">
         <property name="bean">
             <reference id="Bean" />
         </property>

@@ -24,12 +24,16 @@ class Application {
     init() {
         var instance = this;
         instance.initFlag = ++instance.counter;
+
+        console.log("==> Context init: "+instance.initFlag);
     };
 
     run() {
 
         var instance = this;
-        instance.runFlag = ++instance.counter;;
+        instance.runFlag = ++instance.counter;
+
+        console.log("==> Context run: "+instance.initFlag);
 
     }
 }

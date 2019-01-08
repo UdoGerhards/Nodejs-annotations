@@ -1,7 +1,6 @@
 'use strict';
 
 /**
- * @Component("ComponentBean")
  * @constructor
  */
 function Component() {
@@ -12,9 +11,6 @@ function Component() {
     instance.initFlag = null;
 }
 
-/**
- * @Init()
- */
 Component.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;

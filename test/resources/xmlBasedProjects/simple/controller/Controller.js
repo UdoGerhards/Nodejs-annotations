@@ -1,7 +1,6 @@
 'use strict';
 
 /**
- * @Controller("Controller")
  * @constructor
  */
 function Controller() {
@@ -16,9 +15,6 @@ function Controller() {
     instance.initFlag = null;
 }
 
-/**
- * @Init()
- */
 Controller.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;

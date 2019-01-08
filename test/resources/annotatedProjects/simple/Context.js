@@ -41,6 +41,7 @@ class Application {
      */
     init() {
         var instance = this;
+
         instance.initFlag = ++instance.counter;
     };
 
