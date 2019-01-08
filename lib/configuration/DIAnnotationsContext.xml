@@ -31,7 +31,6 @@
     <bean id="Esprima" src="esprima"/>
     <bean id="Util" src="util"/>
     <bean id="Path" src="path"/>
-    <bean id="Lodash" src="lodash"/>
     <bean id="Estraverse" src="estraverse"/>
     <bean id="Bluebird" src="bluebird"/>
     <bean id="FS" src="fs"/>
@@ -887,9 +886,6 @@
         <property name="glob">
             <reference id="Glob" />
         </property>
-        <property name="_">
-            <reference id="Lodash" />
-        </property>
         <property name="toposort">
             <reference id="Toposort" />
         </property>
@@ -925,9 +921,6 @@
         <property name="beautify">
             <reference id="Beautify" />
         </property>
-        <property name="_">
-            <reference id="Lodash" />
-        </property>
         <property name="util">
             <reference id="Util"/>
         </property>
@@ -945,9 +938,6 @@
         </property>
         <property name="lightTokenInformation">
             <value>true</value>
-        </property>
-        <property name="_">
-            <reference id="Lodash" />
         </property>
     </bean>
 
@@ -987,12 +977,6 @@
         <property name="uuidValidator">
             <reference id="UuidValidator" />
         </property>
-        <!--<property name="stages">
-            <reference id="stages"/>
-        </property> -->
-        <property name="promise">
-            <reference id="Bluebird"/>
-        </property>
         <property name="structureParser">
             <reference id="StructureParser" />
         </property>
@@ -1009,9 +993,6 @@
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
-        <!-- <property name="stages">
-            <reference id="stages"/>
-        </property> -->
         <property name="contextBuilder">
             <reference id="ContextBuilder"/>
         </property>
@@ -1027,11 +1008,6 @@
         <property name="esprima">
             <reference id="Esprima"/>
         </property>
-        <!--
-        <property name="_">
-            <reference id="Lodash"/>
-        </property>
-        -->
         <property name="path">
             <reference id="Path"/>
         </property>

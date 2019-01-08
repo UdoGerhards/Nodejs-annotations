@@ -128,7 +128,6 @@
     "htmlparser2": "^3.10.0",
     "istanbul": "^0.4.5",
     "js-beautify": "^1.8.9",
-    "lodash": "^4.17.11",
     "log4js": "^3.0.6",
     "log4js-extend": "^0.2.1",
     "log4js-node-mongodb": "^2.2.1",
