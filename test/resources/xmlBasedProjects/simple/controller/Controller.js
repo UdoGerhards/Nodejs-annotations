@@ -8,8 +8,6 @@ function Controller() {
 
     instance.bean = null;
 
-    instance.service = null;
-
     instance.component = null;
 
     instance.initFlag = null;

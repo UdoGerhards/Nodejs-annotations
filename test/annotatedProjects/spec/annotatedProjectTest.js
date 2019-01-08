@@ -44,9 +44,7 @@ describe("Project annotation test suite", function(){
         this.timeout(timeout);
 
         let processPromise = bootstrap(contextInfo, "INFO", null);
-        return processPromise.then(function(result){
-
-                let context = result[0].nameToNamespace["Application"]._instance;
+        return processPromise.then(function(context){
 
                 try {
 

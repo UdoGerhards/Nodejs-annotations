@@ -3,7 +3,7 @@
 /**
  * @constructor
  */
-class Bean {
+class NestedBean {
 
     constructor() {
 
@@ -20,4 +20,4 @@ class Bean {
     }
 }
 
-module.exports = exports = Bean;
+module.exports = exports = NestedBean;

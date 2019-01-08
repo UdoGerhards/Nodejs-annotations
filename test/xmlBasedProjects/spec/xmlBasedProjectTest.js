@@ -80,9 +80,8 @@ describe("XML based context annotation test suite", function(){
 
         this.timeout(timeout);
         let parsingPromise = bootstrap(contextInfo, "INFO", null);
-        return parsingPromise.then(function(result){
+        return parsingPromise.then(function(context){
 
-            let context = result.nameToNamespace["Application"]._instance;
             try {
 
                 // Test context
@@ -120,9 +119,6 @@ describe("XML based context annotation test suite", function(){
                 assert.isNotNull(controller.bean, "Controller property 'bean' is null");
                 assert.isObject(controller.bean, "Controller property 'bean' is not an object");
 
-                assert.isNotNull(controller.service, "Controller property 'service' is null");
-                assert.isObject(controller.service, "Controller property 'service' is not an object");
-
                 assert.isNotNull(controller.component, "Controller property 'component' is null");
                 assert.isObject(controller.component, "Controller property 'component' is not an object");
 
@@ -156,9 +152,6 @@ describe("XML based context annotation test suite", function(){
 
                 assert.isNotNull(component.initFlag, "Component init flag is null");
                 assert.isTrue(component.initFlag, "Component init flag is not 'true'");
-
-
-                factory.removeAllListeners();
             } catch(e) {
                 console.log(e);
 
