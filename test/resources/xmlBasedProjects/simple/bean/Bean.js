@@ -9,7 +9,7 @@ class Bean {
 
         var instance = this;
 
-        instance.innerBean = null;
+        instance.innerBean1 = "";
 
         instance.initFlag = null;
     }

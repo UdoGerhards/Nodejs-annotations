@@ -15,7 +15,13 @@ describe("Project annotation test suite", function(){
 
 
     let pos = process.env.PWD.indexOf("/test");
-    let libRoot = process.env.PWD.substring(0, pos);
+
+    let libRoot = "";
+    if (pos >-1) {
+        libRoot = process.env.PWD.substring(0, pos);
+    } else {
+        libRoot = process.env.PWD;
+    }
     let testRoot = path.join(libRoot, "test");
     let resourceRoot = path.join(testRoot, "resources");
 
@@ -136,7 +142,7 @@ describe("Project annotation test suite", function(){
                 } catch(e) {
                     console.log(e);
 
-                    reject(e);
+                    throw e;
 
                 }
             });

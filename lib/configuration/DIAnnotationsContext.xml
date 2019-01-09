@@ -149,8 +149,8 @@
                         <entry key="List"><reference id="List"/></entry>
                         <entry key="Prototype"><reference id="Prototype"/></entry>
                         <entry key="Service"><reference id="Service"/></entry>
-                        <entry key="Param"><reference id="Param"/></entry>
-                        <entry key="Type"><reference id="Type"/></entry>
+                        <entry key="param"><reference id="Param"/></entry>
+                        <entry key="type"><reference id="Type"/></entry>
                         <entry key="Namespace"><reference id="Namespace"/></entry>
                         <entry key="Properties"><reference id="Properties"/></entry>
                         <entry key="Run"><reference id="Run"/></entry>

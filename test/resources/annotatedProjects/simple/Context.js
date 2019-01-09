@@ -3,6 +3,7 @@
 
 /**
  * @Context("Application")
+ * @Namespace()
  */
 class Application {
 
@@ -11,11 +12,15 @@ class Application {
         var instance = this;
 
         /*
-         * @Qualifier("Bean") */
+         * @Qualifier("Bean")
+         *
+         * @type{object}
+         */
         instance.bean = null;
 
         /*
          * @Qualifier("Controller")
+         * @type{object}
          */
         instance.controller = null;
 

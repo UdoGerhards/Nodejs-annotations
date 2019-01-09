@@ -107,8 +107,8 @@ describe("XML based context annotation test suite", function(){
 
                 var bean = context.bean;
 
-                assert.isNotNull(bean.innerBean, "Bean property 'innerBean' is null");
-                assert.isObject(bean.innerBean, "Bean property 'innerBean' is not an object");
+                assert.isNotNull(bean.innerBean1, "Bean property 'innerBean' is null");
+                assert.isObject(bean.innerBean1, "Bean property 'innerBean' is not an object");
 
                 assert.isNotNull(bean.initFlag, "Bean init flag is null");
                 assert.isTrue(bean.initFlag, "Bean init flag is not 'true'");

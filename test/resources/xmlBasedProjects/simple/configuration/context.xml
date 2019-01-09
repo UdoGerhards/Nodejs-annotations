@@ -37,14 +37,12 @@
     </properties> -->
 
     <bean id="Bean" init="init" src="/bean/Bean.js" >
-        <property name="inner">
-            <property name="innerBean">
-                <bean init="init" src="/bean/NestedBean.js">
-                <property name="innerBean">
+        <property name="innerBean1">
+            <bean init="init" src="/bean/NestedBean.js">
+                <property name="innerBean2">
                     <bean init="init" src="/bean/NestedBean.js"/>
                 </property>
-                </bean>
-            </property>
+            </bean>
         </property>
     </bean>
 

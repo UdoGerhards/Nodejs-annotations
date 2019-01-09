@@ -9,7 +9,7 @@ class NestedBean {
 
         var instance = this;
 
-        instance.innerBean = null;
+        instance.innerBean2 = null;
 
         instance.initFlag = null;
     }
