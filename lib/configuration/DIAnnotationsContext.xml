@@ -123,6 +123,9 @@
         <entry key="MemberExpression">
             <bean src="/lib/parser/member/MemberExpression/MemberExpression.js"/>
         </entry>
+        <entry key="VariableDeclarator">
+            <bean src="/lib/parser/member/VariableDeclarator/VaraibleDeclaratorExpression.js" />
+        </entry>
         <entry key="Block">
             <bean init="init" src="/lib/parser/member/Block/BlockParser.js">
                 <property name="LogManager">
