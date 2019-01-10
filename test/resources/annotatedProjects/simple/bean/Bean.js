@@ -56,6 +56,9 @@ class Bean {
 
                                     var instance = this;
 
+                                    /*
+                                     * @Qualifier("InnerBean3InnerBean2")
+                                     */
                                     instance.innerBean2 = null;
 
                                     instance.initFlag = null;
