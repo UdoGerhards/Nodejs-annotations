@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @Bean("PrototypeFunction")
+ * @Bean("Function")
  *
  * @Namespace()
  * @Inherits()
