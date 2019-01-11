@@ -781,6 +781,13 @@
                 </property>
             </bean>
         </entry>
+        <entry key="MethodDefinition">
+            <bean src="/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
         <entry key="Line">
             <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
                 <property name="annotationParser">

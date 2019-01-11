@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Review of source code and esprima parsing">
+      <change afterPath="$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/Function.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/Function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/prototype/Prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/prototype/Prototype.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,29 +35,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/parser/structure/StructureParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="190">
               <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js">
+        <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/Context.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/Brackets.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -66,17 +56,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="36" />
+            <state relative-caret-position="412">
+              <caret line="123" selection-start-line="123" selection-end-line="123" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+            <state relative-caret-position="296">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="782" column="16" selection-start-line="782" selection-start-column="16" selection-end-line="782" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -84,17 +83,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="1418">
               <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/prototype/Prototype.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+            <state relative-caret-position="261">
+              <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="691">
+              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -113,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>var</find>
       <find>TYPE_ANNOTATION_AWARE</find>
       <find>TYPE_ANNOTATION_SUPPORT</find>
       <find>object</find>
@@ -143,6 +150,7 @@
       <find>FunctionBean</find>
       <find>console</find>
       <find>console.log</find>
+      <find>Expression</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;property name=&quot;LogManager&quot;&gt;</replace>
@@ -192,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/parser/member/Property/PropertyParser.js" />
         <option value="$PROJECT_DIR$/lib/factory/Factory.js" />
         <option value="$PROJECT_DIR$/lib/diagram/diagramTool.js" />
         <option value="$PROJECT_DIR$/lib/parser/xml/reference/XML_Reference_Tag.js" />
@@ -229,7 +236,6 @@
         <option value="$PROJECT_DIR$/lib/parser/member/ClassDeclaration/ClassDeclarationParser.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/Line/Esprima_LineStatement.js" />
-        <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
         <option value="$PROJECT_DIR$/todelete.uml.xml" />
         <option value="$PROJECT_DIR$/todelete.xmi" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/ObjectBean.js" />
@@ -238,11 +244,13 @@
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/function.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/Function.js" />
-        <option value="$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js" />
-        <option value="$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/prototype/Prototype.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" />
+        <option value="$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js" />
+        <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
         <option value="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" />
+        <option value="$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js" />
+        <option value="$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js" />
       </list>
     </option>
   </component>
@@ -330,6 +338,14 @@
               <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="member" type="462c0819:PsiDirectoryNode" />
               <item name="FunctionDeclaration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="MethodDefinition" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -450,7 +466,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547232180394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547237821884" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -690,14 +706,7 @@
       <workItem from="1547026066462" duration="25183000" />
       <workItem from="1547134562006" duration="18180000" />
       <workItem from="1547211086480" duration="1224000" />
-      <workItem from="1547212678495" duration="17482000" />
-    </task>
-    <task id="LOCAL-00047" summary="Adding GNU General Public License v3.0">
-      <created>1545061646004</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1545061646004</updated>
+      <workItem from="1547212678495" duration="22688000" />
     </task>
     <task id="LOCAL-00048" summary="Adding GNU General Public License v3.0">
       <created>1545062054073</created>
@@ -1035,43 +1044,50 @@
       <option name="project" value="LOCAL" />
       <updated>1547218796056</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Review of source code and esprima parsing">
+      <created>1547232472417</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1547232472417</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 29m 03s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 01m 26s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 30m 01s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 06m 48s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 30m 40s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 07m 40s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 34m 10s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 08m 58s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 37m 22s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 09m 39s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 37m 36s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 10m 00s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 39m 45s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 11m 31s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 42m 31s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 11m 33s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 43m 49s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 13m 09s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.11 at 19h 47m 19s.xml">
+    <history-entry file="Annotated_projects - 2019.01.11 at 21h 14m 59s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499995000" />
+    <option name="totallyTimeSpent" value="505201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1084,6 +1100,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1916" height="1068" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20651014" />
       <window_info id="Structure" order="1" weight="0.2497332" />
@@ -1098,7 +1115,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.76844263" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.46209016" />
-      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.4456967" />
+      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.4887295" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
@@ -1221,19 +1238,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js</url>
-          <line>86</line>
+          <line>77</line>
           <option name="timeStamp" value="432" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/context/ContextBuilder.js</url>
           <line>124</line>
           <option name="timeStamp" value="456" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/parser/structure/StructureParser.js</url>
-          <line>111</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="486" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1242,12 +1253,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="mocha-javascript-test-runner">
-        <watch expression="structure" />
-        <watch expression="applicationContext[&quot;105262de-91be-4af8-9ec0-4d5e245c2bcd&quot;]" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1255,6 +1260,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>path.endsWith(&quot;Bean.js&quot;)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>path.endsWith(&quot;Prototype.js&quot;)</expression-string>
         <language-id>JavaScript</language-id>
@@ -1327,13 +1337,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/annotatedProjects/spec/annotatedProjectTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/xml/init/XML_Init_Attribute.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1511,13 +1514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12510">
-          <caret line="834" column="19" lean-forward="true" selection-start-line="834" selection-start-column="19" selection-end-line="834" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/parser/structure/structureParserTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-261" />
@@ -1537,38 +1533,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/Context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-554">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/Function.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="981">
           <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1586,31 +1554,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
+    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/prototype/Prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+        <state relative-caret-position="870">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/Brackets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="526">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/prototype/Prototype.js">
+    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+        <state relative-caret-position="691">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/Context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="782" column="16" selection-start-line="782" selection-start-column="16" selection-end-line="782" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="123" selection-start-line="123" selection-end-line="123" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/structure/StructureParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="190">
           <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
         </state>
       </provider>
     </entry>
