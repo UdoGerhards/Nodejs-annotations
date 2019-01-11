@@ -3,7 +3,7 @@
 
 /**
  * @Context("Application")
- * @Namespace()
+ * @Namespace(namespace="Context", canonical="Context")
  */
 class Application {
 

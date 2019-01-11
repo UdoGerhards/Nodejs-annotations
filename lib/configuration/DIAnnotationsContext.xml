@@ -31,7 +31,6 @@
     <bean id="Esprima" src="esprima"/>
     <bean id="Util" src="util"/>
     <bean id="Path" src="path"/>
-    <bean id="Estraverse" src="estraverse"/>
     <bean id="FS" src="fs"/>
     <bean id="Glob" src="glob" />
     <bean id="Toposort" src="toposort-class" />
@@ -114,9 +113,7 @@
 
     <!-- Special annotation parser -->
     <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/parser/annotation/meta/Properties/PropertiesParser.js">
-        <!-- <property name="tokenParser">
-            <reference id="TokenParser" />
-        </property>  -->
+
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -151,9 +148,6 @@
     </bean>
 
     <bean id="BeanParser" init="init" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
-        <!-- <property name="tokenParser">
-            <reference id="TokenParser" />
-        </property> -->
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -191,9 +185,6 @@
         <property name="SubBeanLoader">
             <reference id="SubBeanLoader" />
         </property>
-        <!-- <property name="tokenParser">
-            <reference id="TokenParser" />
-        </property> -->
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -225,9 +216,6 @@
         </entry>
         <entry key="Resource">
             <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -247,9 +235,6 @@
         </entry>
         <entry key="Qualifier">
             <bean init="init" src="/lib/parser/annotation/inject/Qualifier/QualifierAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -285,9 +270,6 @@
         </entry>
         <entry key="Init">
             <bean init="init" src="/lib/parser/annotation/initialize/Init/InitAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -311,9 +293,6 @@
         </entry>
         <entry key="After">
             <bean init="init" src="/lib/parser/annotation/aop/After/AfterAnnotationParser.js" >
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -330,9 +309,6 @@
         </entry>
         <entry key="Aspect">
             <bean init="init" src="/lib/parser/annotation/aop/Aspect/AspectAnnotationParser.js" >
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -352,9 +328,6 @@
         </entry>
         <entry key="Before">
             <bean init="init" src="/lib/parser/annotation/aop/Before/BeforeAnnotationParser.js" >
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -371,9 +344,6 @@
         </entry>
         <entry key="PointCute">
             <bean init="init" src="/lib/parser/annotation/aop/PointCut/PointCutAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -396,9 +366,6 @@
         </entry>
         <entry key="Inherits">
             <bean init="init" src="/lib/parser/annotation/inherits/inherits/InheritsAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -428,9 +395,6 @@
         </entry>
         <entry key="Autowire">
             <bean init="init" src="/lib/parser/annotation/inject/Autowire/AutowireAnnotationParser.js" >
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -453,9 +417,6 @@
         </entry>
         <entry key="Store">
             <bean init="init" src="/lib/parser/annotation/inject/Store/StoreAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -478,9 +439,6 @@
                 <property name="SubBeanLoader">
                     <reference id="SubBeanLoader" />
                 </property>
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -513,9 +471,6 @@
                 <property name="SubBeanLoader">
                     <reference id="SubBeanLoader" />
                 </property>
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -541,9 +496,6 @@
                 <property name="SubBeanLoader">
                     <reference id="SubBeanLoader" />
                 </property>
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -570,9 +522,6 @@
         </entry>
         <entry key="List">
             <bean init="init" src="/lib/parser/annotation/instance/List/ListParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -599,9 +548,6 @@
         </entry>
         <entry key="Prototype">
             <bean init="init" src="/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -628,9 +574,6 @@
         </entry>
         <entry key="Resource">
             <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -656,9 +599,6 @@
                 <property name="SubBeanLoader">
                     <reference id="SubBeanLoader" />
                 </property>
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -685,9 +625,6 @@
         </entry>
         <entry key="Param">
             <bean init="init" src="/lib/parser/annotation/JSDoc/paramParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -710,9 +647,6 @@
                 <property name="SubBeanLoader">
                     <reference id="SubBeanLoader" />
                 </property>
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -741,9 +675,6 @@
                 <property name="SubBeanLoader">
                     <reference id="SubBeanLoader" />
                 </property>
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -770,9 +701,6 @@
         </entry>
         <entry key="Run">
             <bean init="init" src="/lib/parser/annotation/run/Run/RunAnnotationParser.js">
-                <!-- <property name="tokenParser">
-                    <reference id="TokenParser" />
-                </property> -->
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -799,10 +727,10 @@
     <!-- TokenParser -->
     <list id="TokenParser">
         <entry key="FunctionDeclaration">
-            <bean src="/lib/parser/member/FunctionDeclaration/FunctionDeclarationParser.js"/>
+            <bean src="/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
         </entry>
         <entry key="Block">
-            <bean init="init" src="/lib/parser/member/Block/BlockParser.js">
+            <bean init="init" src="/lib/parser/member/Block/Esprima_Block.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -840,28 +768,28 @@
             </bean>
         </entry>
         <entry key="ClassDeclaration">
-            <bean src="/lib/parser/member/ClassDeclaration/ClassDeclarationParser.js">
+            <bean src="/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="ExpressionStatement">
-            <bean src="/lib/parser/member/ExpressionStatement/ExpressionStatementParser.js">
+            <bean src="/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="Line">
-            <bean src="/lib/parser/member/Line/LineParser.js">
+            <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="VariableDeclaration">
-            <bean src="/lib/parser/member/VariableDeclaration/VariableDeclarationParser.js">
+            <bean src="/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
@@ -899,16 +827,6 @@
         <property name="expressionParser">
             <reference id="TokenParser"/>
         </property>
-        <property name="removeTokens">
-            <list>
-                <entry>BlockStatement></entry>
-                <entry>AssignmentExpression</entry>
-                <entry>Identifier</entry>
-                <entry>Literal</entry>
-                <entry>ClassBody</entry>
-                <entry>ClassExpression</entry>
-            </list>
-        </property>
         <property name="beautify">
             <reference id="Beautify" />
         </property>
@@ -917,9 +835,6 @@
         </property>
         <property name="esprima">
             <reference id="Esprima"/>
-        </property>
-        <property name="estraverse">
-            <reference id="Estraverse"/>
         </property>
         <property name="uuidV4">
             <reference id="UuidV4" />

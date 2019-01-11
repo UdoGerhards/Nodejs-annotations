@@ -57,34 +57,43 @@ class Bean {
                                     var instance = this;
 
                                     /*
-                                     * @Qualifier("InnerBean3InnerBean2")
+                                     * @Bean("InnerBean4")
                                      */
-                                    instance.innerBean2 = null;
+                                    instance.innerBean4  = function() {};
 
-                                    instance.initFlag = null;
+                                    /*
+                                     * @Qualifier("initFlag3")
+                                     */
+                                    instance.initFlag3 = null;
                                 }
 
                                 /*
                                  * @Init()
                                  */
-                                init() {
+                                init3() {
                                     var instance = this;
-                                    instance.initFlag = true;
+                                    instance.initFlag3 = true;
                                 }
                             };
 
-                        instance.initFlag = null;
+                        /*
+                         * @Qualifier("initFlag2")
+                         */
+                        instance.initFlag2 = null;
                     }
 
                     /*
                      * @Init()
                      */
-                    init() {
+                    init2() {
                         var instance = this;
-                        instance.initFlag = true;
+                        instance.initFlag2 = true;
                     }
-                }
+                };
 
+                /*
+                 * @Qualifier("initFlag2")
+                 */
                 instance.initFlag = null;
             }
 
