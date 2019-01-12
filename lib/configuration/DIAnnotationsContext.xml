@@ -876,6 +876,9 @@
                 <entry key="ClassDeclaration">
                     <value>Class</value>
                 </entry>
+                <entry key="ClassExpression">
+                    <value>Class</value>
+                </entry>
                 <entry key="FunctionExpression" >
                     <value>Class</value>
                 </entry>

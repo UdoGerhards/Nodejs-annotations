@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Review of source code and esprima parsing">
-      <change afterPath="$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/parsing/Constructor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/Brackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/Brackets.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +37,98 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/parser/structure/StructureParser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="165" column="58" lean-forward="true" selection-start-line="165" selection-start-column="58" selection-end-line="165" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1704">
+              <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="874" column="24" selection-start-line="874" selection-start-column="24" selection-end-line="874" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,12 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TYPE_ANNOTATION_BEAN_CONTEXT_AWARE</find>
-      <find>VariableDecl</find>
-      <find>main</find>
-      <find>StaticMemberExpressionIdentifierMatch</find>
-      <find>VariableDecorationStaticMemberExpressionIdentifierMatch</find>
-      <find>uuid</find>
       <find>_Static</find>
       <find>removeTokens</find>
       <find>lightTokenInformation</find>
@@ -77,7 +158,6 @@
       <find>@Qualifiert</find>
       <find>class</find>
       <find>FunctionBean</find>
-      <find>console</find>
       <find>console.log</find>
       <find>Expression</find>
       <find>&lt;entry&gt;</find>
@@ -85,9 +165,15 @@
       <find>Esprima_FunctionDeclaration</find>
       <find>comments</find>
       <find>Esprima_ExpressionStatement</find>
+      <find>descriptor.class</find>
+      <find>annotation.class</find>
+      <find>annotationInfo.property</find>
+      <find>constructor.name</find>
+      <find>console.</find>
+      <find>parser.constructor.name</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
-      <replace>ListParser</replace>
       <replace>List</replace>
       <replace>parseOpenXMLTag(currentTag, propertyStack, namespaceStack, applicationStack, beanStructure);</replace>
       <replace>parseOpenXMLTag(currentTag, propertyStack, namespaceStack, applicationStack, beanStructure)</replace>
@@ -116,16 +202,18 @@
       <replace>&lt;entry key=&quot;&quot; value=&quot;Class&quot;&gt;</replace>
       <replace>Naturschutz/</replace>
       <replace>Esprima_Property</replace>
+      <replace>annotationInfo.descriptor.property</replace>
       <replace>Esprima_AssignmentExpression</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/test/resources</dir>
-      <dir>$PROJECT_DIR$/lib/parser</dir>
       <dir>$PROJECT_DIR$/lib/parser/annotation</dir>
       <dir>$PROJECT_DIR$/lib/parser/annotation/instance/Bean</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/lib</dir>
+      <dir>$PROJECT_DIR$/lib/parser</dir>
       <dir>$PROJECT_DIR$/lib/parser/member</dir>
+      <dir>$PROJECT_DIR$/lib/parser/structure</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -172,18 +260,18 @@
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/parsing/Constructor.js" />
         <option value="$PROJECT_DIR$/../../workspace/jagd-nuernberg.de/html/naturschutz.html" />
         <option value="$PROJECT_DIR$/../../workspace/jagd-nuernberg.de/html/mitteilungsheft.html" />
-        <option value="$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" />
-        <option value="$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" />
-        <option value="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/AssignementStatement/Esprima_ExpressionStatement.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/AssignementExpression/Esprima_AssignmentExpression.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/Brackets.js" />
-        <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
-        <option value="$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js" />
+        <option value="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" />
+        <option value="$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" />
+        <option value="$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js" />
         <option value="$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js" />
+        <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
+        <option value="$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js" />
         <option value="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" />
       </list>
     </option>
@@ -241,85 +329,6 @@
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="AssignmentExpression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="Block" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassDeclaration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="FunctionDeclaration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="Line" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="MethodDefinition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="Property" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="VariableDeclaration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -428,7 +437,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547317705579" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547320609870" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -669,13 +678,6 @@
       <workItem from="1547134562006" duration="18180000" />
       <workItem from="1547211086480" duration="1224000" />
       <workItem from="1547212678495" duration="22688000" />
-    </task>
-    <task id="LOCAL-00048" summary="Adding GNU General Public License v3.0">
-      <created>1545062054073</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1545062054073</updated>
     </task>
     <task id="LOCAL-00049" summary="Edited Readme.md file">
       <created>1545064163378</created>
@@ -1013,43 +1015,50 @@
       <option name="project" value="LOCAL" />
       <updated>1547232472417</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Review of source code and esprima parsing">
+      <created>1547318171767</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1547318171774</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Annotated_projects - 2019.01.12 at 18h 49m 42s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 02m 14s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 18h 52m 41s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 03m 00s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 18h 55m 17s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 05m 05s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 18h 56m 18s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 06m 34s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 18h 59m 50s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 06m 56s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 19h 04m 43s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 07m 15s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 19h 05m 16s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 07m 17s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 19h 27m 59s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 11m 06s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 19h 34m 17s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 11m 51s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.01.12 at 19h 35m 28s.xml">
+    <history-entry file="Annotated_projects - 2019.01.12 at 20h 12m 27s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525038000" />
+    <option name="totallyTimeSpent" value="527479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1062,6 +1071,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1916" height="1068" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2230523" />
       <window_info id="Structure" order="1" weight="0.2497332" />
@@ -1076,7 +1086,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.76844263" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.48668033" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.40061477" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.54303277" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
@@ -1197,6 +1207,12 @@
           <line>67</line>
           <option name="timeStamp" value="393" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/context/ContextBuilder.js</url>
+          <line>124</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="javascript-exception">
@@ -1207,6 +1223,7 @@
     <watches-manager>
       <configuration name="mocha-javascript-test-runner">
         <watch expression="tokenStruct[&quot;8&quot;].length" />
+        <watch expression="applicationContext[&quot;65c16d20-7775-44bd-a7ff-005ecf0477bf&quot;]" />
       </configuration>
     </watches-manager>
   </component>
@@ -1432,13 +1449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/Context.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-92">
@@ -1446,24 +1456,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="397" column="43" selection-start-line="397" selection-start-column="43" selection-end-line="397" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1505,48 +1501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/Function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="872" column="40" selection-start-line="872" selection-start-column="40" selection-end-line="872" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/object/ObjectBean.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1561,24 +1515,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js">
+    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="862">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/function/Function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="231">
+          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="874" column="24" selection-start-line="874" selection-start-column="24" selection-end-line="874" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/parser/structure/StructureParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="148">
+          <caret line="165" column="58" lean-forward="true" selection-start-line="165" selection-start-column="58" selection-end-line="165" selection-end-column="58" />
         </state>
       </provider>
     </entry>
