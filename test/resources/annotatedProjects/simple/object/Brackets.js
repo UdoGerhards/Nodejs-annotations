@@ -8,7 +8,7 @@
 var brackets =  {
 
     /*
-     * @Bean("InnerBean")
+     * @Bean("BracketsInnerBean")
      */
     innerBean: function() {
 
@@ -17,7 +17,41 @@ var brackets =  {
         /*
          * @Qualifier("InnerBeanProperty")
          */
-        instance.innerBeanProperty = null;
+        instance.innerBeanProperty = null,
+
+        /*
+         * @Bean("InnerBeanInnerBean")
+         */
+        instance.innerBeanInnerBean = class {
+
+            constructor() {
+
+                let instance = this;
+
+                /*
+                 * @Qualifier("InnerBeanInnerBeanProperty)
+                 */
+                instance.innerBeanInnerBeanProperty = null;
+
+
+            }
+
+            /*
+             * @Init()
+             */
+            init() {
+
+
+            }
+
+        },
+
+        /*
+         * @Init()
+         */
+        instance.init = function() {
+
+        }
 
     },
 
@@ -29,7 +63,10 @@ var brackets =  {
     /*
      * @Init()
      */
-    init: function() {}
+    init: function() {},
+
+
+    test: null
 
 };
 

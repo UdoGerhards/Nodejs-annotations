@@ -726,9 +726,6 @@
 
     <!-- TokenParser -->
     <list id="TokenParser">
-        <entry key="FunctionDeclaration">
-            <bean src="/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
-        </entry>
         <entry key="Block">
             <bean init="init" src="/lib/parser/member/Block/Esprima_Block.js">
                 <property name="LogManager">
@@ -767,6 +764,16 @@
                 </property>
             </bean>
         </entry>
+        <entry key="VariableDeclaration">
+            <bean src="/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+        <entry key="FunctionDeclaration">
+            <bean src="/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
+        </entry>
         <entry key="ClassDeclaration">
             <bean src="/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
                 <property name="annotationParser">
@@ -774,8 +781,8 @@
                 </property>
             </bean>
         </entry>
-        <entry key="ExpressionStatement">
-            <bean src="/lib/parser/member/ExpressionStatement/Esprima_ExpressionStatement.js">
+        <entry key="AssignmentExpression">
+            <bean src="/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
@@ -788,15 +795,15 @@
                 </property>
             </bean>
         </entry>
-        <entry key="Line">
-            <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
+        <entry key="Property">
+            <bean src="/lib/parser/member/Property/Esprima_Property.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
-        <entry key="VariableDeclaration">
-            <bean src="/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+        <entry key="Line">
+            <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
@@ -851,6 +858,34 @@
         </property>
         <property name="lightTokenInformation">
             <value>true</value>
+        </property>
+        <property name="objectTypes">
+            <list>
+                <entry key="ArrayExpression">
+                        <value>Object</value>
+                </entry>
+                <entry key="ObjectExpression">
+                    <value>Object</value>
+                </entry>
+                <entry key="NewExpression">
+                    <value>Object</value>
+                </entry>
+                <entry key="Identifier">
+                    <value>Class</value>
+                </entry>
+                <entry key="ClassDeclaration">
+                    <value>Class</value>
+                </entry>
+                <entry key="FunctionExpression" >
+                    <value>Class</value>
+                </entry>
+                <entry key="FunctionDeclaration" >
+                    <value>Class</value>
+                </entry>
+                <entry key="CallExpression" >
+                    <value>Class</value>
+                </entry>
+            </list>
         </property>
     </bean>
 
