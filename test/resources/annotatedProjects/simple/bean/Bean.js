@@ -59,7 +59,15 @@ class Bean {
                                     /*
                                      * @Bean("InnerBean4")
                                      */
-                                    instance.innerBean4  = function() {};
+                                    instance.innerBean4  = function() {
+                                        let instance = this;
+
+                                        /*
+                                         * @Init()
+                                         */
+                                        instance.init4 = function() {};
+
+                                    };
 
                                     /*
                                      * @Qualifier("initFlag3")

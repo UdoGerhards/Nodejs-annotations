@@ -13,6 +13,17 @@ var objectBean = Object;
  */
 objectBean.prototype.property = null;
 
+
+/*
+ * @Bean("InnerBean")
+ */
+objectBean.prototype.innerBean = function() {};
+
+/*
+ * @Qualifier("InnerProperty")
+ */
+objectBean.prototype.innerBean.innerProperty = null;
+
 /**
  * @Init();
  * @type {Object}
