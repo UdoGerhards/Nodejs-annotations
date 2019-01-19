@@ -69,9 +69,7 @@ class Bean {
 
                                     };
 
-                                    /*
-                                     * @Qualifier("initFlag3")
-                                     */
+
                                     instance.initFlag3 = null;
                                 }
 
@@ -84,9 +82,6 @@ class Bean {
                                 }
                             };
 
-                        /*
-                         * @Qualifier("initFlag2")
-                         */
                         instance.initFlag2 = null;
                     }
 
@@ -99,9 +94,6 @@ class Bean {
                     }
                 };
 
-                /*
-                 * @Qualifier("initFlag2")
-                 */
                 instance.initFlag = null;
             }
 

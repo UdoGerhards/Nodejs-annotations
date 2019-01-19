@@ -5,7 +5,7 @@
  * @Context("Application")
  * @Namespace(namespace="Context", canonical="Context")
  */
-class Application {
+class Context {
 
     constructor() {
 
@@ -61,4 +61,4 @@ class Application {
     }
 }
 
-module.exports = exports = Application;
+module.exports = exports = Context;

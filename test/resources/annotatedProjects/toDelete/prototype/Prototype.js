@@ -59,9 +59,6 @@ PrototypeBean.prototype.innerBean1.prototype.initFlag = null;
  */
 PrototypeBean.prototype.innerBean1.prototype.init1 = function() {};
 
-/*
- * @Qualifier("initFlag")
- */
 PrototypeBean.prototype.initFlag = null;
 
 /*

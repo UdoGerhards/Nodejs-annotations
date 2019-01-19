@@ -55,16 +55,16 @@ var FunctionBean = function() {
                                 let instance = this;
 
                                 /*
-                                 * @Qualifier("initFlag3")
+                                 * @Qualifier("initFlag4")
                                  */
-                                instance.initFlag3 = null;
+                                instance.initFlag4 = null;
 
                                 /*
                                  * @Init()
                                  */
                                 instance.init4 = function() {
                                     var instance = this;
-                                    instance.initFlag3 = true;
+                                    instance.initFlag4 = true;
                                 }
                             };
 
@@ -98,7 +98,7 @@ var FunctionBean = function() {
                 }
 
         /*
-         * @Qualifier("initFlag2")
+         * @Qualifier("initFlag")
          */
         instance.initFlag = null;
 
