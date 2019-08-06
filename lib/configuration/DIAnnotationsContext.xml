@@ -15,6 +15,8 @@
         <entry key="_STASHING_">stashing</entry>
         <entry key="_INHERIT_">inherit</entry>
         <entry key="_INSTANTIATE_">instantiate</entry>
+        <entry key="_JSDOC_INITIALIZE_">jsdoc_initialize</entry>
+        <entry key="_JSDOC_WIRE_">jsdoc_wire</entry>
         <entry key="_INJECT_">inject</entry>
         <entry key="_AOP_INITIALIZE">aop_initialize</entry>
         <entry key="_AOP_WIRE">aop_wire</entry>
@@ -26,6 +28,8 @@
     <!-- Prototypes -->
     <class id="BaseAnnotationParser" src="/lib/parser/annotation/Base/BaseAnnotationParser.js" />
     <class id="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
+    <class id="ParamTypeProxy" src="/lib/parser/annotation/JSDoc/param/proxy/TypeProxy.js" />
+    <class id="TypeTypeProxy" src="/lib/parser/annotation/JSDoc/type/proxy/TypeProxy.js" />
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -80,6 +84,7 @@
     </list>
 
     <!-- Annotation classes -->
+    <class id="JSDocSupport" src="/lib/annotation/JSDoc/JSDoc/JSDocSupport.js" />
     <class id="Init" src="/lib/annotation/initialize/Init/InitAnnotationClass.js" />
     <class id="Qualifier" src="/lib/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
     <class id="Bean" src="/lib/annotation/instance/Bean/BeanAnnotationClass.js" />
@@ -99,8 +104,8 @@
     <class id="List" src="/lib/annotation/instance/List/ListAnnotationClass.js" />
     <class id="Prototype" src="/lib/annotation/instance/Prototype/PrototypeAnnotationClass.js" />
     <class id="Service" src="/lib/annotation/instance/Service/ServiceAnnotationClass.js" />
-    <class id="Param" src="/lib/annotation/JSDoc/paramAnnotationClass.js" />
-    <class id="Type" src="/lib/annotation/JSDoc/typeAnnotationClass.js" />
+    <class id="param" src="/lib/annotation/JSDoc/param/paramAnnotationClass.js" />
+    <class id="type" src="/lib/annotation/JSDoc/type/typeAnnotationClass.js" />
     <class id="Namespace" src="/lib/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
     <class id="Properties" src="/lib/annotation/meta/Properties/PropertiesAnnotationClass.js" />
     <class id="Run" src="/lib/annotation/run/Run/RunAnnotationClass.js" />
@@ -176,6 +181,12 @@
                 </entry>
             </list>
         </property>
+        <property name="QualifierAnnotation">
+            <reference id="Qualifier" />
+        </property>
+        <property name="CamelCase">
+            <reference id="CamelCase" />
+        </property>
     </bean>
 
     <bean id="ContextParser" init="init" src="/lib/parser/annotation/instance/Context/ContextParser.js">
@@ -207,12 +218,31 @@
                 </entry>
             </list>
         </property>
+        <property name="QualifierAnnotation">
+            <reference id="Qualifier" />
+        </property>
+        <property name="CamelCase">
+            <reference id="CamelCase" />
+        </property>
     </bean>
 
     <!-- AnnotationParser -->
     <list id="AnnotationParser">
         <entry key="Bean">
             <reference id="BeanParser" />
+        </entry>
+        <entry key="JSDocSupport">
+            <bean init="init" src="/lib/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
+                <property name="annotation">
+                    <reference id="JSDocSupport" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
+                </property>
+            </bean>
         </entry>
         <entry key="Resource">
             <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
@@ -401,18 +431,6 @@
                 <property name="annotation">
                     <reference id="Autowire" />
                 </property>
-                <property name="camelcase">
-                    <reference id="CamelCase" />
-                </property>
-                <property name="QualifierAnnotation">
-                    <reference id="Qualifier" />
-                </property>
-                <property name="util">
-                    <reference id="Util" />
-                </property>
-                <property name="path">
-                    <reference id="Path" />
-                </property>
             </bean>
         </entry>
         <entry key="Store">
@@ -460,6 +478,12 @@
                             <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
                     </list>
+                </property>
+                <property name="QualifierAnnotation">
+                    <reference id="Qualifier" />
+                </property>
+                <property name="CamelCase">
+                    <reference id="CamelCase" />
                 </property>
             </bean>
         </entry>
@@ -517,6 +541,12 @@
                             <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
                     </list>
+                </property>
+                <property name="QualifierAnnotation">
+                    <reference id="Qualifier" />
+                </property>
+                <property name="CamelCase">
+                    <reference id="CamelCase" />
                 </property>
             </bean>
         </entry>
@@ -621,49 +651,49 @@
                         </entry>
                     </list>
                 </property>
+                <property name="QualifierAnnotation">
+                    <reference id="Qualifier" />
+                </property>
+                <property name="CamelCase">
+                    <reference id="CamelCase" />
+                </property>
             </bean>
         </entry>
-        <entry key="Param">
-            <bean init="init" src="/lib/parser/annotation/JSDoc/paramParser.js">
+        <entry key="param">
+            <bean init="init" src="/lib/parser/annotation/JSDoc/param/Parser.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
-                    <reference id="Param" />
-                </property>
-                <property name="expressionParser">
-                    <reference id="ExpressionStatement" />
+                    <reference id="param" />
                 </property>
                 <property name="doctrine">
                     <reference id="Doctrine" />
                 </property>
-            </bean>
-        </entry>
-        <entry key="Type">
-            <bean init="init" src="/lib/parser/annotation/JSDoc/typeParser.js">
-                <property name="MainBeanLoader">
-                    <reference id="MainBeanLoader" />
-                </property>
-                <property name="SubBeanLoader">
-                    <reference id="SubBeanLoader" />
+                <property name="ParamProxy">
+                    <reference id="ParamTypeProxy" />
                 </property>
                 <property name="util">
                     <reference id="Util" />
                 </property>
-                <property name="path">
-                    <reference id="Path" />
-                </property>
+            </bean>
+        </entry>
+        <entry key="type">
+            <bean init="init" src="/lib/parser/annotation/JSDoc/type/Parser.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
                 <property name="annotation">
-                    <reference id="Type" />
-                </property>
-                <property name="expressionParser">
-                    <reference id="ExpressionStatement" />
+                    <reference id="type" />
                 </property>
                 <property name="doctrine">
                     <reference id="Doctrine" />
+                </property>
+                <property name="TypeProxy">
+                    <reference id="TypeTypeProxy" />
+                </property>
+                <property name="util">
+                    <reference id="Util" />
                 </property>
             </bean>
         </entry>
@@ -755,8 +785,9 @@
                         <entry key="List"><reference id="List"/></entry>
                         <entry key="Prototype"><reference id="Prototype"/></entry>
                         <entry key="Service"><reference id="Service"/></entry>
-                        <entry key="param"><reference id="Param"/></entry>
-                        <entry key="type"><reference id="Type"/></entry>
+                        <entry key="JSDocSupport"><reference id="JSDocSupport"/></entry>
+                        <entry key="param"><reference id="param"/></entry>
+                        <entry key="type"><reference id="type"/></entry>
                         <entry key="Namespace"><reference id="Namespace"/></entry>
                         <entry key="Properties"><reference id="Properties"/></entry>
                         <entry key="Run"><reference id="Run"/></entry>
@@ -836,7 +867,7 @@
             <reference id="LogManager" />
         </property>
         <property name="annotationParser">
-            <reference id="AnnotationParser"/>
+            <reference id="AnnotationParser" />
         </property>
         <property name="expressionParser">
             <reference id="TokenParser"/>

@@ -4,7 +4,6 @@
  * @Bean("Bean")
  *
  * @Namespace()
- * @Inherits()
  *
  * @constructor
  */
