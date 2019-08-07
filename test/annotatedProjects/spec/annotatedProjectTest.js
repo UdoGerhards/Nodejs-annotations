@@ -253,4 +253,44 @@ describe("Project annotation test suite", function(){
         });
     });
 
+    it("Should instantiate a simple inheritance project", function() {
+
+        /*
+         Initialize context
+         */
+        var contextRoot = projectRoot+path.sep+path.join("inheritance","inheritanceTree");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ],
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
+        };
+
+
+        let ParentClass = require(contextRoot+path.sep+path.join("ParentBean.js"));
+        let GrantParentClass = require(contextRoot+path.sep+path.join("GrantParent.js"));
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        let processPromise = bootstrap(contextInfo, "INFO", null);
+        return processPromise.then(function(context){
+
+            assert.instanceOf(context.inheritor, ParentClass, "Inheritor is not a supobject of 'Parent'");
+
+            assert.instanceOf(context.inheritor, GrantParentClass, "Inheritor is not a supobject of 'GrandParent'");
+
+
+        });
+
+    });
+
 });

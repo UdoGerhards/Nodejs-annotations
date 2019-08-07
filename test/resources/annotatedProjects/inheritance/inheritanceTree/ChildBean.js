@@ -6,9 +6,11 @@
  *
  * @constructor
  */
-var Child = function() {
+function Child() {
 
-    var instance = this;
+    //Parent.call(this);
+
+    let instance = this;
 
     /*
      * @Qualifier("childProperty1")
@@ -56,6 +58,11 @@ var Child = function() {
  * @Init()
  */
 Child.prototype.init = function() {
+
+
+    Parent.prototype.init();
+
+    console.log("Inheritor initilized!");
 
 }
 

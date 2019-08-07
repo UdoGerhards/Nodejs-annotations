@@ -115,6 +115,94 @@
     <class id="MainBeanLoader" src="/lib/parser/annotation/instance/Bean/MainBeanLoader.js" />
     <class id="SubBeanLoader" src="/lib/parser/annotation/instance/Bean/SubBeanLoader.js" />
 
+    <!-- TokenParser -->
+    <list id="TokenParser">
+        <entry key="Block">
+            <bean init="init" src="/lib/parser/member/Block/Esprima_Block.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+                <property name="annotations">
+                    <list>
+                        <entry key="Init"><reference id="Init"/></entry>
+                        <entry key="Qualifier"><reference id="Qualifier"/></entry>
+                        <entry key="Bean"><reference id="Bean"/></entry>
+                        <entry key="Resource"><reference id="Resource"/></entry>
+                        <entry key="After"><reference id="After"/></entry>
+                        <entry key="Aspect"><reference id="Aspect"/></entry>
+                        <entry key="Before"><reference id="Before"/></entry>
+                        <entry key="PointCut"><reference id="PointCut"/></entry>
+                        <entry key="Inherits"><reference id="Inherits"/></entry>
+                        <entry key="Autowire"><reference id="Autowire"/></entry>
+                        <entry key="Inject"><reference id="Inject"/></entry>
+                        <entry key="Store"><reference id="Store"/></entry>
+                        <entry key="Component"><reference id="Component"/></entry>
+                        <entry key="Configuration"><reference id="Configuration"/></entry>
+                        <entry key="Context"><reference id="Context"/></entry>
+                        <entry key="Controller"><reference id="Controller"/></entry>
+                        <entry key="List"><reference id="List"/></entry>
+                        <entry key="Prototype"><reference id="Prototype"/></entry>
+                        <entry key="Service"><reference id="Service"/></entry>
+                        <entry key="JSDocSupport"><reference id="JSDocSupport"/></entry>
+                        <entry key="param"><reference id="param"/></entry>
+                        <entry key="type"><reference id="type"/></entry>
+                        <entry key="Namespace"><reference id="Namespace"/></entry>
+                        <entry key="Properties"><reference id="Properties"/></entry>
+                        <entry key="Run"><reference id="Run"/></entry>
+                    </list>
+                </property>
+            </bean>
+        </entry>
+        <entry key="VariableDeclaration">
+            <bean src="/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+        <entry key="FunctionDeclaration">
+            <bean src="/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
+        </entry>
+        <entry key="ClassDeclaration">
+            <bean src="/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+        <entry key="AssignmentExpression">
+            <bean src="/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+        <entry key="MethodDefinition">
+            <bean src="/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+        <entry key="Property">
+            <bean src="/lib/parser/member/Property/Esprima_Property.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+        <entry key="Line">
+            <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+            </bean>
+        </entry>
+    </list>
+
 
     <!-- Special annotation parser -->
     <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/parser/annotation/meta/Properties/PropertiesParser.js">
@@ -421,6 +509,9 @@
                         </entry>
                     </list>
                 </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
             </bean>
         </entry>
         <entry key="Autowire">
@@ -600,6 +691,9 @@
                         </entry>
                     </list>
                 </property>
+                <property name="tokenParser">
+                    <reference id="TokenParser" />
+                </property>
             </bean>
         </entry>
         <entry key="Resource">
@@ -749,94 +843,6 @@
                             <bean src="/lib/parser/xml/run/XML_Run_Attribute.js" />
                         </entry>
                     </list>
-                </property>
-            </bean>
-        </entry>
-    </list>
-
-    <!-- TokenParser -->
-    <list id="TokenParser">
-        <entry key="Block">
-            <bean init="init" src="/lib/parser/member/Block/Esprima_Block.js">
-                <property name="LogManager">
-                    <reference id="LogManager" />
-                </property>
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
-                </property>
-                <property name="annotations">
-                    <list>
-                        <entry key="Init"><reference id="Init"/></entry>
-                        <entry key="Qualifier"><reference id="Qualifier"/></entry>
-                        <entry key="Bean"><reference id="Bean"/></entry>
-                        <entry key="Resource"><reference id="Resource"/></entry>
-                        <entry key="After"><reference id="After"/></entry>
-                        <entry key="Aspect"><reference id="Aspect"/></entry>
-                        <entry key="Before"><reference id="Before"/></entry>
-                        <entry key="PointCut"><reference id="PointCut"/></entry>
-                        <entry key="Inherits"><reference id="Inherits"/></entry>
-                        <entry key="Autowire"><reference id="Autowire"/></entry>
-                        <entry key="Inject"><reference id="Inject"/></entry>
-                        <entry key="Store"><reference id="Store"/></entry>
-                        <entry key="Component"><reference id="Component"/></entry>
-                        <entry key="Configuration"><reference id="Configuration"/></entry>
-                        <entry key="Context"><reference id="Context"/></entry>
-                        <entry key="Controller"><reference id="Controller"/></entry>
-                        <entry key="List"><reference id="List"/></entry>
-                        <entry key="Prototype"><reference id="Prototype"/></entry>
-                        <entry key="Service"><reference id="Service"/></entry>
-                        <entry key="JSDocSupport"><reference id="JSDocSupport"/></entry>
-                        <entry key="param"><reference id="param"/></entry>
-                        <entry key="type"><reference id="type"/></entry>
-                        <entry key="Namespace"><reference id="Namespace"/></entry>
-                        <entry key="Properties"><reference id="Properties"/></entry>
-                        <entry key="Run"><reference id="Run"/></entry>
-                    </list>
-                </property>
-            </bean>
-        </entry>
-        <entry key="VariableDeclaration">
-            <bean src="/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
-                </property>
-            </bean>
-        </entry>
-        <entry key="FunctionDeclaration">
-            <bean src="/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
-        </entry>
-        <entry key="ClassDeclaration">
-            <bean src="/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
-                </property>
-            </bean>
-        </entry>
-        <entry key="AssignmentExpression">
-            <bean src="/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
-                </property>
-            </bean>
-        </entry>
-        <entry key="MethodDefinition">
-            <bean src="/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
-                </property>
-            </bean>
-        </entry>
-        <entry key="Property">
-            <bean src="/lib/parser/member/Property/Esprima_Property.js">
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
-                </property>
-            </bean>
-        </entry>
-        <entry key="Line">
-            <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
-                <property name="annotationParser">
-                    <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>

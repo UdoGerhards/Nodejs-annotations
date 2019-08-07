@@ -56,6 +56,8 @@ var ParentParentBean = function() {
  */
 ParentParentBean.prototype.init = function() {
 
+    console.log("Grant parent initilized!");
+
 }
 
 module.exports = exports = ParentParentBean;

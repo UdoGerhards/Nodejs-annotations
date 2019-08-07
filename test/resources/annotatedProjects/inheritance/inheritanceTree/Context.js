@@ -15,6 +15,11 @@ var Application = function() {
 
     instance.initFlag = null;
 
+    /**
+     * @Qualifier("Service")
+     */
+    instance.service = null;
+
 }
 
 /**

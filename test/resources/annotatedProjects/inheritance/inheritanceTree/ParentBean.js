@@ -6,57 +6,64 @@
  *
  * @constructor
  */
-var ParentBean = function() {
+class Parent {
 
-        var instance = this;
+    constructor() {
 
-        /*
-         * @Qualifier("parentProperty1")
-         */
-        instance.parentProperty1 = null;
+            //super.call();
 
-        /*
-         * @Qualifier("parentProperty2")
-         */
-        instance.parentProperty2 = null;
+            let instance = this;
 
-        /*
-         * @Qualifier("parentProperty3")
-         */
-        instance.parentProperty3 = null;
+            /*
+             * @Qualifier("parentProperty1")
+             */
+            instance.parentProperty1 = null;
 
-        /*
-         * @Qualifier("parentProperty4")
-         */
-        instance.parentProperty4 = null;
+            /*
+             * @Qualifier("parentProperty2")
+             */
+            instance.parentProperty2 = null;
 
-        /*
-         * @Qualifier("parentProperty5")
-         */
-        instance.parentProperty5 = null;
+            /*
+             * @Qualifier("parentProperty3")
+             */
+            instance.parentProperty3 = null;
 
-        /*
-         * @Qualifier("parentPropertyOverwritten1")
-         */
-        instance.parentPropertyOverwritten1 = null;
+            /*
+             * @Qualifier("parentProperty4")
+             */
+            instance.parentProperty4 = null;
 
-        /*
-         * @Qualifier("parentPropertyOverwritten2")
-         */
-        instance.parentPropertyOverwritten2 = null;
+            /*
+             * @Qualifier("parentProperty5")
+             */
+            instance.parentProperty5 = null;
 
-        /*
-         * @Qualifier("parentPropertyOverwritten3")
-         */
-        instance.parentPropertyOverwritten3 = null;
+            /*
+             * @Qualifier("parentPropertyOverwritten1")
+             */
+            instance.parentPropertyOverwritten1 = null;
 
-    }
+            /*
+             * @Qualifier("parentPropertyOverwritten2")
+             */
+            instance.parentPropertyOverwritten2 = null;
+
+            /*
+             * @Qualifier("parentPropertyOverwritten3")
+             */
+            instance.parentPropertyOverwritten3 = null;
+        }
 
     /**
      * @Init()
      */
-ParentBean.prototype.init = function() {
+    init() {
+
+        super.init();
+        console.log("Parent initilized!");
 
     }
+}
 
-module.exports = exports = ParentBean;
+module.exports = exports = Parent;

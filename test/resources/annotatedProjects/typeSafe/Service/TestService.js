@@ -3,16 +3,15 @@
 /**
  * @Service()
  */
-class TestService {
+function TestService() {
 
-    constructor() {
-        let instance = this;
-
-    }
-
-    init() {
-        let instance = this;
-    }
 }
 
+TestService.prototype.init = function() {
+
+    let instance = this;
+
+};
+
 module.exports = exports = TestService;
+
