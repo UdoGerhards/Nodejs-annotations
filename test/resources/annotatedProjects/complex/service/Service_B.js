@@ -1,10 +1,10 @@
 'use strict';
 
 /**
- * @Component("Component2")
+ * @Service("Service_B")
  * @constructor
  */
-function Component2() {
+function Service2() {
     var instance = this;
 
     instance.initFlag = null;
@@ -13,11 +13,11 @@ function Component2() {
 /**
  * @Init()
  */
-Component2.prototype.init = function() {
+Service2.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
 
     console.log("Initialization ...");
 }
 
-module.exports = exports = Component2;
+module.exports = exports = Service2;

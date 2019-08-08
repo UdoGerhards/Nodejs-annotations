@@ -40,6 +40,7 @@ describe("Project annotation test suite", function(){
             "scan": [
                 contextRoot
             ],
+            /*
             "projectLandScape": {
                 "dir": contextRoot,
                 "useBeanNames": true,
@@ -47,6 +48,7 @@ describe("Project annotation test suite", function(){
                 "avoidDefaultMethods": false,
                 "excludeResources": true,
             }
+            */
         };
 
         /*
@@ -258,6 +260,43 @@ describe("Project annotation test suite", function(){
         /*
          Initialize context
          */
+        var contextRoot = projectRoot+path.sep+path.join("inheritance","simple");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ],
+            /*
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
+            */
+        };
+
+        let ParentClass = require(contextRoot+path.sep+path.join("ParentBean.js"));
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        let processPromise = bootstrap(contextInfo, "INFO", null);
+        return processPromise.then(function(context){
+
+            assert.instanceOf(context.inheritor, ParentClass, "Inheritor is not a supobject of 'Parent'");
+
+        });
+
+    });
+
+    it("Should instantiate a simple tree inheritance project", function() {
+
+        /*
+         Initialize context
+         */
         var contextRoot = projectRoot+path.sep+path.join("inheritance","inheritanceTree");
         var contextInfo = {
             "scan": [
@@ -288,6 +327,41 @@ describe("Project annotation test suite", function(){
 
             assert.instanceOf(context.inheritor, GrantParentClass, "Inheritor is not a supobject of 'GrandParent'");
 
+        });
+
+    });
+
+    it("Should instantiate a complex project", function() {
+
+        /*
+         Initialize context
+         */
+        var contextRoot = projectRoot+path.sep+path.join("complex");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ],
+            /*
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
+            */
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        let processPromise = bootstrap(contextInfo, "INFO", null);
+        return processPromise.then(function(context){
+
+            context.afterFunction(1);
+            context.afterFunctionCounter(1);
 
         });
 

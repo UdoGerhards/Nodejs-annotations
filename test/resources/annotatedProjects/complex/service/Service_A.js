@@ -1,19 +1,19 @@
 'use strict';
 
 /**
- * @Bean("Bean")
+ * @Service("Service_A")
  * @constructor
  */
-function Bean() {
+function Service_A() {
     var instance = this;
 
-    /*
-     * @Qualifier("ServiceBean")
+    /**
+     * @Qualifier("Bean_A")
      */
-    instance.service = null;
+    instance.bean = null;
 
-    /*
-     * @Qualifier("ComponentBean")
+    /**
+     * @Qualifier("Component_B")
      */
     instance.component = null;
 
@@ -23,10 +23,11 @@ function Bean() {
 /**
  * @Init()
  */
-Bean.prototype.init = function() {
+Service_A.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
+
     console.log("Initialization ...");
 }
 
-module.exports = exports = Bean;
+module.exports = exports = Service_A;

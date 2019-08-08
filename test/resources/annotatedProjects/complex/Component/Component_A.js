@@ -1,18 +1,24 @@
 'use strict';
 
 /**
- * @Component("ComponentBean")
+ * @Component("Component_A")
  * @constructor
  */
 function Component() {
     var instance = this;
 
-    /*
-     * @Qualifier("Controller")
+    instance.initFlag = null;
+
+    /**
+     * @Qualifier("Controller_A")
      */
     instance.controller= null;
 
-    instance.initFlag = null;
+    /**
+     * @Qualifier("Service_A")
+     */
+    instance.service = null;
+
 }
 
 /**

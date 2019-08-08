@@ -4,7 +4,7 @@
  * Created by udogerhards on 04.11.18.
  *
  * @Aspect("AfterBeforeAspect")
- * @PointCut("afterFunction*")
+ * @PointCut("afterFunctionC*")
  * @PointCut("afterFunction")
  */
 class Aspect {
@@ -16,11 +16,12 @@ class Aspect {
      */
     afterFunctionAspect(...args) {
 
-        console.log("-------- Aspect::afterFunctionAspect, start --------");
-
-            console.log("    arguments passed:", ...args);
 
         console.log("-------- Aspect::afterFunctionAspect, start --------");
+
+        console.log("    arguments passed:", ...args);
+
+        console.log("-------- Aspect::afterFunctionAspect, end --------");
     }
 }
 module.exports = exports = Aspect;

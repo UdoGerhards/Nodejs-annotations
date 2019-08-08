@@ -8,44 +8,46 @@ var Application = function() {
 
     var instance = this;
 
-    /*
-     * @Qualifier("Bean")
+    /**
+     * @Qualifier("Bean_A")
      */
-    instance.bean = null;
+    instance.bean_A = null;
 
-    /*
-     * @Qualifier("Controller")
+    /**
+     * @Qualifier("Bean_B")
      */
-    instance.controller= null;
+    instance.bean_B = null;
 
-    /*
-     * @Qualifier("ServiceBean")
+    /**
+     * @Qualifier("Controller_A")
      */
-    instance.service = null;
+    instance.controller_A= null;
 
-    /*
-     * @Qualifier("ComponentBean")
+    /**
+     * @Qualifier("Service_A")
      */
-    instance.component = null;
+    instance.service_A = null;
 
-    /*
-     * @Qualifier("InnerBeanLevel1")
+    /**
+     * @Qualifier("Service_B")
      */
-    instance.innerBeanLevel1 = null;
+    instance.service_B = null;
 
-    /*
-    * @Qualifier("InnerBeanLevel2")
-    */
-    instance.innerBeanLevel2 = null;
-
-    /*
-     * @Qualifier("InnerBeanLevel3")
+    /**
+     * @Qualifier("Component_A")
      */
-    instance.innerBeanLevel3 = null;
+    instance.component_A = null;
+
+    /**
+     * @Qualifier("Component_B")
+     */
+    instance.component_B = null;
 
     instance.initFlag = null;
 
-}
+    instance.counter = 0;
+
+};
 
 /**
  *  @Init()
@@ -57,7 +59,7 @@ Application.prototype.init = function() {
 
     console.log("Initialization ...");
 
-}
+};
 
 /**
  * @Run()
@@ -67,7 +69,28 @@ Application.prototype.run = function() {
 
     console.log("Application is running!");
 
-}
+};
+
+/**
+ * This method will be wrappe with an "After" aspect
+ */
+Application.prototype.afterFunction = function(number) {
+
+    let instance = this;
+
+    instance.counter += number;
+};
+
+/**
+ * This method will be wrappe with an "After" aspect
+ */
+Application.prototype.afterFunctionCounter = function(number) {
+
+    let instance = this;
+
+    instance.counter += number;
+};
+
 
 
 module.exports = exports = Application;

@@ -1,17 +1,22 @@
 'use strict';
 
 /**
- * @Bean("Bean2")
+ * @Bean("Bean_B")
  * @constructor
  */
-function Bean2() {
+function Bean() {
     var instance = this;
 
     instance.initFlag = null;
+
+    /**
+     * @Qualifier("Service_B")
+     */
+    instance.service = null;
 }
 
 
-Bean2.prototype.afterFunction = function(param) {
+Bean.prototype.afterFunction = function(param) {
 
     console.log("-------- TestAOPAfterBean::afterFunction, start --------");
 
@@ -29,10 +34,10 @@ Bean2.prototype.afterFunction = function(param) {
 /**
  * @Init()
  */
-Bean2.prototype.init = function() {
+Bean.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
     console.log("Initialization ...");
 };
 
-module.exports = exports = Bean2;
+module.exports = exports = Bean;

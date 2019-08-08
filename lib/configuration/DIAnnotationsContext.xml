@@ -460,7 +460,7 @@
                 </property>
             </bean>
         </entry>
-        <entry key="PointCute">
+        <entry key="PointCut">
             <bean init="init" src="/lib/parser/annotation/aop/PointCut/PointCutAnnotationParser.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
