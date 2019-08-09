@@ -10,6 +10,11 @@
       "category": "defaultFile",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/Application.log"
     },
+    "database": {
+      "type": "log4js-node-mongodb",
+      "connectionString": "localhost:27017/diannotation-logs",
+      "category": "database"
+    },
     "ContextBuilder": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
@@ -82,7 +87,7 @@
     }
   },
   "categories": {
-    "default": { "appenders": ["default","defaultFile"], "level": "INFO" },
+    "default": { "appenders": ["default","defaultFile", "database"], "level": "INFO" },
     "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "INFO" },
     "StructureParser": { "appenders": ["default","StructureParser"], "level": "INFO" },
     "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "INFO" },

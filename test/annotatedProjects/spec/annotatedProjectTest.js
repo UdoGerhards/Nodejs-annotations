@@ -26,7 +26,7 @@ describe("Project annotation test suite", function(){
     let resourceRoot = path.join(testRoot, "resources");
 
     let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
-    let factory = require( path.join(libRoot, "lib", "factory", "Factory.js"));
+    let factory = require( path.join(libRoot, "lib", "foundation", "factory", "Factory.js"));
 
     let projectRoot = path.join(resourceRoot, "annotatedProjects");
 

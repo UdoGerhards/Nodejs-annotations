@@ -84,31 +84,31 @@
     </list>
 
     <!-- Annotation classes -->
-    <class id="JSDocSupport" src="/lib/annotation/JSDoc/JSDoc/JSDocSupport.js" />
-    <class id="Init" src="/lib/annotation/initialize/Init/InitAnnotationClass.js" />
-    <class id="Qualifier" src="/lib/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
-    <class id="Bean" src="/lib/annotation/instance/Bean/BeanAnnotationClass.js" />
-    <class id="Resource" src="/lib/annotation/instance/Resource/ResourceAnnotationClass.js" />
-    <class id="After" src="/lib/annotation/aop/After/AfterAnnotationClass.js" />
-    <class id="Aspect" src="/lib/annotation/aop/Aspect/AspectAnnotationClass.js" />
-    <class id="Before" src="/lib/annotation/aop/Before/BeforeAnnotationClass.js" />
-    <class id="PointCut" src="/lib/annotation/aop/PointCut/PointCutAnnotationClass.js" />
-    <class id="Inherits" src="/lib/annotation/inherits/Inherits/InheritsAnnotationClass.js" />
-    <class id="Autowire" src="/lib/annotation/inject/Autowire/AutowireAnnotationClass.js"/>
-    <class id="Inject" src="/lib/annotation/inject/Inject/InjectAnnotationClass.js"/>
-    <class id="Store" src="/lib/annotation/inject/Store/StoreAnnotationClass.js" />
-    <class id="Component" src="/lib/annotation/instance/Component/ComponentAnnotationClass.js" />
-    <class id="Configuration" src="/lib/annotation/instance/Configuration/ConfigurationAnnotationClass.js" />
-    <class id="Context" src="/lib/annotation/instance/Context/ContextAnnotationClass.js" />
-    <class id="Controller" src="/lib/annotation/instance/Controller/ControllerAnnotationClass.js" />
-    <class id="List" src="/lib/annotation/instance/List/ListAnnotationClass.js" />
-    <class id="Prototype" src="/lib/annotation/instance/Prototype/PrototypeAnnotationClass.js" />
-    <class id="Service" src="/lib/annotation/instance/Service/ServiceAnnotationClass.js" />
-    <class id="param" src="/lib/annotation/JSDoc/param/paramAnnotationClass.js" />
-    <class id="type" src="/lib/annotation/JSDoc/type/typeAnnotationClass.js" />
-    <class id="Namespace" src="/lib/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
-    <class id="Properties" src="/lib/annotation/meta/Properties/PropertiesAnnotationClass.js" />
-    <class id="Run" src="/lib/annotation/run/Run/RunAnnotationClass.js" />
+    <class id="JSDocSupport" src="/lib/foundation/annotation/JSDoc/JSDoc/JSDocSupport.js" />
+    <class id="Init" src="/lib/foundation/annotation/initialize/Init/InitAnnotationClass.js" />
+    <class id="Qualifier" src="/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
+    <class id="Bean" src="/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js" />
+    <class id="Resource" src="/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js" />
+    <class id="After" src="/lib/foundation/annotation/aop/After/AfterAnnotationClass.js" />
+    <class id="Aspect" src="/lib/foundation/annotation/aop/Aspect/AspectAnnotationClass.js" />
+    <class id="Before" src="/lib/foundation/annotation/aop/Before/BeforeAnnotationClass.js" />
+    <class id="PointCut" src="/lib/foundation/annotation/aop/PointCut/PointCutAnnotationClass.js" />
+    <class id="Inherits" src="/lib/foundation/annotation/inherits/Inherits/InheritsAnnotationClass.js" />
+    <class id="Autowire" src="/lib/foundation/annotation/inject/Autowire/AutowireAnnotationClass.js"/>
+    <class id="Inject" src="/lib/foundation/annotation/inject/Inject/InjectAnnotationClass.js"/>
+    <class id="Store" src="/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js" />
+    <class id="Component" src="/lib/foundation/annotation/instance/Component/ComponentAnnotationClass.js" />
+    <class id="Configuration" src="/lib/foundation/annotation/instance/Configuration/ConfigurationAnnotationClass.js" />
+    <class id="Context" src="/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js" />
+    <class id="Controller" src="/lib/foundation/annotation/instance/Controller/ControllerAnnotationClass.js" />
+    <class id="List" src="/lib/foundation/annotation/instance/List/ListAnnotationClass.js" />
+    <class id="Prototype" src="/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js" />
+    <class id="Service" src="/lib/foundation/annotation/instance/Service/ServiceAnnotationClass.js" />
+    <class id="param" src="/lib/foundation/annotation/JSDoc/param/paramAnnotationClass.js" />
+    <class id="type" src="/lib/foundation/annotation/JSDoc/type/typeAnnotationClass.js" />
+    <class id="Namespace" src="/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
+    <class id="Properties" src="/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" />
+    <class id="Run" src="/lib/foundation/annotation/run/Run/RunAnnotationClass.js" />
     <class id="diagramTool" src="/lib/diagram/diagramTool.js" />
 
     <!-- Parser helper classes -->
@@ -849,7 +849,7 @@
     </list>
 
     <!-- DependencyBuilder -->
-    <bean id="DependencyBuilder" init="init" src="/lib/dependency/DependencyBuilder.js">
+    <bean id="DependencyBuilder" init="init" src="/lib/foundation/dependency/DependencyBuilder.js">
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -980,7 +980,7 @@
     </bean>
 
     <!-- Factory -->
-    <context id="Factory" init="init" src="/lib/factory/Factory.js">
+    <context id="Factory" init="init" src="/lib/foundation/factory/Factory.js">
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
