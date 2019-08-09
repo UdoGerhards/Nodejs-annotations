@@ -4,65 +4,64 @@
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Cleanup: Corrected file and class names.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/Foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/Foundation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helper/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/Base/Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/Base/Base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/param/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/param/Parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/param/proxy/TypeConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/param/proxy/TypeConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/param/proxy/TypeProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/type/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/type/Parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/type/proxy/TypeConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/type/proxy/TypeConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/JSDoc/type/proxy/TypeProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/type/proxy/TypeProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/aop/After/After.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/aop/After/After.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/aop/Aspect/Aspect.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/aop/Aspect/Aspect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/aop/Before/Before.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/aop/Before/Before.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/aop/PointCut/PointCut.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/aop/PointCut/PointCut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/inherits/inherits/Inherits.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/inherits/inherits/Inherits.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/initialize/Init/Init.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/initialize/Init/Init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/inject/Autowire/Autowire.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/inject/Autowire/Autowire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/inject/Qualifier/Qualifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/inject/Qualifier/Qualifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/inject/Store/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/inject/Store/Store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/BeanAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/MainBeanLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/MainBeanLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Bean/SubBeanLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/SubBeanLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Component/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Component/Component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Configuration/Configuration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Configuration/Configuration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Context/ContextParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Context/ContextParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Controller/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Controller/Controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/List/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Plugin/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Plugin/Plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Prototype/Prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Prototype/Prototype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Resource/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Resource/Resource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/instance/Service/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Service/Service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Namespace/NamespaceParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Namespace/NamespaceParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/meta/Properties/PropertiesParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/PropertiesParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/annotation/run/Run/RunAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/annotation/run/Run/RunAnnotationParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/Base/Esprima_Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/Base/Esprima_Base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/Block/Esprima_Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/Block/Esprima_Block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/Line/Esprima_LineStatement.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/Line/Esprima_LineStatement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/MethodDefinition/Esprima_MethodDefinition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/Property/Esprima_Property.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/Property/Esprima_Property.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/structure/StructureParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/FoundationXMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/FoundationXMLParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/XMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/XMLParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/bean/XML_Bean_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/bean/XML_Bean_Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/class/XML_Class_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/class/XML_Class_Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/inherits/XML_Inherits_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/inherits/XML_Inherits_Attribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/init/XML_Init_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/init/XML_Init_Attribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/list/XML_List_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/list/XML_List_Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/namespace/XML_Namespace_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/namespace/XML_Namespace_Attribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/property/XML_Property_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/property/XML_Property_Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/reference/XML_Reference_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/reference/XML_Reference_Tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/run/XML_Run_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/run/XML_Run_Attribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/parser/xml/value/XML_Value_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/context/parser/xml/value/XML_Value_Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/ContextBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/Base/Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/Base/Base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/param/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/Parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/param/proxy/TypeConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/proxy/TypeConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/type/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/type/proxy/TypeConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/proxy/TypeConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/JSDoc/type/proxy/TypeProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/proxy/TypeProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/aop/After/After.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/After/After.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/aop/Aspect/Aspect.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/Aspect/Aspect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/aop/Before/Before.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/Before/Before.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/aop/PointCut/PointCut.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/PointCut/PointCut.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/inherits/inherits/Inherits.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/inherits/inherits/Inherits.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/initialize/Init/Init.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/initialize/Init/Init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/inject/Autowire/Autowire.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Autowire/Autowire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/inject/Qualifier/Qualifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Qualifier/Qualifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/inject/Store/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Store/Store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/BeanAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Bean/BeanAnnotationParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/MainBeanLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Bean/MainBeanLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/SubBeanLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Bean/SubBeanLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Component/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Component/Component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Configuration/Configuration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Configuration/Configuration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Context/ContextParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Context/ContextParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Controller/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Controller/Controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/List/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Plugin/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Plugin/Plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Prototype/Prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Prototype/Prototype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Resource/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Resource/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/instance/Service/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Service/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Namespace/NamespaceParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Namespace/NamespaceParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/meta/Properties/PropertiesParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/PropertiesParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/annotation/run/Run/RunAnnotationParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/run/Run/RunAnnotationParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/Base/Esprima_Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/Base/Esprima_Base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/Block/Esprima_Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/Block/Esprima_Block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/Line/Esprima_LineStatement.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/Line/Esprima_LineStatement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/MethodDefinition/Esprima_MethodDefinition.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/MethodDefinition/Esprima_MethodDefinition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/Property/Esprima_Property.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/Property/Esprima_Property.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/FoundationXMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/FoundationXMLParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/XMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/XMLParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/bean/XML_Bean_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/bean/XML_Bean_Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/class/XML_Class_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/class/XML_Class_Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/inherits/XML_Inherits_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/inherits/XML_Inherits_Attribute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/init/XML_Init_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/init/XML_Init_Attribute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/list/XML_List_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/list/XML_List_Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/namespace/XML_Namespace_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/namespace/XML_Namespace_Attribute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/property/XML_Property_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/property/XML_Property_Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/reference/XML_Reference_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/reference/XML_Reference_Tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/run/XML_Run_Attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/run/XML_Run_Attribute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/context/parser/xml/value/XML_Value_Tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/xml/value/XML_Value_Tag.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +90,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Controller/Controller.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Controller/Controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
@@ -100,7 +99,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/List/List.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/List/List.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
@@ -109,7 +108,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Plugin/Plugin.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Plugin/Plugin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
@@ -118,7 +117,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Prototype/Prototype.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Prototype/Prototype.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
@@ -127,7 +126,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Resource/Resource.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Resource/Resource.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
@@ -136,7 +135,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Service/Service.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Service/Service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
@@ -145,7 +144,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/context/parser/structure/StructureParser.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="335">
               <caret line="156" column="17" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
@@ -156,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/foundation/Foundation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="60">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -176,7 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Missing</find>
       <find>autowired</find>
       <find>typeS</find>
       <find>AfterAnnotationParser</find>
@@ -206,9 +204,9 @@
       <find>constants</find>
       <find>/lib/parser</find>
       <find>/lib/foundation/parser</find>
+      <find>/lib/context</find>
     </findStrings>
     <replaceStrings>
-      <replace>regexAnnotationExcl</replace>
       <replace>regexAnnotationBrac</replace>
       <replace>mainAnnotation</replace>
       <replace>type</replace>
@@ -238,6 +236,7 @@
       <replace>Service</replace>
       <replace>/lib/foundation/parser</replace>
       <replace>/lib/context/parser</replace>
+      <replace>/lib/foundation/context</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/test/resources</dir>
@@ -359,7 +358,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565364244032" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565364430746" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -372,8 +371,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/context" />
       <recent name="$PROJECT_DIR$/lib/foundation" />
+      <recent name="$PROJECT_DIR$/lib/context" />
       <recent name="$PROJECT_DIR$/lib/annotation/JSDoc/type" />
       <recent name="$PROJECT_DIR$/lib/annotation/JSDoc/param" />
       <recent name="$PROJECT_DIR$/lib/annotation/JSDoc/JSDoc" />
@@ -608,13 +607,6 @@
       <workItem from="1565109213753" duration="4496000" />
       <workItem from="1565194122425" duration="6485000" />
       <workItem from="1565272372435" duration="12687000" />
-    </task>
-    <task id="LOCAL-00063" summary="Added xml based context processing">
-      <created>1546432911092</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1546432911093</updated>
     </task>
     <task id="LOCAL-00064" summary="Added xml based context processing">
       <created>1546449654318</created>
@@ -952,13 +944,17 @@
       <option name="project" value="LOCAL" />
       <updated>1565363539009</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Cleanup: Corrected file and class names.">
+      <created>1565364266343</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1565364266343</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Annotated_projects - 2019.08.09 at 17h 06m 49s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Annotated_projects - 2019.08.09 at 17h 07m 39s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -986,9 +982,12 @@
     <history-entry file="Annotated_projects - 2019.08.09 at 17h 19m 04s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="Annotated_projects - 2019.08.09 at 17h 26m 35s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="605949000" />
+    <option name="totallyTimeSpent" value="606110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1001,8 +1000,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17838125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17838125" />
       <window_info id="Structure" order="1" weight="0.2497332" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1014,7 +1014,7 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.74385244" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.7683168" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.44950494" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.44950494" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.5049505" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -1085,28 +1085,28 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/lib/context/parser/annotation/aop/PointCut/PointCut.js</url>
+          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/PointCut/PointCut.js</url>
           <line>89</line>
           <option name="timeStamp" value="730" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <condition expression="annotation.name == &quot;PointCut&quot;" language="JavaScript" />
-          <url>file://$PROJECT_DIR$/lib/context/parser/structure/StructureParser.js</url>
+          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js</url>
           <line>253</line>
           <option name="timeStamp" value="733" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/lib/context/parser/member/Block/Esprima_Block.js</url>
+          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/member/Block/Esprima_Block.js</url>
           <line>51</line>
           <option name="timeStamp" value="737" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/lib/context/parser/annotation/aop/PointCut/PointCut.js</url>
+          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/PointCut/PointCut.js</url>
           <line>134</line>
           <option name="timeStamp" value="738" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/lib/context/parser/annotation/aop/PointCut/PointCut.js</url>
+          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/PointCut/PointCut.js</url>
           <line>152</line>
           <option name="timeStamp" value="739" />
         </line-breakpoint>
@@ -1254,14 +1254,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/ContextBuilder.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="324" column="24" selection-start-line="324" selection-start-column="24" selection-end-line="324" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/member/Block/Esprima_Block.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/member/Block/Esprima_Block.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
@@ -1373,140 +1373,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Bean/BeanAnnotationParser.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Bean/BeanAnnotationParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/aop/After/After.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/After/After.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/aop/Aspect/Aspect.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/Aspect/Aspect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/aop/Before/Before.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/Before/Before.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/aop/PointCut/PointCut.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/PointCut/PointCut.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/Base/Base.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/Base/Base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/inherits/inherits/Inherits.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/inherits/inherits/Inherits.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/initialize/Init/Init.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/initialize/Init/Init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/inject/Autowire/Autowire.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Autowire/Autowire.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/inject/Qualifier/Qualifier.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Qualifier/Qualifier.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/inject/Store/Store.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Store/Store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Component/Component.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Component/Component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Configuration/Configuration.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Configuration/Configuration.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/xml/FoundationXMLParser.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/xml/FoundationXMLParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
           <caret line="635" column="47" selection-start-line="635" selection-start-column="47" selection-end-line="635" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Context/ContextParser.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Context/ContextParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Controller/Controller.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Controller/Controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/List/List.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/List/List.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Plugin/Plugin.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Plugin/Plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Prototype/Prototype.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Prototype/Prototype.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Resource/Resource.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Resource/Resource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
@@ -1516,7 +1516,7 @@
     <entry file="file://$PROJECT_DIR$/lib/log/Application.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/annotation/instance/Service/Service.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Service/Service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
@@ -1530,7 +1530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/context/parser/structure/StructureParser.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="156" column="17" selection-start-line="156" selection-start-column="17" selection-end-line="156" selection-end-column="17" />
@@ -1539,8 +1539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/Foundation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="60">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
