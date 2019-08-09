@@ -60,7 +60,7 @@
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
     },
-    "QualifierParser": {
+    "Qualifier": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
@@ -94,8 +94,8 @@
     "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "INFO" },
     "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "INFO" },
     "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "INFO" },
-    "QualifierParser": { "appenders": ["default","QualifierParser"], "level": "INFO" },
+    "Qualifier": { "appenders": ["default","Qualifier"], "level": "INFO" },
     "ContextParser": { "appenders": ["default","ContextParser"], "level": "INFO" },
-    "AutowireAnnotationParser": { "appenders": ["default","Autowire"], "level": "INFO" }
+    "Autowire": { "appenders": ["default","Autowire"], "level": "INFO" }
   }
 }
