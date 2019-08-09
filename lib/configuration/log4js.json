@@ -69,21 +69,33 @@
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
+    },
+    "Prototype": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/PrototypeParser.log"
+    },
+    "Autowire": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/Autowire.log"
     }
   },
   "categories": {
-    "default": { "appenders": ["default","defaultFile"], "level": "DEBUG" },
-    "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "DEBUG" },
-    "StructureParser": { "appenders": ["default","StructureParser"], "level": "DEBUG" },
-    "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "DEBUG" },
-    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "DEBUG" },
-    "Foundation": { "appenders": ["default","Foundation"], "level": "DEBUG" },
-    "XMLParser": { "appenders": ["default","XMLParser"], "level": "DEBUG" },
-    "BeanParser": { "appenders": ["default","BeanParser"], "level": "DEBUG" },
-    "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "DEBUG" },
-    "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "DEBUG" },
-    "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "DEBUG" },
-    "QualifierParser": { "appenders": ["default","QualifierParser"], "level": "TRACE" },
-    "ContextParser": { "appenders": ["default","ContextParser"], "level": "DEBUG" }
+    "default": { "appenders": ["default","defaultFile"], "level": "INFO" },
+    "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "INFO" },
+    "StructureParser": { "appenders": ["default","StructureParser"], "level": "INFO" },
+    "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "INFO" },
+    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "INFO" },
+    "Foundation": { "appenders": ["default","Foundation"], "level": "INFO" },
+    "XMLParser": { "appenders": ["default","XMLParser"], "level": "INFO" },
+    "Prototype": { "appenders": ["default","Prototype"], "level": "INFO" },
+    "BeanParser": { "appenders": ["default","BeanParser"], "level": "INFO" },
+    "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "INFO" },
+    "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "INFO" },
+    "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "INFO" },
+    "QualifierParser": { "appenders": ["default","QualifierParser"], "level": "INFO" },
+    "ContextParser": { "appenders": ["default","ContextParser"], "level": "INFO" },
+    "AutowireAnnotationParser": { "appenders": ["default","Autowire"], "level": "INFO" }
   }
 }

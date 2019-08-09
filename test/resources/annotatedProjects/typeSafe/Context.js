@@ -4,7 +4,7 @@
 /**
  * @Context("Application")
  * @JSDocSupport()
- * @Autowire()
+ * @Autowire(report_missing = true)
  */
 
 class Context {
