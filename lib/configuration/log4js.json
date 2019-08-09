@@ -45,10 +45,10 @@
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/BeanParser.log"
     },
-    "ComponentParser": {
+    "Component": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ComponentParser.log"
+      "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/Component.log"
     },
     "ControllerParser": {
       "type": "file",
@@ -65,7 +65,7 @@
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
     },
-    "ContextParser": {
+    "Context": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/log/ServiceParser.log"
@@ -91,11 +91,11 @@
     "XMLParser": { "appenders": ["default","XMLParser"], "level": "INFO" },
     "Prototype": { "appenders": ["default","Prototype"], "level": "INFO" },
     "BeanParser": { "appenders": ["default","BeanParser"], "level": "INFO" },
-    "ComponentParser": { "appenders": ["default","ComponentParser"], "level": "INFO" },
+    "Component": { "appenders": ["default","Component"], "level": "INFO" },
     "ControllerParser": { "appenders": ["default","ControllerParser"], "level": "INFO" },
     "ServiceParser": { "appenders": ["default","ServiceParser"], "level": "INFO" },
     "Qualifier": { "appenders": ["default","Qualifier"], "level": "INFO" },
-    "ContextParser": { "appenders": ["default","ContextParser"], "level": "INFO" },
+    "Context": { "appenders": ["default","Context"], "level": "INFO" },
     "Autowire": { "appenders": ["default","Autowire"], "level": "INFO" }
   }
 }

@@ -541,7 +541,7 @@
             </bean>
         </entry>
         <entry key="Component">
-            <bean init="init" src="/lib/parser/annotation/instance/Component/ComponentParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/Component/Component.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -579,7 +579,7 @@
             </bean>
         </entry>
         <entry key="Configuration">
-            <bean init="init" src="/lib/parser/annotation/instance/Configuration/ConfigurationParser.js" >
+            <bean init="init" src="/lib/parser/annotation/instance/Configuration/Configuration.js" >
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
