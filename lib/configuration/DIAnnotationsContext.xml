@@ -333,7 +333,7 @@
             </bean>
         </entry>
         <entry key="Resource">
-            <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/Resource/Resource.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -604,7 +604,7 @@
             <reference id="ContextParser" />
         </entry>
         <entry key="Controller">
-            <bean init="init" src="/lib/parser/annotation/instance/Controller/ControllerParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/Controller/Controller.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -642,7 +642,7 @@
             </bean>
         </entry>
         <entry key="List">
-            <bean init="init" src="/lib/parser/annotation/instance/List/ListParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/List/List.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -668,7 +668,7 @@
             </bean>
         </entry>
         <entry key="Prototype">
-            <bean init="init" src="/lib/parser/annotation/instance/Prototype/PrototypeAnnotationParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/Prototype/Prototype.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -697,7 +697,7 @@
             </bean>
         </entry>
         <entry key="Resource">
-            <bean init="init" src="/lib/parser/annotation/instance/Resource/ResourceParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/Resource/Resource.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -716,7 +716,7 @@
             </bean>
         </entry>
         <entry key="Service">
-            <bean init="init" src="/lib/parser/annotation/instance/Service/ServiceParser.js">
+            <bean init="init" src="/lib/parser/annotation/instance/Service/Service.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
