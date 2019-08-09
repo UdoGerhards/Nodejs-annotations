@@ -26,10 +26,10 @@
     </list>
 
     <!-- Prototypes -->
-    <class id="Base" src="/lib/parser/annotation/Base/Base.js" />
-    <class id="BeanAnnotationParserPrototype" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
-    <class id="ParamTypeProxy" src="/lib/parser/annotation/JSDoc/param/proxy/TypeProxy.js" />
-    <class id="TypeTypeProxy" src="/lib/parser/annotation/JSDoc/type/proxy/TypeProxy.js" />
+    <class id="Base" src="/lib/context/parser/annotation/Base/Base.js" />
+    <class id="BeanAnnotationParserPrototype" src="/lib/context/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
+    <class id="ParamTypeProxy" src="/lib/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" />
+    <class id="TypeTypeProxy" src="/lib/context/parser/annotation/JSDoc/type/proxy/TypeProxy.js" />
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -61,18 +61,18 @@
     <!-- Properties Annotation Parser Processors -->
     <list id="PropertiesProcessors">
         <entry>
-            <bean src ="/lib/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js">
+            <bean src ="/lib/context/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js">
                 <property name="propertiesReader">
                     <reference id="PropertiesReader" />
                 </property>
             </bean>
         </entry>
         <entry>
-            <bean src ="/lib/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js">
+            <bean src ="/lib/context/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js">
             </bean>
         </entry>
         <entry>
-            <bean src ="/lib/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
+            <bean src ="/lib/context/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
                 <property name="fs">
                     <references id="FS" />
                 </property>
@@ -112,13 +112,13 @@
     <class id="diagramTool" src="/lib/diagram/diagramTool.js" />
 
     <!-- Parser helper classes -->
-    <class id="MainBeanLoader" src="/lib/parser/annotation/instance/Bean/MainBeanLoader.js" />
-    <class id="SubBeanLoader" src="/lib/parser/annotation/instance/Bean/SubBeanLoader.js" />
+    <class id="MainBeanLoader" src="/lib/context/parser/annotation/instance/Bean/MainBeanLoader.js" />
+    <class id="SubBeanLoader" src="/lib/context/parser/annotation/instance/Bean/SubBeanLoader.js" />
 
     <!-- TokenParser -->
     <list id="TokenParser">
         <entry key="Block">
-            <bean init="init" src="/lib/parser/member/Block/Esprima_Block.js">
+            <bean init="init" src="/lib/context/parser/member/Block/Esprima_Block.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -157,45 +157,45 @@
             </bean>
         </entry>
         <entry key="VariableDeclaration">
-            <bean src="/lib/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+            <bean src="/lib/context/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="FunctionDeclaration">
-            <bean src="/lib/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
+            <bean src="/lib/context/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
         </entry>
         <entry key="ClassDeclaration">
-            <bean src="/lib/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
+            <bean src="/lib/context/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="AssignmentExpression">
-            <bean src="/lib/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
+            <bean src="/lib/context/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="MethodDefinition">
-            <bean src="/lib/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+            <bean src="/lib/context/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="Property">
-            <bean src="/lib/parser/member/Property/Esprima_Property.js">
+            <bean src="/lib/context/parser/member/Property/Esprima_Property.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="Line">
-            <bean src="/lib/parser/member/Line/Esprima_LineStatement.js">
+            <bean src="/lib/context/parser/member/Line/Esprima_LineStatement.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
@@ -205,7 +205,7 @@
 
 
     <!-- Special annotation parser -->
-    <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/parser/annotation/meta/Properties/PropertiesParser.js">
+    <bean id="PropertiesAnnotationParserInstance" init="init" src="/lib/context/parser/annotation/meta/Properties/PropertiesParser.js">
 
         <property name="LogManager">
             <reference id="LogManager" />
@@ -234,13 +234,13 @@
         <property name="xmlMapper">
             <list>
                 <entry key="Properties">
-                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                    <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
             </list>
         </property>
     </bean>
 
-    <bean id="BeanParser" init="init" src="/lib/parser/annotation/instance/Bean/BeanAnnotationParser.js">
+    <bean id="BeanParser" init="init" src="/lib/context/parser/annotation/instance/Bean/BeanAnnotationParser.js">
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -265,7 +265,7 @@
         <property name="xmlMapper">
             <list>
                 <entry key="Bean">
-                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                    <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
             </list>
         </property>
@@ -277,7 +277,7 @@
         </property>
     </bean>
 
-    <bean id="ContextParser" init="init" src="/lib/parser/annotation/instance/Context/ContextParser.js">
+    <bean id="ContextParser" init="init" src="/lib/context/parser/annotation/instance/Context/ContextParser.js">
         <property name="MainBeanLoader">
             <reference id="MainBeanLoader" />
         </property>
@@ -302,7 +302,7 @@
         <property name="xmlMapper">
             <list>
                 <entry key="Context">
-                    <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                    <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
             </list>
         </property>
@@ -320,7 +320,7 @@
             <reference id="BeanParser" />
         </entry>
         <entry key="JSDocSupport">
-            <bean init="init" src="/lib/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js">
+            <bean init="init" src="/lib/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -333,7 +333,7 @@
             </bean>
         </entry>
         <entry key="Resource">
-            <bean init="init" src="/lib/parser/annotation/instance/Resource/Resource.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/Resource/Resource.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -352,7 +352,7 @@
             </bean>
         </entry>
         <entry key="Qualifier">
-            <bean init="init" src="/lib/parser/annotation/inject/Qualifier/Qualifier.js">
+            <bean init="init" src="/lib/context/parser/annotation/inject/Qualifier/Qualifier.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -371,23 +371,23 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Property">
-                            <bean src ="/lib/parser/xml/property/XML_Property_Tag.js" />
+                            <bean src ="/lib/context/parser/xml/property/XML_Property_Tag.js" />
                         </entry>
                         <entry key="Entry">
-                            <bean src ="/lib/parser/xml/property/XML_Property_Tag.js" />
+                            <bean src ="/lib/context/parser/xml/property/XML_Property_Tag.js" />
                         </entry>
                         <entry key="Reference">
-                            <bean src="/lib/parser/xml/reference/XML_Reference_Tag.js" />
+                            <bean src="/lib/context/parser/xml/reference/XML_Reference_Tag.js" />
                         </entry>
                         <entry key="Value">
-                            <bean src="/lib/parser/xml/value/XML_Value_Tag.js" />
+                            <bean src="/lib/context/parser/xml/value/XML_Value_Tag.js" />
                         </entry>
                     </list>
                 </property>
             </bean>
         </entry>
         <entry key="Init">
-            <bean init="init" src="/lib/parser/annotation/initialize/Init/Init.js">
+            <bean init="init" src="/lib/context/parser/annotation/initialize/Init/Init.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -403,14 +403,14 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Init">
-                            <bean src ="/lib/parser/xml/init/XML_Init_Attribute.js" />
+                            <bean src ="/lib/context/parser/xml/init/XML_Init_Attribute.js" />
                         </entry>
                     </list>
                 </property>
             </bean>
         </entry>
         <entry key="After">
-            <bean init="init" src="/lib/parser/annotation/aop/After/After.js" >
+            <bean init="init" src="/lib/context/parser/annotation/aop/After/After.js" >
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -426,7 +426,7 @@
             </bean>
         </entry>
         <entry key="Aspect">
-            <bean init="init" src="/lib/parser/annotation/aop/Aspect/Aspect.js" >
+            <bean init="init" src="/lib/context/parser/annotation/aop/Aspect/Aspect.js" >
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -445,7 +445,7 @@
             </bean>
         </entry>
         <entry key="Before">
-            <bean init="init" src="/lib/parser/annotation/aop/Before/Before.js" >
+            <bean init="init" src="/lib/context/parser/annotation/aop/Before/Before.js" >
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -461,7 +461,7 @@
             </bean>
         </entry>
         <entry key="PointCut">
-            <bean init="init" src="/lib/parser/annotation/aop/PointCut/PointCut.js">
+            <bean init="init" src="/lib/context/parser/annotation/aop/PointCut/PointCut.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -483,7 +483,7 @@
             </bean>
         </entry>
         <entry key="Inherits">
-            <bean init="init" src="/lib/parser/annotation/inherits/inherits/Inherits.js">
+            <bean init="init" src="/lib/context/parser/annotation/inherits/inherits/Inherits.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -505,7 +505,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Inherits">
-                            <bean src="/lib/parser/xml/inherits/XML_Inherits_Attribute.js" />
+                            <bean src="/lib/context/parser/xml/inherits/XML_Inherits_Attribute.js" />
                         </entry>
                     </list>
                 </property>
@@ -515,7 +515,7 @@
             </bean>
         </entry>
         <entry key="Autowire">
-            <bean init="init" src="/lib/parser/annotation/inject/Autowire/Autowire.js" >
+            <bean init="init" src="/lib/context/parser/annotation/inject/Autowire/Autowire.js" >
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -525,7 +525,7 @@
             </bean>
         </entry>
         <entry key="Store">
-            <bean init="init" src="/lib/parser/annotation/inject/Store/Store.js">
+            <bean init="init" src="/lib/context/parser/annotation/inject/Store/Store.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -541,7 +541,7 @@
             </bean>
         </entry>
         <entry key="Component">
-            <bean init="init" src="/lib/parser/annotation/instance/Component/Component.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/Component/Component.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -566,7 +566,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Component">
-                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                            <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
                     </list>
                 </property>
@@ -579,7 +579,7 @@
             </bean>
         </entry>
         <entry key="Configuration">
-            <bean init="init" src="/lib/parser/annotation/instance/Configuration/Configuration.js" >
+            <bean init="init" src="/lib/context/parser/annotation/instance/Configuration/Configuration.js" >
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -604,7 +604,7 @@
             <reference id="ContextParser" />
         </entry>
         <entry key="Controller">
-            <bean init="init" src="/lib/parser/annotation/instance/Controller/Controller.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/Controller/Controller.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -629,7 +629,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Controller">
-                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                            <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
                     </list>
                 </property>
@@ -642,7 +642,7 @@
             </bean>
         </entry>
         <entry key="List">
-            <bean init="init" src="/lib/parser/annotation/instance/List/List.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/List/List.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -661,14 +661,14 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="List">
-                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                            <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
                     </list>
                 </property>
             </bean>
         </entry>
         <entry key="Prototype">
-            <bean init="init" src="/lib/parser/annotation/instance/Prototype/Prototype.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/Prototype/Prototype.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -687,7 +687,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Class">
-                            <bean src="/lib/parser/xml/class/XML_Class_Tag.js" />
+                            <bean src="/lib/context/parser/xml/class/XML_Class_Tag.js" />
                         </entry>
                     </list>
                 </property>
@@ -697,7 +697,7 @@
             </bean>
         </entry>
         <entry key="Resource">
-            <bean init="init" src="/lib/parser/annotation/instance/Resource/Resource.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/Resource/Resource.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -716,7 +716,7 @@
             </bean>
         </entry>
         <entry key="Service">
-            <bean init="init" src="/lib/parser/annotation/instance/Service/Service.js">
+            <bean init="init" src="/lib/context/parser/annotation/instance/Service/Service.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -741,7 +741,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Service">
-                            <bean src="/lib/parser/xml/bean/XML_Bean_Tag.js" />
+                            <bean src="/lib/context/parser/xml/bean/XML_Bean_Tag.js" />
                         </entry>
                     </list>
                 </property>
@@ -754,7 +754,7 @@
             </bean>
         </entry>
         <entry key="param">
-            <bean init="init" src="/lib/parser/annotation/JSDoc/param/Parser.js">
+            <bean init="init" src="/lib/context/parser/annotation/JSDoc/param/Parser.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -773,7 +773,7 @@
             </bean>
         </entry>
         <entry key="type">
-            <bean init="init" src="/lib/parser/annotation/JSDoc/type/Parser.js">
+            <bean init="init" src="/lib/context/parser/annotation/JSDoc/type/Parser.js">
                 <property name="LogManager">
                     <reference id="LogManager" />
                 </property>
@@ -792,7 +792,7 @@
             </bean>
         </entry>
         <entry key="Namespace">
-            <bean init="init" src="/lib/parser/annotation/meta/Namespace/NamespaceParser.js">
+            <bean init="init" src="/lib/context/parser/annotation/meta/Namespace/NamespaceParser.js">
                 <property name="MainBeanLoader">
                     <reference id="MainBeanLoader" />
                 </property>
@@ -814,7 +814,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Namespace">
-                            <bean src="/lib/parser/xml/namespace/XML_Namespace_Attribute.js" />
+                            <bean src="/lib/context/parser/xml/namespace/XML_Namespace_Attribute.js" />
                         </entry>
                     </list>
                 </property>
@@ -824,7 +824,7 @@
             <reference id="PropertiesAnnotationParserInstance" />
         </entry>
         <entry key="Run">
-            <bean init="init" src="/lib/parser/annotation/run/Run/RunAnnotationParser.js">
+            <bean init="init" src="/lib/context/parser/annotation/run/Run/RunAnnotationParser.js">
                 <property name="util">
                     <reference id="Util" />
                 </property>
@@ -840,7 +840,7 @@
                 <property name="xmlMapper">
                     <list>
                         <entry key="Run">
-                            <bean src="/lib/parser/xml/run/XML_Run_Attribute.js" />
+                            <bean src="/lib/context/parser/xml/run/XML_Run_Attribute.js" />
                         </entry>
                     </list>
                 </property>
@@ -868,7 +868,7 @@
     </bean>
 
     <!-- StructureParser -->
-    <bean id="StructureParser" init="init" src="/lib/parser/structure/StructureParser.js">
+    <bean id="StructureParser" init="init" src="/lib/context/parser/structure/StructureParser.js">
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
@@ -930,7 +930,7 @@
     </bean>
 
     <!-- XML Parser -->
-    <bean id="XMLParser" src="/lib/parser/xml/XMLParser.js">
+    <bean id="XMLParser" src="/lib/context/parser/xml/XMLParser.js">
         <property name="LogManager">
             <reference id="LogManager" />
         </property>
