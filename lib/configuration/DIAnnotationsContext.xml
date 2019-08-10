@@ -10,6 +10,14 @@
         <entry key="_FINAL_APPLICATION_CONTEXT_">0xFF</entry>
     </list>
 
+    <list global="true" id="annotationTypes">
+        <entry key="TYPE_ANNOTATION_MODULE">0x1</entry>
+        <entry key="TYPE_ANNOTATION_BEAN_CONTEXT_AWARE">0x2</entry>
+        <entry key="TYPE_ANNOTATION_TARGET">0x4</entry>
+        <entry key="TYPE_ANNOTATION_AWARE">0x10</entry>
+        <entry key="TYPE_ANNOTATION_SUPPORT">0x20</entry>
+    </list>
+
     <!-- global.stages -->
     <list global="true" id="stages">
         <entry key="_STASHING_">stashing</entry>
@@ -30,6 +38,10 @@
     <class id="BeanAnnotationParserPrototype" src="/lib/foundation/context/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
     <class id="ParamTypeProxy" src="/lib/foundation/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" />
     <class id="TypeTypeProxy" src="/lib/foundation/context/parser/annotation/JSDoc/type/proxy/TypeProxy.js" />
+    <class id="ContextAware" src="/lib/foundation/annotation/base/ContextAware.js" />
+    <class id="MemberAware" src="/lib/foundation/annotation/base/MemberAware.js" />
+    <class id="ModuleAware" src="/lib/foundation/annotation/base/ModuleAware.js" />
+    <class id="SupportAware" src="/lib/foundation/annotation/base/SupportAware.js" />
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -935,6 +947,15 @@
 
     <!-- StructureParser -->
     <bean id="StructureParser" init="init" src="/lib/foundation/context/parser/structure/StructureParser.js">
+        <property name="contextAware">
+            <reference id="ContextAware" />
+        </property>
+        <property name="supportAware">
+            <reference id="SupportAware" />
+        </property>
+        <property name="moduleAware">
+            <reference id="ModuleAware" />
+        </property>
         <property name="LogManager">
             <reference id="LogManager" />
         </property>

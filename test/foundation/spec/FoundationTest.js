@@ -16,19 +16,14 @@ var assert = require("chai").assert
             "ContextBuilder",
             "Factory",
             "Esprima",
-            "Estraverse",
             "FS",
             "Path",
             "Util",
-            "StaticMemberExpressionIdentifierMatch",
-            "VariableDecorationStaticMemberExpressionIdentifierMatch",
         ];
         var functions = [
             "Diagram",
             "Beautify",
-            "Bluebird",
             "Glob",
-            "Lodash"
         ];
 
         var lists = [
@@ -103,7 +98,7 @@ describe("XML context described annotation test suite", function(){
 
     it('Should instantiate a FoundationXMLParser instance and test it', function() {
 
-        var xmlContextBuilderClassPath = path.join(resourcesPath,"parser", "xml", "FoundationXMLParser.js");
+        var xmlContextBuilderClassPath = path.join(resourcesPath,"foundation", "context", "parser", "xml", "FoundationXMLParser.js");
         var xmlContextBuilderClass = require(xmlContextBuilderClassPath);
 
         var XMLBuilderInstance = new xmlContextBuilderClass();
