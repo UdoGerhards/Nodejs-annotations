@@ -1,11 +1,12 @@
 'use strict';
 
-
 /**
  * @Context("Application")
- * @Autowire()
+ *
+ * @Autowire(report_missing = true)
  */
-// @Properties('/resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}')
+
+// @Properties("/autowired/configs/**/*.{json,xml, properties}")
 
 var Application = function() {
 
@@ -15,13 +16,15 @@ var Application = function() {
 
     instance.path = null;
 
-    instance.bean = null;
+    instance.bean_A = null;
 
-    instance.otherBean = null;
+    instance.bean_B = null;
 
     instance.component = null;
 
     instance.configuration = null;
+
+    instance.service = null;
 
     instance.initFlag = null;
 };

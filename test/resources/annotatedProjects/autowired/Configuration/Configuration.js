@@ -2,14 +2,6 @@
 
 /**
  * @Configuration("Configuration")
- * @Resource("Util", "util")
- * @Resource("Path", "path")
- * @Resource("CamelCase", "camelcase")
- * @Resource("Wildcard", "node-wildcard")
- *
- * @Autowire()
- *
- * @constructor
  */
 function Configuration() {
     var instance = this;

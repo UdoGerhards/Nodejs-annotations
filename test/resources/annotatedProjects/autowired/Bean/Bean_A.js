@@ -1,10 +1,9 @@
 'use strict';
 
 /**
- * @Prototype("AncestorService")
- * @constructor
+ * @Bean()
  */
-function AncestorService() {
+function BeanA() {
     var instance = this;
 
     instance.serviceBean = null;
@@ -17,10 +16,10 @@ function AncestorService() {
 /**
  * @Init()
  */
-AncestorService.prototype.init = function() {
+BeanA.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
     console.log("Initialization ...");
 };
 
-module.exports = exports = AncestorService;
+module.exports = exports = BeanA;

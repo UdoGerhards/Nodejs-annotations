@@ -74,10 +74,10 @@
         <entry>
             <bean src ="/lib/foundation/context/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
                 <property name="fs">
-                    <references id="FS" />
+                    <reference id="FS" />
                 </property>
                 <property name="xml2js">
-                    <references id="XML2js" />
+                    <reference id="XML2js" />
                 </property>
             </bean>
         </entry>
@@ -157,47 +157,101 @@
             </bean>
         </entry>
         <entry key="VariableDeclaration">
-            <bean src="/lib/foundation/context/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
+            <bean init="init" src="/lib/foundation/context/parser/member/VariableDeclaration/Esprima_VariableDeclaration.js">
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
+                </property>
+                <property name="LogManager">
+                    <reference id="LogManager" />
                 </property>
             </bean>
         </entry>
         <entry key="FunctionDeclaration">
-            <bean src="/lib/foundation/context/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js"/>
+            <bean init="init" src="/lib/foundation/context/parser/member/FunctionDeclaration/Esprima_FunctionDeclaration.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
+            </bean>
         </entry>
         <entry key="ClassDeclaration">
-            <bean src="/lib/foundation/context/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
+            <bean init="init" src="/lib/foundation/context/parser/member/ClassDeclaration/Esprima_ClassDeclaration.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="AssignmentExpression">
-            <bean src="/lib/foundation/context/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
+            <bean init="init" src="/lib/foundation/context/parser/member/AssignmentExpression/Esprima_AssignmentExpression.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="MethodDefinition">
-            <bean src="/lib/foundation/context/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+            <bean init="init" src="/lib/foundation/context/parser/member/MethodDefinition/Esprima_MethodDefinition.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="Property">
-            <bean src="/lib/foundation/context/parser/member/Property/Esprima_Property.js">
+            <bean init="init" src="/lib/foundation/context/parser/member/Property/Esprima_Property.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
                 </property>
             </bean>
         </entry>
         <entry key="Line">
-            <bean src="/lib/foundation/context/parser/member/Line/Esprima_LineStatement.js">
+            <bean init="init" src="/lib/foundation/context/parser/member/Line/Esprima_LineStatement.js">
+                <property name="LogManager">
+                    <reference id="LogManager" />
+                </property>
                 <property name="annotationParser">
                     <reference id="AnnotationParser" />
+                </property>
+                <property name="annotationParser">
+                    <reference id="AnnotationParser" />
+                </property>
+                <property name="annotations">
+                    <list>
+                        <entry key="Init"><reference id="Init"/></entry>
+                        <entry key="Qualifier"><reference id="Qualifier"/></entry>
+                        <entry key="Bean"><reference id="Bean"/></entry>
+                        <entry key="Resource"><reference id="Resource"/></entry>
+                        <entry key="After"><reference id="After"/></entry>
+                        <entry key="Aspect"><reference id="Aspect"/></entry>
+                        <entry key="Before"><reference id="Before"/></entry>
+                        <entry key="PointCut"><reference id="PointCut"/></entry>
+                        <entry key="Inherits"><reference id="Inherits"/></entry>
+                        <entry key="Autowire"><reference id="Autowire"/></entry>
+                        <entry key="Inject"><reference id="Inject"/></entry>
+                        <entry key="Store"><reference id="Store"/></entry>
+                        <entry key="Component"><reference id="Component"/></entry>
+                        <entry key="Configuration"><reference id="Configuration"/></entry>
+                        <entry key="Context"><reference id="Context"/></entry>
+                        <entry key="Controller"><reference id="Controller"/></entry>
+                        <entry key="List"><reference id="List"/></entry>
+                        <entry key="Prototype"><reference id="Prototype"/></entry>
+                        <entry key="Service"><reference id="Service"/></entry>
+                        <entry key="JSDocSupport"><reference id="JSDocSupport"/></entry>
+                        <entry key="param"><reference id="param"/></entry>
+                        <entry key="type"><reference id="type"/></entry>
+                        <entry key="Namespace"><reference id="Namespace"/></entry>
+                        <entry key="Properties"><reference id="Properties"/></entry>
+                        <entry key="Run"><reference id="Run"/></entry>
+                    </list>
                 </property>
             </bean>
         </entry>
@@ -237,6 +291,9 @@
                     <bean src="/lib/foundation/context/parser/xml/bean/XML_Bean_Tag.js" />
                 </entry>
             </list>
+        </property>
+        <property name="tokenParser">
+            <reference id="TokenParser" />
         </property>
     </bean>
 
@@ -597,6 +654,9 @@
                 </property>
                 <property name="path">
                     <reference id="Path" />
+                </property>
+                <property name="CamelCase">
+                    <reference id="CamelCase" />
                 </property>
             </bean>
         </entry>

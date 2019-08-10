@@ -1,11 +1,9 @@
 'use strict';
 
 /**
- * @Bean("OtherBean")
- * @Autowire()
- * @constructor
+ * @Bean()
  */
-function OtherBean() {
+function BeanB() {
     var instance = this;
 
     instance.bean = null;
@@ -14,14 +12,13 @@ function OtherBean() {
 }
 
 
-
 /**
  * @Init()
  */
-OtherBean.prototype.init = function() {
+BeanB.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
     console.log("Initialization ...");
 };
 
-module.exports = exports = OtherBean;
+module.exports = exports = BeanB;

@@ -26,7 +26,7 @@ describe("Project annotation test suite", function(){
     let resourceRoot = path.join(testRoot, "resources");
 
     let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
-    let factory = require( path.join(libRoot, "lib", "foundation", "factory", "Factory.js"));
+    let factory = require( path.join(libRoot, "lib", "foundation",  "factory", "Factory.js"));
 
     let projectRoot = path.join(resourceRoot, "annotatedProjects");
 
@@ -124,6 +124,9 @@ describe("Project annotation test suite", function(){
                 assert.isObject(context.typedParamsBean, "Context property 'typedParamsBean' is not an object");
 
                 factory.removeAllListeners();
+
+                return context;
+
             } catch(e) {
 
                 throw(e)
@@ -248,6 +251,9 @@ describe("Project annotation test suite", function(){
 
 
                 factory.removeAllListeners();
+
+                return context;
+
             } catch(e) {
                 console.log(e);
                 throw e;
@@ -288,6 +294,8 @@ describe("Project annotation test suite", function(){
 
             assert.instanceOf(context.inheritor, ParentClass, "Inheritor is not a supobject of 'Parent'");
 
+            return context;
+
         });
 
     });
@@ -327,6 +335,8 @@ describe("Project annotation test suite", function(){
 
             assert.instanceOf(context.inheritor, GrantParentClass, "Inheritor is not a supobject of 'GrandParent'");
 
+            return context;
+
         });
 
     });
@@ -362,6 +372,43 @@ describe("Project annotation test suite", function(){
 
             context.afterFunction(1);
             context.afterFunctionCounter(1);
+
+            return context;
+
+        });
+
+    });
+
+    it("Should instantiate an autowired complex project", function() {
+
+        /*
+         Initialize context
+         */
+        var contextRoot = projectRoot+path.sep+path.join("autowired");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ],
+            /*
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
+            */
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        let processPromise = bootstrap(contextInfo, "INFO", null);
+        return processPromise.then(function(context){
+
+            return console.log(context);
 
         });
 

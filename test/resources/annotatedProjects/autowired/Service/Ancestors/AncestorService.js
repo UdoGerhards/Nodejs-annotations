@@ -2,7 +2,7 @@
 
 /**
  * @Prototype("AncestorService")
- * @constructor
+
  */
 function AncestorService() {
     var instance = this;

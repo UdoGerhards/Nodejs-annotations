@@ -87,13 +87,6 @@
     }
   },
   "categories": {
-    "default": { "appenders": ["default","defaultFile", "database"], "level": "INFO" },
-    "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "INFO" },
-    "StructureParser": { "appenders": ["default","StructureParser"], "level": "INFO" },
-    "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "INFO" },
-    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "INFO" },
-    "Foundation": { "appenders": ["default","Foundation"], "level": "INFO" },
-    "XMLParser": { "appenders": ["default","XMLParser"], "level": "INFO" },
     "Prototype": { "appenders": ["default","Prototype"], "level": "INFO" },
     "BeanParser": { "appenders": ["default","BeanParser"], "level": "INFO" },
     "Component": { "appenders": ["default","Component"], "level": "INFO" },
@@ -101,6 +94,13 @@
     "Service": { "appenders": ["default","Service"], "level": "INFO" },
     "Qualifier": { "appenders": ["default","Qualifier"], "level": "INFO" },
     "Context": { "appenders": ["default","Context"], "level": "INFO" },
-    "Autowire": { "appenders": ["default","Autowire"], "level": "INFO" }
+    "Autowire": { "appenders": ["default","Autowire"], "level": "INFO" },
+    "default": { "appenders": ["default", "defaultFile"], "level": "INFO" },
+    "ContextBuilder": { "appenders": ["default","ContextBuilder"], "level": "INFO" },
+    "StructureParser": { "appenders": ["default","StructureParser"], "level": "INFO" },
+    "DependencyBuilder": { "appenders": ["default","DependencyBuilder"], "level": "INFO" },
+    "PropertiesParser": { "appenders": ["default","PropertiesParser"], "level": "INFO" },
+    "Foundation": { "appenders": ["default","Foundation"], "level": "INFO" },
+    "XMLParser": { "appenders": ["default","XMLParser"], "level": "INFO" }
   }
 }

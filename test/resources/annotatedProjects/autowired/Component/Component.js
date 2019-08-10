@@ -1,10 +1,8 @@
 'use strict';
 
 /**
- * @Component("Component")
- * @Autowire()
- * @Inherits("AncestorComponent")
- * @constructor
+ * @Component()
+ * @Inherits("ParentComponent")
  */
 function Component() {
     var instance = this;

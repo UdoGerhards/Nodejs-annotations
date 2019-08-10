@@ -5,7 +5,7 @@
  * @Inherits("AncestorService")
  * @Autowire()
  *
- * @constructor
+
  */
 function Service() {
     var instance = this;

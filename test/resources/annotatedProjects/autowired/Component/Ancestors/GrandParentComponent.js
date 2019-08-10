@@ -1,27 +1,21 @@
 'use strict';
 
 /**
- * @Bean("OtherBean")
- * @Autowire()
- * @constructor
+ * @Prototype("GrandParentComponent")
  */
-function OtherBean() {
+function GrandParentComponent() {
     var instance = this;
-
-    instance.bean = null;
 
     instance.initFlag = null;
 }
 
-
-
 /**
  * @Init()
  */
-OtherBean.prototype.init = function() {
+GrandParentComponent.prototype.init = function() {
     var instance = this;
     instance.initFlag = true;
     console.log("Initialization ...");
 };
 
-module.exports = exports = OtherBean;
+module.exports = exports = GrandParentComponent;
