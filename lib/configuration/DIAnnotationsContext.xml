@@ -65,6 +65,9 @@
                 <property name="propertiesReader">
                     <reference id="PropertiesReader" />
                 </property>
+                <property name="fs">
+                    <reference id="FS" />
+                </property>
             </bean>
         </entry>
         <entry>
@@ -648,6 +651,9 @@
                 </property>
                 <property name="annotation">
                     <reference id="Configuration" />
+                </property>
+                <property name="QualifierAnnotation">
+                    <reference id="Qualifier" />
                 </property>
                 <property name="util">
                     <reference id="Util" />
