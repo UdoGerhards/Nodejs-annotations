@@ -25,12 +25,11 @@ describe("Project annotation test suite", function(){
     let testRoot = path.join(libRoot, "test");
     let resourceRoot = path.join(testRoot, "resources");
 
-    let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
-    let factory = require( path.join(libRoot, "lib", "foundation",  "factory", "Factory.js"));
-
     let projectRoot = path.join(resourceRoot, "annotatedProjects");
 
     it('Should instantiate a type safe project', function() {
+
+        let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
 
         /*
             Initialize context
@@ -123,8 +122,6 @@ describe("Project annotation test suite", function(){
                 assert.isNotNull(context.typedParamsBean, "Context property 'typedParamsBean' is null");
                 assert.isObject(context.typedParamsBean, "Context property 'typedParamsBean' is not an object");
 
-                factory.removeAllListeners();
-
                 return context;
 
             } catch(e) {
@@ -138,6 +135,8 @@ describe("Project annotation test suite", function(){
 
      it('Should instantiate a simple project', function() {
 
+         let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
+
         /*
             Initialize context
         */
@@ -145,14 +144,7 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ],
-            "projectLandScape": {
-                "dir": contextRoot,
-                "useBeanNames": true,
-                "showAnnotations": false,
-                "avoidDefaultMethods": false,
-                "excludeResources": true,
-            }
+            ]
         };
 
         /*
@@ -249,9 +241,6 @@ describe("Project annotation test suite", function(){
                 assert.isNotNull(component.initFlag, "Component init flag is null");
                 assert.isTrue(component.initFlag, "Component init flag is not 'true'");
 
-
-                factory.removeAllListeners();
-
                 return context;
 
             } catch(e) {
@@ -263,6 +252,8 @@ describe("Project annotation test suite", function(){
 
     it("Should instantiate a simple inheritance project", function() {
 
+        let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
+
         /*
          Initialize context
          */
@@ -270,16 +261,7 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ],
-            /*
-            "projectLandScape": {
-                "dir": contextRoot,
-                "useBeanNames": true,
-                "showAnnotations": false,
-                "avoidDefaultMethods": false,
-                "excludeResources": true,
-            }
-            */
+            ]
         };
 
         let ParentClass = require(contextRoot+path.sep+path.join("ParentBean.js"));
@@ -302,6 +284,8 @@ describe("Project annotation test suite", function(){
 
     it("Should instantiate a simple tree inheritance project", function() {
 
+        let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
+
         /*
          Initialize context
          */
@@ -309,14 +293,7 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ],
-            "projectLandScape": {
-                "dir": contextRoot,
-                "useBeanNames": true,
-                "showAnnotations": false,
-                "avoidDefaultMethods": false,
-                "excludeResources": true,
-            }
+            ]
         };
 
 
@@ -343,6 +320,8 @@ describe("Project annotation test suite", function(){
 
     it("Should instantiate a complex project", function() {
 
+        let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
+
         /*
          Initialize context
          */
@@ -350,16 +329,7 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ],
-            /*
-            "projectLandScape": {
-                "dir": contextRoot,
-                "useBeanNames": true,
-                "showAnnotations": false,
-                "avoidDefaultMethods": false,
-                "excludeResources": true,
-            }
-            */
+            ]
         };
 
         /*
@@ -381,6 +351,8 @@ describe("Project annotation test suite", function(){
 
     it("Should instantiate an autowired complex project", function() {
 
+        let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
+
         /*
          Initialize context
          */
@@ -388,16 +360,35 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ],
-            /*
-            "projectLandScape": {
-                "dir": contextRoot,
-                "useBeanNames": true,
-                "showAnnotations": false,
-                "avoidDefaultMethods": false,
-                "excludeResources": true,
-            }
-            */
+            ]
+        };
+
+        /*
+            Bootstrap the context and run the tests
+        */
+        this.timeout(timeout);
+
+        let processPromise = bootstrap(contextInfo, "INFO", null);
+        return processPromise.then(function(context){
+
+            return console.log(context);
+
+        });
+
+    });
+
+    it("Should instantiate an autowired complex project", function() {
+
+        let bootstrap = require(path.join(libRoot, "lib", "bootstrap", "bootstrap.js"));
+
+        /*
+         Initialize context
+         */
+        var contextRoot = projectRoot+path.sep+path.join("complex");
+        var contextInfo = {
+            "scan": [
+                contextRoot
+            ]
         };
 
         /*
