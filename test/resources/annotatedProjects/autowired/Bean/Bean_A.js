@@ -6,9 +6,9 @@
 function BeanA() {
     var instance = this;
 
-    instance.serviceBean = null;
+    instance.service = null;
 
-    instance.componentBean = null;
+    instance.component = null;
 
     instance.initFlag = null;
 }

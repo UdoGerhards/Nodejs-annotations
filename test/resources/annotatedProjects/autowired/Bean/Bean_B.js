@@ -6,7 +6,7 @@
 function BeanB() {
     var instance = this;
 
-    instance.bean = null;
+    instance.bean_A = null;
 
     instance.initFlag = null;
 }
