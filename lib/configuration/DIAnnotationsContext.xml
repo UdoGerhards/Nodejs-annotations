@@ -10,14 +10,6 @@
         <entry key="_FINAL_APPLICATION_CONTEXT_">0xFF</entry>
     </list>
 
-    <list global="true" id="annotationTypes">
-        <entry key="TYPE_ANNOTATION_MODULE">0x1</entry>
-        <entry key="TYPE_ANNOTATION_BEAN_CONTEXT_AWARE">0x2</entry>
-        <entry key="TYPE_ANNOTATION_TARGET">0x4</entry>
-        <entry key="TYPE_ANNOTATION_AWARE">0x10</entry>
-        <entry key="TYPE_ANNOTATION_SUPPORT">0x20</entry>
-    </list>
-
     <!-- global.stages -->
     <list global="true" id="stages">
         <entry key="_STASHING_">stashing</entry>

@@ -18,22 +18,12 @@
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Component/ComponentAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Component/ComponentAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Configuration/ConfigurationAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Configuration/ConfigurationAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Controller/ControllerAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Controller/ControllerAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/List/ListAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/List/ListAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Plugin/PluginAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Plugin/PluginAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/instance/Service/ServiceAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/instance/Service/ServiceAnnotationClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/run/Run/RunAnnotationClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/annotation/run/Run/RunAnnotationClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/annotation/support/Lazy/LazyAnnotationClass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/foundation/spec/FoundationTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/foundation/spec/FoundationTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/foundation/factory/Factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/factory/Factory.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,11 +51,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="297" column="17" lean-forward="true" selection-start-line="297" selection-start-column="17" selection-end-line="297" selection-end-column="17" />
+            <state relative-caret-position="31">
+              <caret line="293" column="14" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -84,7 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>* @constructor</find>
       <find>_autowire</find>
       <find>nameTon</find>
       <find>auto</find>
@@ -114,6 +112,7 @@
       <find>TYPE_ANNOTATION_SUPPORT</find>
       <find>TYPE_ANNOTATION_MODULE</find>
       <find>Structure</find>
+      <find>static get TYPE</find>
     </findStrings>
     <replaceStrings>
       <replace>INFO</replace>
@@ -176,7 +175,6 @@
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/autowired/Service/Service.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/autowired/Component/Component.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/PropertiesParser.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/factory/Factory.js" />
         <option value="$PROJECT_DIR$/lib/foundation/Foundation.js" />
         <option value="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/inheritance/inheritanceTree/ChildBean.js" />
@@ -191,16 +189,6 @@
         <option value="$PROJECT_DIR$/lib/foundation/annotation/base/ContextAware.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/base/MemberAware.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/base/SupportAware.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/After/AfterAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/PointCut/PointCutAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/inherits/Inherits/InheritsAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/Before/BeforeAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/initialize/Init/InitAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Inject/InjectAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/Aspect/AspectAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Component/ComponentAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Configuration/ConfigurationAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js" />
@@ -208,15 +196,26 @@
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/List/ListAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Plugin/PluginAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Service/ServiceAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Autowire/AutowireAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/JSDoc/JSDoc/JSDocSupport.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/JSDoc/param/paramAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/JSDoc/type/typeAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/factory/Factory.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/initialize/Init/InitAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/foundation/annotation/run/Run/RunAnnotationClass.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/After/AfterAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/Aspect/AspectAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/Before/BeforeAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/aop/PointCut/PointCutAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Inject/InjectAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Autowire/AutowireAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/inherits/Inherits/InheritsAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/JSDoc/JSDoc/JSDocSupport.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/JSDoc/param/paramAnnotationClass.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/annotation/JSDoc/type/typeAnnotationClass.js" />
         <option value="$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" />
       </list>
@@ -289,268 +288,6 @@
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inherits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inherits" type="462c0819:PsiDirectoryNode" />
-              <item name="Inherits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="initialize" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="initialize" type="462c0819:PsiDirectoryNode" />
-              <item name="Init" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-              <item name="Autowire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-              <item name="Inject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-              <item name="Qualifier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="inject" type="462c0819:PsiDirectoryNode" />
-              <item name="Store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="List" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="instance" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="param" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="type" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-              <item name="Namespace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-              <item name="Properties" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-              <item name="Run" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -568,49 +305,12 @@
               <item name="foundation" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="structure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="annotatedProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="annotatedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="complex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="annotatedProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="complex" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -623,7 +323,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565451078638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565451689815" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -872,14 +572,7 @@
       <workItem from="1565109213753" duration="4496000" />
       <workItem from="1565194122425" duration="6485000" />
       <workItem from="1565272372435" duration="12687000" />
-      <workItem from="1565429492530" duration="19566000" />
-    </task>
-    <task id="LOCAL-00073" summary="Added xml based context processing">
-      <created>1546625804144</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1546625804144</updated>
+      <workItem from="1565429492530" duration="20196000" />
     </task>
     <task id="LOCAL-00074" summary="Added xml based context processing">
       <created>1546626870852</created>
@@ -1217,25 +910,17 @@
       <option name="project" value="LOCAL" />
       <updated>1565448755037</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Cleanup: Corrected file and class names.">
+      <created>1565451086634</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1565451086635</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Foundation_test - 2019.08.10 at 16h 41m 52s.xml">
-      <configuration name="Foundation test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Foundation_test - 2019.08.10 at 16h 42m 30s.xml">
-      <configuration name="Foundation test" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.08.10 at 17h 14m 04s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.08.10 at 17h 14m 19s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotated_projects - 2019.08.10 at 17h 15m 55s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Annotated_projects - 2019.08.10 at 17h 27m 04s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -1251,9 +936,24 @@
     <history-entry file="Annotated_projects - 2019.08.10 at 17h 30m 30s.xml">
       <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="Annotated_projects - 2019.08.10 at 17h 31m 02s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.08.10 at 17h 33m 02s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.08.10 at 17h 33m 40s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.08.10 at 17h 36m 20s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotated_projects - 2019.08.10 at 17h 37m 22s.xml">
+      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="639919000" />
+    <option name="totallyTimeSpent" value="640549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1268,7 +968,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2513312" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2513312" />
       <window_info id="Structure" order="1" weight="0.2497332" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1280,7 +980,7 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.74385244" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.7683168" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.2970297" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.5188119" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49840257" weight="0.44257426" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -1404,7 +1104,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js</url>
-          <line>363</line>
+          <line>361</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="859" />
         </line-breakpoint>
@@ -1536,13 +1236,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/autowired/Component/Ancestors/ParentComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/autowired/Component/Ancestors/GrandParentComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1668,48 +1361,6 @@
     <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/complex/aspect/aspect.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Inject/InjectAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/initialize/Init/InitAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inherits/Inherits/InheritsAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/aop/PointCut/PointCutAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1731,6 +1382,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/aop/Before/BeforeAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inherits/Inherits/InheritsAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Inject/InjectAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Store/StoreAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Bean/BeanAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Component/ComponentAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1742,6 +1442,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1759,20 +1466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Plugin/PluginAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1780,101 +1473,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Service/ServiceAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Autowire/AutowireAnnotationClass.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/JSDoc/type/typeAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/JSDoc/JSDoc/JSDocSupport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/aop/Before/BeforeAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/JSDoc/param/paramAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="82" />
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/JSDoc/type/typeAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/run/Run/RunAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Service/ServiceAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/initialize/Init/InitAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Autowire/AutowireAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/log/Application.log.-2019-08-09">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/factory/Factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state relative-caret-position="149">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js">
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Resource/ResourceAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/configuration/DIAnnotationsContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="939" column="30" selection-start-line="939" selection-start-column="30" selection-end-line="939" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
+        <state relative-caret-position="105">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="297" column="17" lean-forward="true" selection-start-line="297" selection-start-column="17" selection-end-line="297" selection-end-column="17" />
+        <state relative-caret-position="31">
+          <caret line="293" column="14" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="14" />
         </state>
       </provider>
     </entry>
