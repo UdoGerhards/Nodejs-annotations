@@ -10,7 +10,7 @@
 function Service() {
     var instance = this;
 
-    instance.bean = null;
+    instance.bean_B = null;
 
     instance.component = null;
 

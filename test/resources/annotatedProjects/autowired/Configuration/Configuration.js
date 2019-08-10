@@ -1,6 +1,12 @@
 'use strict';
 
 /**
+ *
+ * @Resource("Util", "util")
+ * @Resource("Path", "path")
+ * @Resource("CamelCase", "camelcase")
+ * @Resource("Wildcard", "node-wildcard")
+ *
  * @Configuration("Configuration")
  */
 function Configuration() {
