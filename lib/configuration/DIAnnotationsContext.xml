@@ -55,9 +55,7 @@
     <bean id="UuidValidator" src="uuidv4" />
 
     <!-- LogManager -->
-    <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
-        <property name="configFile" value="/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/configuration/log4js.json" />
-    </bean>
+    <bean id="LogManager" src="/lib/logging/LogManager.js" init="init" />
 
     <!--Diagram painter -->
     <bean id="Diagram" type="multi" src="/lib/diagram/diagramTool.js" />

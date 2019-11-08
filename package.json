@@ -1,117 +1,50 @@
 {
   "_args": [
     [
-      {
-        "raw": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "type": "hosted",
-        "hosted": {
-          "type": "bitbucket",
-          "ssh": "git@bitbucket.org:UdoGerhards/nodejs-annotations-refactored.git",
-          "sshUrl": "git+ssh://git@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-          "httpsUrl": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-          "shortcut": "bitbucket:UdoGerhards/nodejs-annotations-refactored",
-          "directUrl": "https://bitbucket.org/UdoGerhards/nodejs-annotations-refactored/raw/master/package.json"
-        }
-      },
-      "/Users/udogerhards/Documents/workspace_nodejs/nodecms-docroot"
-    ],
-    [
-      {
-        "raw": "nodejs-annotations-refactored@git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "scope": null,
-        "escapedName": "nodejs-annotations-refactored",
-        "name": "nodejs-annotations-refactored",
-        "rawSpec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "type": "hosted",
-        "hosted": {
-          "type": "bitbucket",
-          "ssh": "git@bitbucket.org:UdoGerhards/nodejs-annotations-refactored.git",
-          "sshUrl": "git+ssh://git@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-          "httpsUrl": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-          "shortcut": "bitbucket:UdoGerhards/nodejs-annotations-refactored",
-          "directUrl": "https://bitbucket.org/UdoGerhards/nodejs-annotations-refactored/raw/master/package.json"
-        }
-      },
-      "/Users/udogerhards/Documents/workspace_nodecms/nodecms-docroot"
-    ],
-    [
-      {
-        "raw": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-        "type": "hosted",
-        "hosted": {
-          "type": "bitbucket",
-          "ssh": "git@bitbucket.org:UdoGerhards/nodejs-annotations-refactored.git",
-          "sshUrl": "git+ssh://git@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-          "httpsUrl": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-          "shortcut": "bitbucket:UdoGerhards/nodejs-annotations-refactored",
-          "directUrl": "https://bitbucket.org/UdoGerhards/nodejs-annotations-refactored/raw/master/package.json"
-        }
-      },
-      "/Users/udogerhards/Documents/workspace_nodecms_admin/nodecms-docroot"
+      "git+https://github.com/UdoGerhards/DIAnnotations.git",
+      "/Users/udogerhards/Documents/nodecms-docroot-admin"
     ]
   ],
-  "_from": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-  "_id": "nodejs-annotations-refactored@0.1.0",
+  "_from": "git+https://github.com/UdoGerhards/DIAnnotations.git",
+  "_id": "nodejs-annotations-refactored@git+https://github.com/UdoGerhards/DIAnnotations.git#89130a08069c85fe68f8430de6da6b1442a3d66a",
+  "_inBundle": false,
   "_inCache": true,
+  "_integrity": "",
   "_location": "/nodejs-annotations-refactored",
   "_phantomChildren": {
-    "assertion-error": "1.0.2",
     "browser-stdout": "1.3.0",
-    "check-error": "1.0.2",
-    "commander": "2.9.0",
     "fs.realpath": "1.0.0",
-    "get-func-name": "2.0.0",
     "graceful-fs": "4.1.11",
+    "graceful-readlink": "1.0.1",
     "growl": "1.9.2",
     "has-flag": "1.0.0",
     "inflight": "1.0.6",
     "inherits": "2.0.3",
     "json3": "3.3.2",
-    "jsonfile": "3.0.1",
+    "lodash.create": "3.1.1",
     "minimatch": "3.0.4",
     "mkdirp": "0.5.1",
+    "ms": "2.0.0",
     "once": "1.4.0",
     "path-is-absolute": "1.0.1",
-    "pathval": "1.1.0",
     "universalify": "0.1.1"
   },
   "_requested": {
-    "raw": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-    "spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-    "type": "hosted",
-    "hosted": {
-      "type": "bitbucket",
-      "ssh": "git@bitbucket.org:UdoGerhards/nodejs-annotations-refactored.git",
-      "sshUrl": "git+ssh://git@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-      "httpsUrl": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-      "shortcut": "bitbucket:UdoGerhards/nodejs-annotations-refactored",
-      "directUrl": "https://bitbucket.org/UdoGerhards/nodejs-annotations-refactored/raw/master/package.json"
-    }
+    "type": "git",
+    "raw": "git+https://github.com/UdoGerhards/DIAnnotations.git",
+    "rawSpec": "git+https://github.com/UdoGerhards/DIAnnotations.git",
+    "saveSpec": "git+https://github.com/UdoGerhards/DIAnnotations.git",
+    "fetchSpec": "https://github.com/UdoGerhards/DIAnnotations.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git#f4b97c65ed2364a0e8c2d5a99193024d1f942215",
+  "_resolved": "git+https://github.com/UdoGerhards/DIAnnotations.git#89130a08069c85fe68f8430de6da6b1442a3d66a",
   "_shasum": "296cffac1381471d2a975c66d7af1458e74df4a4",
   "_shrinkwrap": null,
-  "_spec": "git+https://UdoGerhards@bitbucket.org/UdoGerhards/nodejs-annotations-refactored.git",
-  "_where": "/Users/udogerhards/Documents/workspace_nodecms_admin/nodecms-docroot",
+  "_spec": "git+https://github.com/UdoGerhards/DIAnnotations.git",
+  "_where": "/Users/udogerhards/Documents/nodecms-docroot-admin",
   "author": "",
   "dependencies": {
     "MD5": "^1.3.0",
@@ -150,8 +83,6 @@
   "main": "./lib/bootstrap/bootstrap.js",
   "name": "nodejs-annotations-refactored",
   "optionalDependencies": {},
-  "readme": "\n\n# nodejs\n\n\n\n## Usage\n\n\n\n## Developing\n\n\n\n### Tools\n\nCreated with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\n ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   \n\nNodeclipse is free open-source project that grows with your contributions.\n",
-  "readmeFilename": "README.md",
   "repository": "",
   "scripts": {
     "coverage": "istanbul cover _mocha -- --recursive",
