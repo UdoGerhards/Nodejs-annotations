@@ -59,7 +59,7 @@ class Configuration {
             ConfigItemC.prototype.printType = function() {
                 var instance = this;
                 console.log(typeof instance);
-            }
+            };
 
             return new ConfigItemC();
         };

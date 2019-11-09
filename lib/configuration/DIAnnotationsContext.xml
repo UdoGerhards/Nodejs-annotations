@@ -948,6 +948,9 @@
         <property name="moduleAware">
             <reference id="ModuleAware" />
         </property>
+        <property name="memberAware">
+            <reference id="MemberAware" />
+        </property>
         <property name="LogManager">
             <reference id="LogManager" />
         </property>

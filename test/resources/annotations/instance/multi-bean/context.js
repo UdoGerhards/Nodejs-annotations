@@ -9,27 +9,35 @@ class Application {
 
         var instance = this;
 
-        instance.bean = null;
+        /*
+         * @Qualifier("Bean11")
+         */
+        instance.bean11 = null;
 
         /*
-         *  @Qualifier("ConfigItemA")
+         * @Qualifier("Bean21")
          */
-        instance.cItemA = null;
+        instance.bean21 = null;
 
         /*
-         *  @Qualifier("ConfigItemB")
+         * @Qualifier("Bean22")
          */
-        instance.cItemB = null;
+        instance.bean22 = null;
 
         /*
-         *  @Qualifier("ConfigItemC")
+         * @Qualifier("Bean31")
          */
-        instance.cItemC = null;
+        instance.bean31 = null;
 
         /*
-         *  @Qualifier("ConfigItemD")
+         * @Qualifier("Bean32")
          */
-        instance.cItemD = null;
+        instance.bean32 = null;
+
+        /*
+         * @Qualifier("Bean33")
+         */
+        instance.bean33 = null;
 
     }
 }

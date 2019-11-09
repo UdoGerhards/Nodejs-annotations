@@ -5,6 +5,7 @@
  */
 'use strict';
 const fs = require('fs');
+const glob = require('glob-fs')({ gitignore: true });
 
 // Get all test specification files from directory
 var testFiles = fs.readdirSync(__dirname + "/spec");
@@ -12,10 +13,12 @@ var testFiles = fs.readdirSync(__dirname + "/spec");
 // Setup-code - Do this one time before any test suite started
 var randomNumber = Math.random();
 
+var testFiles = glob.readdirSync('./spec/**/*.js');
+
 // Require all the tests and supply with the same random number
 testFiles.forEach(function (file) {
-    if (!file.startsWith("_")) {
-        require('./spec/' + file);
+    if (!file.includes("_")) {
+        require("./"+file);
     }
 });
 
