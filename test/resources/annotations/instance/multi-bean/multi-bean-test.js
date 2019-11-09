@@ -10,8 +10,8 @@ function MultiBean(){
      * @Bean("Bean11")
      */
     instance.level11 = function() {
-
-        let logger = "This is the logger";
+        let instance = this;
+        instance.level = 11;
     };
 
     /*
@@ -19,21 +19,24 @@ function MultiBean(){
      */
     instance.level21 = function() {
         let instance = this;
+        instance.level = 21;
 
         /*
          * @Bean("Bean22")
          */
         instance.level22 = function() {
-
+            let instance = this;
+            instance.level = 22;
         };
     };
-
 
     /*
      * @Bean("Bean31")
      */
     instance.level31 = function() {
         let instance = this;
+
+        instance.level = 31;
 
         /*
          * @Bean("Bean32")
@@ -42,12 +45,14 @@ function MultiBean(){
 
             let instance = this;
 
+            instance.level = 32;
+
             /*
              * @Bean("Bean33")
              */
             instance.level33 = {
                 instance: this,
-                property34: "Propberty34"
+                level:33
             };
         };
     };
