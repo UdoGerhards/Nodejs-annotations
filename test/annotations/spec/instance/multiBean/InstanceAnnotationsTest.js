@@ -49,8 +49,14 @@ describe("Instance annotation test suite", function(){
             assert.isNotNull(context, "Context is null");
             assert.isObject(context, "Context is not an object");
 
+            context.bean11.printName();
 
+            context.bean21.printName();
+            context.bean22.printName();
 
+            context.bean31.printName();
+            context.bean32.printName();
+            context.bean33.printName();
 
         });
     });

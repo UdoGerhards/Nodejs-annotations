@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Optimized bean building for inner beans">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,29 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="true" current-in-tab="true">
+      <file pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="425" column="49" lean-forward="true" selection-start-line="425" selection-start-column="49" selection-end-line="425" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/xml/FoundationXMLParser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="354" column="51" selection-start-line="354" selection-start-column="51" selection-end-line="354" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
+            <state relative-caret-position="242">
+              <caret line="415" column="17" selection-start-line="415" selection-start-column="17" selection-end-line="415" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -68,11 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="true" current-in-tab="false">
+      <file pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="176">
+              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/context.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-29">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -80,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="203">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -230,11 +221,11 @@
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Bean/SubBeanLoader.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/instance/configuration/configuration.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/package.json" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/context.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/instance/controller/context.js" />
-        <option value="$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js" />
+        <option value="$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js" />
       </list>
     </option>
   </component>
@@ -575,7 +566,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573321096845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573321565728" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -847,14 +838,7 @@
       <workItem from="1573222091787" duration="780000" />
       <workItem from="1573224129750" duration="1233000" />
       <workItem from="1573238905846" duration="63000" />
-      <workItem from="1573291669204" duration="26098000" />
-    </task>
-    <task id="LOCAL-00078" summary="Added xml based context processing">
-      <created>1546703831759</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1546703831759</updated>
+      <workItem from="1573291669204" duration="26565000" />
     </task>
     <task id="LOCAL-00079" summary="Added xml based context processing">
       <created>1546705960718</created>
@@ -1192,28 +1176,17 @@
       <option name="project" value="LOCAL" />
       <updated>1573314066942</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Optimized bean building for inner beans">
+      <created>1573321120126</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1573321120126</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Annotations - 2019.11.09 at 18h 21m 57s.xml">
-      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotations - 2019.11.09 at 18h 23m 23s.xml">
-      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotations - 2019.11.09 at 18h 31m 50s.xml">
-      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotations - 2019.11.09 at 18h 32m 21s.xml">
-      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotations - 2019.11.09 at 18h 33m 40s.xml">
-      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="Annotations - 2019.11.09 at 18h 34m 32s.xml">
-      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Annotations - 2019.11.09 at 18h 35m 17s.xml">
       <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -1226,9 +1199,27 @@
     <history-entry file="Annotations - 2019.11.09 at 18h 38m 14s.xml">
       <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="Annotations - 2019.11.09 at 18h 38m 53s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotations - 2019.11.09 at 18h 40m 13s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotations - 2019.11.09 at 18h 40m 53s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotations - 2019.11.09 at 18h 43m 41s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotations - 2019.11.09 at 18h 44m 50s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Annotations - 2019.11.09 at 18h 45m 42s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="675076000" />
+    <option name="totallyTimeSpent" value="675543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1243,8 +1234,8 @@
     <frame x="-1" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20234291" />
-      <window_info id="Structure" order="1" visible="true" weight="0.19329074" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20234291" />
+      <window_info id="Structure" order="1" weight="0.19329074" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -1255,8 +1246,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.74385244" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.7683168" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.35931173" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49840257" visible="true" weight="0.43623483" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.58502024" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49840257" weight="0.43623483" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
@@ -1337,24 +1328,6 @@
           <line>28</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="872" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js</url>
-          <line>49</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="942" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js</url>
-          <line>48</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="943" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js</url>
-          <line>421</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="950" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1728,24 +1701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/instance/configure/_InstanceAnnotationsTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="246" column="20" selection-start-line="246" selection-start-column="20" selection-end-line="246" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/configuration/context.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1763,20 +1722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1786,8 +1731,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="425" column="49" lean-forward="true" selection-start-line="425" selection-start-column="49" selection-end-line="425" selection-end-column="49" />
+        <state relative-caret-position="242">
+          <caret line="415" column="17" selection-start-line="415" selection-start-column="17" selection-end-line="415" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/annotations/spec/instance/configure/_InstanceAnnotationsTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="246" column="20" selection-start-line="246" selection-start-column="20" selection-end-line="246" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/multi-bean/multi-bean-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/annotations/spec/instance/multiBean/InstanceAnnotationsTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
         </state>
       </provider>
     </entry>
