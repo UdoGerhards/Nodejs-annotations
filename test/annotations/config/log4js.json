@@ -1,0 +1,18 @@
+{
+  "appenders": {
+    "default": {
+      "type": "stdout",
+      "pattern": "-yyyy-MM-dd",
+      "category": "defaultConsole"
+    },
+    "defaultFile": {
+      "type": "file",
+      "pattern": "-yyyy-MM-dd",
+      "category": "defaultFile",
+      "filename": "default.log"
+    }
+  },
+  "categories": {
+    "default": { "appenders": ["default","defaultFile"], "level": "DEBUG" }
+  }
+}

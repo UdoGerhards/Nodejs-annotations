@@ -19,9 +19,11 @@ describe("AOP annotation test suite", function(){
 
     var resourcesPath = process.env.PWD + path.sep + path.join("resources", "annotations", "aop");
     var loggerConfig = process.env.PWD + path.sep + path.join("config", "log4js.json");
-    var bootstrap = require(process.env.PWD.replace("/test","") + path.sep + path.join("lib", "bootstrap", "bootstrap.js"));
-    var factory = require(process.env.PWD.replace("/test","") + path.sep + path.join("lib", "factory", "Factory.js"));
-    var contextBuilder = require(process.env.PWD.replace("/test","") + path.sep + path.join("lib", "context", "ContextBuilder.js"));
+    var libPath = process.env.PWD.replace("/test","").replace("/annotations", "") + path.sep + path.join("lib");
+
+    var bootstrap = require( path.join( libPath, "bootstrap", "bootstrap.js"));
+    var factory = require(path.join(libPath, "foundation", "factory", "Factory.js"));
+    var contextBuilder = require(path.join(libPath, "foundation", "context", "ContextBuilder.js"));
 
 
     log4js.configure(loggerConfig);
