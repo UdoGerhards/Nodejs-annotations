@@ -176,7 +176,7 @@ describe("Project annotation test suite", function(){
                 assert.isNotNull(context.initFlag, "Context property 'initFlag' is null");
                 assert.equal(1, context.initFlag, "Init flag does not match expectation");
 
-                assert.isNotNull(context.runFlag, "Context property 'initFlag' is null");
+                assert.isNotNull(context.runFlag, "Context property 'runFlag' is null");
                 assert.equal(2, context.runFlag, "Run flag does not match expectation");
 
                 var bean = context.bean;
