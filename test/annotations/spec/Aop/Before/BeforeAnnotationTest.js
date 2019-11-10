@@ -12,36 +12,42 @@ var mocha = require("mocha")
  * Created by udogerhards on 20.10.18.
  */
 
-describe("Instance annotation test suite", function(){
+describe("AOP annotation test suite", function(){
 
-    var contextBuilder = null;
     var timeout = 50000;
 
-    var resourcesPath = process.env.PWD.replace("/annotations","") + path.sep + path.join("resources", "annotations", "instance");
+    var resourcesPath = process.env.PWD.replace("/annotations","") + path.sep + path.join("resources", "annotations", "aop");
     var loggerConfig = process.env.PWD + path.sep + path.join("config", "log4js.json");
     var libPath = process.env.PWD.replace("/test","").replace("/annotations", "") + path.sep + path.join("lib");
 
     var bootstrap = require( path.join( libPath, "bootstrap", "bootstrap.js"));
 
+
     log4js.configure(loggerConfig);
     var logger = log4js.getLogger("contextBuilder");
 
-    it('Should instantiate a multi bean with internal beans', function(){
+    it('Should instantiate and wire a method before the target method with "@Before"', function(){
 
         /*
             Initialize context
-        */
-        var contextRoot = resourcesPath+path.sep+path.join("multi-bean");
+         */
+
+        var contextRoot = resourcesPath+path.sep+path.join("Before");
         var contextInfo = {
             "scan": [
                 contextRoot
             ]
         };
 
+
+        // Instantiate test class
+        var TestClass = require(contextRoot+path.sep+path.join("bean_test.js"));
+
         /*
             Bootstrap the context and run the tests
         */
         this.timeout(timeout);
+
         let promise = bootstrap(contextInfo, "INFO", null);
         return promise.then(function(context){
 
@@ -49,16 +55,15 @@ describe("Instance annotation test suite", function(){
             assert.isNotNull(context, "Context is null");
             assert.isObject(context, "Context is not an object");
 
-            context.bean11.printName();
+            // Test bean
+            assert.isNotNull(context.bean, "Bean is null");
+            assert.isObject(context.bean, "Bean is not an object");
 
-            context.bean21.printName();
-            context.bean22.printName();
+            // Test bean class
+            assert.instanceOf(context.bean, TestClass, "Context bean has wrong class type");
 
-            context.bean31.printName();
-            context.bean32.printName();
-            context.bean33.printName();
+            context.bean.beforeFunction("Test");
 
         });
     });
-
 });

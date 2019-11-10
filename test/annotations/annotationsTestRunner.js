@@ -17,7 +17,17 @@ var testFiles = glob.readdirSync('./spec/**/*.js');
 
 // Require all the tests and supply with the same random number
 testFiles.forEach(function (file) {
-    if (!file.includes("_")) {
+
+    let execute = true;
+    let nonExec = [
+        "_",
+    ];
+
+    for (let index = 0; index < nonExec.length; index++){
+        execute = !file.includes(nonExec[index]) & execute;
+    }
+
+    if (execute) {
         require("./"+file);
     }
 });

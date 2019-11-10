@@ -3,7 +3,7 @@
 /**
  * @Context("Application")
  */
-// @Properties('/resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}')
+// @Properties('../resources/annotations/meta/Properties/configs/**/*.{json,xml, properties}')
 class Application {
     constructor()
     {
@@ -13,17 +13,17 @@ class Application {
         instance.bean = null;
 
         /*
-         * @Qualifier("xmlPropertiesBean")
+         * @Qualifier("XmlPropertiesBean")
          */
         instance.xmlConfig = null;
 
         /*
-         * @Qualifier("jsonPropertiesBean")
+         * @Qualifier("JsonPropertiesBean")
          */
         instance.jsonConfig = null;
 
         /*
-         * @Qualifier("javaPropertiesBean")
+         * @Qualifier("JavaPropertiesBean")
          */
         instance.javaConfig = null;
     }

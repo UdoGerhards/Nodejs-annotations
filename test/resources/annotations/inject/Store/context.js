@@ -10,9 +10,14 @@ class Application {
         var instance = this;
 
         /*
-         * @Qualifier("TestInjectController")
+         * @Store("Controller")
          */
-        instance.controller = null;
+        instance.controllerArr = [];
+
+        /*
+         * @Store("Controller")
+         */
+        instance.controllerList = {};
     }
 }
 
