@@ -40,7 +40,7 @@ Application.prototype.init = function() {
 };
 
 /**
- * @Run()
+ * Run()
  * @type {Application}
  */
 Application.prototype.run = function() {

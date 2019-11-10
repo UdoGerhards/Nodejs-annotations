@@ -65,7 +65,7 @@ Plugin.prototype.init = function() {
 }
 
 /**
- * @Run()
+ * Run()
  * @type {Plugin}
  */
 Plugin.prototype.run = function() {
