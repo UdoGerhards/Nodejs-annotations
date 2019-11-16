@@ -21,6 +21,12 @@ testFiles.forEach(function (file) {
     let execute = true;
     let nonExec = [
         "_",
+        "Aop",
+        "Init",
+        "Inject",
+        "Instance",
+        "Meta",
+        "Run"
     ];
 
     for (let index = 0; index < nonExec.length; index++){

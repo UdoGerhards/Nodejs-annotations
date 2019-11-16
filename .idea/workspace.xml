@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07037100-3bfd-4d2e-9853-63a0198b7f96" name="Default" comment="Optimized bean building for inner beans">
+      <change afterPath="$PROJECT_DIR$/test/annotations/spec/Inherits/Simple/InheritsAnnotationTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/child.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/grandparent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/bean/bean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/child.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/component/component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/grandparent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/service/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/simple/child.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/simple/context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/simple/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/annotations/inherits/simple/parent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/Parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/annotations/annotationsTestRunner.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/annotations/annotationsTestRunner.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,46 +51,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/run/Run/RunAnnotationParser.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/inherits/inherits/Inherits.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="99" selection-start-line="99" selection-end-line="107" selection-end-column="5" />
+            <state relative-caret-position="193">
+              <caret line="186" selection-start-line="186" selection-end-line="186" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/Parser.js">
+        <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/grandparent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="978">
-              <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+            <state relative-caret-position="215">
+              <caret line="296" column="14" lean-forward="true" selection-start-line="296" selection-start-column="14" selection-end-line="297" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/JSDoc/JSDoc/JSDocSupport.js">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/base/ContextAware.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/annotations/spec/Inherits/Simple/InheritsAnnotationTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="120">
+              <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -92,8 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>process</find>
-      <find>annotatedCTX</find>
       <find>ServiceBean</find>
       <find>linkDataArray</find>
       <find>applicationStack</find>
@@ -122,11 +143,10 @@
       <find>init4</find>
       <find>@Run</find>
       <find>Run</find>
+      <find>Bean</find>
+      <find>Parent</find>
     </findStrings>
     <replaceStrings>
-      <replace>After</replace>
-      <replace>Aspect</replace>
-      <replace>Bevore</replace>
       <replace>Before</replace>
       <replace>PointCut</replace>
       <replace>Base</replace>
@@ -154,6 +174,9 @@
       <replace />
       <replace>JavaPropertiesProcessor</replace>
       <replace>child</replace>
+      <replace>Child</replace>
+      <replace>Parent</replace>
+      <replace>GrantParent</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/lib/parser/annotation</dir>
@@ -178,23 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Autowire/Autowire.js" />
-        <option value="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Aop/Aspect/AspectAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Aop/PointCut/PointCutAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/_AopAnnotationsTest.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Aop/Before/BeforeAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/Aspect/Aspect.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/Before/Before.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Aop/After/AfterAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/aop/After/After.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Inject/Inject/InjectAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/test/resources/annotations/inject/Store/context.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Inject/Store/StoreAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/inject/Store/Store.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Inject/Qualifier/QualifierAnnotationTest.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Inject/Autowired/AutowireAnnotationsTest.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Namespace/NamespaceParser.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/meta/Namespace/controller_test.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/meta/Namespace/service_test.js" />
@@ -205,20 +211,16 @@
         <option value="$PROJECT_DIR$/test/resources/annotations/meta/Properties/context.js" />
         <option value="$PROJECT_DIR$/lib/foundation/factory/Factory.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/member/Block/Esprima_Block.js" />
-        <option value="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/initialize/Init/Init.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/context/context_test.js" />
         <option value="$PROJECT_DIR$/test/resources/Plugins/PluginProject/Context.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/init/package.json" />
         <option value="$PROJECT_DIR$/test/resources/annotations/init/bean_test.js" />
-        <option value="$PROJECT_DIR$/test/resources/annotations/init/context.js" />
-        <option value="$PROJECT_DIR$/test/annotations/spec/Init/InitAnnotationTest.js" />
         <option value="$PROJECT_DIR$/test/resources/annotations/run/package.json" />
         <option value="$PROJECT_DIR$/test/resources/annotations/run/context.js" />
         <option value="$PROJECT_DIR$/test/annotations/spec/Run/RunAnnotationTest.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/run/Run/RunAnnotationParser.js" />
-        <option value="$PROJECT_DIR$/test/annotations/annotationsTestRunner.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/inheritance/inheritanceTree/Context.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/inheritance/simple/Context.js" />
         <option value="$PROJECT_DIR$/test/resources/annotatedProjects/complex/Context.js" />
@@ -229,6 +231,27 @@
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/Parser.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js" />
         <option value="$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/simple/package.json" />
+        <option value="$PROJECT_DIR$/test/annotations/annotationsTestRunner.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/simple/context.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/init/Application.java" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/init/context.js" />
+        <option value="$PROJECT_DIR$/test/annotations/spec/Init/InitAnnotationTest.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/simple/parent.js" />
+        <option value="$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/simple/child.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/grantparent.json" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/package.json" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/grantparent.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/parent.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multiple/grandparent.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/grandparent.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/service/service.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/component/component.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/parent.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/bean/bean.js" />
+        <option value="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/child.js" />
+        <option value="$PROJECT_DIR$/test/annotations/spec/Inherits/Simple/InheritsAnnotationTest.js" />
       </list>
     </option>
   </component>
@@ -246,17 +269,15 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="1" />
+    <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,23 +301,6 @@
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -304,10 +308,75 @@
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="Inherits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="inject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="inject" type="462c0819:PsiDirectoryNode" />
+              <item name="Qualifier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+              <item name="Context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -316,9 +385,6 @@
               <item name="foundation" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDocSupport" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
@@ -327,46 +393,186 @@
               <item name="foundation" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="param" type="462c0819:PsiDirectoryNode" />
+              <item name="structure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="JSDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="type" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-              <item name="Run" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="Inherits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="Inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="Simple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="Init" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="multiple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="multipleWithBeans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="multipleWithBeans" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="multipleWithBeans" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="multipleWithBeans" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inherits" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="init" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="inject" type="462c0819:PsiDirectoryNode" />
+              <item name="Qualifier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs-annotations" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs-annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,7 +580,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573406682842" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573907245018" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -387,19 +593,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test" />
-      <recent name="$PROJECT_DIR$/test/resources/annotations/run" />
-      <recent name="$PROJECT_DIR$/test/annotations/spec/Run" />
-      <recent name="$PROJECT_DIR$/test/resources/annotations/init" />
-      <recent name="$PROJECT_DIR$/test/annotations/spec/Init" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/annotations/spec/Inject/Autowired" />
       <recent name="$PROJECT_DIR$/test/annotations/spec/Inject" />
       <recent name="$PROJECT_DIR$/test/annotations/spec/instance/Resource" />
       <recent name="$PROJECT_DIR$/test/annotations/spec/instance" />
       <recent name="$PROJECT_DIR$/test/annotations/spec/instance/Service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/bean" />
+      <recent name="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/service" />
+      <recent name="$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/component" />
+      <recent name="$PROJECT_DIR$/test/resources/annotations/inherits" />
+      <recent name="$PROJECT_DIR$/test/resources/annotations/inherits/multiple" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -663,13 +869,8 @@
       <workItem from="1573291669204" duration="28499000" />
       <workItem from="1573377855650" duration="15499000" />
       <workItem from="1573394752342" duration="11328000" />
-    </task>
-    <task id="LOCAL-00084" summary="Added xml based context processing">
-      <created>1546789771616</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1546789771616</updated>
+      <workItem from="1573406725755" duration="634000" />
+      <workItem from="1573902492651" duration="4414000" />
     </task>
     <task id="LOCAL-00085" summary="Added xml based context processing">
       <created>1546947869184</created>
@@ -1007,43 +1208,50 @@
       <option name="project" value="LOCAL" />
       <updated>1573404690349</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Optimized bean building for inner beans">
+      <created>1573406736904</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1573406736905</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AnnotationsTestSuite - 2019.11.10 at 17h 48m 27s.xml">
-      <configuration name="AnnotationsTestSuite" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 11m 39s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnnotationsTestSuite - 2019.11.10 at 17h 48m 59s.xml">
-      <configuration name="AnnotationsTestSuite" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 13m 16s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnnotationsTestSuite - 2019.11.10 at 17h 49m 24s.xml">
-      <configuration name="AnnotationsTestSuite" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 13m 51s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnnotationsTestSuite - 2019.11.10 at 17h 49m 53s.xml">
-      <configuration name="AnnotationsTestSuite" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 14m 36s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnnotationsTestSuite - 2019.11.10 at 17h 50m 13s.xml">
-      <configuration name="AnnotationsTestSuite" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 17m 44s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnnotationsTestSuite - 2019.11.10 at 17h 50m 28s.xml">
-      <configuration name="AnnotationsTestSuite" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 20m 44s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Foundation_test - 2019.11.10 at 17h 50m 31s.xml">
-      <configuration name="Foundation test" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 22m 19s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="XML_based_Context - 2019.11.10 at 17h 50m 39s.xml">
-      <configuration name="XML based Context" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 23m 52s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotated_projects - 2019.11.10 at 17h 50m 51s.xml">
-      <configuration name="Annotated projects" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Annotations - 2019.11.16 at 13h 24m 28s.xml">
+      <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Annotations - 2019.11.10 at 17h 51m 00s.xml">
+    <history-entry file="Annotations - 2019.11.16 at 13h 26m 48s.xml">
       <configuration name="Annotations" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="704304000" />
+    <option name="totallyTimeSpent" value="709352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1055,8 +1263,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22896698" />
       <window_info id="Structure" order="1" weight="0.19329074" />
@@ -1071,13 +1278,13 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.7683168" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.45647773" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49840257" weight="0.45850202" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49840257" visible="true" weight="0.5668016" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.328934" />
       <window_info anchor="bottom" id="Statistic" order="9" weight="0.23959391" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32994923" />
-      <window_info active="true" anchor="bottom" x="541" y="0" width="1133" height="1045" id="Terminal" order="11" sideWeight="0.49733758" visible="true" weight="0.24190283" />
+      <window_info anchor="bottom" x="541" y="0" width="1133" height="1045" id="Terminal" order="11" sideWeight="0.49733758" weight="0.24190283" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Dependency Viewer" order="14" visible="true" weight="0.24897541" />
@@ -1086,7 +1293,7 @@
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" visible="true" weight="0.08306709" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" visible="true" weight="0.08413205" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" order="7" weight="0.4" />
       <window_info anchor="right" id="Database" order="8" weight="0.56070286" />
@@ -1151,6 +1358,18 @@
           <url>file://$PROJECT_DIR$/test/annotations/spec/Inject/Store/StoreAnnotationTest.js</url>
           <line>59</line>
           <option name="timeStamp" value="944" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/annotations/spec/Inherits/Simple/InheritsAnnotationTest.js</url>
+          <line>101</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="964" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js</url>
+          <line>300</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="966" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1268,213 +1487,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/Meta/Properties/PropertiesAnnotationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="44" column="59" lean-forward="true" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/Processor/JsonPropertiesProcessor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/Processor/XMLPropertiesProcessor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/meta/Properties/Processor/JavaPropertiesProcessor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/meta/Properties/configs/config2/config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/meta/Properties/configs/config3/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/meta/Properties/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/_MetaAnnotationsTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1699">
-          <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/member/Block/Esprima_Block.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="63" column="88" selection-start-line="63" selection-start-column="88" selection-end-line="63" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/typeSafe/Interface/interface.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/JSDoc/param/paramAnnotationClass.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="384" column="5" selection-start-line="384" selection-start-column="5" selection-end-line="384" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/Base/Base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="124" column="18" selection-start-line="124" selection-end-line="126" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/simple/bean/Bean.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/typeSafe/Context.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/typeSafe/Service/TestService.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/typeSafe/TypeBean.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/typeSafe/TypedParamsBean.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/Instance/component/ComponentAnnotationTest.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/context/context_test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/bean/bean_test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/factory/Factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="239" column="96" selection-start-line="239" selection-start-column="96" selection-end-line="239" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/bean_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/run/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotations/run/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/Init/InitAnnotationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="199" column="28" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/initialize/Init/Init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="86" selection-start-line="86" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/spec/Run/RunAnnotationTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/default.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotatedProjects/spec/annotatedProjectTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2357">
-          <caret line="359" column="27" selection-start-line="359" selection-start-column="27" selection-end-line="359" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/annotatedProjects/autowired/Context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/xmlBasedProjects/xmlBaseProjectTestRunner.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1485,17 +1497,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/toDelete.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testSuite.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/context/contextBuilderTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7325" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/toDelete.txt" />
+    <entry file="file://$PROJECT_DIR$/test/testSuite.js" />
+    <entry file="file://$PROJECT_DIR$/test/context/contextBuilderTest.js" />
     <entry file="file://$PROJECT_DIR$/test/foundation/foundationTestRunner.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1509,34 +1513,28 @@
     <entry file="file://$PROJECT_DIR$/test/annotatedProjects/annotatedProjectTestRunner.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotationTestSuite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/annotations/annotationsTestRunner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/annotationTestSuite.js" />
     <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/run/Run/RunAnnotationClass.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/run/Run/RunAnnotationParser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="1485">
           <caret line="99" selection-start-line="99" selection-end-line="107" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/param/Parser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
+        <state relative-caret-position="2475">
           <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1547,17 +1545,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/type/Parser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="978">
-          <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/JSDoc/JSDocSupport/JSDocSupportParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/annotations/annotationsTestRunner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/simple/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/annotations/spec/Init/InitAnnotationTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/factory/Factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="248" column="63" selection-start-line="248" selection-start-column="63" selection-end-line="248" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/ContextBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/simple/parent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/simple/child.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/simple/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multiple/grantparent.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multiple/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multiple/parent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multiple/grandparent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multiple/context.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/chai/lib/chai/core/assertions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="301" column="16" selection-start-line="301" selection-start-column="16" selection-end-line="301" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inject/Qualifier/component_test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/service/service_test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/instance/bean/bean_test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/component/component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/parent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/child.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/bean/bean.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/bean_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="14" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/init/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/service/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inherits/Inherits/InheritsAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/inherits/inherits/Inherits.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/annotations/inherits/multipleWithBeans/grandparent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/inject/Qualifier/QualifierAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/annotation/instance/Prototype/Prototype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1498" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Prototype/PrototypeAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/instance/Context/ContextAnnotationClass.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/annotation/base/ContextAware.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/annotations/spec/Inherits/Simple/InheritsAnnotationTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/foundation/context/parser/structure/StructureParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="296" column="14" lean-forward="true" selection-start-line="296" selection-start-column="14" selection-end-line="297" selection-end-column="35" />
         </state>
       </provider>
     </entry>
