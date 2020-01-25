@@ -233,4 +233,4 @@ The project is under heavy development currently! Contents and functionality mig
 
 ## Further documentation
 
-Please have a look at the provided tests to see how to use the different annotations. The ["test"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test) and the ["resources"](https://github.com/UdoGerhards/DIAnnotations/tree/master/test/resources) folders contain according examples.
+Please have a look at the provided tests to see how to use the different annotations. The ["test"](https://github.com/UdoGerhards/Nodejs-annotations/tree/master/test) and the ["resources"](https://github.com/UdoGerhards/Nodejs-annotations/tree/master/test/resources) folders contain according examples.
