@@ -170,7 +170,7 @@ image.
 
 ## Inheritance 
 
-The inheritance functionality is currently is supporting function declaration approach like 
+The inheritance functionality is currently supporting the function declaration approach only like 
 
 ```
 /**
