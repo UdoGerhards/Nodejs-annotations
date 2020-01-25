@@ -3,7 +3,7 @@
 
 /**
  * @Context("Application")
- * @JSDocSupport()
+ * @JSDocSupport('Convert')
  * @Autowire(report_missing = true)
  */
 
