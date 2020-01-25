@@ -261,7 +261,14 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ]
+            ],
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
         };
 
         let ParentClass = require(contextRoot+path.sep+path.join("ParentBean.js"));
@@ -293,7 +300,14 @@ describe("Project annotation test suite", function(){
         var contextInfo = {
             "scan": [
                 contextRoot
-            ]
+            ],
+            "projectLandScape": {
+                "dir": contextRoot,
+                "useBeanNames": true,
+                "showAnnotations": false,
+                "avoidDefaultMethods": false,
+                "excludeResources": true,
+            }
         };
 
 
