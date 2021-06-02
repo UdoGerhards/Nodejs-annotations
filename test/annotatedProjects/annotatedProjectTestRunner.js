@@ -7,14 +7,16 @@
 const fs = require('fs');
 
 // Get all test specification files from directory
-var testFiles = fs.readdirSync(__dirname + "/spec");
+
+let testPath = __dirname + "/spec";
+var testFiles = fs.readdirSync(testPath);
 
 // Setup-code - Do this one time before any test suite started
 var randomNumber = Math.random();
 
 // Require all the tests and supply with the same random number
-testFiles.forEach(function (file) {
-    require('./spec/' + file);
+testFiles.forEach(function(file) {
+  //require('./spec/' + file);
 });
 
 // Mocha command to run tests (since Mocha doesn't access them directly)

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/2.0.15/go.js"></script>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="data.js"></script>
+
+    <script id="code">
+        var makeSVGLink = null;
+        var printImgLink = null;
+        var scaleLink = null;
+        var moveNodeToCenter = null;
+        var searchComponent = null;
+        var extScale = false;
+        var fitToScreen = null;
+
+        var links = {
+            diagram: {},
+            chord: {}
+        }
+
+        /*
+        * Class diagram
+        */
+        function init() {
+            var $ = go.GraphObject.make;
+
+            myDiagram =
+                $(go.Diagram, "myDiagramDiv",
+                    {
+                        initialContentAlignment: go.Spot.Center,
+                        initialDocumentSpot: go.Spot.TopCenter,
+                        initialViewportSpot: go.Spot.TopCenter,
+                        initialAutoScale: go.Diagram.Uniform,
+                        "undoManager.isEnabled": true,
+                        layout: $(go.TreeLayout,
+                            { // this only lays out in trees nodes connected by "generalization" links
+                                angle: 90,
+                                path: go.TreeLayout.PathSource,  // links go from child to parent
+                                setsPortSpot: false,  // keep Spot.AllSides for link connection spot
+                                setsChildPortSpot: false,  // keep Spot.AllSides
+                                // nodes not connected by "generalization" links are laid out horizontally
+                                arrangement: go.TreeLayout.ArrangementHorizontal
+                            })
+                    });
+
+            // show visibility or access as a single character at the beginning of each property or method
+            function convertVisibilityMethod(v) {
+
+                switch (v) {
+                    case "public": return "Ellipse";
+                    case "private": return "Rectangle";
+                    case "protected": return "Diamond";
+                    case "package": return "~";
+                    default: return v;
+                }
+            }
+
+            function convertVisiblityColorMethod(v) {
+
+                switch(v) {
+                    case "public":
+                        return "#619b71";
+                    case "private":
+                        return "red";
+                    case "protected":
+                        return "yellow";
+                    case "package":
+                        return "~";
+                    default:
+                        return v
+                }
+            }
+
+            function convertVisibilityProperties(v) {
+
+                switch (v) {
+                    case "public": return "Rectangle";
+                    case "private": return "Rectangle";
+                    case "protected": return "Rectangle";
+                    case "package": return "~";
+                    default: return v;
+                }
+            }
+
+            function convertVisiblityColorProperties(v) {
+
+                switch(v) {
+                    case "public":
+                        return "#619b71";
+                    case "private":
+                        return "red";
+                    case "protected":
+                        return "yellow";
+                    case "package":
+                        return "~";
+                    default:
+                        return v
+                }
+            }
+
+            function getType(v) {
+
+                return v[0];
+
+            }
+
+            // PNG
+
+            function myCallback(blob) {
+                var url = window.URL.createObjectURL(blob);
+
+                var type = blob.type;
+                var filename = data.appName;
+
+                if (type == "image/svg+xml") {
+                    filename += ".svg";
+                } else if (type == "image/png") {
+                    filename += ".png";
+                }
+
+                var a = document.createElement("a");
+                a.style = "display: none";
+                a.href = url;
+                a.download = filename;
+
+                // IE 11
+                if (window.navigator.msSaveBlob !== undefined) {
+                    window.navigator.msSaveBlob(blob, filename);
+                    return;
+                }
+
+                document.body.appendChild(a);
+                requestAnimationFrame(function() {
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a);
+                });
+            }
+
+            function printImg() {
+                window.print()
+            }
+
+            printImgLink = printImg
+
+            function makeSvg() {
+                var svg = myDiagram.makeSvg({ scale: 1, background: "white" });
+                var svgstr = new XMLSerializer().serializeToString(svg);
+                var blob = new Blob([svgstr], { type: "image/svg+xml" });
+                myCallback(blob);
+            }
+
+            makeSVGLink = makeSvg;
+
+            function moveToCenter(input) {
+                var node = myDiagram.findNodeForKey(input);
+
+                myDiagram.centerRect(node.actualBounds);
+                myDiagram.select(node);
+
+            }
+            links.diagram.moveToCenter = moveToCenter;
+
+            // the item template for properties
+            var propertyTemplate =
+                $(go.Panel, "Horizontal",
+                    // property visibility/access
+                    $(go.Shape,
+                        { width: 7, height: 7, column: 0, strokeWidth: 1, stroke:"#888888", margin: 4,
+                            // but disallow drawing links from or to this shape:
+                            fromLinkable: false, toLinkable: false },
+                        new go.Binding("figure", "visibility", convertVisibilityProperties),
+                        new go.Binding("fill", "visibility", convertVisiblityColorProperties)),
+                    $(go.TextBlock,
+                        { isMultiline: false, editable: false },
+                        new go.Binding("text", "name").makeTwoWay(),
+                        new go.Binding("isUnderline", "scope", function(s) { return s[0] === 'c' })),
+                    // property type, if known
+                    $(go.TextBlock, "",
+                        { isMultiline: false, editable: false},
+                        new go.Binding("text", "type", function(t) { return (t ? ": " : ""); })),
+                    $(go.TextBlock,
+                        { isMultiline: false, editable: false, stroke:"#888888", font: "italic 9pt sans-serif", },
+                        new go.Binding("text", "type").makeTwoWay()),
+                    // property default value, if any
+                    $(go.TextBlock,
+                        { isMultiline: false, editable: false },
+                        new go.Binding("text", "default", function(s) { return s ? " = " + s : ""; }))
+                );
+
+            // the item template for methods
+            var methodTemplate =
+                $(go.Panel, "Horizontal",
+                    // method visibility/access
+                    $(go.Shape,
+                        { width: 7, height: 7, column: 0, strokeWidth: 1, stroke:"#888888", margin: 4,
+                            // but disallow drawing links from or to this shape:
+                            fromLinkable: false, toLinkable: false },
+                        new go.Binding("figure", "visibility", convertVisibilityMethod),
+                        new go.Binding("fill", "visibility", convertVisiblityColorMethod)),
+                    $(go.TextBlock,
+                        { isMultiline: false, editable: false },
+                        new go.Binding("text", "name").makeTwoWay(),
+                        new go.Binding("isUnderline", "scope", function(s) { return s[0] === 'c' })),
+                    // method parameters
+                    $(go.TextBlock, "()",
+                        { stroke:"#888888", font: "italic 9pt sans-serif",},
+                        // this does not permit adding/editing/removing of parameters via inplace edits
+                        new go.Binding("text", "parameters", function(parr) {
+                            var s = "(";
+                            for (var i = 0; i < parr.length; i++) {
+                                var param = parr[i];
+                                if (i > 0) s += ", ";
+                                s += param.name + ": " + param.type;
+                            }
+                            return s + ")";
+                        })),
+                    // method return type, if any
+                    $(go.TextBlock, "",
+                        { isMultiline: false, editable: false},
+                        new go.Binding("text", "type", function(t) { return (t ? ": " : ""); })),
+                    $(go.TextBlock,
+                        { isMultiline: false, editable: false},
+                        new go.Binding("text", "type").makeTwoWay())
+                );
+
+            var gradientBackground = $(go.Brush, "Linear", { 0.0: "#fefefe", 1.0: "#dcdcdc" });
+            var lastSelected = null;
+            function onSelectionChanged(node) {
+
+                var shape = node.findObject("SHAPE");
+
+                if (node !== null) {
+                    shape.fill = "lightyellow";
+                    shape.stroke = "red";
+                    if (lastSelected && lastSelected !== shape) {
+                        lastSelected.fill = gradientBackground,
+                            lastSelected.stroke = "#888888";
+                    }
+                    lastSelected = shape;
+                }
+            }
+
+            function mouseEnter(e, node) {
+
+                //console.log(node.isSelected);
+                var shape = node.findObject("SHAPE");
+                shape.fill = "lightyellow";
+            };
+
+            function mouseLeave(e, node) {
+                var shape = node.findObject("SHAPE");
+                if (shape.stroke !== "red") {
+                    shape.fill = gradientBackground;
+                }
+            };
+
+
+            // this simple template does not have any buttons to permit adding or
+            // removing properties or methods, but it could!
+            myDiagram.nodeTemplate =
+                $(go.Node, "Auto",
+                    {
+                        locationSpot: go.Spot.Center,
+                        fromSpot: go.Spot.AllSides,
+                        toSpot: go.Spot.AllSides,
+                        zOrder: 1000,
+                        selectionAdorned: false,
+                        selectionChanged: onSelectionChanged,
+                        mouseEnter: mouseEnter,
+                        mouseLeave: mouseLeave,
+                        click: function(e, node) {
+                            // highlight all Links and Nodes coming out of a given Node
+                            var diagram = node.diagram;
+                            diagram.startTransaction("highlight");
+                            // remove any previous highlighting
+                            diagram.clearHighlighteds();
+                            // for each Link coming out of the Node, set Link.isHighlighted
+                            node.findLinksOutOf().each(function(l) { l.isHighlighted = true; });
+                            // for each Node destination for the Node, set Node.isHighlighted
+                            node.findNodesOutOf().each(function(n) { n.isHighlighted = true; });
+                            diagram.commitTransaction("highlight");
+                        }
+                    },
+                    $(go.Shape, { fill: gradientBackground, stroke: "#888888", name: "SHAPE"},
+                        new go.Binding("stroke", "isHighlighted", function(h) { return h ? "red" : "#888888"; }).ofObject(),
+                        new go.Binding("fill", "isHighlighted", function(h) { return h ? "lightyellow" : gradientBackground; }).ofObject()
+                    ),
+                    $(go.Panel, "Table",
+                        { defaultRowSeparatorStroke: "black" },
+                        // header
+                        $(go.TextBlock,
+                            {
+                                row: 0, columnSpan: 2, margin: go.Margin.parse("3 10 3 25"),alignment: go.Spot.Left,
+                                font: "bold 9pt sans-serif",
+                                isMultiline: false, editable: false
+                            },
+                            new go.Binding("text", "name").makeTwoWay()),
+                        $(go.Shape, "Circle",
+                            { fill: "#619b71",
+                                alignment: go.Spot.Left,
+                                margin: 5,
+                                stroke: null,
+                                desiredSize: new go.Size(18, 18)
+                            },
+                            new go.Binding("fill", "fill"),
+                            // new go.Binding("fill", "isHighlighted", function(h) { return h ? "lightyellow" : "#efefef"; }).ofObject()
+                        ),
+                        $(go.TextBlock,
+                            {
+                                margin: go.Margin.parse("12 10 10 11"),
+                                alignment: go.Spot.Left,
+                                font: "bold 8pt sans-serif",
+                                stroke: "white"
+                            },
+                            new go.Binding("text", "type", getType),
+                        ),
+                        $(go.RowColumnDefinition,
+                            { row: 1, separatorStrokeWidth: 0, separatorStroke: null }),
+                        $(go.TextBlock,
+                            {
+                                row: 1, columnSpan: 2,
+                                margin: go.Margin.parse("0 5 5 5"),
+                                alignment: go.Spot.TopCenter,
+                                font: "italic 7pt sans-serif",
+                                stroke: "#ababab"
+                            },
+                            new go.Binding("text", "file")
+                        ),
+                        // properties
+                        $(go.TextBlock, "Properties",
+                            { row: 2, font: "italic 8pt sans-serif" },
+                            new go.Binding("visible", "visible", function(v) { return !v; }).ofObject("PROPERTIES")),
+                        $(go.Panel, "Vertical", { name: "PROPERTIES" },
+                            new go.Binding("itemArray", "properties"),
+                            {
+                                row: 2, margin: 3, stretch: go.GraphObject.Fill,
+                                defaultAlignment: go.Spot.Left,
+                                //background: "lightyellow",
+                                itemTemplate: propertyTemplate
+                            }
+                        ),
+                        $("PanelExpanderButton", "PROPERTIES",
+                            { row: 2, column: 1, alignment: go.Spot.TopRight, visible: false },
+                            new go.Binding("visible", "properties", function(arr) { return arr.length > 0; })),
+                        // methods
+                        $(go.TextBlock, "Methods",
+                            { row: 3, font: "italic 8pt sans-serif" },
+                            new go.Binding("visible", "visible", function(v) { return !v; }).ofObject("METHODS")),
+                        $(go.Panel, "Vertical", { name: "METHODS" },
+                            new go.Binding("itemArray", "methods"),
+                            {
+                                row: 3, margin: 3, stretch: go.GraphObject.Fill,
+                                defaultAlignment: go.Spot.Left,
+                                //background: "lightyellow",
+                                itemTemplate: methodTemplate
+                            }
+                        ),
+                        $("PanelExpanderButton", "METHODS",
+                            { row: 3, column: 1, alignment: go.Spot.TopRight, visible: false },
+                            new go.Binding("visible", "methods", function(arr) { return arr.length > 0; }))
+                    )
+                );
+
+            function beanColor(r) {
+
+                return "#619b71";
+            }
+
+            function convertIsTreeLink(r) {
+                return r === "generalization";
+            }
+
+            function convertFromArrow(r) {
+                switch (r) {
+                    case "generalization": return "";
+                    default: return "";
+                }
+            }
+
+            function convertToArrow(r) {
+                switch (r) {
+                    case "generalization": return "Triangle";
+                    case "aggregation": return "StretchedDiamond";
+                    default: return "";
+                }
+            }
+
+            function round(x, n) {
+                return Math.round(x * Math.pow(10, n)) / Math.pow(10, n)
+            }
+
+            myDiagram.maxScale = 4.0;
+            myDiagram.addDiagramListener("ViewportBoundsChanged", function(event){
+                //console.log(event);
+                if (!extScale) {
+                    document.getElementById("scale").value = (myDiagram.scale * 100);
+                }
+                extScale = false;
+            });
+
+            myDiagram.addDiagramListener("BackgroundSingleClicked", function(event){
+                for (var it = myDiagram.nodes; it.next(); ) {
+                    var node = it.value;
+                    var shape = node.findObject("SHAPE");
+                    shape.fill = "#efefef";
+                    shape.stroke = "#888888";
+                }
+            });
+
+            function scale(value) {
+                var scaleFactor = round(((1*value)/100),1);
+                extScale = true;
+                myDiagram.scale = scaleFactor;
+
+            }
+
+            links.diagram.scale = scale;
+            links.diagram.scaleVal = function() {
+                return myDiagram.scale;
+            }
+
+            //scaleLink  = scale;
+
+            function fitScreen() {
+                myDiagram.zoomToFit();
+            }
+
+            fitToScreen = fitScreen;
+
+
+            function arrowIsHiglighted(h) {
+                return h ? "red" : "#888888";
+            }
+
+
+            myDiagram.linkTemplate =
+                $(go.Link,
+                    { routing: go.Link.Orthogonal, zOrder:100},
+                    new go.Binding("isLayoutPositioned", "relationship", convertIsTreeLink),
+                    $(go.Shape, {stroke: "#888888"},
+                        new go.Binding("stroke", "isHighlighted", arrowIsHiglighted).ofObject(),),
+                    $(go.Shape, { scale: 1.0, fill: "white", stroke: "#888888" },
+                        new go.Binding("fromArrow", "relationship", convertFromArrow),
+                        new go.Binding("stroke", "isHighlighted", arrowIsHiglighted).ofObject(),),
+                    $(go.Shape, { scale: 1.0, fill: "white", stroke: "#888888" },
+                        new go.Binding("toArrow", "relationship", convertToArrow),
+                        new go.Binding("stroke", "isHighlighted", arrowIsHiglighted).ofObject(),),
+                );
+
+            myDiagram.model = $(go.GraphLinksModel,
+                {
+                    copiesArrays: true,
+                    copiesArrayObjects: true,
+                    nodeDataArray: data.objectModel,
+                    linkDataArray: data.injections
+                });
+
+            var documentsList = document.getElementById("components");
+            for (var index=0; index < data.objectModel.length; index++) {
+
+                var element = data.objectModel[index];
+                var etemplate = "<span class=\"mdl-list__item\"><i class=\"material-icons\">copyright</i>&nbsp;<a href=\"\" onClick=\"moveNodeToCenter(this.text);return false;\" class=\"menuLink\">"+element.name+"</a></span>";
+
+                documentsList.innerHTML += etemplate;
+
+            }
+
+
+            document.title = document.getElementById("title").innerHTML=data.appName;
+            //document.getElementById("scale").value = (myDiagram.scale*100);
+
+            function search(value) {
+
+                var links = document.getElementsByClassName("menuLink");
+
+                Object.keys(links).forEach(function (elemIndex) {
+
+                    var link = links[elemIndex];
+                    if (value && value.trim() != "") {
+                        if (!link.text.startsWith(value)) {
+                            link.parentElement.style.display = "none";
+                        } else {
+                            link.parentElement.style.display = "block";
+                        };
+                    } else {
+                        link.parentElement.style.display = "block";
+                    }
+
+                });
+
+            }
+
+            searchComponent = search;
+
+        }
+
+        /*
+         *  Chord diagram
+         */
+
+        function dependencies() {
+
+            var instance = this;
+
+            var NameProvider = [];
+            var matrix = [];
+
+            var objectModel = data.objectModel;
+            var injections = data.injections;
+
+            for (var index = 0; objectModel[index]; index++) {
+
+                var element = objectModel[index];
+                if (!NameProvider.includes(element.name)) {
+                    NameProvider.push(element.name);
+                }
+            }
+
+            for (var index = 0; injections[index]; index++) {
+
+                var element = injections[index];
+                if (!NameProvider.includes(element.to)) {
+                    NameProvider.push(element.to);
+                }
+            }
+
+            for (var index = 0; index < NameProvider.length; index++) {
+                var dependencies = [];
+                for (var depIndex = 0; depIndex < NameProvider.length; depIndex++) {
+                    dependencies.push(0);
+                }
+                matrix.push(dependencies);
+            }
+
+
+            for (var index = 0; injections[index]; index++) {
+
+                var element = injections[index];
+
+                var from = element.from;
+                var fromPos = NameProvider.indexOf(from);
+
+
+                var to = element.to;
+                var pos = NameProvider.indexOf(to);
+
+                try {
+                    if (pos > -1 && fromPos) {
+                        matrix[fromPos][pos] = matrix[fromPos][pos] ? ++matrix[fromPos][pos] : 1;
+                    }
+                } catch (e) {
+                    throw e;
+                }
+            }
+
+            //var colors = ["#C4C4C4", "#69B40F", "#EC1D25", "#C8125C", "#008FC8", "#10218B", "#134B24", "#737373"];
+
+            var colors = [];
+            for(var index=0; index < NameProvider.length; index++) {
+
+                var color = null;
+                do {
+                    color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                } while (colors.indexOf(color) >-1)
+                colors.push(color);
+            }
+
+
+            var chord = d3.layout.chord()
+                .padding(.04)
+                .sortSubgroups(d3.descending) //sort the chords inside an arc from high to low
+                .sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
+                .matrix(matrix);
+
+            var width = window.innerWidth,
+                height = window.innerHeight,
+                innerRadius = Math.min(width, height - 200) * .58,
+                outerRadius = innerRadius * 1.05,
+                top = window.innerHeight / 2,
+                left = (window.innerWidth / 2);
+
+            var fill = d3.scale.ordinal()
+                .domain(d3.range(NameProvider.length))
+                .range(colors);
+
+            var arc = d3.svg.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(outerRadius);
+
+            var zoom = d3.behavior.zoom();
+            zoom.on("zoom", function () {
+
+                if (d3.event.translate[0] == 0 && d3.event.translate[1] <= 0) {
+                    d3.event.translate[0] = left;
+                    d3.event.translate[1] = top + 30;
+                }
+                svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+            })
+                .scaleExtent([0.1, 4])
+                .scale(0.7);
+
+            var svg = d3.select("#chart").append("svg:svg")
+                .call(zoom)
+                .attr("width", width)
+                .attr("height", height)
+                .append("svg:g")
+                .attr("transform", "translate(" + left + "," + (top + 30) + ")");
+
+            zoom.event(svg);
+
+            function scale(input) {
+                var value = input / 100;
+                zoom.scale(value);
+                zoom.event(svg);
+            }
+
+            links.chord.scale = scale;
+            links.chord.scaleVal = function () {
+                return zoom.scale();
+            }
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Draw outer Arcs /////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            var g = svg.selectAll("g.group")
+                .data(chord.groups)
+                .enter().append("svg:g")
+                .attr("class", "group")
+                .on("mouseover", fade(.02))
+                .on("mouseout", fade(.80));
+
+            g.append("svg:path")
+                .style("stroke", function (d) {
+                    return fill(d.index);
+                })
+                .style("fill", function (d) {
+                    return fill(d.index);
+                })
+                .attr("d", arc);
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Append Ticks ////////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            var ticks = svg.append("svg:g").selectAll("g.ticks")
+                .data(chord.groups)
+                .enter().append("svg:g").selectAll("g.ticks")
+                .attr("class", "ticks")
+                .data(groupTicks)
+                .enter().append("svg:g")
+                .attr("transform", function (d) {
+                    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+                        + "translate(" + outerRadius + 40 + ",0)";
+                });
+
+            ticks.append("svg:line")
+                .attr("x1", 1)
+                .attr("y1", 0)
+                .attr("x2", 5)
+                .attr("y2", 0)
+                .style("stroke", "#000");
+
+            ticks.append("svg:text")
+                .attr("x", 8)
+                .attr("dy", ".35em")
+                .attr("transform", function (d) {
+                    return d.angle > Math.PI ? "rotate(180)translate(-16)" : null;
+                })
+                .style("text-anchor", function (d) {
+                    return d.angle > Math.PI ? "end" : null;
+                })
+                .text(function (d) {
+                    return d.label;
+                });
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Append Names ////////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            g.append("svg:text")
+                .each(function (d) {
+                    d.angle = (d.startAngle + d.endAngle) / 2;
+                })
+                .attr("dy", ".35em")
+                .attr("class", "titles")
+                .attr("text-anchor", function (d) {
+                    return d.angle > Math.PI ? "end" : null;
+                })
+                .attr("transform", function (d) {
+                    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+                        + "translate(" + (innerRadius + 55) + ")"
+                        + (d.angle > Math.PI ? "rotate(180)" : "");
+                })
+                .style("font-size", "0.8em")
+                .text(function (d, i) {
+                    return NameProvider[i];
+                });
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Draw inner chords ///////////////////////
+            ////////////////////////////////////////////////////////////
+
+            svg.selectAll("path.chord")
+                .data(chord.chords)
+                .enter().append("svg:path")
+                .attr("class", "chord")
+                .style("stroke", function (d) {
+                    return d3.rgb(fill(d.source.index)).darker();
+                })
+                .style("fill", function (d) {
+                    return fill(d.source.index);
+                })
+                .attr("d", d3.svg.chord().radius(innerRadius));
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Extra Functions /////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            // Returns an event handler for fading a given chord group.
+            function fade(opacity) {
+                return function (d, i) {
+                    svg.selectAll("path.chord")
+                        .filter(function (d) {
+                            return d.source.index != i && d.target.index != i;
+                        })
+                        .transition()
+                        .style("stroke-opacity", opacity)
+                        .style("fill-opacity", opacity);
+                };
+            }//fade
+
+
+            function hightLightDependency(name) {
+
+                var pos = NameProvider.indexOf(name);
+
+                svg.selectAll("path.chord")
+                    .transition()
+                    .style("stroke-opacity", .80)
+                    .style("fill-opacity", .80);
+
+                fadeManual(.02, pos);
+
+                /*
+                 * fade core
+                 */
+                function fadeManual(opacity, i) {
+                    svg.selectAll("path.chord")
+                        .filter(function (d) {
+                            return d.source.index != i && d.target.index != i;
+                        })
+                        .transition()
+                        .style("stroke-opacity", opacity)
+                        .style("fill-opacity", opacity);
+                };
+            }
+
+            // Returns an array of tick angles and labels, given a group.
+            function groupTicks(d) {
+                var k = (d.endAngle - d.startAngle) / d.value;
+                return d3.range(0, d.value, 1).map(function (v, i) {
+                    return {
+                        angle: v * k + d.startAngle,
+                        label: (i % 10) && (i > 0) ? null : v
+                    };
+                });
+            }//groupTicks
+
+            links.chord.moveToCenter = hightLightDependency;
+        }
+
+        /*
+        window.onresize = function() {
+            var targetWidth = (window.innerWidth < width)? window.innerWidth : width;
+
+            var svg = d3.select("#chart")
+                .attr("width", targetWidth)
+                .attr("height", targetWidth / aspect);
+        }
+        */
+
+        var switchFuncs = function(element) {
+
+            scaleLink = links[element]["scale"];
+            moveNodeToCenter = links[element]['moveToCenter'];
+
+            var scaleVal = links[element].scaleVal();
+
+            document.getElementById("scale").value = (scaleVal*100);
+
+        };
+
+    </script>
+
+    <style type="text/css">
+        @media print {
+            .mdl-layout__header {display:none};
+        }
+
+        #components {
+            overflow: scroll;
+            height:100%;
+            position:absolute;
+        }
+
+        .sidemenu {
+            overflow: hidden;
+            height:100%;
+            position:absolute;
+        }
+
+        #myDiagramDiv {
+            width: 98%;
+            height: 98%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: scroll;
+            margin: auto;
+            resize: both;
+        }
+
+        body {
+            /*background: url(http://mbostock.github.io/d3/talk/20111018/texture-noise.png);*/
+            overflow: hidden;
+            margin: 0;
+            font-size: 14px;
+            font-family: "Helvetica Neue", Helvetica;
+        }
+
+        line {
+            stroke: #000;
+            stroke-width: 1.px;
+        }
+        #chart {
+            width: 98%;
+            height: 98%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: scroll;
+            margin: auto;
+            resize: both;
+        }
+
+        .hint {
+            position: absolute;
+            right: 0;
+            width: 350px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        text {
+            font-size: 10px;
+        }
+
+        .titles{
+            font-size: 14px;
+        }
+
+        path.chord {
+            fill-opacity: .80;
+        }
+    </style>
+</head>
+<body onload="init();dependencies();switchFuncs('diagram')">
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+    .demo-layout-transparent {
+
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+        /* This background is dark, so we set text to white. Use 87% black instead if
+           your background is light. */
+        color: white;
+    }
+</style>
+
+<div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title" id="title"></span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-textfield--align-right" Id="topMenu">
+                <input class="mdl-slider" type="range" id="scale"
+                       min="0" max="400" value="100" tabindex="0" onChange="scaleLink(this.value)">
+                <div class="mdl-layout-spacer">&nbsp;</div>
+                <!-- Right aligned menu below button -->
+                <button id="demo-menu-lower-right"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-right">
+                    <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"<a id="submenu" class="mdl-navigation__link" href="#"><i class="fa fa-search-plus" aria-hidden="true"></i>&nbsp;Scale diagram</a></li>
+                    <li class="mdl-menu__item" onClick="makeSVGLink();"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Export as SVG</li>
+                    <li class="mdl-menu__item" onClick="printImgLink();"><i class="fa fa-print" aria-hidden="true"></i>&nbsp;Print</li>
+                </ul>
+            </nav>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="submenu">
+                <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" onClick="fitToScreen();">Fit to screen</li>
+                <li class="mdl-menu__item" onClick="scaleLink(50)">50%</li>
+                <li class="mdl-menu__item" onClick="scaleLink(100)">100%</li>
+                <li class="mdl-menu__item" onClick="scaleLink(200)">200%</li>
+                <li class="mdl-menu__item" onClick="scaleLink(400)">400%</li>
+            </ul>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active" onClick="switchFuncs(this.id);" id="diagram">Class diagram</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab" onClick="switchFuncs(this.id);" id="chord" >Dependencies</a>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer sidemenu">
+        <form action="#">
+                <span class="mdl-list__item">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search" onkeyUp="searchComponent(this.value);">
+                        <label class="mdl-textfield__label" for="search">Expandable Input</label>
+                    </div>
+                </div>
+                </span>
+        </form>
+        <nav class="mdl-navigation">
+            <div id="components"></div>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <div class="page-content" id="myDiagramDiv"><!-- Your content goes here --></div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+            <div class="page-content" id="chart"><!-- Your content goes here --></div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

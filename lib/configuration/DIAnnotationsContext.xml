@@ -30,10 +30,12 @@
     <class id="BeanAnnotationParserPrototype" src="/lib/foundation/context/parser/annotation/instance/Bean/BeanAnnotationParser.js" />
     <class id="ParamTypeProxy" src="/lib/foundation/context/parser/annotation/JSDoc/param/proxy/TypeProxy.js" />
     <class id="TypeTypeProxy" src="/lib/foundation/context/parser/annotation/JSDoc/type/proxy/TypeProxy.js" />
+    <class id="BeanAware" src="/lib/foundation/annotation/base/BeanAware.js" />
     <class id="ContextAware" src="/lib/foundation/annotation/base/ContextAware.js" />
     <class id="MemberAware" src="/lib/foundation/annotation/base/MemberAware.js" />
     <class id="ModuleAware" src="/lib/foundation/annotation/base/ModuleAware.js" />
     <class id="SupportAware" src="/lib/foundation/annotation/base/SupportAware.js" />
+    <class id="ClazzMetaInformation" src="/lib/foundation/context/JScript/analyzer/meta/ClazzMetaInformation.js" />"
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -53,10 +55,11 @@
     <bean id="HTMLParser" src="htmlparser2" />
     <bean id="DotProp" src="dot-prop" />
     <bean id="UuidValidator" src="uuidv4" />
+    <bean ide="DeepMerge" src="deepmerge" />
 
     <!-- LogManager -->
     <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
-        <property name="configFile" value="/Users/udogerhards/Documents/Bitbucket/nodejs-annotations/lib/configuration/log4js.json" />
+        <property name="configFile" value="/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/configuration/log4js.json" />
     </bean>
 
     <!--Diagram painter -->
@@ -116,11 +119,71 @@
     <class id="Namespace" src="/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
     <class id="Properties" src="/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" />
     <class id="Run" src="/lib/foundation/annotation/run/Run/RunAnnotationClass.js" />
+    <class id="FileObject" src="/lib/foundation/context/analyze/data/FileObject.js" />
+    <class id="MetaObject" src="/lib/foundation/context/analyze/data/MetaObject.js" />
+    <class id="Injectable" src="/lib/foundation/context/analyze/data/Injectable.js" />
+    <class id="Property" src="/lib/foundation/context/analyze/data/Property.js" />
+    <class id="Member" src="/lib/foundation/context/analyze/data/Member.js" />
+    <class id="Support" src="/lib/foundation/context/analyze/data/Support.js" />
     <class id="diagramTool" src="/lib/diagram/diagramTool.js" />
 
     <!-- Parser helper classes -->
     <class id="MainBeanLoader" src="/lib/foundation/context/parser/annotation/instance/Bean/MainBeanLoader.js" />
     <class id="SubBeanLoader" src="/lib/foundation/context/parser/annotation/instance/Bean/SubBeanLoader.js" />
+
+    <!-- Analyzers -->
+    <bean id="ClazzPropertyAnalyzer" src="/lib/foundation/context/JScript/object/analyzer/ClazzPropertyAnalyzer.js" >
+      <property name="LogManager">
+          <reference id="LogManager" />
+      </property>
+      <property name="annotation">
+        <list>
+          <entry key="Inject"><reference id="Inject"/></entry>
+          <entry key="Store"><reference id="Store"/></entry>
+          <entry key="List"><reference id="List"/></entry>
+        </list>
+      </propert>
+    </bean>
+
+    <bean id="ClazzMemberAnalyzer" src="/lib/foundation/context/JScript/object/analyzer/ClazzMemberAnalyzer.js" >
+      <property name="LogManager">
+          <reference id="LogManager" />
+      </property>
+      <property name="annotation">
+        <list>
+          <entry key="Run"><reference id="Run"/></entry>
+          <entry key="Init"><reference id="Init"/></entry>
+        </list>
+      </propert>
+    </bean>
+
+    <!-- Asynchonous syntax tree analyzer -->
+    <bean id="ClassStructAnalyzer" src="/lib/foundation/context/JScript/object/ClazzStructAnalyzer.js">
+      <property name="util">
+          <reference id="Util" />
+      </property>
+      <property name="esprima">
+          <reference id="Esprima" />
+      </property>
+      <property name="LogManager">
+          <reference id="LogManager" />
+      </property>
+      <property name="DeepMerge">
+         <reference id="DeepMerge" />
+      </property>
+      <property name="SupportAwareClazz">
+        <reference id="SupportAware" />
+      </property>
+      <property name="Analyzer">
+        <list>
+          <entry>
+            <reference id="ClazzPropertyAnalyzer" />
+          </entry>
+          <entry>
+            <reference id="ClazzMemberAnalyzer" />
+          </entry>
+        </list>
+    </bean>
 
     <!-- TokenParser -->
     <list id="TokenParser">
