@@ -119,12 +119,7 @@
     <class id="Namespace" src="/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
     <class id="Properties" src="/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" />
     <class id="Run" src="/lib/foundation/annotation/run/Run/RunAnnotationClass.js" />
-    <class id="FileObject" src="/lib/foundation/context/analyze/data/FileObject.js" />
-    <class id="MetaObject" src="/lib/foundation/context/analyze/data/MetaObject.js" />
-    <class id="Injectable" src="/lib/foundation/context/analyze/data/Injectable.js" />
-    <class id="Property" src="/lib/foundation/context/analyze/data/Property.js" />
-    <class id="Member" src="/lib/foundation/context/analyze/data/Member.js" />
-    <class id="Support" src="/lib/foundation/context/analyze/data/Support.js" />
+    <class id="File" src="/lib/foundation/context/JScript/object/module/File.js" />
     <class id="diagramTool" src="/lib/diagram/diagramTool.js" />
 
     <!-- Parser helper classes -->
@@ -132,7 +127,43 @@
     <class id="SubBeanLoader" src="/lib/foundation/context/parser/annotation/instance/Bean/SubBeanLoader.js" />
 
     <!-- Analyzers -->
-    <bean id="ClazzPropertyAnalyzer" src="/lib/foundation/context/JScript/object/analyzer/ClazzPropertyAnalyzer.js" >
+
+    <bean id="SupportAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/SupportAnalyzer.js" >
+      <property name="LogManager">
+          <reference id="LogManager" />
+      </property>
+      <property name="annotation">
+        <list>
+          <entry key="After"><reference id="After"/></entry>
+          <entry key="Before"><reference id="Before"/></entry>
+          <entry key="PointCut"><reference id="PointCut"/></entry>
+          <entry key="Resource"><reference id="Resource"/></entry>
+          <entry key="Autowire"><reference id="Autowire"/></entry>
+          <entry key="Namespace"><reference id="Namespace"/></entry>
+          <entry key="Properties"><reference id="Properties"/></entry>
+          <entry key="JSDocSupport"><reference id="JSDocSupport"/></entry>
+          <entry key="param"><reference id="param"/></entry>
+          <entry key="type"><reference id="type"/></entry>
+        </list>
+      </propert>
+    </bean>
+
+    <bean id="BeanAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/BeanAnalyzer.js" >
+      <property name="LogManager">
+          <reference id="LogManager" />
+      </property>
+      <property name="annotation">
+        <list>
+          <entry key="Prototype"><reference id="Prototype"/></entry>
+          <entry key="Bean"><reference id="Bean"/></entry>
+          <entry key="Component"><reference id="Component"/></entry>
+          <entry key="Controller"><reference id="Controller"/></entry>
+          <entry key="Service"><reference id="Service"/></entry>
+        </list>
+      </propert>
+    </bean>
+
+    <bean id="ClazzPropertyAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/ClazzPropertyAnalyzer.js" >
       <property name="LogManager">
           <reference id="LogManager" />
       </property>
@@ -141,11 +172,12 @@
           <entry key="Inject"><reference id="Inject"/></entry>
           <entry key="Store"><reference id="Store"/></entry>
           <entry key="List"><reference id="List"/></entry>
+          <entry key="Qualifier"><reference id="Qualifier"/></entry>
         </list>
       </propert>
     </bean>
 
-    <bean id="ClazzMemberAnalyzer" src="/lib/foundation/context/JScript/object/analyzer/ClazzMemberAnalyzer.js" >
+    <bean id="ClazzMemberAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/ClazzMemberAnalyzer.js" >
       <property name="LogManager">
           <reference id="LogManager" />
       </property>
@@ -158,7 +190,7 @@
     </bean>
 
     <!-- Asynchonous syntax tree analyzer -->
-    <bean id="ClassStructAnalyzer" src="/lib/foundation/context/JScript/object/ClazzStructAnalyzer.js">
+    <bean id="ClassStructAnalyzer" init="init" src="/lib/foundation/context/JScript/object/ClazzStructAnalyzer.js">
       <property name="util">
           <reference id="Util" />
       </property>
@@ -174,13 +206,22 @@
       <property name="SupportAwareClazz">
         <reference id="SupportAware" />
       </property>
+      <property name="BeanAware">
+        <reference id="BeanAware" />
+      </property>
       <property name="Analyzer">
         <list>
+          <entry>
+            <reference id="BeanAnalyzer" />
+          </entry>
           <entry>
             <reference id="ClazzPropertyAnalyzer" />
           </entry>
           <entry>
             <reference id="ClazzMemberAnalyzer" />
+          </entry>
+          <entry>
+            <reference id="SupportAnalyzer" />
           </entry>
         </list>
     </bean>
