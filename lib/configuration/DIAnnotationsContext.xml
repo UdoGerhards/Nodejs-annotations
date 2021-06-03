@@ -134,13 +134,17 @@
       </property>
       <property name="annotation">
         <list>
+          <entry key="Resource"><reference id="Resource"/></entry>
+          <entry key="Autowire"><reference id="Autowire"/></entry>
+          <entry key="Inherits"><reference id="Inherits"/></entry>
+          <entry key="Namespace"><reference id="Namespace"/></entry>
+          <entry key="Properties"><reference id="Properties"/></entry>
+          <!-- Apect oriented programing -->
+          <entry key="Aspect"><reference id="Aspect"/></entry>
           <entry key="After"><reference id="After"/></entry>
           <entry key="Before"><reference id="Before"/></entry>
           <entry key="PointCut"><reference id="PointCut"/></entry>
-          <entry key="Resource"><reference id="Resource"/></entry>
-          <entry key="Autowire"><reference id="Autowire"/></entry>
-          <entry key="Namespace"><reference id="Namespace"/></entry>
-          <entry key="Properties"><reference id="Properties"/></entry>
+          <!-- Javascript documentation -->
           <entry key="JSDocSupport"><reference id="JSDocSupport"/></entry>
           <entry key="param"><reference id="param"/></entry>
           <entry key="type"><reference id="type"/></entry>
@@ -159,6 +163,8 @@
           <entry key="Component"><reference id="Component"/></entry>
           <entry key="Controller"><reference id="Controller"/></entry>
           <entry key="Service"><reference id="Service"/></entry>
+          <entry key="Context"><reference id="Context"/></entry>
+          <entry key="Configuration"><reference id="Configuration"/></entry>
         </list>
       </propert>
     </bean>
