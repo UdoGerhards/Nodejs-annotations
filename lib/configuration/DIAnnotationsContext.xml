@@ -35,7 +35,7 @@
     <class id="MemberAware" src="/lib/foundation/annotation/base/MemberAware.js" />
     <class id="ModuleAware" src="/lib/foundation/annotation/base/ModuleAware.js" />
     <class id="SupportAware" src="/lib/foundation/annotation/base/SupportAware.js" />
-    <class id="ClazzMetaInformation" src="/lib/foundation/context/JScript/analyzer/meta/ClazzMetaInformation.js" />"
+    <class id="ClazzMetaInformation" src="/lib/foundation/context/JScript/meta/ClazzMetaInformation.js" />"
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -55,7 +55,7 @@
     <bean id="HTMLParser" src="htmlparser2" />
     <bean id="DotProp" src="dot-prop" />
     <bean id="UuidValidator" src="uuidv4" />
-    <bean ide="DeepMerge" src="deepmerge" />
+    <bean id="DeepMerge" src="deepmerge" />
 
     <!-- LogManager -->
     <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
@@ -119,7 +119,7 @@
     <class id="Namespace" src="/lib/foundation/annotation/meta/Namespace/NamespaceAnnotationClass.js" />
     <class id="Properties" src="/lib/foundation/annotation/meta/Properties/PropertiesAnnotationClass.js" />
     <class id="Run" src="/lib/foundation/annotation/run/Run/RunAnnotationClass.js" />
-    <class id="File" src="/lib/foundation/context/JScript/object/module/File.js" />
+    <class id="File" src="/lib/foundation/context/JScript/module/File.js" />
     <class id="diagramTool" src="/lib/diagram/diagramTool.js" />
 
     <!-- Parser helper classes -->
@@ -128,9 +128,12 @@
 
     <!-- Analyzers -->
 
-    <bean id="SupportAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/SupportAnalyzer.js" >
+    <bean id="SupportAnalyzer" init="init" src="/lib/foundation/context/JScript/analyzer/SupportAnalyzer.js" >
       <property name="LogManager">
           <reference id="LogManager" />
+      </property>
+      <property name="util">
+          <reference id="Util" />
       </property>
       <property name="annotation">
         <list>
@@ -152,9 +155,12 @@
       </propert>
     </bean>
 
-    <bean id="BeanAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/BeanAnalyzer.js" >
+    <bean id="BeanAnalyzer" init="init" src="/lib/foundation/context/JScript/analyzer/BeanAnalyzer.js" >
       <property name="LogManager">
           <reference id="LogManager" />
+      </property>
+      <property name="util">
+          <reference id="Util" />
       </property>
       <property name="annotation">
         <list>
@@ -169,9 +175,12 @@
       </propert>
     </bean>
 
-    <bean id="ClazzPropertyAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/ClazzPropertyAnalyzer.js" >
+    <bean id="ClazzPropertyAnalyzer" init="init" src="/lib/foundation/context/JScript/analyzer/ClazzPropertyAnalyzer.js" >
       <property name="LogManager">
           <reference id="LogManager" />
+      </property>
+      <property name="util">
+          <reference id="Util" />
       </property>
       <property name="annotation">
         <list>
@@ -183,9 +192,12 @@
       </propert>
     </bean>
 
-    <bean id="ClazzMemberAnalyzer" init="init" src="/lib/foundation/context/JScript/object/analyzer/ClazzMemberAnalyzer.js" >
+    <bean id="ClazzMemberAnalyzer" init="init" src="/lib/foundation/context/JScript/analyzer/ClazzMemberAnalyzer.js" >
       <property name="LogManager">
           <reference id="LogManager" />
+      </property>
+      <property name="util">
+          <reference id="Util" />
       </property>
       <property name="annotation">
         <list>
@@ -196,7 +208,7 @@
     </bean>
 
     <!-- Asynchonous syntax tree analyzer -->
-    <bean id="ClassStructAnalyzer" init="init" src="/lib/foundation/context/JScript/object/ClazzStructAnalyzer.js">
+    <bean id="ClassStructAnalyzer" init="init" src="/lib/foundation/context/JScript/ClazzStructAnalyzer.js">
       <property name="util">
           <reference id="Util" />
       </property>
@@ -206,13 +218,13 @@
       <property name="LogManager">
           <reference id="LogManager" />
       </property>
-      <property name="DeepMerge">
+      <property name="deepMerge">
          <reference id="DeepMerge" />
       </property>
       <property name="SupportAwareClazz">
         <reference id="SupportAware" />
       </property>
-      <property name="BeanAware">
+      <property name="BeanAwareClazz">
         <reference id="BeanAware" />
       </property>
       <property name="Analyzer">
@@ -1187,6 +1199,9 @@
         </property>
         <property name="structureParser">
             <reference id="StructureParser" />
+        </property>
+        <property name="classStructAnalyzer">
+          <reference id="ClassStructAnalyzer" />
         </property>
         <property name="esprima">
             <reference id="Esprima"/>

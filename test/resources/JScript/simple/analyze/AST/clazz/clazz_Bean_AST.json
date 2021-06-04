@@ -1,0 +1,74 @@
+{
+  "type": "Program",
+  "body": [{
+    "type": "ClassDeclaration",
+    "id": {
+      "type": "Identifier",
+      "name": "Component",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 6
+        },
+        "end": {
+          "line": 5,
+          "column": 15
+        }
+      }
+    },
+    "superClass": null,
+    "body": {
+      "type": "ClassBody",
+      "body": [],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 16
+        },
+        "end": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    },
+    "loc": {
+      "start": {
+        "line": 5,
+        "column": 0
+      },
+      "end": {
+        "line": 8,
+        "column": 1
+      }
+    },
+    "leadingComments": [{
+      "type": "Block",
+      "value": "*\n * @Component(\"ComponentBean\")\n * @constructor\n ",
+      "range": [
+        0,
+        54
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    }]
+  }],
+  "sourceType": "script",
+  "loc": {
+    "start": {
+      "line": 5,
+      "column": 0
+    },
+    "end": {
+      "line": 8,
+      "column": 1
+    }
+  }
+}

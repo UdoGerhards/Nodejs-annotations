@@ -14,7 +14,7 @@ var randomNumber = Math.random();
 
 // Require all the tests and supply with the same random number
 testFiles.forEach(function (file) {
-    require('./spec/' + file);
+    //  require('./spec/' + file);
 });
 
 // Mocha command to run tests (since Mocha doesn't access them directly)
