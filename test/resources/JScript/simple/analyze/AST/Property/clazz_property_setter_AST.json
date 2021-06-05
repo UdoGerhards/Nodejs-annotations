@@ -1,0 +1,135 @@
+{
+  "type": "MethodDefinition",
+  "key": {
+    "type": "Identifier",
+    "name": "setService",
+    "loc": {
+      "start": {
+        "line": 19,
+        "column": 2
+      },
+      "end": {
+        "line": 19,
+        "column": 12
+      }
+    }
+  },
+  "computed": false,
+  "value": {
+    "type": "FunctionExpression",
+    "id": null,
+    "params": [],
+    "body": {
+      "type": "BlockStatement",
+      "body": [{
+        "type": "VariableDeclaration",
+        "declarations": [{
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "instance",
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 8
+              },
+              "end": {
+                "line": 20,
+                "column": 16
+              }
+            }
+          },
+          "init": {
+            "type": "Literal",
+            "value": null,
+            "raw": "null",
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 19
+              },
+              "end": {
+                "line": 20,
+                "column": 23
+              }
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 20,
+              "column": 23
+            }
+          }
+        }],
+        "kind": "let",
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 4
+          },
+          "end": {
+            "line": 20,
+            "column": 24
+          }
+        }
+      }],
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 15
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    "generator": false,
+    "expression": false,
+    "async": false,
+    "loc": {
+      "start": {
+        "line": 19,
+        "column": 12
+      },
+      "end": {
+        "line": 21,
+        "column": 3
+      }
+    }
+  },
+  "kind": "method",
+  "static": false,
+  "loc": {
+    "start": {
+      "line": 19,
+      "column": 2
+    },
+    "end": {
+      "line": 21,
+      "column": 3
+    }
+  },
+  "leadingComments": [{
+    "type": "Block",
+    "value": "*\n   * @Qualifier(\"Service\")\n   ",
+    "range": [
+      159,
+      195
+    ],
+    "loc": {
+      "start": {
+        "line": 16,
+        "column": 2
+      },
+      "end": {
+        "line": 18,
+        "column": 5
+      }
+    }
+  }]
+}

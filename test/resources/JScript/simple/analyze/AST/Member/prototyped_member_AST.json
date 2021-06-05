@@ -1,0 +1,213 @@
+{
+  "type": "ExpressionStatement",
+  "expression": {
+    "type": "AssignmentExpression",
+    "operator": "=",
+    "left": {
+      "type": "MemberExpression",
+      "computed": false,
+      "object": {
+        "type": "MemberExpression",
+        "computed": false,
+        "object": {
+          "type": "Identifier",
+          "name": "Component",
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 0
+            },
+            "end": {
+              "line": 17,
+              "column": 9
+            }
+          }
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "prototyp",
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 10
+            },
+            "end": {
+              "line": 17,
+              "column": 18
+            }
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 17,
+            "column": 18
+          }
+        }
+      },
+      "property": {
+        "type": "Identifier",
+        "name": "init",
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 19
+          },
+          "end": {
+            "line": 17,
+            "column": 23
+          }
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 23
+        }
+      }
+    },
+    "right": {
+      "type": "FunctionExpression",
+      "id": null,
+      "params": [{
+        "type": "Identifier",
+        "name": "service",
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 35
+          },
+          "end": {
+            "line": 17,
+            "column": 42
+          }
+        }
+      }],
+      "body": {
+        "type": "BlockStatement",
+        "body": [{
+          "type": "VariableDeclaration",
+          "declarations": [{
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "instance",
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 6
+                },
+                "end": {
+                  "line": 18,
+                  "column": 14
+                }
+              }
+            },
+            "init": {
+              "type": "ThisExpression",
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 17
+                },
+                "end": {
+                  "line": 18,
+                  "column": 21
+                }
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 6
+              },
+              "end": {
+                "line": 18,
+                "column": 21
+              }
+            }
+          }],
+          "kind": "let",
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 2
+            },
+            "end": {
+              "line": 18,
+              "column": 22
+            }
+          }
+        }],
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 44
+          },
+          "end": {
+            "line": 19,
+            "column": 1
+          }
+        }
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 26
+        },
+        "end": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    },
+    "loc": {
+      "start": {
+        "line": 17,
+        "column": 0
+      },
+      "end": {
+        "line": 19,
+        "column": 1
+      }
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 17,
+      "column": 0
+    },
+    "end": {
+      "line": 19,
+      "column": 1
+    }
+  },
+  "leadingComments": [{
+    "type": "Block",
+    "value": "*\n * @Init()\n ",
+    "range": [
+      127,
+      145
+    ],
+    "loc": {
+      "start": {
+        "line": 14,
+        "column": 0
+      },
+      "end": {
+        "line": 16,
+        "column": 3
+      }
+    }
+  }]
+}

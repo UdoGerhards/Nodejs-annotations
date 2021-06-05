@@ -468,3 +468,334 @@
 [2021-06-04T21:12:07.837] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
 [2021-06-04T21:12:07.924] [INFO] default - Test: Detect simple class
 [2021-06-04T21:12:08.262] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:10:17.691] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:10:17.786] [INFO] default - Test: Detect simple class
+[2021-06-05T14:10:18.192] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:11:42.000] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:11:42.087] [INFO] default - Test: Detect simple class
+[2021-06-05T14:11:42.409] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:15:40.818] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:15:41.097] [INFO] default - Test: Detect simple class
+[2021-06-05T14:15:41.708] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:17:41.067] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:17:41.303] [INFO] default - Test: Detect simple class
+[2021-06-05T14:17:41.893] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:18:54.287] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:18:54.642] [INFO] default - Test: Detect simple class
+[2021-06-05T14:18:55.603] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:20:55.845] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:20:56.130] [INFO] default - Test: Detect simple class
+[2021-06-05T14:20:56.688] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:23:22.043] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:23:22.320] [INFO] default - Test: Detect simple class
+[2021-06-05T14:23:22.921] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:28:31.029] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:28:31.319] [INFO] default - Test: Detect simple class
+[2021-06-05T14:28:31.893] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:29:42.980] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:29:43.289] [INFO] default - Test: Detect simple class
+[2021-06-05T14:29:43.868] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:31:17.804] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:31:18.093] [INFO] default - Test: Detect simple class
+[2021-06-05T14:31:18.647] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:33:10.667] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:33:10.956] [INFO] default - Test: Detect simple class
+[2021-06-05T14:33:11.606] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:41:45.777] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:41:45.856] [INFO] default - Test: Detect simple class
+[2021-06-05T14:41:46.143] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:43:34.672] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:43:34.758] [INFO] default - Test: Detect simple class
+[2021-06-05T14:43:35.077] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:44:42.638] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:44:42.738] [INFO] default - Test: Detect simple class
+[2021-06-05T14:44:43.042] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:45:09.948] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:45:10.318] [INFO] default - Test: Detect simple class
+[2021-06-05T14:45:10.997] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:46:27.503] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:46:27.869] [INFO] default - Test: Detect simple class
+[2021-06-05T14:46:28.429] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:47:16.507] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:47:16.855] [INFO] default - Test: Detect simple class
+[2021-06-05T14:47:17.442] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:48:09.936] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:48:10.020] [INFO] default - Test: Detect simple class
+[2021-06-05T14:48:10.305] [INFO] default - Initializing LogManager ...
+[2021-06-05T14:51:19.810] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T14:51:19.927] [INFO] default - Test: Detect simple class
+[2021-06-05T14:51:20.253] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:02:26.377] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:02:26.488] [INFO] default - Test: Detect simple class
+[2021-06-05T15:02:26.973] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:03:09.089] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:03:09.147] [INFO] default - Test: Detect simple class
+[2021-06-05T15:03:09.371] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:03:32.402] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:03:32.634] [INFO] default - Test: Detect simple class
+[2021-06-05T15:03:33.167] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:04:41.173] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:04:41.488] [INFO] default - Test: Detect simple class
+[2021-06-05T15:04:42.139] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:05:56.470] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:05:56.765] [INFO] default - Test: Detect simple class
+[2021-06-05T15:05:57.296] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:06:53.115] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:06:53.206] [INFO] default - Test: Detect simple class
+[2021-06-05T15:06:53.542] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:07:23.152] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:07:23.214] [INFO] default - Test: Detect simple class
+[2021-06-05T15:07:23.419] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:20:33.586] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:20:33.676] [INFO] default - Test: Detect simple class
+[2021-06-05T15:20:34.020] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:21:11.633] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:21:11.722] [INFO] default - Test: Detect simple class
+[2021-06-05T15:21:12.050] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:22:36.886] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:22:37.227] [INFO] default - Test: Detect simple class
+[2021-06-05T15:22:37.739] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:23:56.518] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:23:56.868] [INFO] default - Test: Detect simple class
+[2021-06-05T15:23:57.554] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:24:49.443] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:24:49.885] [INFO] default - Test: Detect simple class
+[2021-06-05T15:24:50.543] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:28:31.192] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:28:31.436] [INFO] default - Test: Detect simple class
+[2021-06-05T15:28:32.032] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:38:24.723] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:38:25.085] [INFO] default - Test: Detect simple class
+[2021-06-05T15:38:25.715] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:39:26.616] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:39:27.008] [INFO] default - Test: Detect simple class
+[2021-06-05T15:39:27.794] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:44:22.952] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:44:23.042] [INFO] default - Test: Detect simple class
+[2021-06-05T15:44:23.378] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:44:48.579] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:44:48.951] [INFO] default - Test: Detect simple class
+[2021-06-05T15:44:49.688] [INFO] default - Initializing LogManager ...
+[2021-06-05T15:46:44.449] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T15:46:44.769] [INFO] default - Test: Detect simple class
+[2021-06-05T15:46:45.400] [INFO] default - Initializing LogManager ...
+[2021-06-05T16:01:40.341] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T16:01:40.437] [INFO] default - Test: Detect simple class
+[2021-06-05T16:01:40.762] [INFO] default - Initializing LogManager ...
+[2021-06-05T16:02:48.112] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T16:02:48.443] [INFO] default - Test: Detect simple class
+[2021-06-05T16:02:49.097] [INFO] default - Initializing LogManager ...
+[2021-06-05T16:04:12.675] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T16:04:12.932] [INFO] default - Test: Detect simple class
+[2021-06-05T16:04:13.509] [INFO] default - Initializing LogManager ...
+[2021-06-05T16:42:13.825] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T16:42:13.910] [INFO] default - Test: Detect simple class
+[2021-06-05T16:42:14.146] [INFO] default - Processing was rejected ... result was expected ... checking object if setup was successfull! 
+[2021-06-05T16:42:14.149] [INFO] default - Test: Detect simple class
+[2021-06-05T16:42:14.167] [INFO] default - Processing was rejected ... result was expected ... checking object if setup was successfull! 
+[2021-06-05T16:44:17.031] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T16:44:17.299] [INFO] default - Test: Detect simple class
+[2021-06-05T16:44:17.693] [INFO] default - Processing was rejected ... result was expected ... checking object if setup was successfull! 
+[2021-06-05T16:45:09.951] [INFO] default - Test: Detect simple class
+[2021-06-05T16:45:09.979] [INFO] default - Processing was rejected ... result was expected ... checking object if setup was successfull! 
+[2021-06-05T16:45:41.758] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T16:45:41.844] [INFO] default - Test: Detect simple class
+[2021-06-05T16:45:42.286] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:33:43.687] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:33:43.692] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:33:43.692] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T17:33:43.788] [INFO] default - Test: Detect simple class
+[2021-06-05T17:33:44.070] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:37:16.401] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:37:16.486] [INFO] default - Test: Detect simple class
+[2021-06-05T17:37:16.801] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:38:43.529] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:38:43.533] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:38:43.620] [INFO] default - Test: Detect simple class
+[2021-06-05T17:38:43.851] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:42:08.700] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:42:08.706] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:42:08.790] [INFO] default - Test: Detect simple class
+[2021-06-05T17:42:09.070] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:47:58.798] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:47:58.802] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:47:58.887] [INFO] default - Test: Detect simple class
+[2021-06-05T17:47:59.162] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:49:26.604] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:49:26.608] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:49:26.713] [INFO] default - Test: Detect simple class
+[2021-06-05T17:49:27.021] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:50:27.663] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:50:27.666] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:50:27.724] [INFO] default - Test: Detect simple class
+[2021-06-05T17:50:27.905] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:51:57.675] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:51:57.681] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:51:57.782] [INFO] default - Test: Detect simple class
+[2021-06-05T17:51:58.061] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:54:20.197] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:54:20.202] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:54:20.292] [INFO] default - Test: Detect simple class
+[2021-06-05T17:54:20.569] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:55:46.234] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:55:46.272] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:55:46.528] [INFO] default - Test: Detect simple class
+[2021-06-05T17:55:47.065] [INFO] default - Initializing LogManager ...
+[2021-06-05T17:59:30.325] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T17:59:30.333] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T17:59:30.430] [INFO] default - Test: Detect simple class
+[2021-06-05T17:59:30.721] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:00:09.003] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:00:09.009] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:00:09.269] [INFO] default - Test: Detect simple class
+[2021-06-05T18:00:09.787] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:01:58.109] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:01:58.119] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:01:58.445] [INFO] default - Test: Detect simple class
+[2021-06-05T18:01:59.038] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:03:00.098] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:03:00.103] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:03:00.199] [INFO] default - Test: Detect simple class
+[2021-06-05T18:03:00.479] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:05:32.016] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:05:32.021] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:05:32.108] [INFO] default - Test: Detect simple class
+[2021-06-05T18:05:32.379] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:07:09.572] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:07:09.578] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:07:09.677] [INFO] default - Test: Detect simple class
+[2021-06-05T18:07:09.970] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:07:32.826] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:07:32.830] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:07:33.000] [INFO] default - Test: Detect simple class
+[2021-06-05T18:07:33.680] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:11:48.070] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:11:48.075] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:11:48.075] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:11:48.168] [INFO] default - Test: Detect simple class
+[2021-06-05T18:11:48.439] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:24:27.167] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:24:27.172] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:24:27.172] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:24:27.270] [INFO] default - Test: Detect simple class
+[2021-06-05T18:24:27.555] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:27:02.322] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:27:02.387] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:27:02.388] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:27:02.603] [INFO] default - Test: Detect simple class
+[2021-06-05T18:27:03.240] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:28:56.481] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:28:56.487] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:28:56.487] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:28:56.576] [INFO] default - Test: Detect simple class
+[2021-06-05T18:28:56.859] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:29:39.387] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:29:39.395] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:29:39.395] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:29:39.504] [INFO] default - Test: Detect simple class
+[2021-06-05T18:29:39.801] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:32:24.000] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:32:24.005] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:32:24.005] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:32:24.088] [INFO] default - Test: Detect simple class
+[2021-06-05T18:32:24.391] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:33:52.470] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:33:52.475] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:33:52.475] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:33:52.568] [INFO] default - Test: Detect simple class
+[2021-06-05T18:33:52.869] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:34:54.890] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:34:54.894] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:34:54.895] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:34:54.988] [INFO] default - Test: Detect simple class
+[2021-06-05T18:34:55.258] [INFO] default - Initializing LogManager ...
+[2021-06-05T18:52:38.917] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T18:52:38.922] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T18:52:38.923] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T18:52:38.923] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T18:52:39.007] [INFO] default - Test: Detect simple class
+[2021-06-05T18:52:39.280] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:01:28.895] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:01:28.900] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:01:28.900] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:01:28.900] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:01:28.984] [INFO] default - Test: Detect simple class
+[2021-06-05T19:01:29.247] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:02:18.532] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:02:18.535] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:02:18.536] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:02:18.536] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:02:18.618] [INFO] default - Test: Detect simple class
+[2021-06-05T19:02:18.887] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:02:48.917] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:02:48.921] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:02:48.921] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:02:48.921] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:02:49.010] [INFO] default - Test: Detect simple class
+[2021-06-05T19:02:49.277] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:03:23.766] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:03:23.771] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:03:23.771] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:03:23.771] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:03:23.854] [INFO] default - Test: Detect simple class
+[2021-06-05T19:03:24.123] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:07:20.347] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:07:20.352] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:07:20.352] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:07:20.352] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:07:20.438] [INFO] default - Test: Detect simple class
+[2021-06-05T19:07:20.716] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:08:07.167] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:08:07.171] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:08:07.171] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:08:07.171] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:08:07.223] [INFO] default - Test: Detect simple class
+[2021-06-05T19:08:07.388] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:09:43.197] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:09:43.201] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:09:43.201] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:09:43.201] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:09:43.248] [INFO] default - Test: Detect simple class
+[2021-06-05T19:09:43.430] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:12:19.548] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:12:19.553] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:12:19.553] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:12:19.553] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:12:19.633] [INFO] default - Test: Detect simple class
+[2021-06-05T19:12:19.908] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:13:57.704] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:13:57.709] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:13:57.709] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:13:57.710] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:13:57.796] [INFO] default - Test: Detect simple class
+[2021-06-05T19:13:58.071] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:14:28.375] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:14:28.380] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:14:28.380] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:14:28.381] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:14:28.462] [INFO] default - Test: Detect simple class
+[2021-06-05T19:14:28.737] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:16:48.473] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:16:48.478] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:16:48.478] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:16:48.478] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:16:48.562] [INFO] default - Test: Detect simple class
+[2021-06-05T19:16:48.835] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:17:35.849] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:17:35.855] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:17:35.855] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:17:35.855] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:17:35.937] [INFO] default - Test: Detect simple class
+[2021-06-05T19:17:36.208] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:18:14.001] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:18:14.004] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:18:14.004] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:18:14.004] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:18:14.055] [INFO] default - Test: Detect simple class
+[2021-06-05T19:18:14.223] [INFO] default - Initializing LogManager ...
+[2021-06-05T19:19:07.425] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test.js
+[2021-06-05T19:19:07.431] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_bean_analyzer.js
+[2021-06-05T19:19:07.431] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_member_analyzer.js
+[2021-06-05T19:19:07.431] [INFO] default - /Users/udogerhards/Documents/workspace/Nodejs-annotations/test/parser/JScript/analyze/test_property_analyzer.js
+[2021-06-05T19:19:07.516] [INFO] default - Test: Detect simple class
+[2021-06-05T19:19:07.790] [INFO] default - Initializing LogManager ...
