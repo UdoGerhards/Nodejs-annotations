@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+            "args": [
+                "${workspaceFolder}/test/**/*.js",
+                "--expose-gc --recursive"
+            ],
+            "port": 9229,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

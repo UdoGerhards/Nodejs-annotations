@@ -15,13 +15,9 @@ describe("Property analyzer test", function () {
     const logger = log4js.getLogger();
     const timeout = 50000;
 
-    const pos = process.env.PWD.indexOf("/test");
-    let libRoot = "";
-    if (pos > -1) {
-        libRoot = process.env.PWD.substring(0, pos);
-    } else {
-        libRoot = process.env.PWD;
-    }
+    const pos = __dirname.indexOf("/test");
+    const libRoot = __dirname.substring(0, pos);
+    
     const testRoot = path.join(libRoot, "test");
     const resourceRoot = path.join(testRoot, "resources");
     const JScriptTestRoot = path.join(resourceRoot, "JScript");
