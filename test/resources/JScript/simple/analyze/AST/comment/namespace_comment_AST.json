@@ -1,0 +1,20 @@
+[
+  {
+    "type": "Block",
+    "value": "*\n   * @()Namespace\n   ",
+    "range": [
+      142,
+      164
+    ],
+    "loc": {
+      "start": {
+        "line": 14,
+        "column": 2
+      },
+      "end": {
+        "line": 16,
+        "column": 5
+      }
+    }
+  }
+]

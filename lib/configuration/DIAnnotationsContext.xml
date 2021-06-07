@@ -314,6 +314,9 @@
       <property name="BeanAwareClazz">
         <reference id="BeanAware" />
       </property>
+      <property name="MemberAwareClazz">
+        <reference id="MemberAware" />
+      </property>
       <property name="Analyzer">
         <list>
           <entry>
