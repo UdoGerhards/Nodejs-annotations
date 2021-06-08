@@ -35,7 +35,8 @@
     <class id="MemberAware" src="/lib/foundation/annotation/base/MemberAware.js" />
     <class id="ModuleAware" src="/lib/foundation/annotation/base/ModuleAware.js" />
     <class id="SupportAware" src="/lib/foundation/annotation/base/SupportAware.js" />
-    <class id="ClazzMetaInformation" src="/lib/foundation/context/JScript/meta/ClazzMetaInformation.js" />"
+    <class id="PropertyAware" src="/lib/foundation/annotation/base/PropertyAware.js" />
+    <class id="ClassMetaInformation" src="/lib/foundation/context/JScript/meta/ClazzMetaInformation.js" />"
 
     <!-- Esprima, Util, all externals -->
     <bean id="Esprima" src="esprima"/>
@@ -56,6 +57,7 @@
     <bean id="DotProp" src="dot-prop" />
     <bean id="UuidValidator" src="uuidv4" />
     <bean id="DeepMerge" src="deepmerge" />
+    <bean id="Traverse" src="traverse" />
 
     <!-- LogManager -->
     <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
@@ -299,9 +301,15 @@
       <property name="util">
           <reference id="Util" />
       </property>
+      <property name="traverse">
+          <reference id="Traverse" />
+      </property>
       <property name="esprima">
           <reference id="Esprima" />
       </property>
+      <property name="beautify">
+        <reference id="Beautify" />
+    </property>
       <property name="LogManager">
           <reference id="LogManager" />
       </property>
@@ -316,6 +324,12 @@
       </property>
       <property name="MemberAwareClazz">
         <reference id="MemberAware" />
+      </property>
+      <property name="PropertyAwareClazz">
+        <reference id="PropertyAware" />
+      </property>
+      <property name="ClassMetaInformation">
+        <reference id="ClassMetaInformation" />
       </property>
       <property name="Analyzer">
         <list>

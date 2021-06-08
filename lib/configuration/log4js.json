@@ -25,10 +25,10 @@
       "pattern": "-yyyy-MM-dd",
       "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/DependencyBuilder.log"
     },
-    "Analyzer": {
+    "ClazzStructAnalyzer": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Analyzer.log"
+      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/ClazzStructAnalyzer.log"
     },
     "BeanAnalyzer": {
       "type": "file",
@@ -95,6 +95,10 @@
     "Prototype": {
       "appenders": ["default", "Prototype"],
       "level": "INFO"
+    },
+    "ClazzStructAnalyzer": {
+      "appenders": ["default", "ClazzStructAnalyzer"],
+      "level": "DEBUG"
     },
     "BeanParser": {
       "appenders": ["default", "BeanParser"],
