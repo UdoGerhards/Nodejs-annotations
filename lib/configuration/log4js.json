@@ -8,93 +8,93 @@
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "category": "defaultFile",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Application.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Application.log"
     },
     "ContextBuilder": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/ContextBuilder.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/ContextBuilder.log"
     },
     "StructureParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/StructureParser.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/StructureParser.log"
     },
     "DependencyBuilder": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/DependencyBuilder.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/DependencyBuilder.log"
     },
     "ClazzStructAnalyzer": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/ClazzStructAnalyzer.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/ClazzStructAnalyzer.log"
     },
     "BeanAnalyzer": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/BeanAnalyzer.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/BeanAnalyzer.log"
     },
     "PropertiesParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/PropertiesParser.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/PropertiesParser.log"
     },
     "Foundation": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/PropertiesParser.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/PropertiesParser.log"
     },
     "XMLParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/XMLParser.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/XMLParser.log"
     },
     "BeanParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/BeanParser.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/BeanParser.log"
     },
     "Component": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Component.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Component.log"
     },
     "Controller": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Controller.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Controller.log"
     },
     "Service": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Service.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
     },
     "Qualifier": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Service.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
     },
     "Context": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Service.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
     },
     "Prototype": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/PrototypeParser.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/PrototypeParser.log"
     },
     "Autowire": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/log/Autowire.log"
+      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Autowire.log"
     }
   },
   "categories": {
     "Prototype": {
       "appenders": ["default", "Prototype"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "ClazzStructAnalyzer": {
       "appenders": ["default", "ClazzStructAnalyzer"],
@@ -102,59 +102,59 @@
     },
     "BeanParser": {
       "appenders": ["default", "BeanParser"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Component": {
       "appenders": ["default", "Component"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Controller": {
       "appenders": ["default", "Controller"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Service": {
       "appenders": ["default", "Service"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Qualifier": {
       "appenders": ["default", "Qualifier"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Context": {
       "appenders": ["default", "Context"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Autowire": {
       "appenders": ["default", "Autowire"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "default": {
       "appenders": ["default", "defaultFile"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "ContextBuilder": {
       "appenders": ["default", "ContextBuilder"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "StructureParser": {
       "appenders": ["default", "StructureParser"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "DependencyBuilder": {
       "appenders": ["default", "DependencyBuilder"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "PropertiesParser": {
       "appenders": ["default", "PropertiesParser"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "Foundation": {
       "appenders": ["default", "Foundation"],
-      "level": "INFO"
+      "level": "DEBUG"
     },
     "XMLParser": {
       "appenders": ["default", "XMLParser"],
-      "level": "INFO"
+      "level": "DEBUG"
     }
   }
 }

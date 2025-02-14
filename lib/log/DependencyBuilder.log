@@ -1,132 +1,84 @@
-[2021-06-08T15:53:18.483] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T15:53:18.487] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T15:53:18.622] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:18.624] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:18.707] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:18.729] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:18.916] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:18.917] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.083] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.084] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.256] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.258] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.407] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.408] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.481] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.482] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.590] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.591] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.748] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.750] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.830] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.832] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:19.915] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:19.916] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.186] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.187] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.273] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.274] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.374] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.375] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.444] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.445] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.544] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.545] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.616] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.617] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.687] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.688] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T15:53:20.766] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
-[2021-06-08T15:53:20.771] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
-[2021-06-08T16:10:06.840] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:10:06.858] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:10:47.237] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:10:47.241] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:19:29.067] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:19:29.070] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:22:39.925] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:22:39.928] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:23:25.553] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:23:25.556] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:23:56.173] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:23:56.176] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:26:28.706] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:26:28.710] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:31:16.422] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:31:16.425] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:41:51.721] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:41:51.725] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T16:46:02.305] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T16:46:02.311] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:22:22.115] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:22:22.121] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:26:34.145] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:26:34.149] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:33:25.815] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:33:25.818] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:34:55.185] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:34:55.191] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:35:20.356] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:35:20.359] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:36:42.215] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:36:42.218] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:37:05.469] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:37:05.472] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:37:21.290] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:37:21.293] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:38:16.894] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:38:16.897] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:39:15.880] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:39:15.884] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:48:47.607] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:48:47.610] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:49:29.434] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:49:29.437] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:51:24.564] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:51:24.567] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:52:55.521] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:52:55.524] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:58:25.989] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:58:25.993] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:59:09.597] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:59:09.600] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:59:33.749] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:59:33.752] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T17:59:52.716] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T17:59:52.719] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:00:35.771] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:00:35.774] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:00:58.990] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:00:58.993] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:01:21.594] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:01:21.597] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:03:04.057] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:03:04.060] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:03:35.998] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:03:36.003] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:04:36.761] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:04:36.764] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:05:21.612] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:05:21.616] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:06:58.109] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:06:58.112] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:09:02.334] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:09:02.337] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:12:49.608] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:12:49.611] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:14:02.935] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:14:02.938] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:14:49.970] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:14:49.973] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:15:47.612] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:15:47.615] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:16:23.698] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:16:23.701] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:20:11.760] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:20:11.763] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:22:05.460] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:22:05.464] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:23:13.525] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:23:13.531] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
-[2021-06-08T18:23:23.759] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
-[2021-06-08T18:23:23.768] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-14T15:02:32.098] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-14T15:02:32.118] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/' buildStandardScanGlobs(/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-14T15:02:32.136] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ---------------- _reportModuleOrder(/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:33:16)
+[2025-02-14T15:02:32.137] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ---------------- _reportModuleOrder(/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:43:16)
+[2025-02-14T15:02:32.461] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:32.467] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:32.475] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:32.475] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:32.715] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:32.718] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:32.730] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:32.733] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:32.958] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:32.963] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:32.966] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:32.966] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:33.213] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:33.218] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:33.220] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:33.228] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:33.400] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:33.407] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:33.411] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:33.414] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:33.610] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:33.616] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:33.623] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:33.623] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:33.913] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:33.914] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:33.924] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:33.924] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:34.195] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:34.219] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:34.220] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:34.221] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:34.446] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:34.451] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:34.458] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:34.458] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:34.658] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:34.659] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:34.665] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:34.667] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:35.180] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:35.190] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:35.199] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:35.203] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:35.469] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:35.472] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:35.486] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:35.487] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:35.758] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:35.772] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:35.776] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:35.776] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:36.045] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:36.055] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:36.057] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:36.057] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:36.289] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:36.296] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:36.298] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:36.303] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:36.546] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:36.553] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:36.559] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:36.562] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:36.812] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:36.816] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:36.819] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:36.821] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:37.080] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:37.085] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:37.088] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:37.091] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:37.314] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:37.315] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:37.322] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:37.330] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-14T15:02:37.546] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-14T15:02:37.552] [INFO] DependencyBuilder -     => main path: '/home/udo-gerhards/node_modules/@annotations/'
+[2025-02-14T15:02:37.561] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-14T15:02:37.564] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------

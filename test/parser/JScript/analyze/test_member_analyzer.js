@@ -39,7 +39,7 @@ describe("Member analyzer test", function () {
     const astPath = path.join(analyzePath, "AST");
     const memberPath = path.join(astPath, "Member");
 
-    const Init = require(path.join(initialize, "init", "InitAnnotationClass"));
+    const Init = require(path.join(initialize, "Init", "InitAnnotationClass"));
     const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.js"));
 
     it("Testing class based member AST ... ", function () {

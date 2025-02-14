@@ -1,66 +1,21 @@
-[2021-06-08T15:53:18.484] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T15:53:18.623] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:18.707] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:18.916] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.083] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.257] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.407] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.481] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.591] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.748] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.830] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:19.915] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.186] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.274] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.374] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.444] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.544] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.617] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.687] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T15:53:20.767] [INFO] StructureParser - StructureParser initialized
-[2021-06-08T16:10:06.841] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:10:47.238] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:19:29.067] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:22:39.925] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:23:25.553] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:23:56.173] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:26:28.707] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:31:16.422] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:41:51.722] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T16:46:02.306] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:22:22.116] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:26:34.145] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:33:25.815] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:34:55.185] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:35:20.357] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:36:42.216] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:37:05.469] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:37:21.291] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:38:16.895] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:39:15.881] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:48:47.607] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:49:29.434] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:51:24.564] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:52:55.522] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:58:25.990] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:59:09.598] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:59:33.750] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T17:59:52.716] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:00:35.771] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:00:58.990] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:01:21.594] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:03:04.058] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:03:35.999] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:04:36.761] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:05:21.613] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:06:58.110] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:09:02.334] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:12:49.609] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:14:02.935] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:14:49.970] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:15:47.613] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:16:23.698] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:20:11.760] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:22:05.461] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:23:13.526] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
-[2021-06-08T18:23:23.760] [INFO] StructureParser - StructureParser initialized init(/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
+[2025-02-14T15:02:32.105] [INFO] StructureParser - StructureParser initialized init(/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/context/parser/structure/StructureParser.js:50:16)
+[2025-02-14T15:02:32.463] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:32.715] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:32.958] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:33.213] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:33.400] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:33.610] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:33.913] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:34.195] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:34.446] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:34.658] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:35.181] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:35.469] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:35.764] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:36.045] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:36.289] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:36.547] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:36.815] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:37.080] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:37.314] [INFO] StructureParser - StructureParser initialized
+[2025-02-14T15:02:37.546] [INFO] StructureParser - StructureParser initialized

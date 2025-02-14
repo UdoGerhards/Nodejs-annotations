@@ -61,7 +61,7 @@
 
     <!-- LogManager -->
     <bean id="LogManager" src="/lib/logging/LogManager.js" init="init">
-        <property name="configFile" value="/Users/udogerhards/Documents/workspace/Nodejs-annotations/lib/configuration/log4js.json" />
+        <property name="configFile" value="/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/configuration/log4js.json" />
     </bean>
 
     <!--Diagram painter -->
