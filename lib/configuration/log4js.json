@@ -8,87 +8,87 @@
       "type": "file",
       "pattern": "-yyyy-MM-dd",
       "category": "defaultFile",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Application.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Application.log"
     },
     "ContextBuilder": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/ContextBuilder.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/ContextBuilder.log"
     },
     "StructureParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/StructureParser.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/StructureParser.log"
     },
     "DependencyBuilder": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/DependencyBuilder.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/DependencyBuilder.log"
     },
     "ClazzStructAnalyzer": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/ClazzStructAnalyzer.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/ClazzStructAnalyzer.log"
     },
     "BeanAnalyzer": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/BeanAnalyzer.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/BeanAnalyzer.log"
     },
     "PropertiesParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/PropertiesParser.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/PropertiesParser.log"
     },
     "Foundation": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/PropertiesParser.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/PropertiesParser.log"
     },
     "XMLParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/XMLParser.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/XMLParser.log"
     },
     "BeanParser": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/BeanParser.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/BeanParser.log"
     },
     "Component": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Component.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Component.log"
     },
     "Controller": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Controller.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Controller.log"
     },
     "Service": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
     },
     "Qualifier": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
     },
     "Context": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Service.log"
     },
     "Prototype": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/PrototypeParser.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/PrototypeParser.log"
     },
     "Autowire": {
       "type": "file",
       "pattern": "-yyyy-MM-dd",
-      "filename": "/home/udo-gerhards/Development/NodeJS/Nodejs-annotations/lib/log/Autowire.log"
+      "filename": "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/log/Autowire.log"
     }
   },
   "categories": {
