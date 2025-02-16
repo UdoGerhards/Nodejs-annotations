@@ -1,10 +1,8 @@
-'use strict';
-
 /**
  * @Service("ServiceBean")
  * @constructor
  */
-class Component {
+export default class Component {
   
   constructor() {
 
@@ -18,6 +16,4 @@ class Component {
     let inatance = this;
   }
 
-}
-
-module.exports = exports = Component;
+};
