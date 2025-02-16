@@ -46,7 +46,7 @@ describe("Class struct amalyzer test", function () {
     const testFilePath = path.join(analyzePath, "files");
     const clazzFilePath = path.join(testFilePath, "clazz");
 
-    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.js"));
+    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.cjs"));
 
     it("Testing comment function: Getting value from annotation commment ... ", function () {
 

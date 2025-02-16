@@ -49,7 +49,7 @@ describe("ECMAScript test", function () {
         /*
          * Test preparation
          */
-        const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.js"));
+        const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.cjs"));
 
         var contextInfo = {
             "scan": []

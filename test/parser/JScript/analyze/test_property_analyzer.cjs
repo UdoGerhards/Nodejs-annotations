@@ -39,7 +39,7 @@ describe("Property analyzer test", function () {
     const astPath = path.join(analyzePath, "AST");
     const propertyPath = path.join(astPath, "Property");
 
-    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.js"));
+    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.cjs"));
 
     it("Testing property AST with empty annotation value ... ", function () {
 

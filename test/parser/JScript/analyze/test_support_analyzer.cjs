@@ -41,7 +41,7 @@ describe("Support amalyzer test", function () {
     const astPath = path.join(analyzePath, "AST");
     const commentPath = path.join(astPath, "comment");
 
-    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.js"));
+    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.cjs"));
 
     it("Testing simple comment to get back according annotation ... ", function () {
 
