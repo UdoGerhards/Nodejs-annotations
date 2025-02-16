@@ -4,10 +4,58 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Mocha Tests",
+            "name": "Bean Tests",
             "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
             "args": [
-                "${workspaceFolder}/test/**/*.js"
+                //"${workspaceFolder}/test/**/*.js"
+                "${workspaceFolder}/test/parser/JScript/analyze/bean.cjs"
+            ],
+            "port": 9229,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+        , {
+            "type": "node",
+            "request": "launch",
+            "name": "Clazz structure Tests",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+            "args": [
+                "--experimental-require-module",
+                "${workspaceFolder}/test/parser/JScript/analyze/clazz_structure.cjs"
+            ],
+            "port": 9229,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+        ,{
+            "type": "node",
+            "request": "launch",
+            "name": "Member Tests",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+            "args": [
+                "--experimental-require-module",
+                "${workspaceFolder}/test/parser/JScript/analyze/member.cjs"
+            ],
+            "port": 9229,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+        ,{
+            "type": "node",
+            "request": "launch",
+            "name": "Property Tests",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+            "args": [
+                "${workspaceFolder}/test/parser/JScript/analyze/property.cjs"
+            ],
+            "port": 9229,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+        ,{
+            "type": "node",
+            "request": "launch",
+            "name": "Support Tests",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/mocha",
+            "args": [
+                "--experimental-require-module",
+                "${workspaceFolder}/test/parser/JScript/analyze/support.cjs"
             ],
             "port": 9229,
             "internalConsoleOptions": "openOnSessionStart"

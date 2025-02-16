@@ -2,10 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import FoundationXMLParserClass from "./context/parser/xml/FoundationXMLParser.js";
 import LogManager from "../logging/LogManager.js";
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-const __dirname = path.dirname(__filename); // get the name of the directory
 
 /**
  * Foundation Class
@@ -16,7 +12,7 @@ const __dirname = path.dirname(__filename); // get the name of the directory
  *
  * @constructor()
  */
-class  Foundation{
+export default class Foundation {
 
     constructor() {
 
@@ -43,15 +39,22 @@ class  Foundation{
 
     /**
      * Initializes the Foundation class
-    init(contextFilePath) {
+     */
+    static init(contextFilePath) {
 
         var instance = this;
 
+        //instance.logger = instance.logManager.getLogger(instance);
+
         var logger = instance.logger;
+
+        //logger.info("Initializing Foundation ... ");
 
         instance._FoundationXMLParser.init(instance._moduleDir, contextFilePath);
         instance._contextFile = path.join(instance._moduleDir, contextFilePath);
-    } */
+
+        //instance.logger = instance.logManager.getLogger(instance);
+    }
 
     /**
      * Returns the base (initial) context.
@@ -75,7 +78,7 @@ class  Foundation{
      *
      * @returns {*|PromiseLike<T | never>|Promise<T | never>}
      */
-    getFactory() {
+    static getFactory() {
         var instance = this;
 
         console.log();
@@ -139,34 +142,4 @@ class  Foundation{
 
         return libPath;
     }
-};
-
-let FoundationBase = new Foundation();
-
-export function init(contextFilePath) {
-
-    var instance = FoundationBase;
-
-    var logger = instance.logger;
-
-    instance._FoundationXMLParser.init(instance._moduleDir, contextFilePath);
-    instance._contextFile = path.join(instance._moduleDir, contextFilePath);
-};
-
-export function getFactory() {
-    var instance = FoundationBase;
-
-    console.log();
-    console.log("***********************************************************************************");
-    console.log("*                                                                                 *");
-    console.log("*  DI-Annotations                                                                 *");
-    console.log("*                                                                                 *");
-    console.log("*  Library for dependency injection in nodejs                                     *");
-    console.log("***********************************************************************************");
-    console.log();
-
-    var baseContext = instance._process();
-    return baseContext.then(function (loadedContext) {
-        return loadedContext['Factory'];
-    });
 };
