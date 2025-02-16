@@ -52,7 +52,7 @@
     <bean id="Doctrine" src="doctrine" />
     <bean id="PropertiesReader" src="properties" />
     <bean id="XML2js" src="xml2js" />
-    <bean id="UuidV4" src="uuid/v4" />
+    <bean id="UuidV4" src="uuid" />
     <bean id="HTMLParser" src="htmlparser2" />
     <bean id="DotProp" src="dot-prop" />
     <bean id="UuidValidator" src="uuidv4" />

@@ -170,3 +170,263 @@
 [2025-02-15T09:46:59.691] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
 [2025-02-15T09:46:59.691] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
 [2025-02-15T09:46:59.691] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:15:16.430] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T10:15:16.439] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T10:15:16.481] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:33:16)
+[2025-02-15T10:15:16.481] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:43:16)
+[2025-02-15T10:15:16.613] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:15:16.614] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:15:16.623] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:15:16.623] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:15:16.705] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:15:16.707] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:15:16.708] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:15:16.709] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:15:16.769] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:15:16.770] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:15:16.771] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:15:16.772] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:25.177] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T10:16:25.219] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T10:16:25.227] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:33:16)
+[2025-02-15T10:16:25.228] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:43:16)
+[2025-02-15T10:16:25.348] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:25.350] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:25.351] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:25.351] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:25.421] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:25.423] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:25.424] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:25.424] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:25.463] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:25.464] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:25.465] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:25.466] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:40.875] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T10:16:40.884] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T10:16:40.891] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:33:16)
+[2025-02-15T10:16:40.891] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:43:16)
+[2025-02-15T10:16:41.129] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.130] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.131] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.131] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.271] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.274] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.281] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.281] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.367] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.367] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.368] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.368] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.396] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.396] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.396] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.397] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.422] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.422] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.423] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.423] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.466] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.466] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.467] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.467] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.607] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.607] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.607] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.607] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.633] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.633] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.634] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.634] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.680] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.681] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.682] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.682] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.758] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.759] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.759] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.759] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.803] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.804] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.805] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.805] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.826] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.827] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.828] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.828] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.846] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.846] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.846] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.846] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.868] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.870] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.871] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.871] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.897] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.898] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.898] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.898] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.935] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.939] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.940] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.940] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.964] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.964] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.965] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.965] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:41.986] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:41.987] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:41.988] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:41.988] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:42.010] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:42.010] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:42.010] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:42.011] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:16:42.036] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:16:42.037] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T10:16:42.038] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:16:42.038] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.510] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T10:18:32.512] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T10:18:32.515] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:33:16)
+[2025-02-15T10:18:32.515] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ---------------- _reportModuleOrder(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:43:16)
+[2025-02-15T10:18:32.544] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.544] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.545] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.545] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.598] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.599] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.600] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.600] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.634] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.634] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.635] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.635] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.676] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.676] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.677] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.677] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.708] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.711] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.712] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.712] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.747] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.751] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.752] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.752] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.784] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.787] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.788] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.788] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.814] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.814] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.815] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.815] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.840] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.840] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.841] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.841] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.880] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.880] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.881] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.881] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.907] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.907] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.908] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.908] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:32.985] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:32.986] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:32.986] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:32.986] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.029] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.030] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.031] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.032] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.057] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.057] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.057] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.057] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.089] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.089] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.090] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.090] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.114] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.114] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.115] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.115] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.155] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.164] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.164] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.164] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.193] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.194] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.196] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.196] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.230] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.230] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.231] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.231] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T10:18:33.252] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T10:18:33.253] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T10:18:33.254] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, start ----------------
+[2025-02-15T10:18:33.254] [DEBUG] DependencyBuilder - ---------------- Parsing order - modules, end ----------------
+[2025-02-15T14:27:39.087] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T14:27:39.100] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T14:30:09.285] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T14:30:09.296] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T14:30:09.494] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T14:30:09.511] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T14:30:09.705] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T14:30:09.709] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T14:30:09.772] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T14:30:09.775] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T14:31:09.934] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T14:31:09.969] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T14:31:10.192] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T14:31:10.221] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T14:31:10.313] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T14:31:10.318] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T14:31:10.377] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T14:31:10.379] [INFO] DependencyBuilder -     => main path: '//node_modules/@annotations/'
+[2025-02-15T18:04:30.720] [INFO] DependencyBuilder - DependencyBuilder initialized ...  init(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:25:25)
+[2025-02-15T18:04:30.723] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/' buildStandardScanGlobs(/Users/udogerhards/Development/NodeJS/Nodejs-annotations/lib/foundation/dependency/DependencyBuilder.js:324:20)
+[2025-02-15T18:04:30.766] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.768] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:30.810] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.811] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:30.836] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.837] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:30.872] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.873] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:30.912] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.913] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:30.948] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.948] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:30.976] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:30.988] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.021] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.023] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.063] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.064] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.102] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.102] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.150] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.151] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.188] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.190] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.229] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.230] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.258] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.259] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.294] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.295] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.331] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.332] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.369] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.370] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.399] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.399] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.440] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.441] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'
+[2025-02-15T18:04:31.471] [INFO] DependencyBuilder - DependencyBuilder initialized ... 
+[2025-02-15T18:04:31.475] [INFO] DependencyBuilder -     => main path: '/Users/udogerhards/Development/NodeJS/Nodejs-annotations/node_modules/@annotations/'

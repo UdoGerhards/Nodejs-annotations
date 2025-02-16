@@ -121,3 +121,85 @@
   member: null
 }
 [2025-02-15T09:46:59.238] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:16:41.423] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.423] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.423] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:16:41.468] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.483] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.483] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:16:41.483] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.483] [DEBUG] ClazzStructAnalyzer - Namespace { value: null }
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Namespace { value: null }
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.608] [DEBUG] ClazzStructAnalyzer - Inherits { value: 'Service' }
+[2025-02-15T10:16:41.635] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.635] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.635] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:16:41.635] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:16:41.687] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.687] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.687] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:16:41.687] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.687] [DEBUG] ClazzStructAnalyzer - Namespace { value: null }
+[2025-02-15T10:16:41.687] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:16:41.759] [INFO] ClazzStructAnalyzer - Starting to analyze file "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/test/resources/JScript/simple/analyze/files/clazz/clazz_simple.js ...
+[2025-02-15T10:16:41.772] [DEBUG] ClazzStructAnalyzer - Starting to work on class "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/test/resources/JScript/simple/analyze/files/clazz/clazz_simple.js"
+[2025-02-15T10:16:41.781] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.781] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.781] [DEBUG] ClazzStructAnalyzer - Service { value: 'ServiceBean', namespace: null, support: [] }
+[2025-02-15T10:16:41.781] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:16:41.782] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:16:41.782] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:16:41.782] [DEBUG] ClazzStructAnalyzer - Init {
+  value: null,
+  namespace: null,
+  support: [],
+  property: null,
+  member: null
+}
+[2025-02-15T10:16:41.783] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:18:32.752] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.753] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.753] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:18:32.789] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.789] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.789] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:18:32.790] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.790] [DEBUG] ClazzStructAnalyzer - Namespace { value: null }
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Namespace { value: null }
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.815] [DEBUG] ClazzStructAnalyzer - Inherits { value: 'Service' }
+[2025-02-15T10:18:32.842] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.842] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.842] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:18:32.842] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:18:32.881] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.881] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.881] [DEBUG] ClazzStructAnalyzer - Component { value: 'ComponentBean', namespace: null, support: [] }
+[2025-02-15T10:18:32.881] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.881] [DEBUG] ClazzStructAnalyzer - Namespace { value: null }
+[2025-02-15T10:18:32.881] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:18:32.908] [INFO] ClazzStructAnalyzer - Starting to analyze file "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/test/resources/JScript/simple/analyze/files/clazz/clazz_simple.js ...
+[2025-02-15T10:18:32.928] [DEBUG] ClazzStructAnalyzer - Starting to work on class "/Users/udogerhards/Development/NodeJS/Nodejs-annotations/test/resources/JScript/simple/analyze/files/clazz/clazz_simple.js"
+[2025-02-15T10:18:32.939] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.939] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.939] [DEBUG] ClazzStructAnalyzer - Service { value: 'ServiceBean', namespace: null, support: [] }
+[2025-02-15T10:18:32.939] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 
+[2025-02-15T10:18:32.947] [DEBUG] ClazzStructAnalyzer - Analyzing comment for annotation ... 
+[2025-02-15T10:18:32.948] [DEBUG] ClazzStructAnalyzer - Annotation object from comment 
+[2025-02-15T10:18:32.948] [DEBUG] ClazzStructAnalyzer - Init {
+  value: null,
+  namespace: null,
+  support: [],
+  property: null,
+  member: null
+}
+[2025-02-15T10:18:32.948] [DEBUG] ClazzStructAnalyzer - Calling asynchrous analyzer ... 

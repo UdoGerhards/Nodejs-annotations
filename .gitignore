@@ -1,0 +1,13 @@
+lib/log/Application.log
+lib/log/Application.log
+lib/log/Autowire.log
+lib/log/BeanParser.log
+lib/log/ClazzStructAnalyzer.log
+lib/log/Component.log
+lib/log/ContextBuilder.log
+lib/log/Controller.log
+lib/log/DependencyBuilder.log
+lib/log/PropertiesParser.log
+lib/log/PrototypeParser.log
+lib/log/Service.log
+lib/log/StructureParser.log
