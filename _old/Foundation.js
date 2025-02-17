@@ -12,7 +12,7 @@ import LogManager from "../logging/LogManager.js";
  *
  * @constructor()
  */
-export default class Foundation {
+class Foundation {
 
     constructor() {
 
@@ -143,3 +143,5 @@ export default class Foundation {
         return libPath;
     }
 };
+
+export default new Foundation();

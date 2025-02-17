@@ -2,7 +2,7 @@
  * @Service("ServiceBean")
  * @constructor
  */
-export default class Component {
+class Component {
   
   constructor() {
 
@@ -17,3 +17,6 @@ export default class Component {
   }
 
 };
+
+
+export default  new Component();
