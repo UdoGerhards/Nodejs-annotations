@@ -43,7 +43,12 @@ describe("Bean amalyzer test", function () {
     const astPath = path.join(analyzePath, "AST");
     const classBeanPath = path.join(astPath, "clazz");
 
-    const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.cjs"));
+    //const bootstrap = require(path.join(LIBRARY, "bootstrap", "bootstrap.cjs"));
+
+    import (path.join(LIBRARY, "bootstrap", "bootstrap.cjs")).then((bootstrap) => {
+        console.log (bootstrap);
+
+    });
 
     it("Testing class based AST with empty annotation value ... ", function () {
 
