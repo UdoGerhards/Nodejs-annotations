@@ -35,6 +35,8 @@ describe("Bean amalyzer test", function () {
 
     const ClazzComponent = require(path.join(instance, "Component", "ComponentAnnotationClass"));
 
+    console.log(ClazzComponent);
+
     // Test resources
     const simplePath = path.join(JScriptTestRoot, "simple");
     const analyzePath = path.join(simplePath, "analyze");
@@ -67,8 +69,16 @@ describe("Bean amalyzer test", function () {
         const reject = reject => {
 
             const analyzer = reject.classStructAnalyzer;
+
+            import(path.join(classBeanPath, "clazz_Bean_AST.json")).then((clazz) => {
+
+                logger.debug(clazz);
+                
+            });
+
             const tree = require(path.join(classBeanPath, "clazz_Bean_AST.json"));
-            const componentAnnotation = new ClazzComponent();
+            //const componentAnnotation = new ClazzComponent();
+
 
             const beanAnalyzer = analyzer.AnalyzerByAnnotationClazz[componentAnnotation.constructor.name];
             const node = tree.body[0];
